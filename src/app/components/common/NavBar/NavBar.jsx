@@ -3,9 +3,12 @@ import { ReactComponent as GlassesLogo } from "../../../assets/svg/glasses.svg";
 import { ReactComponent as CalendarLogo } from "../../../assets/svg/calendar.svg";
 import { ReactComponent as MuseumLogo } from "../../../assets/svg/museum.svg";
 import { ReactComponent as RiverUniversityLogo } from "../../../assets/svg/riveruniversityLogo.svg";
-import { ReactComponent as SearchLogo } from "../../../assets/svg/search.svg";
+
 import { ReactComponent as UserLogo } from "../../../assets/svg/user.svg";
 import React from "react";
+import Button from "../button/Button";
+import MenuNavbar from "../menuNavbar/menuNavbar";
+import Search from "../search/search";
 const NavBar = () => {
   return (
     <>
@@ -28,7 +31,7 @@ const NavBar = () => {
               <div className="header__link">
                 <span className="icon">
                   <object>
-                    <MuseumLogo width={"18px"} height={"18px"} />
+                    <MuseumLogo width="18px" height="18px" />
                   </object>
                 </span>
                 <span className="text__underlined">
@@ -38,34 +41,39 @@ const NavBar = () => {
             </div>
             {/*    <!-- поиск --> */}
             <div className="header__section3-btn">
-              <div className="header__section3-btn-margin header__search">
+              <Search />
+              {/* <div className="header__section3-btn-margin header__search">
                 <span className="icon">
                   <object>
                     <SearchLogo />
                   </object>
                 </span>
-              </div>
+              </div> */}
               {/*   <!-- расписание --> */}
               <div className="header__section3-btn-margin header__timetable">
-                <button className="btn__timetable">
-                  <span className="icon">
-                    <object>
-                      <CalendarLogo />
-                    </object>
-                  </span>
-                  <span className="btn__office-text">Календарь</span>
-                </button>
+                <Button className={"btn__timetable"}>
+                  {
+                    <span className="icon">
+                      <object>
+                        <CalendarLogo />
+                      </object>
+                    </span>
+                  }
+                  {<span className="btn__office-text">Календарь</span>}
+                </Button>
               </div>
               {/*  <!-- кнопка входа в личный кабинет --> */}
               <div className="header__section3-btn-margin header__office">
-                <button className="btn__office">
-                  <span className="icon">
-                    <object>
-                      <UserLogo />
-                    </object>
-                  </span>
-                  <span className="btn__office-text">Личный кабинет</span>
-                </button>
+                <Button className={"btn__office"}>
+                  {
+                    <span className="icon">
+                      <object>
+                        <UserLogo />
+                      </object>
+                    </span>
+                  }
+                  {<span className="btn__office-text">Личный кабинет</span>}
+                </Button>
               </div>
             </div>
           </div>
@@ -92,43 +100,7 @@ const NavBar = () => {
               Уфимский филиал ФГБОУ ВО <br />
               "Волжский государственный университет водного транспорта"
             </div>
-            <div className="header__navbar">
-              <div className="header__item headerButton">
-                <a href="/" className="href">
-                  Повышение квалификации
-                </a>
-              </div>
-              <div className="header__item headerButton">
-                <a href="/" className="href">
-                  Университет
-                </a>
-              </div>
-              <div className="header__item headerButton">
-                <a href="/" className="href">
-                  Поступление
-                </a>
-              </div>
-              <div className="header__item headerButton">
-                <a href="/" className="href">
-                  Обучение
-                </a>
-              </div>
-              <div className="header__item headerButton">
-                <a href="/" className="href">
-                  Наука
-                </a>
-              </div>
-              <div className="header__item headerButton">
-                <a href="/" className="href">
-                  Студентам
-                </a>
-              </div>
-              <div className="header__item headerButton">
-                <a href="/" className="href">
-                  Контакты
-                </a>
-              </div>
-            </div>
+            <MenuNavbar />
           </div>
         </div>
       </header>

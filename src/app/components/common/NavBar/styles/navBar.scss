@@ -1,113 +1,64 @@
 .header {
-
-
     background-color: #0C1C2B;  
     justify-content: space-between;
     font-size: 0.875rem;
-  
     color:#ffffff;
-    
   }
-  
-  .header a {
-      color: #ffffff;
+.header a {
+    color: #ffffff;
   }
-  .header__section1 {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+.header__section1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
-  .header__navbar {
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-  }
-  .header__item {
-  
-      text-align: center;
-  
-  }
-  .headerButton{
-      max-width: 110px;
-      margin: 0.5em;
-  }
-  .header__item.headerName {
+.header__item.headerName {
       font-size: 0.6875rem; 
       min-width: 380px;
   }
-  
-  .header__section2 {
-      display: flex;
-      
-      align-items: center;
-      margin: 10px;
-  
+.header__section2 {
+    display: flex;
+    align-items: center;
+    margin: 10px;
   }
-  .signBoard__logo{
-      min-width: 380px;
-      padding: 0px 140px;
-  
+.signBoard__logo{
+    min-width: 380px;
+    padding: 0px 140px;
   }
-  .signBoard__tagline{
-      padding: 0px 20px;
-      font-weight: 600;
-      font-size: 2rem;
-  
-      
+.signBoard__tagline{
+    padding: 0px 20px;
+    font-weight: 600;
+    font-size: 2rem;    
   }
-  .header__section3 {
-      display: flex;
-      padding-top: 10px;
-      align-items: center;
-      justify-content: space-between;
+.header__section3 {
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+    justify-content: space-between;
       
   }	
-  .header__section3-btn-margin {
-      margin: 0px  0px 0px 5px;
+.header__section3-btn-margin {
+    margin: 0px  0px 0px 5px;
   }
-  .header__section3-link {
-      display: flex;
+.header__section3-link {
+    display: flex;
   }
-  .header__section3-btn {
-      display: flex;
-      
-      
+.header__section3-btn {
+    display: flex;    
   }
-  hr.redline {
+hr.redline {
       background-color: #C80000;
       height: 1px;
       margin: 4px 0px;
       padding: 0px;
-  }
+}
   
   /* ---------------------------------Кнопка входа в личный кабинет---------------------------------------------- */
   .header__office {
       position: relative;
         
     }
-  .btn__office {
-       background-color: #C80000;
-      color: #ffffff;
-      height: 32px;
-      width: 160px;
-      border-radius: 5px;
-  
-  
-  
-  
-  
-  
-  }
-  .btn__office:hover {
-      box-shadow: inset 0px 0px 5px rgba(0,0,0,0.9);
-      font-weight: 500;
-  }
-  
-  .icon {
-    color: white;
-      vertical-align: middle;
-  }
-  
+ 
   .text__underlined {
       border-bottom: solid 1px;
       margin-top: 2px;
@@ -118,24 +69,22 @@
   }
   
   
-  /* -----------------------Расписание --------------------------- */
+/* -------------------menuNavbar-------------------------------------- */
   
-  .btn__timetable {
-       background-color: #ffffff;
-      color: #C80000;
-      height: 32px;
-      width: 160px;
-      border-radius: 5px;
-      
-  }
-  .btn__timetable.icon:hover {
-      color: #ffffff;
-  }
-  
-  .btn__timetable:hover {
-      
-      box-shadow: inset 0px 0px 5px rgba(0,0,0,0.9);
-      font-weight: 500;
-  }
+.header__navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.header__item {
+
+    text-align: center;
+
+}
+.headerButton{
+    max-width: 110px;
+    margin: 0.5em;
+}
+
   
   
