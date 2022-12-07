@@ -1,8 +1,9 @@
 import React from "react";
+import "./menuNavbar.scss";
 const MenuNavbar = () => {
   return (
     <>
-      <div className="header__navbar">
+      <nav className="header__navbar">
         <div className="header__item headerButton">
           <a href="/" className="href">
             Повышение квалификации
@@ -38,7 +39,7 @@ const MenuNavbar = () => {
             Контакты
           </a>
         </div>
-      </div>
+      </nav>
     </>
   );
 };

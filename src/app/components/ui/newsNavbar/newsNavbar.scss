@@ -1,0 +1,21 @@
+.news__navbar{
+    display: flex;
+}
+.navbar__button{
+    margin: 20px 20px;
+}
+.navbar__button a{
+    color: #0C1C2A;
+    opacity: .72;
+    font-weight: 500;
+}
+.navbar__button a:hover{
+    color: #0C1C2A;
+    opacity: 1;
+    border-bottom: solid 2px #0C1C2A;
+}
+.navbar__button a:active{
+    opacity: 1;
+    color: #0C1C2A;
+    border-bottom: solid 2px #0C1C2A;
+}

@@ -11,7 +11,7 @@ const Button = ({
   active,
   ...attrs
 }) => {
-  const classes = classNames("button ", className, { active });
+  const classes = classNames("", className, { active });
   return (
     <>
       <button

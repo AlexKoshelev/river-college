@@ -1,7 +1,10 @@
 import React from "react";
 /* import { Carousel } from "../components/common/carousel/carousel"; */
 import CarouselCompaund from "../components/common/carousel";
+
 import NavBar from "../components/common/NavBar/NavBar";
+
+import InfoPage from "../components/page/infoPage/infoPage";
 
 const Main = () => {
   return (
@@ -20,6 +23,7 @@ const Main = () => {
           </CarouselCompaund.Page>
         </CarouselCompaund>
       </div>
+      <InfoPage />
     </>
   );
 };

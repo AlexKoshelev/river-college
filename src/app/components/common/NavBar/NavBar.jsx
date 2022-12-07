@@ -7,7 +7,7 @@ import { ReactComponent as RiverUniversityLogo } from "../../../assets/svg/river
 import { ReactComponent as UserLogo } from "../../../assets/svg/user.svg";
 import React from "react";
 import Button from "../button/Button";
-import MenuNavbar from "../menuNavbar/menuNavbar";
+import MenuNavbar from "../../ui/menuNavbar/menuNavbar";
 import Search from "../search/search";
 const NavBar = () => {
   return (
@@ -51,7 +51,7 @@ const NavBar = () => {
               </div> */}
               {/*   <!-- расписание --> */}
               <div className="header__section3-btn-margin header__timetable">
-                <Button className={"btn__timetable"}>
+                <Button className={"button btn__timetable"}>
                   {
                     <span className="icon">
                       <object>
@@ -64,7 +64,7 @@ const NavBar = () => {
               </div>
               {/*  <!-- кнопка входа в личный кабинет --> */}
               <div className="header__section3-btn-margin header__office">
-                <Button className={"btn__office"}>
+                <Button className={"button btn__office"}>
                   {
                     <span className="icon">
                       <object>
