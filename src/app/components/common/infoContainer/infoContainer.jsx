@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import Button from "../button/Button";
 import React from "react";
 import { ReactComponent as ArrowButton } from "../../../assets/svg/arrowButton.svg";
+import Image from "../image/image";
 const InfoContainer = ({
   title = "Новости университета",
   btnTitle = "Все новости",
@@ -21,10 +22,10 @@ const InfoContainer = ({
       </div>
       <div className="infocontainer__content">
         <div className="infocontainer__image">
-          <img
+          <Image
             src="newsimg/corpus.jpg"
             alt="Фото уплыло:("
-            height={"100%"}
+            height="100%"
             width="100%"
           />
         </div>
