@@ -1,8 +1,8 @@
-import "./newsCard.scss";
+import "./cardNine.scss";
 import React from "react";
-import Badge from "../bage/bage";
-import Image from "../image/image";
-const NewsCard = () => {
+import Badge from "../../bage/bage";
+import Image from "../../image/image";
+const CardNine = () => {
   return (
     <div className="newscard__container">
       <div className="newscard__background">
@@ -26,4 +26,4 @@ const NewsCard = () => {
     </div>
   );
 };
-export default NewsCard;
+export default CardNine;
