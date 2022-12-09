@@ -4,10 +4,10 @@ import Badge from "../../bage/bage";
 import Image from "../../image/image";
 const CardSeven = () => {
   return (
-    <div className="newscard__container">
+    <div className="newscard__container cardSeven">
       <div className="newscard__background">
         <Image
-          src="newsimg/corpus.jpg"
+          src="newsimg/mans.jpg"
           alt="Фото уплыло:("
           height="100%"
           width="100%"

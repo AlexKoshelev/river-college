@@ -1,29 +1,29 @@
-import "./newsCard.scss";
+import "./cardThree.scss";
 import React from "react";
 import Badge from "../../bage/bage";
 import Image from "../../image/image";
-const NewsCard = () => {
+const CardThree = () => {
   return (
-    <div className="newscard__container">
+    <div className="newscard__container container-three">
       <div className="newscard__background">
         <Image
-          src="newsimg/corpus.jpg"
+          src="newsimg/guitar.jpg"
           alt="Фото уплыло:("
           height="100%"
           width="100%"
         />
 
-        <div className="newscard__frontend">
-          <div className="newscard__date">
-            <Badge title={"07.12.2022"} className="newscard__date-bage" />
+        <div className="newscard__frontend-three">
+          <div className="newscard__date-three">
+            <Badge title={"07.12.2022"} className="newscard__date-bage-three" />
           </div>
-          <div className="newscard__info">
-            Дорогие абитурьенты! Приглашаем Вас принять участие в приемной
-            компании!
+          <div className="newscard__info-three">
+            Конкурс талантов! <br />
+            АХ как поет!
           </div>
         </div>
       </div>
     </div>
   );
 };
-export default NewsCard;
+export default CardThree;

@@ -1,23 +1,8 @@
-.newscard__container { 
-
-    width: 530px;
-    height: 440px;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: all 0.4s linear;
- 
-}
-.newscard__container:hover {
-    margin: 10px;
-    width: 530px;
-    height: 440px;
-    border-radius: 10px;
-    overflow: hidden;
-    transform: scale(1.04,1.04);
- 
+.cardSeven {
+    grid-area: cardSeven;
 }
 .newscard__background{
-    background-color: red;
+
     width: 100%;
     height: 100%;
     position: relative;

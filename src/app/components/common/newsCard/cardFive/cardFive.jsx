@@ -4,22 +4,22 @@ import Badge from "../../bage/bage";
 import Image from "../../image/image";
 const CardFive = () => {
   return (
-    <div className="newscard__container">
-      <div className="newscard__background">
+    <div className="newscard__container cardFive">
+      <div className="newscard__background-five">
         <Image
-          src="newsimg/corpus.jpg"
+          src="newsimg/parad.jpg"
           alt="Фото уплыло:("
           height="100%"
           width="100%"
         />
 
-        <div className="newscard__frontend">
+        <div className="newscard__frontend-five">
           <div className="newscard__date">
-            <Badge title={"07.12.2022"} className="newscard__date-bage" />
+            <Badge title={"07.12.2022"} className="newscard__date-bage-five" />
           </div>
-          <div className="newscard__info">
-            Дорогие абитурьенты! Приглашаем Вас принять участие в приемной
-            компании!
+          <div className="newscard__info-five">
+            Военный парад! <br />
+            Форма украшает мужчин!
           </div>
         </div>
       </div>
