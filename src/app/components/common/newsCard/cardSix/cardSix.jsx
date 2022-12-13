@@ -7,7 +7,7 @@ const CardSix = () => {
     <div className="newscard__container cardSix">
       <div className="newscard__background-six">
         <Image
-          src="newsimg/musei.jpg"
+          src="img/newsimg/musei.jpg"
           alt="Фото уплыло:("
           height="100%"
           width="100%"

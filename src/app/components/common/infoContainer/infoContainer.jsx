@@ -23,7 +23,7 @@ const InfoContainer = ({
       <div className="infocontainer__content">
         <div className="infocontainer__image">
           <Image
-            src="newsimg/corpus.jpg"
+            src="img/newsimg/corpus.jpg"
             alt="Фото уплыло:("
             height="100%"
             width="100%"

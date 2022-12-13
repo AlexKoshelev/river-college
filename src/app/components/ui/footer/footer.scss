@@ -1,0 +1,29 @@
+.footer {
+    background-color: #0C1C2B;  
+    color: white;
+}
+.footer__container{
+    padding: 20px;
+    font-size: 1rem;
+    display: grid;
+    justify-items:center;
+ 
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+
+    grid-template-areas: 
+    "vguvt logo collegeInfo";
+
+}
+.footer__vguvt{
+    grid-area: vguvt;
+    
+}
+.footer__logo{
+    grid-area: logo;
+
+    
+}
+.footer__collegeInfo{
+    grid-area: collegeInfo;
+}

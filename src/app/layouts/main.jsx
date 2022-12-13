@@ -1,10 +1,12 @@
 import React from "react";
 /* import { Carousel } from "../components/common/carousel/carousel"; */
 import CarouselCompaund from "../components/common/carousel";
+import LiveCardContainer from "../components/common/liveCardContainer/liveCardContainer";
 
 import NavBar from "../components/common/NavBar/NavBar";
 
 import InfoPage from "../components/page/infoPage/infoPage";
+import Footer from "../components/ui/footer/footer";
 
 const Main = () => {
   return (
@@ -24,6 +26,8 @@ const Main = () => {
         </CarouselCompaund>
       </div>
       <InfoPage />
+      <LiveCardContainer />
+      <Footer />
     </>
   );
 };

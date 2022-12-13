@@ -7,7 +7,7 @@ const CardOne = () => {
     <div className="newscard__container cardOne">
       <div className="newscard__background">
         <Image
-          src="newsimg/corpus.jpg"
+          src="img/newsimg/corpus.jpg"
           alt="Фото уплыло:("
           height="100%"
           width="100%"
