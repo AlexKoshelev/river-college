@@ -6,22 +6,42 @@ const NewsNavbar = () => {
     <>
       <nav className="news__navbar">
         <div className="navbar__button">
-          <NavLink to="/" className="href">
+          <NavLink
+            to="/"
+            className={(navData) =>
+              navData.isActive ? "href navbar__button-active" : "href"
+            }
+          >
             Новости
           </NavLink>
         </div>
         <div className="navbar__button">
-          <NavLink to="/events" className="href">
+          <NavLink
+            to="/events"
+            className={(navData) =>
+              navData.isActive ? "href navbar__button-active" : "href"
+            }
+          >
             Мероприятия
           </NavLink>
         </div>
         <div className="navbar__button">
-          <NavLink to="/applicants" className="href">
+          <NavLink
+            to="/applicants"
+            className={(navData) =>
+              navData.isActive ? "href navbar__button-active" : "href"
+            }
+          >
             Поступающим
           </NavLink>
         </div>
         <div className="navbar__button">
-          <NavLink to="/security" className="href">
+          <NavLink
+            to="/security"
+            className={(navData) =>
+              navData.isActive ? "href navbar__button-active" : "href"
+            }
+          >
             Безопасность
           </NavLink>
         </div>
