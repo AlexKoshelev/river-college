@@ -1,28 +1,29 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./newsNavbar.scss";
 const NewsNavbar = () => {
   return (
     <>
       <nav className="news__navbar">
         <div className="navbar__button">
-          <a href="/" className="href">
+          <NavLink to="/" className="href">
             Новости
-          </a>
+          </NavLink>
         </div>
         <div className="navbar__button">
-          <a href="/" className="href">
+          <NavLink to="/events" className="href">
             Мероприятия
-          </a>
+          </NavLink>
         </div>
         <div className="navbar__button">
-          <a href="/" className="href">
+          <NavLink to="/applicants" className="href">
             Поступающим
-          </a>
+          </NavLink>
         </div>
         <div className="navbar__button">
-          <a href="/" className="href">
+          <NavLink to="/security" className="href">
             Безопасность
-          </a>
+          </NavLink>
         </div>
       </nav>
     </>

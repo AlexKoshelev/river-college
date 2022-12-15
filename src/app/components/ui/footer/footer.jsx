@@ -27,17 +27,17 @@ const Footer = () => {
         </div>
 
         <div className="footer__collegeInfo">
-          <table class="iksweb">
+          <table>
             <tbody>
               <tr>
                 <td>Наш адрес:</td>
                 <td></td>
               </tr>
               <tr>
-                <td colspan="2">450017,ул. Ахметова, 275,</td>
+                <td colSpan="2">450017,ул. Ахметова, 275,</td>
               </tr>
               <tr>
-                <td colspan="2">Уфа, Республика Башкортостан</td>
+                <td colSpan="2">Уфа, Республика Башкортостан</td>
               </tr>
               <tr>
                 <td> Контакты:</td>
