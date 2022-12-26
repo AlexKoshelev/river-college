@@ -1,0 +1,24 @@
+.applicants__container{
+    display: flex;
+    justify-content:center;
+    
+   margin: 0px 50px;
+}
+.container-links{
+    line-height: 2rem;
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+}
+.applicants-link{
+    color: #0C1C2A;
+    opacity: .72;
+    border-bottom: solid 1px #0C1C2A;
+   
+}
+.applicants-link:hover{
+    color: #0C1C2A;
+    opacity: 1;
+    border-bottom: solid 1px #0C1C2A;
+   
+}

@@ -35,8 +35,8 @@ button.infopage__button:hover{
     overflow: hidden;
     margin: 10px 20px; 
     border-radius: 10px;
-    max-height: 500px;
-    max-width: 500px;
+    max-height: 350px;
+    max-width: 400px;
 }
 /* text в новостном блоке */
 .infocontainer__content{
@@ -50,10 +50,13 @@ button.infopage__button:hover{
     display: flex;
     justify-content: center;
     font-weight: 500;
-     margin: 10px 20px 20px 20px; 
+    margin: 10px 20px 20px 20px; 
 }
 .news__text{
-    max-width: 600px;
+    max-width: 100%;
     margin: 10px 20px;
     
+}
+.news__block{
+    max-width: 750px;
 }
