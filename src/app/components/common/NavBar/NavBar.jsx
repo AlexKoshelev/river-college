@@ -3,12 +3,12 @@ import { ReactComponent as GlassesLogo } from "../../../assets/svg/glasses.svg";
 import { ReactComponent as CalendarLogo } from "../../../assets/svg/calendar.svg";
 import { ReactComponent as MuseumLogo } from "../../../assets/svg/museum.svg";
 import { ReactComponent as RiverUniversityLogo } from "../../../assets/svg/riveruniversityLogo.svg";
-
 import { ReactComponent as UserLogo } from "../../../assets/svg/user.svg";
 import React from "react";
 import Button from "../button/Button";
 import MenuNavbar from "../../ui/menuNavbar/menuNavbar";
 import Search from "../search/search";
+import { NavLink } from "react-router-dom";
 const NavBar = () => {
   return (
     <>
@@ -35,7 +35,10 @@ const NavBar = () => {
                   </object>
                 </span>
                 <span className="text__underlined">
-                  Сведения об образовательной организации
+                  <NavLink to="sveden/common">
+                    {" "}
+                    Сведения об образовательной организации
+                  </NavLink>
                 </span>
               </div>
             </div>

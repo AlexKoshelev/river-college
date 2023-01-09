@@ -1,5 +1,7 @@
 @import "~bootstrap-icons/font/bootstrap-icons.scss";
 @import "node_modules/bootstrap/scss/bootstrap.scss";
+@import "./components/index.scss";
+@import "./variables";
 /*Обнуление*/
 *{
 	padding: 0;
@@ -39,8 +41,7 @@ ul li{list-style: none;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 ._container {/*технический класс, содержит общие стили*/
-     width: 1240px; 
-  
+    width: 1240px; 
     margin: 0px auto; /*выравнивает контейнер по середине (для ограниченных по ширине блоков)*/
     box-sizing: content-box;
     padding: 0 15px;
