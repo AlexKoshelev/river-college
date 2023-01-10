@@ -61,7 +61,7 @@ const Common = () => {
         <div className="common__item-header">
           Полное наименование образовательной организации
         </div>
-        <div className="common__item-body">
+        <div itemProp="fullName" className="common__item-body">
           Уфимский филиал Федерального государственного бюджетного
           образовательного учреждения высшего образования «Волжский
           государственный университет водного транспорта»
@@ -71,7 +71,7 @@ const Common = () => {
         <div className="common__item-header">
           Сокращенное наименование образовательной организации
         </div>
-        <div className="common__item-body">
+        <div itemProp="shortName" className="common__item-body">
           Уфимский филиал ФГБОУ ВО "ВГУВТ"
         </div>
       </div>
@@ -83,11 +83,11 @@ const Common = () => {
           <tbody>
             <tr>
               <td>Дата создания образовательной организации</td>
-              <td>07.08.1970</td>
+              <td itemProp="regDate">07.08.1970</td>
             </tr>
             <tr>
               <td>Адрес местонахождения образовательной организации</td>
-              <td>
+              <td itemProp="address">
                 450017, Республика Башкортостан, г. Уфа, ул. Ахметова, д. 275
               </td>
             </tr>
@@ -101,30 +101,30 @@ const Common = () => {
             </tr>
             <tr>
               <td>Режим, график работы</td>
-              <td>
+              <td itemProp="workTime">
                 08.15 – 17.15 (пн - пт), обеденный перерыв 12.00-13.00 8.30 -
                 13.25 (суббота) - в период обучения
               </td>
             </tr>
             <tr>
               <td>Контактные телефоны</td>
-              <td>8 (347) 278-28-83 (приемная);</td>
+              <td itemProp="telephone">8 (347) 278-28-83 (приемная);</td>
             </tr>
             <tr>
               <td></td>
-              <td>8 (347) 278-28-86</td>
+              <td itemProp="telephone">8 (347) 278-28-86</td>
             </tr>
             <tr>
               <td></td>
-              <td>8 (347) 278-03-25 (бухгалтерия)</td>
+              <td itemProp="telephone">8 (347) 278-03-25 (бухгалтерия)</td>
             </tr>
             <tr>
               <td>Адреса электронной почты</td>
-              <td>Приемная ukru@ufanet.ru</td>
+              <td itemProp="email">Приемная ukru@ufanet.ru</td>
             </tr>
             <tr>
               <td></td>
-              <td>Бухгалтерия buh-ukru@yandex.ru</td>
+              <td itemProp="email">Бухгалтерия buh-ukru@yandex.ru</td>
             </tr>
           </tbody>
         </table>
@@ -210,7 +210,7 @@ const Common = () => {
         Уфимский филиал ФГБОУ ВО "ВГУВТ" филиалов и представительств не имеет, в
         том числе находящихся за пределами Российской Федерации.
       </h3>
-      <h3 className="common__container-title title">
+      <h3 itemProp="uchredLaw" className="common__container-title title">
         Информация об учредителе
       </h3>
       <div>
@@ -218,34 +218,36 @@ const Common = () => {
           <tbody>
             <tr>
               <td>Наименование учредителя</td>
-              <td>Федеральное агентство морского и речного транспорта</td>
+              <td itemProp="nameUchred">
+                Федеральное агентство морского и речного транспорта
+              </td>
             </tr>
             <tr>
               <td>Адрес местонахождения учредителя</td>
-              <td>
+              <td itemProp="addressUchred">
                 Россия, 125993, Центральный ФО, г. Москва, ул. Петровка, д. 3/6
               </td>
             </tr>
             <tr>
               <td>Контактные телефоны</td>
-              <td>8(495)626-11-00,</td>
+              <td itemProp="telUchred">8(495)626-11-00,</td>
             </tr>
             <tr>
               <td></td>
-              <td>8(495)626-10-57</td>
+              <td itemProp="telUchred">8(495)626-10-57</td>
             </tr>
             <tr>
               <td>Адрес электронной почты</td>
-              <td>ud@morflot.ru</td>
+              <td itemProp="mailUchred">ud@morflot.ru</td>
             </tr>
             <tr>
               <td>Адрес сайта учредителя в сети "Интернет"</td>
-              <td>http://morflot.gov.ru/</td>
+              <td itemProp="websiteUchred">http://morflot.gov.ru/</td>
             </tr>
           </tbody>
         </table>
       </div>
-      <h3 className="common__container-title title">
+      <h3 itemProp="addressPlace" className="common__container-title title">
         Информация о местах осуществления образовательной деятельности, в том
         числе не указываемых в соответствии с частью 4 статьи 91 Федерального
         закона от 29.12.2012 №273-ФЗ «Об образовании в Российской Федерации» в
@@ -273,7 +275,7 @@ const Common = () => {
             </tr>
             <tr>
               <td>1</td>
-              <td>Учебный корпус</td>
+              <td itemProp="addressPlacePodg">Учебный корпус</td>
               <td>
                 450017, Республика Башкортостан, г.Уфа, ул. Ахметова, д. 275
               </td>
@@ -289,7 +291,7 @@ const Common = () => {
               <td>
                 450017, Республика Башкортостан, г.Уфа, ул. Ахметова, д. 275
               </td>
-              <td>
+              <td itemProp="addressPlaceDop">
                 основная, дополнительная профессиональная программа, основная
                 программа профессионального обучения проведение практической
                 подготовки обучающихся, проведение ГИА
@@ -306,7 +308,7 @@ const Common = () => {
             </tr>
             <tr>
               <td>4</td>
-              <td>
+              <td itemProp="addressPlacePodg">
                 Открытый стадион широкого профиля с элементами полосы
                 препятствий
               </td>
@@ -319,12 +321,15 @@ const Common = () => {
             <tr>
               <td>5</td>
               <td>Базы практики</td>
-              <td> Список баз практик обучающихся</td>
+              <td itemProp="addressPlacePrac">
+                {" "}
+                Список баз практик обучающихся
+              </td>
               <td>проведение практики</td>
             </tr>
             <tr>
               <td>6</td>
-              <td>Теплоход "Штурман Альбанов"</td>
+              <td itemProp="addressPlacePrac">Теплоход "Штурман Альбанов"</td>
               <td>г. Уфа</td>
               <td>проведение практики</td>
             </tr>
