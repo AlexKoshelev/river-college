@@ -2,3 +2,24 @@
 $MAIN_COLOR:#0C1C2B;
 $LINK_COLOR:rgb(12, 28, 42, 0.72);
 $ACTIV_LINK_COLOR:rgb(12, 28, 42);
+$BLUE:#F4FBFF;
+
+// Голубой фон
+.background-blue{
+    background-color: $BLUE;
+}
+
+// Для заголовков
+.title {
+    font-weight: 600;
+    color: $MAIN_COLOR;
+    margin: 15px 0px 30px 0px;
+}
+
+//flexbox
+.flex {
+    display: flex;
+}
+.td__max{
+    max-width: 450px;
+}

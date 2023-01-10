@@ -1,5 +1,5 @@
 import React from "react";
 const Vacant = () => {
-  return <div className="_container">Vacant</div>;
+  return <div className="">Vacant</div>;
 };
 export default Vacant;

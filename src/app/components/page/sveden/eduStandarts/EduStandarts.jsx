@@ -1,5 +1,5 @@
 import React from "react";
 const EduStandarts = () => {
-  return <div className="_container">Document</div>;
+  return <div className="">Document</div>;
 };
 export default EduStandarts;

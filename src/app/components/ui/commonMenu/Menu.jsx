@@ -2,8 +2,9 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 const CommonMenu = () => {
   return (
-    <div className="_container">
+    <div className="">
       <ul className="common__menu">
+        <h3 className="common__menu-title title">Навигация </h3>
         <li>
           <NavLink
             className={({ isActive }) =>

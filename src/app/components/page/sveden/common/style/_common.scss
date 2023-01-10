@@ -1,0 +1,29 @@
+@import "../../../../../style/variables";
+.common__container{
+    font-size: 1rem;
+    &-title{
+        text-align: center;
+    }
+    p{
+        text-indent: 2em;
+    }
+    tr {
+        border-bottom: solid 1px #ededed;
+    }
+    td {
+        padding: 20px ;
+        text-align: left;
+        min-width: 90px;
+       
+    }
+}
+.common__item{
+    margin-bottom: 15px;
+    &-header{
+        width: 200px;
+    }
+    &-body{
+        min-width: 400px;
+        max-width: 700px;
+    }
+}

@@ -1,5 +1,5 @@
 import React from "react";
 const PaidEdu = () => {
-  return <div className="_container">PaidEdu</div>;
+  return <div className="">PaidEdu</div>;
 };
 export default PaidEdu;

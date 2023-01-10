@@ -13,6 +13,11 @@
         color: $LINK_COLOR;
         margin: 10px 0px;
     }
+    &-title {
+        font-size: 1.1rem;
+        border-bottom: 1px solid $LINK_COLOR;
+        max-width: fit-content;
+    }
     &-item {
         width: 100%;
         color: $LINK_COLOR;

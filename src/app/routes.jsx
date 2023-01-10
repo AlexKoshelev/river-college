@@ -12,7 +12,7 @@ import PaidEdu from "./components/page/sveden/paidEdu/PaidEdu";
 import Struct from "./components/page/sveden/struct/Struct";
 import Vacant from "./components/page/sveden/vacant/Vacant";
 import Main from "./layouts/main";
-import Sveden from "./layouts/Sveden";
+import Sveden from "./layouts/sveden/Sveden";
 
 const routes = () => [
   {

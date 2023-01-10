@@ -1,5 +1,5 @@
 import React from "react";
 const Inter = () => {
-  return <div className="_container">Inter</div>;
+  return <div className="">Inter</div>;
 };
 export default Inter;
