@@ -70,7 +70,7 @@ const routes = () => [
         element: <Ovz />,
       },
       {
-        path: "paidEdu",
+        path: "paid__edu",
         element: <PaidEdu />,
       },
       {

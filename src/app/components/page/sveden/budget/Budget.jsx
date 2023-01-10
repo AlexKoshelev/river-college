@@ -1,5 +1,5 @@
 import React from "react";
 const Budget = () => {
-  return <>Budget</>;
+  return <div className="_container">Budget</div>;
 };
 export default Budget;

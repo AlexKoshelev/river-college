@@ -9,7 +9,7 @@ const NewsNavbar = () => {
           <NavLink
             to="/"
             className={(navData) =>
-              navData.isActive ? "href navbar__button-active" : "href"
+              navData.isActive ? "navbar__button-active" : ""
             }
           >
             Новости
@@ -19,7 +19,7 @@ const NewsNavbar = () => {
           <NavLink
             to="/events"
             className={(navData) =>
-              navData.isActive ? "href navbar__button-active" : "href"
+              navData.isActive ? "navbar__button-active" : ""
             }
           >
             Мероприятия
@@ -29,7 +29,7 @@ const NewsNavbar = () => {
           <NavLink
             to="/applicants"
             className={(navData) =>
-              navData.isActive ? "href navbar__button-active" : "href"
+              navData.isActive ? "navbar__button-active" : ""
             }
           >
             Поступающим
@@ -39,7 +39,7 @@ const NewsNavbar = () => {
           <NavLink
             to="/security"
             className={(navData) =>
-              navData.isActive ? "href navbar__button-active" : "href"
+              navData.isActive ? "navbar__button-active" : ""
             }
           >
             Безопасность

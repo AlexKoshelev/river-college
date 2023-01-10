@@ -1,0 +1,33 @@
+@import "../../../../style/variables";
+.common__menu {
+    display: block;
+    width: 280px;
+    font-size: 0.8rem;
+    margin: 20px 10px;
+    padding: 10px;
+    -webkit-box-shadow: 0.2px 0.2px 0.5px 0.5px $LINK_COLOR;
+    -moz-box-shadow: 0.2px 0.2px 0.5px 0.5px $LINK_COLOR;
+    box-shadow: 0.2px 0.2px 0.5px 0.5px $LINK_COLOR;
+    & li {
+        width: 100%;
+        color: $LINK_COLOR;
+        margin: 10px 0px;
+    }
+    &-item {
+        width: 100%;
+        color: $LINK_COLOR;
+        margin: 10px 0px;
+        &:hover {
+            border-bottom: solid 1px $MAIN_COLOR;
+            color: $ACTIV_LINK_COLOR;
+        }
+    }
+    &-active{
+        border-bottom: solid 1px $MAIN_COLOR;
+        color: $ACTIV_LINK_COLOR;
+        &:hover{
+            color: $ACTIV_LINK_COLOR;
+        }
+    }
+   
+}
