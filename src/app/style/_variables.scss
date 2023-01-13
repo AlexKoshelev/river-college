@@ -20,6 +20,21 @@ $BLUE:#F4FBFF;
 .flex {
     display: flex;
 }
+// tables
 .td__max{
     max-width: 450px;
+}
+.scroll-table{
+    max-width: 900px;
+    overflow: scroll;
+}
+// links
+.active__link{
+    text-decoration: none;
+    color: $ACTIV_LINK_COLOR;
+    border-bottom: solid 1px $ACTIV_LINK_COLOR;
+    &:hover {
+        color: $ACTIV_LINK_COLOR;
+        font-weight: 500;
+    }
 }

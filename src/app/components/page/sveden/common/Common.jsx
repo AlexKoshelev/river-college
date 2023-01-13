@@ -1,4 +1,5 @@
 import React from "react";
+import BazPraktik from "../../../../assets/pdf/commonPage/baz_praktik.pdf";
 const Common = () => {
   return (
     <div className="common__container">
@@ -322,8 +323,14 @@ const Common = () => {
               <td>5</td>
               <td>Базы практики</td>
               <td itemProp="addressPlacePrac">
-                {" "}
-                Список баз практик обучающихся
+                <a
+                  className="active__link"
+                  href={BazPraktik}
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
+                  Список баз практик обучающихся
+                </a>
               </td>
               <td>проведение практики</td>
             </tr>

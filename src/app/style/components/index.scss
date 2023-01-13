@@ -1,3 +1,4 @@
+
 // Сведения об образовательной организации
 @import "../../components/page/sveden/common/style/common";
 @import "../../components/page/sveden/budget/style/budget";
@@ -12,6 +13,9 @@
 @import "../../components/page/sveden/paidEdu/style/paidEdu";
 @import "../../components/page/sveden/struct/style/struct";
 @import "../../components/page/sveden/vacant/style/vacant";
+
+// common
+@import "../../components/common/hrLine/style/hrLine";
 
 // --------------------ui----------------------------------
 @import "../../components/ui/commonMenu/style/commonMenu";
