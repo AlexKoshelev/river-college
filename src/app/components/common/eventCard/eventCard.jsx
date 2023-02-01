@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import React from "react";
-import "./eventCard.scss";
+
 import PropTypes from "prop-types";
 const EventCard = ({ num, month, title, className }) => {
   const classes = classNames("eventCard", className);

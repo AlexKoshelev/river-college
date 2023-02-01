@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./image.scss";
 import classNames from "classnames";
 const Image = ({ src, alt, className, width, height, ...attrs }) => {
   const classes = classNames("image ", className);

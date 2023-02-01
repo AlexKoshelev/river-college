@@ -13,13 +13,39 @@
 @import "../../components/page/sveden/paidEdu/style/paidEdu";
 @import "../../components/page/sveden/struct/style/struct";
 @import "../../components/page/sveden/vacant/style/vacant";
-
+@import "../../components/page/applicantsPage/style/applicantsPage";
+@import "../../components/page/eventsPages/style/eventsPages";
 // common
+@import "../../components/common/liveCards/style/liveCards";
 @import "../../components/common/hrLine/style/hrLine";
+@import "../../components/common/disabled/style/disabled";
+@import "../../components/common/badge/style/badge";
+@import "../../components/common/button/styles/button";
+@import "../../components/common/carousel/style/carousel";
+@import "../../components/common/eventCard/style/eventCard";
+@import "../../components/common/image/style/image";
+@import "../../components/common/infoContainer/style/infoContainer";
+@import "../../components/common/liveCard/style/liveCard";
+@import "../../components/common/liveCardContainer/style/liveCardContainer";
+@import "../../components/common/NavBar/style/navBar";
+@import "../../components/common/pageCarousel/style/pageCarousel";
+@import "../../components/common/search/style/search";
+@import "../../components/common/newsCard/cardEight/style/cardEight";
+@import "../../components/common/newsCard/cardFive/style/cardFive";
+@import "../../components/common/newsCard/cardFour/style/cardFour";
+@import "../../components/common/newsCard/cardOne/style/cardOne";
+@import "../../components/common/newsCard/cardSeven/style/cardSeven";
+@import "../../components/common/newsCard/cardSix/style/cardSix";
+@import "../../components/common/newsCard/cardThree/style/cardThree";
+@import "../../components/common/newsCard/cardTwo/style/cardTwo";
+
 
 // --------------------ui----------------------------------
 @import "../../components/ui/commonMenu/style/commonMenu";
-
+@import "../../components/ui/footer/style/footer";
+@import "../../components/ui/menuNavbar/style/menuNavbar";
+@import "../../components/ui/newsCardContainer/style/newsCardContainer";
+@import "../../components/ui/newsNavbar/style/newsNavbar";
 
 // -----------------------loyouts---------------------
 @import "../../layouts/sveden/style/sveden";

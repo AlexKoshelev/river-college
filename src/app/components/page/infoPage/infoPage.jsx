@@ -1,10 +1,8 @@
 import React from "react";
-import Image from "../../common/image/image";
-import InfoContainer from "../../common/infoContainer/infoContainer";
+import Image from "../../common/image/Image";
+import InfoContainer from "../../common/infoContainer/InfoContainer";
+import NewsCardContainer from "../../ui/newsCardContainer/NewsCardContainer";
 
-import NewsCardContainer from "../../ui/newsCardContainer/newsCardContainer";
-
-import "./infoPage.scss";
 const InfoPage = () => {
   return (
     <>

@@ -1,12 +1,12 @@
 import React from "react";
 import { useParams } from "react-router";
 import ImageSlider from "../components/common/carousel/ImageSlider";
-import LiveCardContainer from "../components/common/liveCardContainer/liveCardContainer";
-import ApplicantsPage from "../components/page/applicantsPage/applicantsPage";
-import EventsPages from "../components/page/eventsPages/eventsPages";
-import InfoPage from "../components/page/infoPage/infoPage";
-import SecurityPage from "../components/page/securityPage/securityPage";
-import NewsNavbar from "../components/ui/newsNavbar/newsNavbar";
+import LiveCardContainer from "../components/common/liveCardContainer/LiveCardContainer";
+import ApplicantsPage from "../components/page/applicantsPage/ApplicantsPage";
+import EventsPages from "../components/page/eventsPages/EventsPages";
+import InfoPage from "../components/page/infoPage/InfoPage";
+import SecurityPage from "../components/page/securityPage/SecurityPage";
+import NewsNavbar from "../components/ui/newsNavbar/NewsNavbar";
 
 const Main = () => {
   const params = useParams();

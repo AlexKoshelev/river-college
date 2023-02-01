@@ -1,6 +1,5 @@
 import React from "react";
-import LiveCards from "../liveCards/liveCards";
-import "./liveCardContainer.scss";
+import LiveCards from "../liveCards/LiveCards";
 const LiveCardContainer = () => {
   return (
     <>

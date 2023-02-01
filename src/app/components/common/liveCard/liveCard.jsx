@@ -1,6 +1,5 @@
 import classNames from "classnames";
 import React from "react";
-import "./liveCard.scss";
 import PropTypes from "prop-types";
 const LiveCard = ({ title, children, className }) => {
   const classes = classNames("liveCard ", className);

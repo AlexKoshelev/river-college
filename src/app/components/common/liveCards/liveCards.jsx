@@ -1,7 +1,6 @@
 import React from "react";
-import Image from "../image/image";
-import LiveCard from "../liveCard/liveCard";
-import "./liveCards.scss";
+import Image from "../image/Image";
+import LiveCard from "../liveCard/LiveCard";
 const LiveCards = () => {
   return (
     <div className="liveCards">

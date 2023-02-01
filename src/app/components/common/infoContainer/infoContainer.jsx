@@ -1,4 +1,3 @@
-import "./infoContainer.scss";
 import PropTypes from "prop-types";
 import Button from "../button/Button";
 import React from "react";

@@ -1,7 +1,6 @@
-import "./cardSeven.scss";
 import React from "react";
-import Badge from "../../bage/bage";
-import Image from "../../image/image";
+import Badge from "../../badge/Bage";
+import Image from "../../image/Image";
 const CardSeven = () => {
   return (
     <div className="newscard__container cardSeven">

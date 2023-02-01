@@ -1,4 +1,3 @@
-import "./styles/navBar.scss";
 import { ReactComponent as GlassesLogo } from "../../../assets/svg/glasses.svg";
 import { ReactComponent as CalendarLogo } from "../../../assets/svg/calendar.svg";
 import { ReactComponent as MuseumLogo } from "../../../assets/svg/museum.svg";
@@ -6,14 +5,19 @@ import { ReactComponent as RiverUniversityLogo } from "../../../assets/svg/river
 import { ReactComponent as UserLogo } from "../../../assets/svg/user.svg";
 import React from "react";
 import Button from "../button/Button";
-import MenuNavbar from "../../ui/menuNavbar/menuNavbar";
-import Search from "../search/search";
+import MenuNavbar from "../../ui/menuNavbar/MenuNavbar";
+import Search from "../search/Search";
 import { NavLink } from "react-router-dom";
+import Disabled from "../disabled/Disabled";
+import { ThemeContext, themes } from "../../../hooks/useTheme";
 const NavBar = () => {
+  console.log(themes);
+
   return (
     <>
       <header className="header">
         <div className="_container">
+          <Disabled />
           <div className="header__section3">
             {/* ссылка версия для слабовидящих  */}
             <div className="header__section3-link">
@@ -23,9 +27,19 @@ const NavBar = () => {
                     <GlassesLogo width="18" height="18" />
                   </object>
                 </span>
-                <span className="text__underlined">
-                  Версия для слабовидящих
-                </span>
+                <ThemeContext.Consumer>
+                  {({ theme, setTheme }) => (
+                    <span
+                      onClick={() => {
+                        if (theme === themes.light) setTheme(themes.dark);
+                        if (theme === themes.dark) setTheme(themes.light);
+                      }}
+                      className="text__underlined"
+                    >
+                      Версия для слабовидящих
+                    </span>
+                  )}
+                </ThemeContext.Consumer>
               </div>
               {/*  <!-- ссылка Сведения для образовательное организации --> */}
               <div className="header__link">
@@ -36,7 +50,6 @@ const NavBar = () => {
                 </span>
                 <span className="text__underlined">
                   <NavLink to="sveden/common">
-                    {" "}
                     Сведения об образовательной организации
                   </NavLink>
                 </span>
@@ -45,13 +58,6 @@ const NavBar = () => {
             {/*    <!-- поиск --> */}
             <div className="header__section3-btn">
               <Search />
-              {/* <div className="header__section3-btn-margin header__search">
-                <span className="icon">
-                  <object>
-                    <SearchLogo />
-                  </object>
-                </span>
-              </div> */}
               {/*   <!-- расписание --> */}
               <div className="header__section3-btn-margin header__timetable">
                 <Button className={"button btn__timetable"}>

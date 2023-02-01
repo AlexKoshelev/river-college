@@ -1,0 +1,22 @@
+@import "../../../../style/variables";
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    height: 800px;
+    width: 100%;
+}
+.item-1 {
+    background-color: orange;
+}
+.item-2 {
+    background-color:aqua;
+}
+.item-3 {
+    background-color:rgb(2, 14, 14);
+}
+
+.arrow {
+    cursor: pointer;
+}

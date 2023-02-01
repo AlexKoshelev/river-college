@@ -1,0 +1,12 @@
+@import "../../../../style/variables";
+.eventsPages{
+    background-color: #F4FBFF;
+    margin: 20px;
+    padding: 20px;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 300px);
+    grid-template-areas: 
+    "firstCard   secondCard   thirdCard   fourthCard";
+}

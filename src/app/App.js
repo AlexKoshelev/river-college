@@ -1,5 +1,5 @@
 import NavBar from "./components/common/NavBar/NavBar";
-import Footer from "./components/ui/footer/footer";
+import Footer from "./components/ui/footer/Footer";
 import { useRoutes } from "react-router";
 import routes from "./routes";
 

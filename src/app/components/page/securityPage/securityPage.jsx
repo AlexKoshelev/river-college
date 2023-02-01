@@ -1,11 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Image from "../../common/image/image";
-import InfoContainer from "../../common/infoContainer/infoContainer";
+import Image from "../../common/image/Image";
+import InfoContainer from "../../common/infoContainer/InfoContainer";
 const SecurityPage = () => {
   return (
     <>
-      {" "}
       <InfoContainer
         title={"Безопсность"}
         newsTitle={"Ознакомьтесь с информацией"}

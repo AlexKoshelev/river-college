@@ -1,6 +1,6 @@
 import React from "react";
-import EventCard from "../../common/eventCard/eventCard";
-import "./eventsPages.scss";
+import EventCard from "../../common/eventCard/EventCard";
+
 const EventsPages = () => {
   return (
     <div className="eventsPages">
