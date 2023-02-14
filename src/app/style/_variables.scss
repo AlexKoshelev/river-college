@@ -1,27 +1,39 @@
 // Colors
-:root[data-theme="light"] {
-	--background-color: #ffffff;
-    --font-color: #000000;
-  }
-  
-:root[data-theme="dark"] {
-	--background-color: #0C1C2B;
-    --font-color: #fff;
-  }
 
-$MAIN_COLOR:var(--background-color);
-$FONT_COLOR:var(--font-color);
+$MAIN_COLOR:#0C1C2B;
+$FONT_COLOR:#ffffff;
+$BACK_BLACK:#000;
+$BACK_WHITE:#fff;
+$BACK_CONTRAST: #9dd1ff;
+$FONT_CONTRAST:#195183;
 $DISABLED_FONT_COLOR:#000;
 $WHITE_FONT_COLOR:#fff;
 $RED_COLOR:#C80000;
 $TIMETABLE_COLOR:#C80000;
 $BACK_TIMETABLE_COLOR:#fff;
+$BACK_NEWSCARD:rgb(1, 78, 193);
+$BACK_NEWSCARD_ORANGE:#fd5a3a;
+$BLUE_FONT_COLOR:#0C1C2A;
+$BACK_MENU_COLOR:#fff;
 $LINK_COLOR:rgb(12, 28, 42, 0.72);
 $ACTIV_LINK_COLOR:rgb(12, 28, 42);
 $BLUE:#F4FBFF;
 $DISABLED:#CCC;
 
 
+$SVEDEN_BORDER-COLOR:#ededed;
+$BACK_BTN_SHOW:rgb(158, 181, 217);
+
+
+
+:root[data-fontSize="normal"] {
+    --font-size: 1rem;
+  }
+  
+  :root[data-fontSize="medium"] {
+    --font-size: 1.5rem;
+  }
+  
 // Голубой фон
 .background-blue{
     background-color: $BLUE;

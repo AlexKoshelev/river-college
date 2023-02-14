@@ -18,10 +18,10 @@
     margin: 10px 0px;
     padding: 10px 0;
     &:hover {
-        background-color: rgb(158, 181, 217);
+        background-color: $BACK_BTN_SHOW;
     }
     &-active{
-        background-color: rgb(158, 181, 217);
+        background-color: $BACK_BTN_SHOW;
         width: 100%;
         height: 40px;
         border: solid 1px $MAIN_COLOR;

@@ -2,16 +2,24 @@ import NavBar from "./components/common/NavBar/NavBar";
 import Footer from "./components/ui/footer/Footer";
 import { useRoutes } from "react-router";
 import routes from "./routes";
+import { observer } from "mobx-react-lite";
+import fontSize from "./store/fontSize";
 
-function App() {
+const App = observer(() => {
+  const toggleFontSize = () => {
+    const size = fontSize.fontSize;
+    if (size === "normal") return "1.25rem";
+    if (size === "medium") return "1.5rem";
+    if (size === "large") return "2rem";
+  };
   const element = useRoutes(routes());
   return (
-    <>
+    <div style={{ fontSize: toggleFontSize() }}>
       <NavBar />
       {element}
       <Footer />
-    </>
+    </div>
   );
-}
+});
 
 export default App;

@@ -1,7 +1,7 @@
 import React from "react";
 import { Menu, Space } from "antd";
 
-const MenuNavbar = () => {
+const MenuNavbar = ({ fontSize, toggleFontSize }) => {
   return (
     <>
       <nav className="header__navbar">
@@ -9,7 +9,7 @@ const MenuNavbar = () => {
           className="header__navbar-button"
           style={{
             width: "100%",
-
+            fontSize: toggleFontSize(0.875),
             backgroundColor: "#0C1C2B",
             color: "white",
             hover: { color: "white" },

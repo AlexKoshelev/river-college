@@ -8,7 +8,7 @@
 .firstCard{
     grid-area: firstCard;
     background: rgb(0,25,212);
-background: linear-gradient(90deg, rgba(0,25,212,1) 0%, rgba(119,130,214,1) 100%, rgba(167,167,214,1) 100%);}
+    background: linear-gradient(90deg, rgba(0,25,212,1) 0%, rgba(119,130,214,1) 100%, rgba(167,167,214,1) 100%);}
 .secondCard{
     grid-area: secondCard;
     background: rgb(18,147,65);
@@ -16,7 +16,7 @@ background: linear-gradient(90deg, rgba(0,25,212,1) 0%, rgba(119,130,214,1) 100%
 .thirdCard{
     grid-area: thirdCard;  
     background: rgb(18,147,139);
-background: linear-gradient(90deg, rgba(18,147,139,1) 0%, rgba(37,251,245,1) 100%, rgba(177,250,207,1) 100%);
+    background: linear-gradient(90deg, rgba(18,147,139,1) 0%, rgba(37,251,245,1) 100%, rgba(177,250,207,1) 100%);
 }
 .fourthCard{
     grid-area: fourthCard;
@@ -47,12 +47,9 @@ background: linear-gradient(90deg, rgba(18,147,139,1) 0%, rgba(37,251,245,1) 100
     margin: 40px 0 10px 0;
 }
 .eventCard__more{
-  
-
     position: absolute;
     bottom: 10px;
     right: 30%;
-
     font-size: 0.8rem;
     
 }

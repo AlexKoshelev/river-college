@@ -1,27 +1,119 @@
 import React from "react";
-import DisabledElements from "./DisabledElements";
-const Disabled = () => {
-  /*   const [isActive, setActive] = useState("");
-  const handleToggleClassName = () => {
-    if (isActive === "size1") {
-      return setActive("-active");
-    } else if (isActive === "size2") {
-      return setActive("-active");
-    } else if (isActive === "size2") {
-      return setActive("-active");
-    }
+import { observer } from "mobx-react-lite";
+import fontSize from "../../../store/fontSize";
+import theme from "../../../store/theme";
+import { toggleClassName } from "../../../utils/disabled";
+
+const Disabled = observer(() => {
+  const handleThemeMain = () => {
+    fontSize.original();
+    theme.main();
   };
-  const handleToggle = (item) => {
-    setActive(item);
-  }; */
+  const toggleClassNameFontSize = (original, normal, medium, large) => {
+    const currentSize = fontSize.fontSize;
+    if (currentSize === "original") return original;
+    if (currentSize === "normal") return normal;
+    if (currentSize === "medium") return medium;
+    if (currentSize === "large") return large;
+  };
   return (
     <>
-      <DisabledElements
-      /*  isActive={isActive}
-        handleToggle={handleToggle}
-        handleToggleClassName={handleToggleClassName} */
-      />
+      <div className="header__section-disabled">
+        <div className="disabled__container">
+          <div className="disabled__container-label">Размер</div>
+          <div className="disabled__container-block">
+            <div
+              onClick={() => fontSize.normal()}
+              className={`${toggleClassNameFontSize(
+                "disabled__container-block-a",
+                "disabled__container-block-a-normal",
+                "disabled__container-block-a",
+                "disabled__container-block-a"
+              )}`}
+            >
+              А
+            </div>
+
+            <div
+              onClick={() => fontSize.medium()}
+              className={`${toggleClassNameFontSize(
+                "disabled__container-block-aa",
+                "disabled__container-block-aa",
+                "disabled__container-block-aa-medium",
+                "disabled__container-block-aa"
+              )}`}
+            >
+              А
+            </div>
+
+            <div
+              onClick={() => fontSize.large()}
+              className={`${toggleClassNameFontSize(
+                "disabled__container-block-aaa",
+                "disabled__container-block-aaa",
+                "disabled__container-block-aaa",
+                "disabled__container-block-aaa-large"
+              )}`}
+            >
+              А
+            </div>
+          </div>
+        </div>
+        <div className="disabled__container">
+          <div className="disabled__container-label">Цвет</div>
+          <div className="disabled__container-block">
+            <div
+              onClick={() => theme.white()}
+              className={`${toggleClassName(
+                "disabled__container-block-c",
+                "disabled__container-block-c-white",
+                "disabled__container-block-c",
+                "disabled__container-block-c"
+              )}`}
+            >
+              С
+            </div>
+            <div
+              onClick={() => theme.black()}
+              className={`${toggleClassName(
+                "disabled__container-block-cc",
+                "disabled__container-block-cc",
+                "disabled__container-block-cc-black",
+                "disabled__container-block-cc"
+              )}`}
+            >
+              С
+            </div>
+            <div
+              onClick={() => theme.contrast()}
+              className={`${toggleClassName(
+                "disabled__container-block-ccc",
+                "disabled__container-block-ccc",
+                "disabled__container-block-ccc",
+                "disabled__container-block-ccc-contrast"
+              )}`}
+            >
+              С
+            </div>
+          </div>
+        </div>
+        <div className="disabled__container">
+          <div className="disabled__container-label">Изображения</div>
+          <div className="disabled__container-block">
+            <div className="disabled__container-block-active">Вкл.</div>
+            <div className="disabled__container-block-inactive">Выкл.</div>
+          </div>
+        </div>
+        <div className="disabled__container">
+          <div
+            onClick={() => handleThemeMain()}
+            className="disabled__container-back"
+          >
+            Обычная версия сайта
+          </div>
+        </div>
+      </div>
     </>
   );
-};
+});
 export default Disabled;

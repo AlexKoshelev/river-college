@@ -1,29 +1,7 @@
 @import "../../../../style/variables";
-.icon {
-    margin-right: 3px;
-     }
-.btn__office-text{
-    vertical-align: middle;
-    font-size: 0.625rem;
-    
-  }
-.btn__office {
-    background-color:$RED_COLOR;
-    color: $FONT_COLOR;
-}
-.btn__office:hover {
-    box-shadow: inset 0px 0px 5px rgba(0,0,0,0.9);
-    font-weight: 500;
-}
-.btn__timetable {
-    background-color: $BACK_TIMETABLE_COLOR;
-    color: $TIMETABLE_COLOR;
-}
-.btn__timetable.icon:hover {
-    color: #ffffff;
-}
-
-.btn__timetable:hover {
-    box-shadow: inset 0px 0px 5px rgba(0,0,0,0.9);
-    font-weight: 500;
+.button {
+    border-radius: 5px;
+    height: 2.67em;
+    width: 13.33em;
+  
 }
