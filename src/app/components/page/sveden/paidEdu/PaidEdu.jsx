@@ -1,8 +1,23 @@
 import React from "react";
+import { toggleClassName } from "../../../../utils/disabled";
 const PaidEdu = () => {
   return (
-    <div className="common__container">
-      <h1 className="common__container-title title">
+    <div
+      className={toggleClassName(
+        "common__container",
+        "common__container-white",
+        "common__container-black",
+        "common__container-contrast"
+      )}
+    >
+      <h1
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Платные образовательные услуги
       </h1>
       <p>

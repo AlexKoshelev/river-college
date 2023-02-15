@@ -1,9 +1,25 @@
+import { observer } from "mobx-react-lite";
 import React from "react";
 import BazPraktik from "../../../../assets/pdf/commonPage/baz_praktik.pdf";
-const Common = () => {
+import { toggleClassName } from "../../../../utils/disabled";
+const Common = observer(() => {
   return (
-    <div className="common__container">
-      <h1 className="common__container-title title">
+    <div
+      className={toggleClassName(
+        "common__container",
+        "common__container-white",
+        "common__container-black",
+        "common__container-contrast"
+      )}
+    >
+      <h1
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         История создания и развития
       </h1>
       <p>
@@ -55,7 +71,14 @@ const Common = () => {
         «ВГУВТ», расположенным вне места его нахождения и осуществляющим
         постоянно все его функции или их часть.
       </p>
-      <h1 className="common__container-title title">
+      <h1
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Сведения об образовательной организации
       </h1>
       <div className="common__item flex">
@@ -76,7 +99,14 @@ const Common = () => {
           Уфимский филиал ФГБОУ ВО "ВГУВТ"
         </div>
       </div>
-      <h3 className="common__container-title title">
+      <h3
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Основные сведения об образовательной организации
       </h3>
       <div>
@@ -130,7 +160,14 @@ const Common = () => {
           </tbody>
         </table>
       </div>
-      <h3 className="common__container-title title">
+      <h3
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Сведения о филиалах (при наличии)
       </h3>
       <table className="">
@@ -168,7 +205,14 @@ const Common = () => {
           </tr>
         </tbody>
       </table>
-      <h3 className="common__container-title title">
+      <h3
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Сведения о представительствах (при наличии)
       </h3>
 
@@ -207,11 +251,26 @@ const Common = () => {
           </tr>
         </tbody>
       </table>
-      <h3 className="common__container-title title">
+      <h3
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Уфимский филиал ФГБОУ ВО "ВГУВТ" филиалов и представительств не имеет, в
         том числе находящихся за пределами Российской Федерации.
       </h3>
-      <h3 itemProp="uchredLaw" className="common__container-title title">
+      <h3
+        itemProp="uchredLaw"
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Информация об учредителе
       </h3>
       <div>
@@ -248,7 +307,15 @@ const Common = () => {
           </tbody>
         </table>
       </div>
-      <h3 itemProp="addressPlace" className="common__container-title title">
+      <h3
+        itemProp="addressPlace"
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Информация о местах осуществления образовательной деятельности, в том
         числе не указываемых в соответствии с частью 4 статьи 91 Федерального
         закона от 29.12.2012 №273-ФЗ «Об образовании в Российской Федерации» в
@@ -343,7 +410,14 @@ const Common = () => {
           </tbody>
         </table>
       </div>
-      <h3 className="common__container-title title">
+      <h3
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Федеральное государственное бюджетное образовательное учреждение высшего
         образования «Волжский государственный университет водного транспорта»
         (ФГБОУ ВО «ВГУВТ»)
@@ -394,5 +468,5 @@ const Common = () => {
       </div>
     </div>
   );
-};
+});
 export default Common;

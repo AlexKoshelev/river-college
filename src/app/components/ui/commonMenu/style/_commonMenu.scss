@@ -36,3 +36,111 @@
     }
    
 }
+.common__menu-white {
+    display: block;
+    width: 280px;
+    font-size: 0.8rem;
+    margin: 20px 10px;
+    padding: 10px;
+    border: solid 1px  $BACK_BLACK;
+    & li {
+        width: 100%;
+        color: $DISABLED_FONT_COLOR;
+        margin: 10px 0px;
+    }
+    &-title {
+        font-size: 1.1rem;
+        border-bottom: 1px solid $DISABLED_FONT_COLOR;
+        max-width: fit-content;
+    }
+    &-item {
+        width: 100%;
+        color: $DISABLED_FONT_COLOR;
+        margin: 10px 0px;
+        &:hover {
+            border-bottom: solid 1px $DISABLED_FONT_COLOR;
+            color: $DISABLED_FONT_COLOR;
+        };
+    }
+    &-active{
+        border-bottom: solid 1px $DISABLED_FONT_COLOR;
+        color: $DISABLED_FONT_COLOR;
+        &:hover {
+            border-bottom: solid 1px $DISABLED_FONT_COLOR;
+            color: $DISABLED_FONT_COLOR;
+        }
+    }
+   
+}
+.common__menu-black {
+    display: block;
+    width: 280px;
+    font-size: 0.8rem;
+    margin: 20px 10px;
+    padding: 10px;
+    border:solid 1px $WHITE_FONT_COLOR;
+    & li {
+        width: 100%;
+        color: $WHITE_FONT_COLOR;
+        margin: 10px 0px;
+    }
+    &-title {
+        font-size: 1.1rem;
+        border-bottom: 1px solid $WHITE_FONT_COLOR;
+        max-width: fit-content;
+    }
+    &-item {
+        width: 100%;
+        color: $WHITE_FONT_COLOR;
+        margin: 10px 0px;
+        &:hover {
+            border-bottom: solid 1px  $WHITE_FONT_COLOR;
+            color: $WHITE_FONT_COLOR;
+        }
+    }
+    &-active{
+        border-bottom: solid 1px  $WHITE_FONT_COLOR;
+        color:  $WHITE_FONT_COLOR;
+        &:hover {
+            color: $WHITE_FONT_COLOR;
+            border-bottom: solid 1px  $WHITE_FONT_COLOR;
+        }
+    }
+   
+}
+.common__menu-contrast {
+    display: block;
+    width: 280px;
+    font-size: 0.8rem;
+    margin: 20px 10px;
+    padding: 10px;
+    border:solid 1px $FONT_CONTRAST;
+    & li {
+        width: 100%;
+        color: $FONT_CONTRAST;
+        margin: 10px 0px;
+    }
+    &-title {
+        font-size: 1.1rem;
+        border-bottom: 1px solid $FONT_CONTRAST;
+        max-width: fit-content;
+    }
+    &-item {
+        width: 100%;
+        color: $FONT_CONTRAST;
+        margin: 10px 0px;
+        &:hover {
+            border-bottom: solid 1px $FONT_CONTRAST;
+            color: $FONT_CONTRAST
+        }
+    }
+    &-active{
+        border-bottom: solid 1px $FONT_CONTRAST;
+        color: $FONT_CONTRAST;
+        &:hover {
+            border-bottom: solid 1px $FONT_CONTRAST;
+            color: $FONT_CONTRAST
+        }
+    }
+   
+}

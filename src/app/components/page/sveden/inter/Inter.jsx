@@ -1,11 +1,34 @@
+import { observer } from "mobx-react-lite";
 import React from "react";
-const Inter = () => {
+import { toggleClassName } from "../../../../utils/disabled";
+const Inter = observer(() => {
   return (
-    <div className="common__container">
-      <h1 className="common__container-title title">
+    <div
+      className={toggleClassName(
+        "common__container",
+        "common__container-white",
+        "common__container-black",
+        "common__container-contrast"
+      )}
+    >
+      <h1
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Международное сотрудничество
       </h1>
-      <h3 className="common__container-title title">
+      <h3
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Сведения о заключенных и планируемых к заключению договорах с
         иностранными и (или) международными организациями по вопросам
         образования и науки:
@@ -28,7 +51,14 @@ const Inter = () => {
           </tr>
         </tbody>
       </table>
-      <h3 className="common__container-title title">
+      <h3
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Информация о международной аккредитации
       </h3>
       <table className="">
@@ -50,12 +80,19 @@ const Inter = () => {
           </tr>
         </tbody>
       </table>
-      <h3 className="common__container-title title">
+      <h3
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Информация о заключенных и планируемых к заключению договорах с
         иностранными и (или) международными организациями по вопросам
         образования и науки - договора отсутствуют.
       </h3>
     </div>
   );
-};
+});
 export default Inter;

@@ -1,9 +1,34 @@
+import { observer } from "mobx-react-lite";
 import React from "react";
-const Vacant = () => {
+import { toggleClassName } from "../../../../utils/disabled";
+const Vacant = observer(() => {
   return (
-    <div className="common__container">
-      <h1 className="common__container-title title">Образование</h1>
-      <h3 className="common__container-title title">
+    <div
+      className={toggleClassName(
+        "common__container",
+        "common__container-white",
+        "common__container-black",
+        "common__container-contrast"
+      )}
+    >
+      <h1
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
+        Образование
+      </h1>
+      <h3
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Информация о количестве вакантных мест для приема (перевода) на
         01.10.2022 г.
       </h3>
@@ -346,5 +371,5 @@ const Vacant = () => {
       </div>
     </div>
   );
-};
+});
 export default Vacant;

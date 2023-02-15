@@ -6,7 +6,7 @@ import { ReactComponent as UserLogo } from "../../../assets/svg/user.svg";
 import React from "react";
 import Button from "../button/Button";
 import MenuNavbar from "../../ui/menuNavbar/MenuNavbar";
-import Search from "../search/Search";
+/* import Search from "../search/Search"; */
 import { NavLink } from "react-router-dom";
 import Disabled from "../disabled/Disabled";
 import { observer } from "mobx-react-lite";
@@ -61,7 +61,7 @@ const NavBar = observer(() => {
             </div>
             {/*    <!-- поиск --> */}
             <div className="header__section3-btn">
-              <Search />
+              {/*  <Search /> */}
               {/*   <!-- расписание --> */}
               <div className="header__section3-btn-margin header__timetable">
                 <Button

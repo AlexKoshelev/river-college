@@ -1,11 +1,34 @@
+import { observer } from "mobx-react-lite";
 import React from "react";
-const EduStandarts = () => {
+import { toggleClassName } from "../../../../utils/disabled";
+const EduStandarts = observer(() => {
   return (
-    <div className="common__container">
-      <h1 className="common__container-title title">
+    <div
+      className={toggleClassName(
+        "common__container",
+        "common__container-white",
+        "common__container-black",
+        "common__container-contrast"
+      )}
+    >
+      <h1
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Образовательные стандарты и требования
       </h1>
-      <h3 className="common__container-title title">
+      <h3
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Федеральные государственные образовательные стандарты среднего
         профессионального образования (ФГОС СПО) III + поколения
       </h3>
@@ -85,10 +108,17 @@ const EduStandarts = () => {
           </tr>
         </tbody>
       </table>
-      <h3 className="common__container-title title">
+      <h3
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Образовательные стандарты не разрабатываются и не реализуются.
       </h3>
     </div>
   );
-};
+});
 export default EduStandarts;

@@ -1,5 +1,6 @@
 @import "../../../../../style/variables";
 .common__container{
+    
     font-size: 1rem;
     &-title{
         text-align: center;
@@ -9,6 +10,66 @@
     }
     tr {
         border-bottom: solid 1px $SVEDEN_BORDER-COLOR;
+    }
+    td {
+        padding: 20px ;
+        text-align: left;
+        min-width: 90px;
+       
+    }
+}
+.common__container-white{
+    color: $DISABLED_FONT_COLOR;
+    background-color: $BACK_WHITE;
+    font-size: 1rem;
+    &-title{
+        text-align: center;
+    }
+    p{
+        text-indent: 2em;
+    }
+    tr {
+        border-bottom: solid 1px $DISABLED_FONT_COLOR;
+    }
+    td {
+        padding: 20px ;
+        text-align: left;
+        min-width: 90px;
+       
+    }
+}
+.common__container-black{
+    color: $WHITE_FONT_COLOR;
+    background-color: $BACK_BLACK;
+    font-size: 1rem;
+    &-title{
+        text-align: center;
+    }
+    p{
+        text-indent: 2em;
+    }
+    tr {
+        border-bottom: solid 1px  $WHITE_FONT_COLOR;
+    }
+    td {
+        padding: 20px ;
+        text-align: left;
+        min-width: 90px;
+       
+    }
+}
+.common__container-contrast{
+    color: $FONT_CONTRAST;
+    background-color: $BACK_CONTRAST;
+    font-size: 1rem;
+    &-title{
+        text-align: center;
+    }
+    p{
+        text-indent: 2em;
+    }
+    tr {
+        border-bottom: solid 1px $FONT_CONTRAST;
     }
     td {
         padding: 20px ;

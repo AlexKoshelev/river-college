@@ -1,12 +1,35 @@
+import { observer } from "mobx-react-lite";
 import React from "react";
-const Ovz = () => {
+import { toggleClassName } from "../../../../utils/disabled";
+const Ovz = observer(() => {
   return (
-    <div className="common__container">
-      <h1 className="common__container-title title">
+    <div
+      className={toggleClassName(
+        "common__container",
+        "common__container-white",
+        "common__container-black",
+        "common__container-contrast"
+      )}
+    >
+      <h1
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Материально-техническое обеспечение и оснащенность образовательного
         процесса
       </h1>
-      <h3 className="common__container-title title">
+      <h3
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Места осуществления образовательной деятельности, в том числе не
         указываемые в приложении к лицензии на осуществление образовательной
         деятельности:
@@ -81,7 +104,14 @@ const Ovz = () => {
           </tbody>
         </table>
       </div>
-      <h3 className="common__container-title title">
+      <h3
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Сведения о наличии оборудованных учебных кабинетов
       </h3>
       <div className="scroll-table">
@@ -414,7 +444,14 @@ const Ovz = () => {
           </tbody>
         </table>
       </div>
-      <h3 className="common__container-title title">
+      <h3
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Сведения о наличии объектов для проведения практических занятий
       </h3>
       <div className="scroll-table">
@@ -792,7 +829,14 @@ const Ovz = () => {
           </tbody>
         </table>
       </div>
-      <h3 className="common__container-title title">
+      <h3
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Сведения о наличии библиотек, объектов спорта, об условиях питания и
         охраны здоровья
       </h3>
@@ -900,7 +944,14 @@ const Ovz = () => {
           аттестации и результатов освоения программы;
         </li>
       </ol>
-      <h3 className="common__container-title title">
+      <h3
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Сведения о наличии электронных образовательных и информационных
         ресурсов:
       </h3>
@@ -935,7 +986,14 @@ const Ovz = () => {
         для использования обучающимися, в том числе для использования инвалидами
         и лицами с ограниченными возможностями здоровья:
       </p>
-      <h3 className="common__container-title title">
+      <h3
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Сторонние электронные образовательные и информационные ресурсы
       </h3>
       <ol>
@@ -964,7 +1022,14 @@ const Ovz = () => {
           систем
         </li>
       </ol>
-      <h3 className="common__container-title title">
+      <h3
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Сторонние электронные образовательные и информационные ресурсы
       </h3>
       <ol>
@@ -977,7 +1042,14 @@ const Ovz = () => {
         филиала со свободным доступом обучающихся, которая включает в себя:
         учебно-методический комплекс, конспекты лекций (в электронном виде).
       </p>
-      <h3 className="common__container-title title">
+      <h3
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Электронные библиотечные системы и ресурсы:
       </h3>
       <ol>
@@ -999,7 +1071,14 @@ const Ovz = () => {
           Медиа») http://www.iprbookshop.ru/
         </li>
       </ol>
-      <h3 className="common__container-title title">
+      <h3
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Информация о наличии у Уфимского филиала ФГБОУ ВО "ВГУВТ" на праве
         собственности или ином законном основании зданий, строений, сооружений,
         территорий, необходимых для осуществления образовательной деятельности
@@ -1105,7 +1184,14 @@ const Ovz = () => {
           </tbody>
         </table>
       </div>
-      <h3 className="common__container-title title">
+      <h3
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Информация о наличии библиотек, объектов спорта, об условиях питания и
         охраны здоровья обучающихся
       </h3>
@@ -1264,7 +1350,14 @@ const Ovz = () => {
           </tbody>
         </table>
       </div>
-      <h3 className="common__container-title title">
+      <h3
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Информация о наличии объектов спорта
       </h3>
       <div className="scroll-table">
@@ -1447,7 +1540,14 @@ const Ovz = () => {
         использования инвалидами и лицами с ограниченными возможностями
         здоровья:
       </p>
-      <h3 className="common__container-title title">
+      <h3
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Сторонние электронные образовательные и информационные ресурсы
       </h3>
       <ol>
@@ -1491,7 +1591,14 @@ const Ovz = () => {
         филиала со свободным доступом обучающихся, которая включает в себя:
         учебно-методический комплекс, конспекты лекций (в электронном виде).
       </p>
-      <h3 className="common__container-title title">
+      <h3
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Электронные библиотечные системы и ресурсы:
       </h3>
       <ol>
@@ -1529,7 +1636,14 @@ const Ovz = () => {
           также наличии посторонних звуков или преграды между собеседниками.
         </li>
       </ol>
-      <h3 className="common__container-title title">
+      <h3
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Информация о наличии оборудованных учебных кабинетов, объектов для
         проведения практических занятий
       </h3>
@@ -1559,5 +1673,5 @@ const Ovz = () => {
       </p>
     </div>
   );
-};
+});
 export default Ovz;

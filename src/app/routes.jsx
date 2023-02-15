@@ -6,7 +6,7 @@ import EduStandarts from "./components/page/sveden/eduStandarts/EduStandarts";
 import Employees from "./components/page/sveden/employees/Employees";
 import Grants from "./components/page/sveden/grants/Grants";
 import Inter from "./components/page/sveden/inter/Inter";
-import Ovz from "./components/page/sveden/objects/Objects";
+import Ovz from "./components/page/sveden/ovz/Ovz";
 import Objects from "./components/page/sveden/objects/Objects";
 import PaidEdu from "./components/page/sveden/paidEdu/PaidEdu";
 import Struct from "./components/page/sveden/struct/Struct";

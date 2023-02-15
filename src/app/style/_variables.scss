@@ -45,6 +45,21 @@ $BACK_BTN_SHOW:rgb(158, 181, 217);
     color: $MAIN_COLOR;
     margin: 15px 0px 30px 0px;
 }
+.title-white {
+    font-weight: 600;
+    color: $DISABLED_FONT_COLOR;
+    margin: 15px 0px 30px 0px;
+}
+.title-black {
+    font-weight: 600;
+    color: $WHITE_FONT_COLOR;
+    margin: 15px 0px 30px 0px;
+}
+.title-contrast {
+    font-weight: 600;
+    color: $FONT_CONTRAST;
+    margin: 15px 0px 30px 0px;
+}
 
 //flexbox
 .flex {

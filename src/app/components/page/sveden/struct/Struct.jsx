@@ -1,8 +1,25 @@
+import { observer } from "mobx-react-lite";
 import React from "react";
-const Struct = () => {
+import { toggleClassName } from "../../../../utils/disabled";
+const Struct = observer(() => {
   return (
-    <>
-      <h1 itemProp="structOrgUprav" className="common__container-title title">
+    <div
+      className={toggleClassName(
+        "common__container",
+        "common__container-white",
+        "common__container-black",
+        "common__container-contrast"
+      )}
+    >
+      <h1
+        itemProp="structOrgUprav"
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Структура и органы управления Уфимского филиала ФГБОУ ВО "ВГУВТ"
       </h1>
       <div className="common__container scroll-table">
@@ -130,7 +147,7 @@ const Struct = () => {
           </tbody>
         </table>
       </div>
-    </>
+    </div>
   );
-};
+});
 export default Struct;

@@ -1,14 +1,44 @@
+import { observer } from "mobx-react-lite";
 import React from "react";
 import { NavLink } from "react-router-dom";
-const CommonMenu = () => {
+import { toggleClassName } from "../../../utils/disabled";
+const CommonMenu = observer(() => {
   return (
-    <div className="">
-      <ul className="common__menu">
-        <h3 className="common__menu-title title">Навигация </h3>
+    <div>
+      <ul
+        className={toggleClassName(
+          "common__menu",
+          "common__menu-white",
+          "common__menu-black",
+          "common__menu-contrast"
+        )}
+      >
+        <h3
+          className={`common__menu-title ${toggleClassName(
+            "title",
+            "title-white",
+            "title-black",
+            "title-contrast"
+          )}`}
+        >
+          Навигация{" "}
+        </h3>
         <li>
           <NavLink
             className={({ isActive }) =>
-              isActive ? "common__menu-active" : "common__menu-item"
+              isActive
+                ? toggleClassName(
+                    "common__menu-active",
+                    "common__menu-white-active",
+                    "common__menu-black-active",
+                    "common__menu-contrast-active"
+                  )
+                : toggleClassName(
+                    "common__menu-item",
+                    "common__menu-white-item",
+                    "common__menu-black-item",
+                    "common__menu-contrast-item"
+                  )
             }
             to="common"
           >
@@ -19,7 +49,19 @@ const CommonMenu = () => {
         <li>
           <NavLink
             className={({ isActive }) =>
-              isActive ? "common__menu-active" : "common__menu-item"
+              isActive
+                ? toggleClassName(
+                    "common__menu-active",
+                    "common__menu-white-active",
+                    "common__menu-black-active",
+                    "common__menu-contrast-active"
+                  )
+                : toggleClassName(
+                    "common__menu-item",
+                    "common__menu-white-item",
+                    "common__menu-black-item",
+                    "common__menu-contrast-item"
+                  )
             }
             to="struct"
           >
@@ -30,7 +72,19 @@ const CommonMenu = () => {
         <li>
           <NavLink
             className={({ isActive }) =>
-              isActive ? "common__menu-active" : "common__menu-item"
+              isActive
+                ? toggleClassName(
+                    "common__menu-active",
+                    "common__menu-white-active",
+                    "common__menu-black-active",
+                    "common__menu-contrast-active"
+                  )
+                : toggleClassName(
+                    "common__menu-item",
+                    "common__menu-white-item",
+                    "common__menu-black-item",
+                    "common__menu-contrast-item"
+                  )
             }
             to="document"
           >
@@ -40,7 +94,19 @@ const CommonMenu = () => {
         <li>
           <NavLink
             className={({ isActive }) =>
-              isActive ? "common__menu-active" : "common__menu-item"
+              isActive
+                ? toggleClassName(
+                    "common__menu-active",
+                    "common__menu-white-active",
+                    "common__menu-black-active",
+                    "common__menu-contrast-active"
+                  )
+                : toggleClassName(
+                    "common__menu-item",
+                    "common__menu-white-item",
+                    "common__menu-black-item",
+                    "common__menu-contrast-item"
+                  )
             }
             to="education"
           >
@@ -50,7 +116,19 @@ const CommonMenu = () => {
         <li>
           <NavLink
             className={({ isActive }) =>
-              isActive ? "common__menu-active" : "common__menu-item"
+              isActive
+                ? toggleClassName(
+                    "common__menu-active",
+                    "common__menu-white-active",
+                    "common__menu-black-active",
+                    "common__menu-contrast-active"
+                  )
+                : toggleClassName(
+                    "common__menu-item",
+                    "common__menu-white-item",
+                    "common__menu-black-item",
+                    "common__menu-contrast-item"
+                  )
             }
             to="eduStandarts"
           >
@@ -60,7 +138,19 @@ const CommonMenu = () => {
         <li>
           <NavLink
             className={({ isActive }) =>
-              isActive ? "common__menu-active" : "common__menu-item"
+              isActive
+                ? toggleClassName(
+                    "common__menu-active",
+                    "common__menu-white-active",
+                    "common__menu-black-active",
+                    "common__menu-contrast-active"
+                  )
+                : toggleClassName(
+                    "common__menu-item",
+                    "common__menu-white-item",
+                    "common__menu-black-item",
+                    "common__menu-contrast-item"
+                  )
             }
             to="employees"
           >
@@ -70,7 +160,19 @@ const CommonMenu = () => {
         <li>
           <NavLink
             className={({ isActive }) =>
-              isActive ? "common__menu-active" : "common__menu-item"
+              isActive
+                ? toggleClassName(
+                    "common__menu-active",
+                    "common__menu-white-active",
+                    "common__menu-black-active",
+                    "common__menu-contrast-active"
+                  )
+                : toggleClassName(
+                    "common__menu-item",
+                    "common__menu-white-item",
+                    "common__menu-black-item",
+                    "common__menu-contrast-item"
+                  )
             }
             to="objects"
           >
@@ -81,7 +183,19 @@ const CommonMenu = () => {
         <li>
           <NavLink
             className={({ isActive }) =>
-              isActive ? "common__menu-active" : "common__menu-item"
+              isActive
+                ? toggleClassName(
+                    "common__menu-active",
+                    "common__menu-white-active",
+                    "common__menu-black-active",
+                    "common__menu-contrast-active"
+                  )
+                : toggleClassName(
+                    "common__menu-item",
+                    "common__menu-white-item",
+                    "common__menu-black-item",
+                    "common__menu-contrast-item"
+                  )
             }
             to="grants"
           >
@@ -91,7 +205,19 @@ const CommonMenu = () => {
         <li>
           <NavLink
             className={({ isActive }) =>
-              isActive ? "common__menu-active" : "common__menu-item"
+              isActive
+                ? toggleClassName(
+                    "common__menu-active",
+                    "common__menu-white-active",
+                    "common__menu-black-active",
+                    "common__menu-contrast-active"
+                  )
+                : toggleClassName(
+                    "common__menu-item",
+                    "common__menu-white-item",
+                    "common__menu-black-item",
+                    "common__menu-contrast-item"
+                  )
             }
             to="paid__edu"
           >
@@ -101,7 +227,19 @@ const CommonMenu = () => {
         <li>
           <NavLink
             className={({ isActive }) =>
-              isActive ? "common__menu-active" : "common__menu-item"
+              isActive
+                ? toggleClassName(
+                    "common__menu-active",
+                    "common__menu-white-active",
+                    "common__menu-black-active",
+                    "common__menu-contrast-active"
+                  )
+                : toggleClassName(
+                    "common__menu-item",
+                    "common__menu-white-item",
+                    "common__menu-black-item",
+                    "common__menu-contrast-item"
+                  )
             }
             to="budget"
           >
@@ -111,7 +249,19 @@ const CommonMenu = () => {
         <li>
           <NavLink
             className={({ isActive }) =>
-              isActive ? "common__menu-active" : "common__menu-item"
+              isActive
+                ? toggleClassName(
+                    "common__menu-active",
+                    "common__menu-white-active",
+                    "common__menu-black-active",
+                    "common__menu-contrast-active"
+                  )
+                : toggleClassName(
+                    "common__menu-item",
+                    "common__menu-white-item",
+                    "common__menu-black-item",
+                    "common__menu-contrast-item"
+                  )
             }
             to="vacant"
           >
@@ -121,7 +271,19 @@ const CommonMenu = () => {
         <li>
           <NavLink
             className={({ isActive }) =>
-              isActive ? "common__menu-active" : "common__menu-item"
+              isActive
+                ? toggleClassName(
+                    "common__menu-active",
+                    "common__menu-white-active",
+                    "common__menu-black-active",
+                    "common__menu-contrast-active"
+                  )
+                : toggleClassName(
+                    "common__menu-item",
+                    "common__menu-white-item",
+                    "common__menu-black-item",
+                    "common__menu-contrast-item"
+                  )
             }
             to="ovz"
           >
@@ -131,7 +293,19 @@ const CommonMenu = () => {
         <li>
           <NavLink
             className={({ isActive }) =>
-              isActive ? "common__menu-active" : "common__menu-item"
+              isActive
+                ? toggleClassName(
+                    "common__menu-active",
+                    "common__menu-white-active",
+                    "common__menu-black-active",
+                    "common__menu-contrast-active"
+                  )
+                : toggleClassName(
+                    "common__menu-item",
+                    "common__menu-white-item",
+                    "common__menu-black-item",
+                    "common__menu-contrast-item"
+                  )
             }
             to="inter"
           >
@@ -141,5 +315,5 @@ const CommonMenu = () => {
       </ul>
     </div>
   );
-};
+});
 export default CommonMenu;

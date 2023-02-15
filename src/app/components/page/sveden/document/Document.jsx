@@ -67,15 +67,43 @@ import ZaklSanitar5 from "../../../../assets/pdf/documentPage/zakl_sanitar_5.pdf
 import DoDop from "../../../../assets/pdf/documentPage/DO_dop.pdf";
 import PolozPd from "../../../../assets/pdf/documentPage/Pologenie_PD.pdf";
 import DropDown from "../../../common/dropDown/DropDown";
+import { toggleClassName } from "../../../../utils/disabled";
+import { observer } from "mobx-react-lite";
 
-const Document = () => {
+const Document = observer(() => {
   return (
-    <div className="common__container">
-      <h1 className="common__container-title title">Документы</h1>
+    <div
+      className={toggleClassName(
+        "common__container",
+        "common__container-white",
+        "common__container-black",
+        "common__container-contrast"
+      )}
+    >
+      <h1
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
+        Документы
+      </h1>
       <HrLine className="document__hrLine" />
       <DropDown
-        className={"btn-show"}
-        classNameActive={"btn-show-active"}
+        className={`${toggleClassName(
+          "btn-show",
+          "btn-show-white",
+          "btn-show-black",
+          "btn-show-contrast"
+        )}`}
+        classNameActive={`${toggleClassName(
+          "btn-show-active",
+          "btn-show-white-active",
+          "btn-show-black-active",
+          "btn-show-contrast-active"
+        )}`}
         title={"Документы"}
       >
         <ul>
@@ -123,8 +151,18 @@ const Document = () => {
       </DropDown>
 
       <DropDown
-        className={"btn-show"}
-        classNameActive={"btn-show-active"}
+        className={`${toggleClassName(
+          "btn-show",
+          "btn-show-white",
+          "btn-show-black",
+          "btn-show-contrast"
+        )}`}
+        classNameActive={`${toggleClassName(
+          "btn-show-active",
+          "btn-show-white-active",
+          "btn-show-black-active",
+          "btn-show-contrast-active"
+        )}`}
         title={"Аккредитация"}
       >
         <ul>
@@ -232,8 +270,18 @@ const Document = () => {
       </DropDown>
 
       <DropDown
-        className={"btn-show"}
-        classNameActive={"btn-show-active"}
+        className={`${toggleClassName(
+          "btn-show",
+          "btn-show-white",
+          "btn-show-black",
+          "btn-show-contrast"
+        )}`}
+        classNameActive={`${toggleClassName(
+          "btn-show-active",
+          "btn-show-white-active",
+          "btn-show-black-active",
+          "btn-show-contrast-active"
+        )}`}
         title={"План финансово-хозяйственной деятельности, расписание"}
       >
         <ul>
@@ -263,11 +311,28 @@ const Document = () => {
         </ul>
       </DropDown>
       <DropDown
-        className={"btn-show"}
-        classNameActive={"btn-show-active"}
+        className={`${toggleClassName(
+          "btn-show",
+          "btn-show-white",
+          "btn-show-black",
+          "btn-show-contrast"
+        )}`}
+        classNameActive={`${toggleClassName(
+          "btn-show-active",
+          "btn-show-white-active",
+          "btn-show-black-active",
+          "btn-show-contrast-active"
+        )}`}
         title={"Контроля успеваемости и промежуточная аттестация"}
       >
-        <h3 className="common__container-title title">
+        <h3
+          className={`common__container-title ${toggleClassName(
+            "title",
+            "title-white",
+            "title-black",
+            "title-contrast"
+          )}`}
+        >
           Документы, регламентирующие формы, периодичность и порядок текущего
           контроля успеваемости и промежуточной аттестации обучающихся
         </h3>
@@ -294,8 +359,18 @@ const Document = () => {
       </DropDown>
 
       <DropDown
-        className={"btn-show"}
-        classNameActive={"btn-show-active"}
+        className={`${toggleClassName(
+          "btn-show",
+          "btn-show-white",
+          "btn-show-black",
+          "btn-show-contrast"
+        )}`}
+        classNameActive={`${toggleClassName(
+          "btn-show-active",
+          "btn-show-white-active",
+          "btn-show-black-active",
+          "btn-show-contrast-active"
+        )}`}
         title={"Перевод и восстановление"}
       >
         <ul>
@@ -322,8 +397,18 @@ const Document = () => {
       </DropDown>
 
       <DropDown
-        className={"btn-show"}
-        classNameActive={"btn-show-active"}
+        className={`${toggleClassName(
+          "btn-show",
+          "btn-show-white",
+          "btn-show-black",
+          "btn-show-contrast"
+        )}`}
+        classNameActive={`${toggleClassName(
+          "btn-show-active",
+          "btn-show-white-active",
+          "btn-show-black-active",
+          "btn-show-contrast-active"
+        )}`}
         title={"Правила, договоры"}
       >
         <ul>
@@ -370,8 +455,18 @@ const Document = () => {
       </DropDown>
 
       <DropDown
-        className={"btn-show"}
-        classNameActive={"btn-show-active"}
+        className={`${toggleClassName(
+          "btn-show",
+          "btn-show-white",
+          "btn-show-black",
+          "btn-show-contrast"
+        )}`}
+        classNameActive={`${toggleClassName(
+          "btn-show-active",
+          "btn-show-white-active",
+          "btn-show-black-active",
+          "btn-show-contrast-active"
+        )}`}
         title={"Отчеты"}
       >
         <ul>
@@ -397,8 +492,18 @@ const Document = () => {
       </DropDown>
 
       <DropDown
-        className={"btn-show"}
-        classNameActive={"btn-show-active"}
+        className={`${toggleClassName(
+          "btn-show",
+          "btn-show-white",
+          "btn-show-black",
+          "btn-show-contrast"
+        )}`}
+        classNameActive={`${toggleClassName(
+          "btn-show-active",
+          "btn-show-white-active",
+          "btn-show-black-active",
+          "btn-show-contrast-active"
+        )}`}
         title={"Платные услуги"}
       >
         <ul>
@@ -422,8 +527,18 @@ const Document = () => {
       </DropDown>
 
       <DropDown
-        className={"btn-show"}
-        classNameActive={"btn-show-active"}
+        className={`${toggleClassName(
+          "btn-show",
+          "btn-show-white",
+          "btn-show-black",
+          "btn-show-contrast"
+        )}`}
+        classNameActive={`${toggleClassName(
+          "btn-show-active",
+          "btn-show-white-active",
+          "btn-show-black-active",
+          "btn-show-contrast-active"
+        )}`}
         title={"Общежитие"}
       >
         <ul>
@@ -457,13 +572,28 @@ const Document = () => {
       </DropDown>
 
       <DropDown
-        className={"btn-show"}
-        classNameActive={"btn-show-active"}
+        className={`${toggleClassName(
+          "btn-show",
+          "btn-show-white",
+          "btn-show-black",
+          "btn-show-contrast"
+        )}`}
+        classNameActive={`${toggleClassName(
+          "btn-show-active",
+          "btn-show-white-active",
+          "btn-show-black-active",
+          "btn-show-contrast-active"
+        )}`}
         title={"Предписания и отчеты"}
       >
         <h3
           itemProp="prescriptionDocLink"
-          className="common__container-title title"
+          className={`common__container-title ${toggleClassName(
+            "title",
+            "title-white",
+            "title-black",
+            "title-contrast"
+          )}`}
         >
           Предписания органов, осуществляющих государственный контроль в сфере
           образования и отчеты об их исполнении:
@@ -478,7 +608,14 @@ const Document = () => {
           </a>
         </ul>
         <HrLine className="document__hrLine" />
-        <h3 className="common__container-title title">
+        <h3
+          className={`common__container-title ${toggleClassName(
+            "title",
+            "title-white",
+            "title-black",
+            "title-contrast"
+          )}`}
+        >
           Отчет об исполнении Предписаний:
         </h3>
         <ul>
@@ -492,8 +629,18 @@ const Document = () => {
       </DropDown>
 
       <DropDown
-        className={"btn-show"}
-        classNameActive={"btn-show-active"}
+        className={`${toggleClassName(
+          "btn-show",
+          "btn-show-white",
+          "btn-show-black",
+          "btn-show-contrast"
+        )}`}
+        classNameActive={`${toggleClassName(
+          "btn-show-active",
+          "btn-show-white-active",
+          "btn-show-black-active",
+          "btn-show-contrast-active"
+        )}`}
         title={"Письма и заключения"}
       >
         <ul>
@@ -559,11 +706,28 @@ const Document = () => {
         </ul>
       </DropDown>
       <DropDown
-        className={"btn-show"}
-        classNameActive={"btn-show-active"}
+        className={`${toggleClassName(
+          "btn-show",
+          "btn-show-white",
+          "btn-show-black",
+          "btn-show-contrast"
+        )}`}
+        classNameActive={`${toggleClassName(
+          "btn-show-active",
+          "btn-show-white-active",
+          "btn-show-black-active",
+          "btn-show-contrast-active"
+        )}`}
         title={"Дополнительные документы"}
       >
-        <h3 className="common__container-title title">
+        <h3
+          className={`common__container-title ${toggleClassName(
+            "title",
+            "title-white",
+            "title-black",
+            "title-contrast"
+          )}`}
+        >
           Дополнительные документы:
         </h3>
         <ul>
@@ -584,5 +748,5 @@ const Document = () => {
       </DropDown>
     </div>
   );
-};
+});
 export default Document;

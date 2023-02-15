@@ -1,8 +1,24 @@
+import { observer } from "mobx-react-lite";
 import React from "react";
-const Grants = () => {
+import { toggleClassName } from "../../../../utils/disabled";
+const Grants = observer(() => {
   return (
-    <div className="common__container">
-      <h1 className="common__container-title title">
+    <div
+      className={toggleClassName(
+        "common__container",
+        "common__container-white",
+        "common__container-black",
+        "common__container-contrast"
+      )}
+    >
+      <h1
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Стипендии и меры поддержки обучающихся
       </h1>
       <p>
@@ -14,7 +30,14 @@ const Grants = () => {
         <li>Социальная стипендия</li>
         <li>Стипендия Правительства Республики Башкортостан</li>
       </ol>
-      <h3 className="common__container-title title">
+      <h3
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Информация о наличии и условиях предоставления обучающимся стипендий, о
         мерах социальной поддержки обучающихся
       </h3>
@@ -44,7 +67,14 @@ const Grants = () => {
           </li>
         </a>
       </ul>
-      <h3 className="common__container-title title">
+      <h3
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Информация об иных видах материальной поддержки обучающихся
       </h3>
       <ul>
@@ -54,7 +84,14 @@ const Grants = () => {
           </li>
         </a>
       </ul>
-      <h3 className="common__container-title title">
+      <h3
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Информация о наличии общежития, интерната, в том числе приспособленных
         для использования инвалидами и лицами с ограниченными возможностями
         здоровья
@@ -147,7 +184,14 @@ const Grants = () => {
           </li>
         </a>
       </ul>
-      <h3 className="common__container-title title">
+      <h3
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Локальные нормативные акты, регламентирующие формирование платы за
         пользование жилым помещением и коммунальные услуги в общежитии
       </h3>
@@ -163,7 +207,14 @@ const Grants = () => {
           </li>
         </a>
       </ul>
-      <h3 className="common__container-title title">
+      <h3
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Информация о трудоустройстве выпускников образовательных организаций
       </h3>
       <div className="scroll-table">
@@ -236,5 +287,5 @@ const Grants = () => {
       </div>
     </div>
   );
-};
+});
 export default Grants;

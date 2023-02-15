@@ -1,8 +1,17 @@
+import { observer } from "mobx-react-lite";
 import React from "react";
 import { ReactComponent as RiverUniversityLogo } from "../../../assets/svg/riveruniversityLogo.svg";
-const Footer = () => {
+import { toggleClassName } from "../../../utils/disabled";
+const Footer = observer(() => {
   return (
-    <footer className="footer">
+    <footer
+      className={toggleClassName(
+        "footer",
+        "footer-white",
+        "footer-black",
+        "footer-contrast"
+      )}
+    >
       <div className="footer__container _container">
         <div className="footer__vguvt">
           <div className="">ВГУВТ 2022</div>
@@ -49,5 +58,5 @@ const Footer = () => {
       </div>
     </footer>
   );
-};
+});
 export default Footer;

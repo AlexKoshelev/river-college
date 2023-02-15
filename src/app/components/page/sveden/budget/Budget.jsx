@@ -1,11 +1,34 @@
+import { observer } from "mobx-react-lite";
 import React from "react";
-const Budget = () => {
+import { toggleClassName } from "../../../../utils/disabled";
+const Budget = observer(() => {
   return (
-    <div className="common__container">
-      <h1 className="common__container-title title">
+    <div
+      className={toggleClassName(
+        "common__container",
+        "common__container-white",
+        "common__container-black",
+        "common__container-contrast"
+      )}
+    >
+      <h1
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Финансово-хозяйственная деятельность
       </h1>
-      <h3 className="common__container-title title">
+      <h3
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Сведения об объеме образовательной деятельности за 2021 год
       </h3>
       <table className="">
@@ -39,7 +62,14 @@ const Budget = () => {
           </tr>
         </tbody>
       </table>
-      <h3 className="common__container-title title">
+      <h3
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Сведения о поступлении финансовых и материальных средств и об их
         расходовании
       </h3>
@@ -100,5 +130,5 @@ const Budget = () => {
       </div>
     </div>
   );
-};
+});
 export default Budget;

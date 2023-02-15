@@ -1,8 +1,26 @@
+import { observer } from "mobx-react-lite";
 import React from "react";
-const Education = () => {
+import { toggleClassName } from "../../../../utils/disabled";
+const Education = observer(() => {
   return (
-    <div className="common__container">
-      <h1 className="common__container-title title">Образование</h1>
+    <div
+      className={toggleClassName(
+        "common__container",
+        "common__container-white",
+        "common__container-black",
+        "common__container-contrast"
+      )}
+    >
+      <h1
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
+        Образование
+      </h1>
       <ul>
         <a href={"Ustav"} target={"_blank"} rel="noreferrer">
           <li className="doc__item active__link">
@@ -11,7 +29,14 @@ const Education = () => {
           </li>
         </a>
       </ul>
-      <h3 className="common__container-title title">
+      <h3
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Информация о сроке действия государственной аккредитации образовательной
         программы, о языках, на которых осуществляется образование (обучение):
       </h3>
@@ -178,7 +203,14 @@ const Education = () => {
           </tbody>
         </table>
       </div>
-      <h3 className="common__container-title title">
+      <h3
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Информация о профессионально-общественной аккредитации образовательной
         программы:
       </h3>
@@ -206,7 +238,14 @@ const Education = () => {
           </tbody>
         </table>
       </div>
-      <h3 className="common__container-title title">
+      <h3
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Информация о численности обучающихся по реализуемым образовательным
         программам за счет бюджетных ассигнований федерального бюджета, бюджетов
         субъектов Российской Федерации, местных бюджетов и по договорам об
@@ -489,11 +528,25 @@ const Education = () => {
           </tbody>
         </table>
       </div>
-      <h3 className="common__container-title title">
+      <h3
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Информация о численности обучающихся, являющихся иностранными
         гражданами: 3 обучающихся
       </h3>
-      <h3 className="common__container-title title">
+      <h3
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Информация о результатах приема по каждой профессии, специальности
         среднего профессионального образования (при наличии вступительных
         испытаний), каждому направлению подготовки или специальности высшего
@@ -713,7 +766,14 @@ const Education = () => {
           </tbody>
         </table>
       </div>
-      <h3 className="common__container-title title">
+      <h3
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Информация о результатах перевода, восстановления и отчисления на
         01.10.2022
       </h3>
@@ -865,7 +925,14 @@ const Education = () => {
           </tbody>
         </table>
       </div>
-      <h3 className="common__container-title title">
+      <h3
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Реализуемые образовательные программы (учебные предметы, курсы,
         дисциплины (модули), практики), в том числе адаптированные
       </h3>
@@ -891,7 +958,14 @@ const Education = () => {
           </li>
         </a>
       </ul>
-      <h3 className="common__container-title title">
+      <h3
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Информация по неадаптированным образовательным программам:
       </h3>
       <div className="scroll-table">
@@ -1817,7 +1891,14 @@ const Education = () => {
       * Информация по реализуемым общеобразовательным программам: программа
       основного общего образования является частью Основных профессиональных
       образовательных программ СПО по специальностям
-      <h3 className="common__container-title title">
+      <h3
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Информация по адаптированным образовательным программам:
       </h3>
       <div className="scroll-table">
@@ -1980,7 +2061,14 @@ const Education = () => {
           </li>
         </a>
       </ul>
-      <h3 className="common__container-title title">
+      <h3
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Информация о направлениях и результатах научной
         (научно-исследовательской) деятельности:
       </h3>
@@ -2072,5 +2160,5 @@ const Education = () => {
       </ul>
     </div>
   );
-};
+});
 export default Education;

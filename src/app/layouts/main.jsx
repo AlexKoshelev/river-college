@@ -1,3 +1,4 @@
+import { observer } from "mobx-react-lite";
 import React from "react";
 import { useParams } from "react-router";
 import ImageSlider from "../components/common/carousel/ImageSlider";
@@ -7,18 +8,33 @@ import EventsPages from "../components/page/eventsPages/EventsPages";
 import InfoPage from "../components/page/infoPage/InfoPage";
 import SecurityPage from "../components/page/securityPage/SecurityPage";
 import NewsNavbar from "../components/ui/newsNavbar/NewsNavbar";
+import { toggleClassName } from "../utils/disabled";
 
-const Main = () => {
+const Main = observer(() => {
   const params = useParams();
 
   return (
     <>
       <ImageSlider />
-      <div className="_container">
+      <div
+        className={toggleClassName(
+          "_container",
+          "_container-white",
+          "_container-black",
+          "_container-contrast"
+        )}
+      >
         <NewsNavbar />
       </div>
       <div className="infopage">
-        <div className="_container">
+        <div
+          className={toggleClassName(
+            "_container",
+            "_container-white",
+            "_container-black",
+            "_container-contrast"
+          )}
+        >
           {!params.element && <InfoPage />}
           {params.element === "events" ? <EventsPages /> : null}
           {params.element === "applicants" ? <ApplicantsPage /> : null}
@@ -28,5 +44,5 @@ const Main = () => {
       <LiveCardContainer />
     </>
   );
-};
+});
 export default Main;

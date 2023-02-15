@@ -1,11 +1,34 @@
+import { observer } from "mobx-react-lite";
 import React from "react";
-const Employees = () => {
+import { toggleClassName } from "../../../../utils/disabled";
+const Employees = observer(() => {
   return (
-    <div className="common__container">
-      <h1 className="common__container-title title">
+    <div
+      className={toggleClassName(
+        "common__container",
+        "common__container-white",
+        "common__container-black",
+        "common__container-contrast"
+      )}
+    >
+      <h1
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Руководство. Педагогический (научно-педагогический) состав
       </h1>
-      <h3 className="common__container-title title">
+      <h3
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Информация о руководителе/заместителях руководителя Уфимского филиала
         ФГБОУ ВО "ВГУВТ"
       </h3>
@@ -51,7 +74,14 @@ const Employees = () => {
           </tbody>
         </table>
       </div>
-      <h3 className="common__container-title title">
+      <h3
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Информация о руководителях филиалов Уфимского филиала ФГБОУ ВО "ВГУВТ"
         (при наличии)
       </h3>
@@ -80,7 +110,14 @@ const Employees = () => {
           </tr>
         </tbody>
       </table>
-      <h3 className="common__container-title title">
+      <h3
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
         Информация о составе педагогических (научно-педагогических) работников
         Уфимского филиала ФГБОУ ВО "ВГУВТ"
       </h3>
@@ -1988,5 +2025,5 @@ const Employees = () => {
       </div>
     </div>
   );
-};
+});
 export default Employees;
