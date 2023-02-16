@@ -6,21 +6,39 @@
     font-size: 1rem;
 }
 .infocontainer__titile{
-    color: #0C1C2A;
+    color: $ACTIV_LINK_COLOR;
     font-weight: 500;
     width:max-content;
-    border-bottom: solid 2px #0C1C2A;
+    border-bottom: solid 2px $ACTIV_LINK_COLOR;
+}
+.infocontainer__titile-white{
+    color: $DISABLED_FONT_COLOR;
+    font-weight: 500;
+    width:max-content;
+    border-bottom: solid 2px $DISABLED_FONT_COLOR;
+}
+.infocontainer__titile-black{
+    color: $WHITE_FONT_COLOR;
+    font-weight: 500;
+    width:max-content;
+    border-bottom: solid 2px $WHITE_FONT_COLOR;
+}
+.infocontainer__titile-contrast{
+    color: $FONT_CONTRAST;
+    font-weight: 500;
+    width:max-content;
+    border-bottom: solid 2px $FONT_CONTRAST;
 }
 button.infocontainer__button{
-    background-color:#F4FBFF;
-    color: #C80000;
+    background-color:$BLUE;
+    color: $RED_COLOR;
     border-radius: 5px;
     padding: 5px 15px;
 
   
 }
 button.infopage__button:hover{
-    background-color: white;
+    background-color: $BACK_WHITE;
 /*     border: solid 1px #0C1C2A; */
     padding: 5px 15px;
     border-radius: 5px;
@@ -28,8 +46,8 @@ button.infopage__button:hover{
 .infopage__button {
     padding: 5px 15px;
     display: flex; 
-    background-color: #F4FBFF;
-    color: #C80000;
+    background-color: $BLUE;
+    color: $RED_COLOR;
 }
 /* картинка в новостном блоке */
 .infocontainer__image{
@@ -46,8 +64,29 @@ button.infopage__button:hover{
     margin: 20px 0px;
 }
 .news__title{
-    color: #0C1C2A;
+    color: $MAIN_COLOR;
     opacity: .72;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    margin: 10px 20px 20px 20px; 
+}
+.news__title-white{
+    color: $DISABLED_FONT_COLOR;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    margin: 10px 20px 20px 20px; 
+}
+.news__title-black{
+    color: $WHITE_FONT_COLOR;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    margin: 10px 20px 20px 20px; 
+}
+.news__title-contrast{
+    color: $FONT_CONTRAST;
     display: flex;
     justify-content: center;
     font-weight: 500;

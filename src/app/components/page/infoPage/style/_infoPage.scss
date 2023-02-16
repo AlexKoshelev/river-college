@@ -1,5 +1,16 @@
 @import "../../../../style/variables";
 .infopage {
     background-color: $BLUE;
-
+}
+.infopage-white {
+    background-color: $BACK_WHITE;
+    color: $DISABLED_FONT_COLOR;
+}
+.infopage-black {
+    background-color: $BACK_BLACK;
+    color: $WHITE_FONT_COLOR;
+}
+.infopage-contast {
+    background-color: $BACK_CONTRAST;
+    color: $FONT_CONTRAST;
 }

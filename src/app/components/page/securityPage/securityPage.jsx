@@ -1,8 +1,10 @@
+import { observer } from "mobx-react-lite";
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { toggleClassName } from "../../../utils/disabled";
 import Image from "../../common/image/Image";
 import InfoContainer from "../../common/infoContainer/InfoContainer";
-const SecurityPage = () => {
+const SecurityPage = observer(() => {
   return (
     <>
       <InfoContainer
@@ -18,23 +20,24 @@ const SecurityPage = () => {
         }
       >
         <div className="applicants__container">
-          <div className="container-links">
-            <NavLink className={"applicants-link"} to={"./"}>
+          <div
+            className={toggleClassName(
+              "container-links",
+              "container-links-white",
+              "container-links-black",
+              "container-links-contrast"
+            )}
+          >
+            <NavLink to={"./"}>
               Сезонные заболевания и меры борьбы с ними
             </NavLink>
-            <NavLink className={"applicants-link"} to={"./"}>
-              Короновирус
-            </NavLink>
-            <NavLink className={"applicants-link"} to={"./"}>
-              Противодействия коррупции
-            </NavLink>
-            <NavLink className={"applicants-link"} to={"./"}>
-              Памятка ВГУВТ без коррупции
-            </NavLink>
+            <NavLink to={"./"}>Короновирус</NavLink>
+            <NavLink to={"./"}>Противодействия коррупции</NavLink>
+            <NavLink to={"./"}>Памятка ВГУВТ без коррупции</NavLink>
           </div>
         </div>
       </InfoContainer>
     </>
   );
-};
+});
 export default SecurityPage;

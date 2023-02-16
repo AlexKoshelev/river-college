@@ -1,8 +1,41 @@
 @import "../../../../style/variables";
 .eventsPages{
     background-color: $BLUE;
-    margin: 20px;
-    padding: 20px;
+
+    padding: 40px 0px 40px 0px;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 300px);
+    grid-template-areas: 
+    "firstCard   secondCard   thirdCard   fourthCard";
+}
+.eventsPages-white{
+    background-color: $BACK_WHITE;
+    color: $DISABLED_FONT_COLOR;
+    padding: 40px 0px 40px 0px;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 300px);
+    grid-template-areas: 
+    "firstCard   secondCard   thirdCard   fourthCard";
+}
+.eventsPages-black{
+    background-color: $BACK_BLACK;
+    color: $WHITE_FONT_COLOR;
+    padding: 40px 0px 40px 0px;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 300px);
+    grid-template-areas: 
+    "firstCard   secondCard   thirdCard   fourthCard";
+}
+.eventsPages-contrast{
+    background-color: $BACK_CONTRAST;
+    color: $FONT_CONTRAST;
+    padding: 40px 0px 40px 0px;
     display: grid;
     gap: 40px;
     grid-template-columns: repeat(4, 1fr);

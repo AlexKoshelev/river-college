@@ -5,16 +5,61 @@
 }
 .navbar__button{
     margin: 20px 20px;
+    &-active{
+        color: $ACTIV_LINK_COLOR;
+        border-bottom: solid 2px $MAIN_COLOR;
+    }
+     a{
+        color: $LINK_COLOR;
+        font-weight: 500;
+        :hover{
+            color: $ACTIV_LINK_COLOR;
+            border-bottom: solid 2px $MAIN_COLOR;
+        }
+    }
 }
-.navbar__button a{
-    color: $LINK_COLOR;
+
+.navbar__button-white{ 
+    margin: 20px 20px;
+    &-active{
+        color: $DISABLED_FONT_COLOR;
+        border-bottom: solid 2px $DISABLED_FONT_COLOR;
+    }
+    a{
+    color: $DISABLED_FONT_COLOR;
     font-weight: 500;
-}
-.navbar__button a:hover{
-    color: $ACTIV_LINK_COLOR;
-    border-bottom: solid 2px $MAIN_COLOR;
-}
-.navbar__button-active{
-    color: $ACTIV_LINK_COLOR;
-    border-bottom: solid 2px $MAIN_COLOR;
-}
+    :hover{
+        color: $ACTIV_LINK_COLOR;
+        border-bottom: solid 2px $MAIN_COLOR;
+    }
+
+}}
+.navbar__button-black {
+    &-active{
+        color: $WHITE_FONT_COLOR;
+        border-bottom: solid 2px $WHITE_FONT_COLOR;
+    }
+    margin: 20px 20px;
+    a{
+    color: $WHITE_FONT_COLOR;
+    font-weight: 500;
+    :hover{
+        color: $WHITE_FONT_COLOR;
+        border-bottom: solid 2px $WHITE_FONT_COLOR;
+    }
+}}
+.navbar__button-contrast {
+    &-active{
+        color: $FONT_CONTRAST;
+        border-bottom: solid 2px $FONT_CONTRAST;
+    }
+    margin: 20px 20px;
+    a{
+    color: $FONT_CONTRAST;
+    font-weight: 500;
+    :hover{
+        color: $FONT_CONTRAST;
+        border-bottom: solid 2px $FONT_CONTRAST;
+    }
+}}
+

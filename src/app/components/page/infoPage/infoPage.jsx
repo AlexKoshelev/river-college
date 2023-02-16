@@ -1,12 +1,21 @@
+import { observer } from "mobx-react-lite";
 import React from "react";
+import { toggleClassName } from "../../../utils/disabled";
 import Image from "../../common/image/Image";
 import InfoContainer from "../../common/infoContainer/InfoContainer";
 import NewsCardContainer from "../../ui/newsCardContainer/NewsCardContainer";
 
-const InfoPage = () => {
+const InfoPage = observer(() => {
   return (
     <>
-      <div className="infopage">
+      <div
+        className={toggleClassName(
+          "infopage",
+          "infopage-white",
+          "infopage-black",
+          "infopage-contrast"
+        )}
+      >
         <InfoContainer
           title="Новости университета"
           newsTitle="Заголовок новости"
@@ -64,5 +73,5 @@ const InfoPage = () => {
       </div>
     </>
   );
-};
+});
 export default InfoPage;

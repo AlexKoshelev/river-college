@@ -1,9 +1,18 @@
+import { observer } from "mobx-react-lite";
 import React from "react";
+import { toggleClassName } from "../../../utils/disabled";
 import EventCard from "../../common/eventCard/EventCard";
 
-const EventsPages = () => {
+const EventsPages = observer(() => {
   return (
-    <div className="eventsPages">
+    <div
+      className={toggleClassName(
+        "eventsPages",
+        "eventsPages-white",
+        "eventsPages-black",
+        "eventsPages-contrast"
+      )}
+    >
       <EventCard
         num={"1"}
         month={"Ноября"}
@@ -30,5 +39,5 @@ const EventsPages = () => {
       />
     </div>
   );
-};
+});
 export default EventsPages;

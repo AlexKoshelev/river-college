@@ -1,8 +1,10 @@
+import { observer } from "mobx-react-lite";
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { toggleClassName } from "../../../utils/disabled";
 import Image from "../../common/image/Image";
 import InfoContainer from "../../common/infoContainer/InfoContainer";
-const ApplicantsPage = () => {
+const ApplicantsPage = observer(() => {
   return (
     <>
       <InfoContainer
@@ -18,55 +20,41 @@ const ApplicantsPage = () => {
         }
       >
         <div className="applicants__container">
-          <div className="container-links">
-            <NavLink className={"applicants-link"} to={"./"}>
-              Общие сведения
-            </NavLink>
-            <NavLink className={"applicants-link"} to={"./"}>
-              Правила приема
-            </NavLink>
-            <NavLink className={"applicants-link"} to={"./"}>
-              Специальности
-            </NavLink>
-            <NavLink className={"applicants-link"} to={"./"}>
-              Подача документов
-            </NavLink>
-            <NavLink className={"applicants-link"} to={"./"}>
-              Вступительные испытания
-            </NavLink>
-            <NavLink className={"applicants-link"} to={"./"}>
-              Прием на договорной основе
-            </NavLink>
-            <NavLink className={"applicants-link"} to={"./"}>
-              Дни открытых дверей
-            </NavLink>
+          <div
+            className={toggleClassName(
+              "container-links",
+              "container-links-white",
+              "container-links-black",
+              "container-links-contrast"
+            )}
+          >
+            <NavLink to={"./"}>Общие сведения</NavLink>
+            <NavLink to={"./"}>Правила приема</NavLink>
+            <NavLink to={"./"}>Специальности</NavLink>
+            <NavLink to={"./"}>Подача документов</NavLink>
+            <NavLink to={"./"}>Вступительные испытания</NavLink>
+            <NavLink to={"./"}>Прием на договорной основе</NavLink>
+            <NavLink to={"./"}>Дни открытых дверей</NavLink>
           </div>
-          <div className="container-links">
-            <NavLink className={"applicants-link"} to={"./"}>
-              Олимпиады
-            </NavLink>
-            <NavLink className={"applicants-link"} to={"./"}>
-              Подача документов
-            </NavLink>
-            <NavLink className={"applicants-link"} to={"./"}>
-              Вступительные испытания
-            </NavLink>
-            <NavLink className={"applicants-link"} to={"./"}>
-              Прием на договорной основе
-            </NavLink>
-            <NavLink className={"applicants-link"} to={"./"}>
-              Дни открытых дверей
-            </NavLink>
-            <NavLink className={"applicants-link"} to={"./"}>
-              Горячая линия
-            </NavLink>
-            <NavLink className={"applicants-link"} to={"./"}>
-              Обратная связь
-            </NavLink>
+          <div
+            className={toggleClassName(
+              "container-links",
+              "container-links-white",
+              "container-links-black",
+              "container-links-contrast"
+            )}
+          >
+            <NavLink to={"./"}>Олимпиады</NavLink>
+            <NavLink to={"./"}>Подача документов</NavLink>
+            <NavLink to={"./"}>Вступительные испытания</NavLink>
+            <NavLink to={"./"}>Прием на договорной основе</NavLink>
+            <NavLink to={"./"}>Дни открытых дверей</NavLink>
+            <NavLink to={"./"}>Горячая линия</NavLink>
+            <NavLink to={"./"}>Обратная связь</NavLink>
           </div>
         </div>
       </InfoContainer>
     </>
   );
-};
+});
 export default ApplicantsPage;
