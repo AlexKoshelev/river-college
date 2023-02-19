@@ -1,9 +1,10 @@
 import { observer } from "mobx-react-lite";
 import React from "react";
-import { toggleClassName } from "../../../../utils/disabled";
+import { toggleClassName, toggleFontSize } from "../../../../utils/disabled";
 const Struct = observer(() => {
   return (
     <div
+      style={{ fontSize: toggleFontSize(1) }}
       className={toggleClassName(
         "common__container",
         "common__container-white",
@@ -23,7 +24,7 @@ const Struct = observer(() => {
         Структура и органы управления Уфимского филиала ФГБОУ ВО "ВГУВТ"
       </h1>
       <div className="common__container scroll-table">
-        <table>
+        <table style={{ fontSize: toggleFontSize(1) }}>
           <tbody>
             <tr>
               <td itemProp="name">

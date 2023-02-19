@@ -1,9 +1,10 @@
 import { observer } from "mobx-react-lite";
 import React from "react";
-import { toggleClassName } from "../../../../utils/disabled";
+import { toggleClassName, toggleFontSize } from "../../../../utils/disabled";
 const Employees = observer(() => {
   return (
     <div
+      style={{ fontSize: toggleFontSize(1) }}
       className={toggleClassName(
         "common__container",
         "common__container-white",

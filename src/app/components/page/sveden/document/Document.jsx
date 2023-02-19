@@ -67,12 +67,13 @@ import ZaklSanitar5 from "../../../../assets/pdf/documentPage/zakl_sanitar_5.pdf
 import DoDop from "../../../../assets/pdf/documentPage/DO_dop.pdf";
 import PolozPd from "../../../../assets/pdf/documentPage/Pologenie_PD.pdf";
 import DropDown from "../../../common/dropDown/DropDown";
-import { toggleClassName } from "../../../../utils/disabled";
+import { toggleClassName, toggleFontSize } from "../../../../utils/disabled";
 import { observer } from "mobx-react-lite";
 
 const Document = observer(() => {
   return (
     <div
+      style={{ fontSize: toggleFontSize(1) }}
       className={toggleClassName(
         "common__container",
         "common__container-white",
