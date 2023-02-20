@@ -3,6 +3,7 @@ import { observer } from "mobx-react-lite";
 import fontSize from "../../../store/fontSize";
 import theme from "../../../store/theme";
 import { toggleClassName } from "../../../utils/disabled";
+import images from "../../../store/images";
 
 const Disabled = observer(() => {
   const handleThemeMain = () => {
@@ -16,6 +17,8 @@ const Disabled = observer(() => {
     if (currentSize === "medium") return medium;
     if (currentSize === "large") return large;
   };
+  console.log(images.image);
+
   return (
     <>
       <div className="header__section-disabled">
@@ -100,8 +103,34 @@ const Disabled = observer(() => {
         <div className="disabled__container">
           <div className="disabled__container-label">Изображения</div>
           <div className="disabled__container-block">
-            <div className="disabled__container-block-active">Вкл.</div>
-            <div className="disabled__container-block-inactive">Выкл.</div>
+            {images.image === "color" ? (
+              <div
+                onClick={() => images.gray()}
+                className="disabled__container-block-gray"
+              >
+                Чб.
+              </div>
+            ) : (
+              <div
+                onClick={() => images.color()}
+                className="disabled__container-block-gray"
+              >
+                Цвет
+              </div>
+            )}
+
+            <div
+              onClick={() => images.on()}
+              className="disabled__container-block-active"
+            >
+              Вкл.
+            </div>
+            <div
+              onClick={() => images.off()}
+              className="disabled__container-block-inactive"
+            >
+              Выкл.
+            </div>
           </div>
         </div>
         <div className="disabled__container">

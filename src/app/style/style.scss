@@ -45,6 +45,13 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     box-sizing: content-box;
     padding: 0 15px;
 }
+._container-main{
+	width: 1240px; 
+	background-color: $BLUE;
+    margin: 0px auto; /*выравнивает контейнер по середине (для ограниченных по ширине блоков)*/
+    box-sizing: content-box;
+    padding: 0 15px;
+}
 ._container-white {
 	width: 1240px; 
 	background-color: $BACK_WHITE;

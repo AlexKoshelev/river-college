@@ -37,9 +37,8 @@ button.infocontainer__button{
 
   
 }
-button.infopage__button:hover{
+.infopage__button:hover{
     background-color: $BACK_WHITE;
-/*     border: solid 1px #0C1C2A; */
     padding: 5px 15px;
     border-radius: 5px;
 }
@@ -61,7 +60,7 @@ button.infopage__button:hover{
 .infocontainer__content{
     display: flex;
     font-size: 1rem;
-    margin: 20px 0px;
+    padding: 20px 0px;
 }
 .news__title{
     color: $MAIN_COLOR;

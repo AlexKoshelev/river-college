@@ -1,5 +1,6 @@
 import theme from "../store/theme";
 import fontSize from "../store/fontSize";
+import images from "../store/images";
 export const toggleFontSize = (originalSize) => {
   const size = fontSize.fontSize;
   if (size === "original") return `${originalSize}rem`;
@@ -19,7 +20,15 @@ export const toggleClassName = (
   if (currentTheme === "black") return blackTheme;
   if (currentTheme === "contrast") return contrastTheme;
 };
+export const toggleImagesClassName = (color, gray, on, off) => {
+  const currentImage = images.image;
+  if (currentImage === "color") return color;
+  if (currentImage === "gray") return gray;
+  if (currentImage === "on") return on;
+  if (currentImage === "off") return off;
+};
 export const disabled = () => {
   fontSize.normal();
   theme.white();
+  images.gray();
 };

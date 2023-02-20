@@ -26,10 +26,10 @@ const Main = observer(() => {
       >
         <NewsNavbar />
       </div>
-      <div className="infopage">
+      <div>
         <div
           className={toggleClassName(
-            "_container",
+            "_container-main",
             "_container-white",
             "_container-black",
             "_container-contrast"

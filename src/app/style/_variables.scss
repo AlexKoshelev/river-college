@@ -33,7 +33,32 @@ $BACK_BTN_SHOW:rgb(158, 181, 217);
   :root[data-fontSize="medium"] {
     --font-size: 1.5rem;
   }
-  
+//temes
+.main {
+    background-color: $MAIN_COLOR;
+    color: $WHITE_FONT_COLOR;
+}
+.white {
+    background-color: $BACK_WHITE;
+    color: $DISABLED_FONT_COLOR;
+}
+.white-radius {
+    border: solid 1px $DISABLED_FONT_COLOR;
+}
+.black {
+    background-color: $BACK_BLACK;
+    color: $WHITE_FONT_COLOR;
+}
+.black-radius {
+    border: solid 1px $WHITE_FONT_COLOR;
+}
+.contrast {
+    background-color: $BACK_CONTRAST;
+    color: $FONT_CONTRAST;
+}
+.contrast-radius {
+    border: solid 1px $FONT_CONTRAST;
+}
 // Голубой фон
 .background-blue{
     background-color: $BLUE;
@@ -86,4 +111,7 @@ $BACK_BTN_SHOW:rgb(158, 181, 217);
 //hidden
 .hidden {
     display: none;
+}
+.imageFilter {
+    filter: grayscale(100%);
 }

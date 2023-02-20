@@ -1,11 +1,12 @@
 import { observer } from "mobx-react-lite";
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { toggleClassName } from "../../../utils/disabled";
+import { toggleClassName, toggleFontSize } from "../../../utils/disabled";
 const CommonMenu = observer(() => {
   return (
     <div>
       <ul
+        style={{ fontSize: toggleFontSize(0.8) }}
         className={toggleClassName(
           "common__menu",
           "common__menu-white",
@@ -14,6 +15,7 @@ const CommonMenu = observer(() => {
         )}
       >
         <h3
+          style={{ fontSize: toggleFontSize(1) }}
           className={`common__menu-title ${toggleClassName(
             "title",
             "title-white",

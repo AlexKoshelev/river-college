@@ -3,13 +3,16 @@ import Button from "../button/Button";
 import React from "react";
 import { ReactComponent as ArrowButton } from "../../../assets/svg/arrowButton.svg";
 import { observer } from "mobx-react-lite";
-import { toggleClassName } from "../../../utils/disabled";
+import { toggleClassName, toggleFontSize } from "../../../utils/disabled";
 
 const InfoContainer = observer(
   ({ title, btnTitle, image, children, newsTitle }) => {
     return (
       <>
-        <div className="infocontainer__header">
+        <div
+          style={{ fontSize: toggleFontSize(1) }}
+          className="infocontainer__header"
+        >
           <div
             className={toggleClassName(
               "infocontainer__titile",
@@ -23,7 +26,15 @@ const InfoContainer = observer(
 
           {btnTitle ? (
             <div className="infocontainer__button">
-              <Button className={"infopage__button"}>
+              <Button
+                style={{ fontSize: toggleFontSize(1) }}
+                className={toggleClassName(
+                  "infopage__button",
+                  "white white-radius",
+                  "black black-radius",
+                  "contrast contrast-radius"
+                )}
+              >
                 {btnTitle}
                 {<ArrowButton />}
               </Button>
@@ -34,6 +45,7 @@ const InfoContainer = observer(
           <div className="infocontainer__image">{image}</div>
           <div className="news__block">
             <div
+              style={{ fontSize: toggleFontSize(1) }}
               className={toggleClassName(
                 "news__title",
                 "news__title-white",
@@ -43,7 +55,9 @@ const InfoContainer = observer(
             >
               {newsTitle}
             </div>
-            <div className="news__text">{children}</div>
+            <div style={{ fontSize: toggleFontSize(1) }} className="news__text">
+              {children}
+            </div>
           </div>
         </div>
       </>
