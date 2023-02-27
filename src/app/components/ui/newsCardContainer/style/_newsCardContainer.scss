@@ -16,7 +16,6 @@
     gap: 20px;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(11, 130px);
-
     grid-template-areas: 
     "cardOne   cardOne   cardOne   cardOne   cardOne   cardOne   cardTwo   cardTwo   cardTwo   cardTwo   cardTwo   cardTwo"
     "cardOne   cardOne   cardOne   cardOne   cardOne   cardOne   cardTwo   cardTwo   cardTwo   cardTwo   cardTwo   cardTwo"
@@ -28,7 +27,6 @@
     "cardThree cardThree cardThree cardFour  cardFour  cardFour  cardSix   cardSix   cardSix   cardSix   cardSix   cardSix"
     "cardSeven cardSeven cardSeven cardSeven cardSeven cardSeven cardSeven cardEight cardEight cardEight  cardEight  cardEight"
     "cardSeven cardSeven cardSeven cardSeven cardSeven cardSeven cardSeven cardEight cardEight cardEight  cardEight  cardEight"
-    "cardSeven cardSeven cardSeven cardSeven cardSeven cardSeven cardSeven cardEight cardEight cardEight  cardEight  cardEight";
-   
+    "cardSeven cardSeven cardSeven cardSeven cardSeven cardSeven cardSeven cardEight cardEight cardEight  cardEight  cardEight"; 
 }
 

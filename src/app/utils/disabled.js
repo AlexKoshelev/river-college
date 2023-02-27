@@ -1,6 +1,11 @@
 import theme from "../store/theme";
 import fontSize from "../store/fontSize";
 import images from "../store/images";
+export const handleThemeMain = () => {
+  fontSize.original();
+  theme.main();
+  images.on();
+};
 export const toggleFontSize = (originalSize) => {
   const size = fontSize.fontSize;
   if (size === "original") return `${originalSize}rem`;

@@ -2,14 +2,10 @@ import React from "react";
 import { observer } from "mobx-react-lite";
 import fontSize from "../../../store/fontSize";
 import theme from "../../../store/theme";
-import { toggleClassName } from "../../../utils/disabled";
+import { handleThemeMain, toggleClassName } from "../../../utils/disabled";
 import images from "../../../store/images";
 
 const Disabled = observer(() => {
-  const handleThemeMain = () => {
-    fontSize.original();
-    theme.main();
-  };
   const toggleClassNameFontSize = (original, normal, medium, large) => {
     const currentSize = fontSize.fontSize;
     if (currentSize === "original") return original;
@@ -17,7 +13,6 @@ const Disabled = observer(() => {
     if (currentSize === "medium") return medium;
     if (currentSize === "large") return large;
   };
-  console.log(images.image);
 
   return (
     <>

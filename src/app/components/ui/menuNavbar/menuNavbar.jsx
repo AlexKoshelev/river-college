@@ -7,8 +7,10 @@ const MenuNavbar = ({ fontSize, toggleFontSize }) => {
       <nav className="header__navbar">
         <Menu
           className="header__navbar-button"
+          inlineCollapsed={false}
+          forceSubMenuRender={false}
           style={{
-            width: "100%",
+            /*      width: "70%", */
             fontSize: toggleFontSize(0.875),
             backgroundColor: "#0C1C2B",
             color: "white",
