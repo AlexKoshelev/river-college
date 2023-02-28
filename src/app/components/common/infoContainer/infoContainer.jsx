@@ -40,7 +40,7 @@ const InfoContainer = observer(
                 )}
               >
                 {btnTitle}
-                {<ArrowButton fill={toggleIconColor("C80000")} />}
+                {<ArrowButton fill={toggleIconColor("#C80000")} />}
               </Button>
             </div>
           ) : null}

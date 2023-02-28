@@ -1,11 +1,17 @@
 import { observer } from "mobx-react-lite";
 import React from "react";
 import { Outlet } from "react-router";
+import BreadCrumbs from "../../components/common/breadCrumbs/BreadCrumbs";
 import Menu from "../../components/ui/commonMenu/Menu";
 import { toggleClassName } from "../../utils/disabled";
 const Sveden = observer(() => {
   return (
     <>
+      <div className="_container">
+        {" "}
+        <BreadCrumbs />
+      </div>
+
       <div
         className={`sveden__container ${toggleClassName(
           "_container",
