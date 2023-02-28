@@ -3,7 +3,11 @@ import Button from "../button/Button";
 import React from "react";
 import { ReactComponent as ArrowButton } from "../../../assets/svg/arrowButton.svg";
 import { observer } from "mobx-react-lite";
-import { toggleClassName, toggleFontSize } from "../../../utils/disabled";
+import {
+  toggleClassName,
+  toggleFontSize,
+  toggleIconColor,
+} from "../../../utils/disabled";
 
 const InfoContainer = observer(
   ({ title, btnTitle, image, children, newsTitle }) => {
@@ -36,7 +40,7 @@ const InfoContainer = observer(
                 )}
               >
                 {btnTitle}
-                {<ArrowButton />}
+                {<ArrowButton fill={toggleIconColor("C80000")} />}
               </Button>
             </div>
           ) : null}

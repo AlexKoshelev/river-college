@@ -11,7 +11,12 @@ import { NavLink } from "react-router-dom";
 import Disabled from "../disabled/Disabled";
 import { observer } from "mobx-react-lite";
 import fontSize from "../../../store/fontSize";
-import { toggleFontSize } from "../../../utils/disabled";
+import { toggleIconColor } from "../../../utils/disabled";
+import {
+  toggleFontSize,
+  toggleIconHeightSize,
+  toggleIconWidthSize,
+} from "../../../utils/disabled";
 import { disabled } from "../../../utils/disabled";
 import { toggleClassName } from "../../../utils/disabled";
 const NavBar = observer(() => {
@@ -37,7 +42,21 @@ const NavBar = observer(() => {
               <div className="header__link header__link-pointer">
                 <span className="icon">
                   <object>
-                    <GlassesLogo width="18" height="18" />
+                    <GlassesLogo
+                      fill={toggleIconColor("#fff")}
+                      width={toggleIconWidthSize(
+                        "18px",
+                        "22px",
+                        "25px",
+                        "28px"
+                      )}
+                      height={toggleIconHeightSize(
+                        "18px",
+                        "22px",
+                        "25px",
+                        "28px"
+                      )}
+                    />
                   </object>
                 </span>
                 <span onClick={disabled} className="text__underlined">
@@ -49,7 +68,21 @@ const NavBar = observer(() => {
               <div className="header__link">
                 <span className="icon">
                   <object>
-                    <MuseumLogo width="18px" height="18px" />
+                    <MuseumLogo
+                      fill={toggleIconColor("#fff")}
+                      width={toggleIconWidthSize(
+                        "18px",
+                        "22px",
+                        "25px",
+                        "28px"
+                      )}
+                      height={toggleIconHeightSize(
+                        "18px",
+                        "22px",
+                        "25px",
+                        "28px"
+                      )}
+                    />
                   </object>
                 </span>
                 <span className="text__underlined">
@@ -75,7 +108,21 @@ const NavBar = observer(() => {
                   {
                     <span className="icon">
                       <object>
-                        <CalendarLogo />
+                        <CalendarLogo
+                          fill={toggleIconColor("#C80000")}
+                          width={toggleIconWidthSize(
+                            "18px",
+                            "22px",
+                            "25px",
+                            "28px"
+                          )}
+                          height={toggleIconHeightSize(
+                            "18px",
+                            "22px",
+                            "25px",
+                            "28px"
+                          )}
+                        />
                       </object>
                     </span>
                   }
@@ -102,7 +149,21 @@ const NavBar = observer(() => {
                   {
                     <span className="icon">
                       <object>
-                        <UserLogo />
+                        <UserLogo
+                          fill={toggleIconColor("#fff")}
+                          width={toggleIconWidthSize(
+                            "18px",
+                            "22px",
+                            "25px",
+                            "28px"
+                          )}
+                          height={toggleIconHeightSize(
+                            "18px",
+                            "22px",
+                            "25px",
+                            "28px"
+                          )}
+                        />
                       </object>
                     </span>
                   }
@@ -126,7 +187,9 @@ const NavBar = observer(() => {
           <div className="header__section2">
             <div className="signBoard__logo">
               <object>
-                <RiverUniversityLogo />
+                <RiverUniversityLogo
+                  fill={toggleIconColor("#0C1C2B", "", "#000")}
+                />
               </object>
             </div>
             <div style={{ fontSize: "2rem" }} className="signBoard__tagline">

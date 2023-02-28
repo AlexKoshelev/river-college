@@ -1,7 +1,7 @@
 import { observer } from "mobx-react-lite";
 import React from "react";
 import { ReactComponent as RiverUniversityLogo } from "../../../assets/svg/riveruniversityLogo.svg";
-import { toggleClassName } from "../../../utils/disabled";
+import { toggleClassName, toggleIconColor } from "../../../utils/disabled";
 const Footer = observer(() => {
   return (
     <footer
@@ -19,7 +19,9 @@ const Footer = observer(() => {
         </div>
         <div className="footer__logo">
           <object>
-            <RiverUniversityLogo />
+            <RiverUniversityLogo
+              fill={toggleIconColor("#0C1C2B", "", "#000")}
+            />
           </object>
         </div>
 
