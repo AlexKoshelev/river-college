@@ -1,34 +1,51 @@
 @import "../../../../style/variables";
+@import "../../../../style/mixins/response-mixins.scss";
 
 .header {
     background-color: $MAIN_COLOR;  
     justify-content: space-between;
+    width: 100%;
     color: $FONT_COLOR;
+    @include desktop{
+      display: none;
+    }
     a {
       color: inherit;
        }
   }
 .header-white{
+    width: 100%;
     justify-content: space-between;
     background-color: $BACK_WHITE;
     color: $DISABLED_FONT_COLOR;
+    @include desktop {
+      display: none;
+    }
     a {
       color: inherit;
        }
 
   }
 .header-black{
+    width: 100%;
     justify-content: space-between;
     background-color: $BACK_BLACK;
     color: $WHITE_FONT_COLOR;
+    @include desktop {
+      display: none;
+    }
     a {
       color: inherit;
        }
   }
 .header-contrast{
+    width: 100%;
     justify-content: space-between;
     background-color: $BACK_CONTRAST;
     color: $FONT_CONTRAST;
+    @include desktop {
+      display: none;
+    }
     a {
       color: inherit;
        }
@@ -36,6 +53,7 @@
 
 
 .header__section1 {
+  border-bottom: solid 2px $MAIN_COLOR;
     display: flex;
     align-items: center;
     justify-content: space-between;

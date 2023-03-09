@@ -1,7 +1,7 @@
 import React from "react";
 import { useLocation, Link } from "react-router-dom";
 import { Breadcrumb } from "antd";
-import { toggleClassName, toggleFontSize } from "../../../utils/disabled";
+import { toggleClassName } from "../../../utils/disabled";
 import { observer } from "mobx-react-lite";
 
 const BreadCrumbs = observer(() => {
@@ -65,14 +65,16 @@ const BreadCrumbs = observer(() => {
                 routeTo = null;
                 break;
             }
-            console.log(routeTo);
-
             const isLast = index === pathnames.length - 1;
             return isLast ? (
-              <Breadcrumb.Item key={index}>{capatilize(name)}</Breadcrumb.Item>
+              <Breadcrumb.Item value="large" key={index}>
+                {capatilize(name)}
+              </Breadcrumb.Item>
             ) : (
-              <Breadcrumb.Item key={index}>
-                <Link to={`${routeTo}`}>{capatilize(name)}</Link>
+              <Breadcrumb.Item value="large" key={index}>
+                <Link value="large" to={`${routeTo}`}>
+                  {capatilize(name)}
+                </Link>
               </Breadcrumb.Item>
             );
           })}

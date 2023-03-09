@@ -1,19 +1,45 @@
 import React from "react";
 import { Menu, Space } from "antd";
+import { ReactComponent as Icon } from "../../../assets/svg/burger.svg";
+import theme from "../../../store/theme";
+import {
+  toggleIconColor,
+  toggleIconHeightSize,
+  toggleIconWidthSize,
+} from "../../../utils/disabled";
 
-const MenuNavbar = ({ fontSize, toggleFontSize }) => {
+const MenuNavbar = ({ toggleFontSize }) => {
+  const toggleBackColor = () => {
+    const currentTheme = theme.theme;
+    if (currentTheme === "main") return "#0C1C2B";
+    if (currentTheme === "white") return "white";
+    if (currentTheme === "black") return "black";
+    if (currentTheme === "contrast") return "#9dd1ff";
+  };
+  const toggleColor = () => {
+    const currentTheme = theme.theme;
+    if (currentTheme === "main") return "white";
+    if (currentTheme === "white") return "black";
+    if (currentTheme === "black") return "white";
+    if (currentTheme === "contrast") return "#195183";
+  };
   return (
     <>
       <nav className="header__navbar">
         <Menu
+          overflowedIndicator={
+            <Icon
+              stroke={toggleIconColor("#fff")}
+              width={toggleIconWidthSize("30px", "32px", "35px", "38px")}
+              height={toggleIconHeightSize("18px", "22px", "25px", "28px")}
+            />
+          }
           className="header__navbar-button"
-          inlineCollapsed={false}
-          forceSubMenuRender={false}
           style={{
-            /*      width: "70%", */
+            width: "100%",
             fontSize: toggleFontSize(0.875),
-            backgroundColor: "#0C1C2B",
-            color: "white",
+            backgroundColor: toggleBackColor(),
+            color: toggleColor(),
             hover: { color: "white" },
           }}
           mode="horizontal"
@@ -72,7 +98,7 @@ const MenuNavbar = ({ fontSize, toggleFontSize }) => {
               ],
             },
             {
-              label: "Студеньческая жизнь",
+              label: "Студенческая жизнь",
               key: "studentLife",
               children: [
                 {
@@ -110,7 +136,7 @@ function MainMenu() {
       >
         <Menu
           style={{
-            width: "310px",
+            width: "400px",
             border: "none",
             boxShadow: "none",
           }}
@@ -152,7 +178,7 @@ function EducationMenu() {
       >
         <Menu
           style={{
-            width: "310px",
+            width: "400px",
             border: "none",
             boxShadow: "none",
           }}
@@ -194,7 +220,7 @@ function ApplicantMenu() {
       >
         <Menu
           style={{
-            width: "310px",
+            width: "400px",
             border: "none",
             boxShadow: "none",
           }}
@@ -240,7 +266,7 @@ function TrainingMenu() {
       >
         <Menu
           style={{
-            width: "310px",
+            width: "450px",
             border: "none",
             boxShadow: "none",
           }}
@@ -280,7 +306,7 @@ function StudentLifeMenu() {
       >
         <Menu
           style={{
-            width: "310px",
+            width: "400px",
             border: "none",
             boxShadow: "none",
           }}

@@ -1,4 +1,9 @@
 @import "../../../../style/variables";
+.ant-menu-submenu-title{
+    border-bottom: solid 2px $MAIN_COLOR !important;
+    padding: 5px;
+    border-radius: 2px;
+}
 .ant-menu-submenu-title:hover{
     background-color: $BACK_MENU_COLOR !important;
     border-bottom: solid 2px $RED_COLOR !important;

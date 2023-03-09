@@ -16,8 +16,8 @@ const App = observer(() => {
   return (
     <div style={{ fontSize: toggleFontSize() }}>
       <NavBar />
-      {element}
-      <Footer />
+      {/*   {element}
+      <Footer /> */}
     </div>
   );
 });

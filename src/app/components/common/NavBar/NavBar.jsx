@@ -19,6 +19,7 @@ import {
 } from "../../../utils/disabled";
 import { disabled } from "../../../utils/disabled";
 import { toggleClassName } from "../../../utils/disabled";
+import PhoneMenu from "../phoneMenu/PhoneMenu";
 const NavBar = observer(() => {
   return (
     <>
@@ -182,7 +183,6 @@ const NavBar = observer(() => {
         </div>
         {/* Разделительная красная линия */}
         <hr className="redline" />
-
         <div className="_container">
           <div className="header__section2">
             <div className="signBoard__logo">
@@ -204,10 +204,12 @@ const NavBar = observer(() => {
               Уфимский филиал ФГБОУ ВО <br />
               "Волжский государственный университет водного транспорта"
             </div>
-            <MenuNavbar fontSize={fontSize} toggleFontSize={toggleFontSize} />
+            <MenuNavbar toggleFontSize={toggleFontSize} />
           </div>
         </div>
       </header>
+
+      <PhoneMenu />
     </>
   );
 });

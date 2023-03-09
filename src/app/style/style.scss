@@ -1,5 +1,6 @@
 @import "~bootstrap-icons/font/bootstrap-icons.scss";
 @import "node_modules/bootstrap/scss/bootstrap.scss";
+@import "./mixins/response-mixins.scss";
 @import "./components/index.scss";
 @import "./variables";
 /*Обнуление*/
@@ -44,6 +45,22 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     margin: 0px auto; /*выравнивает контейнер по середине (для ограниченных по ширине блоков)*/
     box-sizing: content-box;
     padding: 0 15px;
+	@include desktop {
+		width: 1220px;
+		padding: 0;
+	}
+	 @include laptop {
+		width: 992px;
+		padding: 0;
+	}
+	@include tablets {
+		width: 768px;
+		padding: 0;
+	}
+	@include phones {
+		width: 480px;
+		padding: 0;
+	} 
 }
 ._container-main{
 	width: 1240px; 
@@ -51,6 +68,18 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     margin: 0px auto; /*выравнивает контейнер по середине (для ограниченных по ширине блоков)*/
     box-sizing: content-box;
     padding: 0 15px;
+	@include laptop {
+		width: 992px;
+		padding: 0;
+	}
+	@include tablets {
+		width: 768px;
+		padding: 0;
+	}
+	@include phones {
+		width: 480px;
+		padding: 0;
+	} 
 }
 ._container-white {
 	width: 1240px; 
@@ -59,6 +88,18 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     margin: 0px auto; /*выравнивает контейнер по середине (для ограниченных по ширине блоков)*/
     box-sizing: content-box;
     padding: 0 15px;
+	@include laptop {
+		width: 992px;
+		padding: 0;
+	}
+	@include tablets {
+		width: 768px;
+		padding: 0;
+	}
+	@include phones {
+		width: 480px;
+		padding: 0;
+	} 
 }
 ._container-black {
 	width: 1240px; 
@@ -67,6 +108,18 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     margin: 0px auto; /*выравнивает контейнер по середине (для ограниченных по ширине блоков)*/
     box-sizing: content-box;
     padding: 0 15px;
+	@include laptop {
+		width: 992px;
+		padding: 0;
+	}
+	@include tablets {
+		width: 768px;
+		padding: 0;
+	}
+	@include phones {
+		width: 480px;
+		padding: 0;
+	} 
 }
 ._container-contrast {
 	width: 1240px; 
@@ -75,4 +128,16 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     margin: 0px auto; /*выравнивает контейнер по середине (для ограниченных по ширине блоков)*/
     box-sizing: content-box;
     padding: 0 15px;
+	@include laptop {
+		width: 992px;
+		padding: 0;
+	}
+	@include tablets {
+		width: 768px;
+		padding: 0;
+	}
+	@include phones {
+		width: 480px;
+		padding: 0;
+	} 
 }
