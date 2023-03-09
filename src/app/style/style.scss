@@ -41,24 +41,24 @@ ul li{list-style: none;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 ._container {/*технический класс, содержит общие стили*/
-    width: 1240px; 
+    max-width: 1240px; 
     margin: 0px auto; /*выравнивает контейнер по середине (для ограниченных по ширине блоков)*/
     box-sizing: content-box;
     padding: 0 15px;
 	@include desktop {
-		width: 1220px;
+		max-width: 1220px;
 		padding: 0;
 	}
 	 @include laptop {
-		width: 992px;
+		max-width: 992px;
 		padding: 0;
 	}
 	@include tablets {
-		width: 768px;
+		max-width: 768px;
 		padding: 0;
 	}
 	@include phones {
-		width: 480px;
+		max-width: 480px;
 		padding: 0;
 	} 
 }

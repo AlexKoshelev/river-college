@@ -1,7 +1,10 @@
 @import "../../../../style/variables";
+@import "../../../../style/mixins/response-mixins.scss";
 
-.news__navbar{
+.news__navbar ul{
+    flex-wrap: wrap;
     display: flex;
+    padding: 0px 1em;
 }
 .navbar__button{
     margin: 20px 20px;
@@ -62,4 +65,19 @@
         border-bottom: solid 2px $FONT_CONTRAST;
     }
 }}
+@media screen and (max-width:807px){
+    .news__navbar {
+        display: flex;
+        justify-content: center;
 
+        ul{
+        font-size: 1rem;
+        padding: 0px;
+    }}
+}
+@include phones {
+    .news__navbar {
+        ul{
+        font-size: 0.8rem;
+    }}
+}

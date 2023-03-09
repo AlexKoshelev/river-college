@@ -26,13 +26,13 @@ const ImageSlider = ({ className, ...rest }) => {
         {...rest}
       >
         <SwiperSlide>
-          <div className="item item-1">Item 1</div>,
+          <div className="item item-1">Item 1</div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="item item-2">Item 2</div>,
+          <div className="item item-2">Item 2</div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="item item-3">Item 3</div>,
+          <div className="item item-3">Item 3</div>
         </SwiperSlide>
         {/* {items.map((item) => (
           <SwiperSlide key={item} className={className}>
