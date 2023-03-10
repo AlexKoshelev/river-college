@@ -17,17 +17,18 @@ const InfoContainer = observer(
           style={{ fontSize: toggleFontSize(1) }}
           className="infocontainer__header"
         >
-          <div
-            className={toggleClassName(
-              "infocontainer__titile",
-              "infocontainer__titile-white",
-              "infocontainer__titile-black",
-              "infocontainer__titile-contrast"
-            )}
-          >
-            {title}
+          <div>
+            <div
+              className={toggleClassName(
+                "infocontainer__titile",
+                "infocontainer__titile-white",
+                "infocontainer__titile-black",
+                "infocontainer__titile-contrast"
+              )}
+            >
+              {title}
+            </div>
           </div>
-
           {btnTitle ? (
             <div className="infocontainer__button">
               <Button
@@ -39,29 +40,31 @@ const InfoContainer = observer(
                   "contrast contrast-radius"
                 )}
               >
-                {btnTitle}
+                <span>{btnTitle}</span>
                 {<ArrowButton fill={toggleIconColor("#C80000")} />}
               </Button>
             </div>
           ) : null}
         </div>
-        <div className="infocontainer__content">
-          <div className="infocontainer__image">{image}</div>
-          <div className="news__block">
-            <div
-              style={{ fontSize: toggleFontSize(1) }}
-              className={toggleClassName(
-                "news__title",
-                "news__title-white",
-                "news__title-black",
-                "news__title-contrast"
-              )}
-            >
-              {newsTitle}
+
+        {/*  <div className="infocontainer__image imageFloatLeft">{image}</div> */}
+        <div className="news__block">
+          <div style={{ fontSize: toggleFontSize(1) }} className="news__text">
+            <div className="infocontainer__image imageFloatLeft">
+              <span
+                style={{ fontSize: toggleFontSize(1) }}
+                className={toggleClassName(
+                  "news__title",
+                  "news__title-white",
+                  "news__title-black",
+                  "news__title-contrast"
+                )}
+              >
+                {newsTitle}
+              </span>
+              {image}
             </div>
-            <div style={{ fontSize: toggleFontSize(1) }} className="news__text">
-              {children}
-            </div>
+            {children}
           </div>
         </div>
       </>

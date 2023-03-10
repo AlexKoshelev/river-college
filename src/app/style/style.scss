@@ -41,103 +41,40 @@ ul li{list-style: none;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 ._container {/*технический класс, содержит общие стили*/
-    max-width: 1240px; 
+    max-width: 1270px; 
     margin: 0px auto; /*выравнивает контейнер по середине (для ограниченных по ширине блоков)*/
     box-sizing: content-box;
     padding: 0 15px;
-	@include desktop {
-		max-width: 1220px;
-		padding: 0;
-	}
-	 @include laptop {
-		max-width: 992px;
-		padding: 0;
-	}
-	@include tablets {
-		max-width: 768px;
-		padding: 0;
-	}
-	@include phones {
-		max-width: 480px;
-		padding: 0;
-	} 
 }
 ._container-main{
-	width: 1240px; 
+	max-width: 1270px;
 	background-color: $BLUE;
     margin: 0px auto; /*выравнивает контейнер по середине (для ограниченных по ширине блоков)*/
     box-sizing: content-box;
     padding: 0 15px;
-	@include laptop {
-		width: 992px;
-		padding: 0;
-	}
-	@include tablets {
-		width: 768px;
-		padding: 0;
-	}
-	@include phones {
-		width: 480px;
-		padding: 0;
-	} 
 }
 ._container-white {
-	width: 1240px; 
+	max-width: 1270px;
 	background-color: $BACK_WHITE;
 	color: $DISABLED_FONT_COLOR;
     margin: 0px auto; /*выравнивает контейнер по середине (для ограниченных по ширине блоков)*/
     box-sizing: content-box;
     padding: 0 15px;
-	@include laptop {
-		width: 992px;
-		padding: 0;
-	}
-	@include tablets {
-		width: 768px;
-		padding: 0;
-	}
-	@include phones {
-		width: 480px;
-		padding: 0;
-	} 
 }
 ._container-black {
-	width: 1240px; 
+	max-width: 1270px;
 	background-color: $BACK_BLACK;
 	color: $WHITE_FONT_COLOR;
     margin: 0px auto; /*выравнивает контейнер по середине (для ограниченных по ширине блоков)*/
     box-sizing: content-box;
     padding: 0 15px;
-	@include laptop {
-		width: 992px;
-		padding: 0;
-	}
-	@include tablets {
-		width: 768px;
-		padding: 0;
-	}
-	@include phones {
-		width: 480px;
-		padding: 0;
-	} 
 }
 ._container-contrast {
-	width: 1240px; 
+	max-width: 1270px; 
 	background-color: $BACK_CONTRAST;
 	color: $FONT_CONTRAST;
     margin: 0px auto; /*выравнивает контейнер по середине (для ограниченных по ширине блоков)*/
     box-sizing: content-box;
     padding: 0 15px;
-	@include laptop {
-		width: 992px;
-		padding: 0;
-	}
-	@include tablets {
-		width: 768px;
-		padding: 0;
-	}
-	@include phones {
-		width: 480px;
-		padding: 0;
-	} 
+
 }
