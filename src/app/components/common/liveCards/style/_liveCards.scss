@@ -9,3 +9,34 @@
     "liveCardOne liveCardTwo liveCardThree liveCardFour"
     "liveCardFive liveCardSix liveCardSeven liveCardEight";
 }
+@include laptop {
+    .liveCards{
+        padding: 20px 0px;
+        gap: 15px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 90px);
+        grid-template-areas: 
+        "liveCardOne liveCardTwo"
+        "liveCardThree liveCardFour"
+        "liveCardFive liveCardSix"
+        "liveCardSeven liveCardEight";
+    }
+}
+@include phones{
+    .liveCards{
+        padding: 20px 0px;
+        display: grid;
+        gap: 15px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(8, 90px);
+        grid-template-areas: 
+        "liveCardOne"
+        "liveCardTwo"
+        "liveCardThree"
+        "liveCardFour"
+        "liveCardFive"
+        "liveCardSix"
+        "liveCardSeven"
+        "liveCardEight";
+    }
+}

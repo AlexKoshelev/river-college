@@ -41,7 +41,7 @@ const Main = observer(() => {
           {params.element === "security" ? <SecurityPage /> : null}
         </div>
       </div>
-      {/* <LiveCardContainer />  */}
+      <LiveCardContainer />
     </>
   );
 });
