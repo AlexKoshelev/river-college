@@ -14,6 +14,17 @@ import Vacant from "./components/page/sveden/vacant/Vacant";
 import Main from "./layouts/main";
 import Sveden from "./layouts/sveden/Sveden";
 
+import Live from "./layouts/live";
+import StudentsLive from "./components/page/live/studentsLive/StudentsLive";
+import Rest from "./components/page/live/rest/Rest";
+import Sport from "./components/page/live/sport/Sport";
+import PhotoGallery from "./components/page/live/photoGallery/PhotoGallery";
+import OurPride from "./components/page/live/ourPride/OurPride";
+
+import Vacancies from "./components/page/live/vacancies/Vacancies";
+import Science from "./components/page/live/science/Science";
+import Teachers from "./components/page/live/teachers/Teachers";
+
 const routes = () => [
   {
     path: "",
@@ -83,9 +94,43 @@ const routes = () => [
       },
     ],
   },
-  /* {
-    path: "/events",
-    element: <News />,
-  }, */
+  {
+    path: "live",
+    element: <Live />,
+    children: [
+      {
+        path: "studentsLive",
+        element: <StudentsLive />,
+      },
+      {
+        path: "rest",
+        element: <Rest />,
+      },
+      {
+        path: "sport",
+        element: <Sport />,
+      },
+      {
+        path: "photoGallery",
+        element: <PhotoGallery />,
+      },
+      {
+        path: "teachers",
+        element: <Teachers />,
+      },
+      {
+        path: "ourPride",
+        element: <OurPride />,
+      },
+      {
+        path: "science",
+        element: <Science />,
+      },
+      {
+        path: "vacancies",
+        element: <Vacancies />,
+      },
+    ],
+  },
 ];
 export default routes;

@@ -33,6 +33,7 @@ const BreadCrumbs = observer(() => {
               .join("/")}`;
             let routeTo = routeToReactRouter;
             switch (routeToReactRouter) {
+              /*сведения об образовательной организации */
               case "/sveden":
                 return (routeTo = null);
               case "/sveden/common":
@@ -61,6 +62,25 @@ const BreadCrumbs = observer(() => {
                 return (routeTo = "/ Доступная среда");
               case "/sveden/inter":
                 return (routeTo = " / Международное сотрудничество");
+              /* Жизнь ВГУВТ */
+              case "/live":
+                return (routeTo = null);
+              case "/live/studentsLive":
+                return (routeTo = "/ Студенческая жизнь");
+              case "/live/rest":
+                return (routeTo = "/ Отдых");
+              case "/live/sport":
+                return (routeTo = "/ Спорт");
+              case "/live/photoGallery":
+                return (routeTo = "/ Фотогаллерея");
+              case "/live/teachers":
+                return (routeTo = "/ Преподаватели");
+              case "/live/ourPride":
+                return (routeTo = "/ Наша гордость");
+              case "/live/science":
+                return (routeTo = "/ Наука");
+              case "/live/vacancies":
+                return (routeTo = "/ Вакансии");
               default:
                 routeTo = null;
                 break;

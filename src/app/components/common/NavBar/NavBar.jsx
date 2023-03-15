@@ -208,7 +208,6 @@ const NavBar = observer(() => {
           </div>
         </div>
       </header>
-
       <PhoneMenu />
     </>
   );

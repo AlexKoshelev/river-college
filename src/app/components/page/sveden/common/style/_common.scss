@@ -1,7 +1,8 @@
 @import "../../../../../style/variables";
 .common__container{
-    
+    max-width: 930px;
     font-size: 1rem;
+    text-align: justify;
     &-title{
         text-align: center;
     }
@@ -18,6 +19,7 @@
        
     }
 }
+
 .common__container-white{
     color: $DISABLED_FONT_COLOR;
     background-color: $BACK_WHITE;
@@ -79,12 +81,41 @@
     }
 }
 .common__item{
-    margin-bottom: 15px;
+     margin-bottom: 15px;
     &-header{
-        width: 200px;
+        padding: 1em;
     }
     &-body{
-        min-width: 400px;
-        max-width: 700px;
-    }
+        padding: 1em;
+    } 
 }
+
+@media screen and (max-width:1300px) {
+    .common__container{
+        max-width: 100%;
+        td {
+            padding: 5px ;
+            text-align: left;
+            min-width: none;           
+        }
+    }
+    .common__item{
+        margin-bottom: 0px;
+    }
+    
+}
+@media screen and (max-width:623px) {
+    
+}
+@media screen and (max-width:715px) {
+        .common__container{
+            font-size: 0.7rem;
+            table{
+                font-size: 0.6rem;
+            }
+        }
+    }
+    .common__scrollTable{
+       width: 623px;
+        overflow-x: auto;
+    }

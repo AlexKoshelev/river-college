@@ -3,7 +3,6 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { toggleClassName } from "../../../utils/disabled";
 import Image from "../../common/image/Image";
-import InfoContainer from "../../common/infoContainer/InfoContainer";
 const SecurityPage = observer(() => {
   return (
     <div className="applicantsPage">
