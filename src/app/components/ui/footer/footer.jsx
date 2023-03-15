@@ -1,6 +1,7 @@
 import { observer } from "mobx-react-lite";
 import React from "react";
 import { ReactComponent as RiverUniversityLogo } from "../../../assets/svg/riveruniversityLogo.svg";
+import { ReactComponent as Vk } from "../../../assets/svg/vk.svg";
 import { toggleClassName, toggleIconColor } from "../../../utils/disabled";
 const Footer = observer(() => {
   return (
@@ -15,7 +16,9 @@ const Footer = observer(() => {
       <div className="footer__container _container">
         <div className="footer__vguvt">
           <div className="">ВГУВТ 2022</div>
-          <div className="">VKontacte</div>
+          <a href="https://vk.com/uf_vsuwt" target={"_blank"} rel="noreferrer">
+            <Vk className="footer__vk" />
+          </a>
         </div>
         <div className="footer__logo">
           <object>

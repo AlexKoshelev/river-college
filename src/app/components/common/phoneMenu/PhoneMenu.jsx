@@ -49,7 +49,7 @@ const PhoneMenu = () => {
             />
           )}
         </div>
-        <div className={`phoneMenu__menu-dropdown ${!nav ? "" : " is-open"}`}>
+        <div className={`phoneMenu__menu-dropdown ${!nav ? "" : " is-open "} `}>
           <div className="button__container">
             <Button className={"button__container-btn"}>
               {<Schedul className={"button__container-btn-icon"} />}

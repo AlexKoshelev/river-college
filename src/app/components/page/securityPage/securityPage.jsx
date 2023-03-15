@@ -6,21 +6,21 @@ import Image from "../../common/image/Image";
 import InfoContainer from "../../common/infoContainer/InfoContainer";
 const SecurityPage = observer(() => {
   return (
-    <>
-      <InfoContainer
-        title={"Безопсность"}
-        newsTitle={"Ознакомьтесь с информацией"}
-        image={
-          <Image
-            src="img/newsimg/safety.jpg"
-            alt="Фото уплыло:("
-            height="100%"
-            width="100%"
-          />
-        }
-      >
+    <div className="applicantsPage">
+      <div className="applicantsPage__header">
+        <h1>Безопсность</h1>
+        <h1>Ознакомьтесь с информацией</h1>
+      </div>
+      <div className="applicantsPage__main">
+        <Image
+          src="img/newsimg/safety.jpg"
+          alt="Фото уплыло:("
+          height="100%"
+          width="100%"
+        />
+
         <div className="applicants__container">
-          <div
+          <ul
             className={toggleClassName(
               "container-links",
               "container-links-white",
@@ -28,16 +28,25 @@ const SecurityPage = observer(() => {
               "container-links-contrast"
             )}
           >
-            <NavLink to={"./"}>
-              Сезонные заболевания и меры борьбы с ними
-            </NavLink>
-            <NavLink to={"./"}>Короновирус</NavLink>
-            <NavLink to={"./"}>Противодействия коррупции</NavLink>
-            <NavLink to={"./"}>Памятка ВГУВТ без коррупции</NavLink>
-          </div>
+            <li>
+              {" "}
+              <NavLink to={"./"}>
+                Сезонные заболевания и меры борьбы с ними
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to={"./"}>Короновирус</NavLink>
+            </li>
+            <li>
+              <NavLink to={"./"}>Противодействия коррупции</NavLink>
+            </li>
+            <li>
+              <NavLink to={"./"}>Памятка ВГУВТ без коррупции</NavLink>
+            </li>
+          </ul>
         </div>
-      </InfoContainer>
-    </>
+      </div>
+    </div>
   );
 });
 export default SecurityPage;

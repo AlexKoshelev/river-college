@@ -1,15 +1,45 @@
 @import "../../../../style/variables";
+.applicantsPage{
+    padding: 15px;
+    &__header{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        & :first-child{
+            font-weight: 500;
+            outline: 1px;
+            padding-bottom: 1rem;
+            text-decoration: underline;
+        }
+        & :last-child{
+            font-weight: 500;
+            opacity: 0.72;
+        }
+    }
+    &__main{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        img{
+            max-width: 500px;
+            margin-right: 10%;
+        }
+    }
+}
 .applicants__container{
     display: flex;
     justify-content:center;
-    margin: 0px 50px;
+
+
 }
 .container-links{
     line-height: 2rem;
+    padding: 0;
     display: flex;
     margin: 10px;
     flex-direction: column;
     a {
+        min-width: 300px;
         color: $BLUE_FONT_COLOR;
         opacity: .72;
         border-bottom: solid 1px $BLUE_FONT_COLOR;
@@ -51,6 +81,60 @@
     a {
         color: $FONT_CONTRAST;
         border-bottom: solid 1px $FONT_CONTRAST;
+    }
+}
+@media screen and (max-width:1022px) {
+    .applicantsPage{
+            &__header{
+
+                & :first-child{
+
+                }
+                & :last-child{
+
+                }
+            }
+            &__main{
+
+                img{
+                    max-width: 500px;
+                    margin-right: 3%;
+                }
+            }
+        }
+        .container-links{
+            a{
+                font-size: 0.8rem;
+            }
+        }
+}
+@include tablets{
+         .applicantsPage{
+            &__main{
+                img{
+                    margin-right: 0%;
+                }
+            }
+        }
+        .container-links{            
+            a{
+                font-size: 0.8rem;
+            }
+        }
+}
+@media screen and (max-width:668px) {
+    .applicantsPage{
+        &__header{
+            font-size: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width:567px) {
+    .applicantsPage{
+        &__header{
+            font-size: 0.8rem;
+        }
     }
 }
 
