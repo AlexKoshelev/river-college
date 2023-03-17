@@ -125,7 +125,7 @@ const Grants = observer(() => {
         мест - 375.
       </p>
       <p>Адрес общежития: г.Уфа, ул. Ахметова, 275. </p>
-      <div className="scroll-table">
+      <div className="scroll-table struct__scrollTable">
         <table className="">
           <tbody>
             <tr>
@@ -218,7 +218,7 @@ const Grants = observer(() => {
       >
         Информация о трудоустройстве выпускников образовательных организаций
       </h3>
-      <div className="scroll-table">
+      <div className="scroll-table struct__scrollTable">
         <table className="">
           <tbody>
             <tr>

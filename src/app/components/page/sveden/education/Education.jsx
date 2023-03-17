@@ -41,7 +41,7 @@ const Education = observer(() => {
         Информация о сроке действия государственной аккредитации образовательной
         программы, о языках, на которых осуществляется образование (обучение):
       </h3>
-      <div className="scroll-table">
+      <div className="scroll-table struct__scrollTable">
         <table className="">
           <tbody>
             <tr>
@@ -215,7 +215,7 @@ const Education = observer(() => {
         Информация о профессионально-общественной аккредитации образовательной
         программы:
       </h3>
-      <div className="common__container scroll-table">
+      <div className="common__container scroll-table struct__scrollTable">
         <table className="">
           <tbody>
             <tr>
@@ -253,7 +253,7 @@ const Education = observer(() => {
         образовании за счет средств физических и (или) юридических лиц на
         01.10.2022:
       </h3>
-      <div className="scroll-table">
+      <div className="scroll-table struct__scrollTable">
         <table className="">
           <tbody>
             <tr>
@@ -556,7 +556,7 @@ const Education = observer(() => {
         Федерации, местных бюджетов и по договорам об образовании за счет
         средств физических и (или) юридических лиц):
       </h3>
-      <div className="scroll-table">
+      <div className="scroll-table struct__scrollTable">
         <table className="">
           <tbody>
             <tr>
@@ -778,7 +778,7 @@ const Education = observer(() => {
         Информация о результатах перевода, восстановления и отчисления на
         01.10.2022
       </h3>
-      <div className="scroll-table">
+      <div className="scroll-table struct__scrollTable">
         <table className="">
           <tbody>
             <tr>
@@ -969,7 +969,7 @@ const Education = observer(() => {
       >
         Информация по неадаптированным образовательным программам:
       </h3>
-      <div className="scroll-table">
+      <div className="scroll-table struct__scrollTable">
         <table className="">
           <tbody>
             <tr>
@@ -1902,7 +1902,7 @@ const Education = observer(() => {
       >
         Информация по адаптированным образовательным программам:
       </h3>
-      <div className="scroll-table">
+      <div className="scroll-table struct__scrollTable">
         <table className="">
           <tbody>
             <tr>
@@ -2073,7 +2073,7 @@ const Education = observer(() => {
         Информация о направлениях и результатах научной
         (научно-исследовательской) деятельности:
       </h3>
-      <div className="scroll-table">
+      <div className="scroll-table struct__scrollTable">
         <table className="">
           <tbody>
             <tr>

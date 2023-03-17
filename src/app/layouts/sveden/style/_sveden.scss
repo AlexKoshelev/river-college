@@ -1,19 +1,20 @@
+@import "../../../style/mixins/response-mixins.scss";
 .sveden__container{
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
     &-item{
-        margin: 20px 10px;
-        padding: 10px;
+        padding: 20px;
     }
 }
 @media screen and (max-width:1300px) {
     .sveden__container{
        align-items: center;
        justify-content: center;
-        &-item{
-            margin: 0;
-            padding: 0;
-        }
+    }
+}
+@include laptop{
+    .sveden__container-item{
+        padding: 0;
     }
 }

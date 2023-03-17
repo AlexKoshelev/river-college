@@ -86,23 +86,25 @@ const Common = observer(() => {
         >
           Сведения об образовательной организации
         </h1>
-        <table>
-          <tbody>
-            <tr>
-              <td>Полное наименование образовательной организации</td>
-              <td itemProp="fullName">
-                {" "}
-                Уфимский филиал Федерального государственного бюджетного
-                образовательного учреждения высшего образования «Волжский
-                государственный университет водного транспорта»
-              </td>
-            </tr>
-            <tr>
-              <td> Сокращенное наименование образовательной организации</td>
-              <td itemProp="shortName">Уфимский филиал ФГБОУ ВО "ВГУВТ"</td>
-            </tr>
-          </tbody>
-        </table>
+        <div className="common__scrollTable">
+          <table>
+            <tbody>
+              <tr>
+                <td>Полное наименование образовательной организации</td>
+                <td itemProp="fullName">
+                  {" "}
+                  Уфимский филиал Федерального государственного бюджетного
+                  образовательного учреждения высшего образования «Волжский
+                  государственный университет водного транспорта»
+                </td>
+              </tr>
+              <tr>
+                <td> Сокращенное наименование образовательной организации</td>
+                <td itemProp="shortName">Уфимский филиал ФГБОУ ВО "ВГУВТ"</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
         <h3
           className={`common__container-title ${toggleClassName(
             "title",
@@ -113,7 +115,7 @@ const Common = observer(() => {
         >
           Основные сведения об образовательной организации
         </h3>
-        <div>
+        <div className="common__scrollTable">
           <table className="">
             <tbody>
               <tr>
@@ -201,7 +203,7 @@ const Common = observer(() => {
               <td>-</td>
             </tr>
             <tr>
-              <td className="td__max">
+              <td>
                 Адрес официального сайта или страницы филиала в сети "Интернет"
                 (при наличии)
               </td>
@@ -219,42 +221,43 @@ const Common = observer(() => {
         >
           Сведения о представительствах (при наличии)
         </h3>
-
-        <table className="">
-          <tbody>
-            <tr>
-              <td>№ п/п</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>Наименование филиала</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>Адрес места нахождения</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>Режим и график работы</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>Контактные телефоны</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>Электронная почта</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td className="td__max">
-                Адрес официального сайта или страницы филиала в сети "Интернет"
-                (при наличии)
-              </td>
-              <td>-</td>
-            </tr>
-          </tbody>
-        </table>
+        <div className="common__scrollTable">
+          <table className="">
+            <tbody>
+              <tr>
+                <td>№ п/п</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Наименование филиала</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Адрес места нахождения</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Режим и график работы</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Контактные телефоны</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Электронная почта</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td className="">
+                  Адрес официального сайта или страницы филиала в сети
+                  "Интернет" (при наличии)
+                </td>
+                <td>-</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
         <h3
           className={`common__container-title ${toggleClassName(
             "title",
@@ -277,7 +280,7 @@ const Common = observer(() => {
         >
           Информация об учредителе
         </h3>
-        <div>
+        <div className="common__scrollTable">
           <table className="">
             <tbody>
               <tr>

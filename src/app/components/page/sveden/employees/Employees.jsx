@@ -33,7 +33,7 @@ const Employees = observer(() => {
         Информация о руководителе/заместителях руководителя Уфимского филиала
         ФГБОУ ВО "ВГУВТ"
       </h3>
-      <div className="scroll-table">
+      <div className="scroll-table struct__scrollTable">
         <table className="">
           <tbody>
             <tr>
@@ -130,7 +130,7 @@ const Employees = observer(() => {
           </li>
         </a>
       </ul>
-      <div className="scroll-table">
+      <div className="scroll-table struct__scrollTable">
         <table class="iksweb">
           <tbody>
             <tr>

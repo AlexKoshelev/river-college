@@ -95,6 +95,10 @@ $BACK_BTN_SHOW:rgb(158, 181, 217);
     max-width: 450px;
 }
 .scroll-table{
+    padding: 0.5em;
+    border-top-left-radius: 0.5em;
+    border-left: solid 1px rgba(12, 29, 44, 0.139);
+    border-top: solid 1px rgba(12, 29, 44, 0.139);
     max-width: 900px;
     overflow: scroll;
 }

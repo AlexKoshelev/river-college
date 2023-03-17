@@ -4,27 +4,26 @@ import { NavLink } from "react-router-dom";
 import { toggleClassName, toggleFontSize } from "../../../utils/disabled";
 const CommonMenu = observer(() => {
   return (
-    <div>
-      <ul
-        style={{ fontSize: toggleFontSize(0.8) }}
-        className={toggleClassName(
-          "common__menu",
-          "common__menu-white",
-          "common__menu-black",
-          "common__menu-contrast"
-        )}
+    <div
+      className={toggleClassName(
+        "common__menu",
+        "common__menu-white",
+        "common__menu-black",
+        "common__menu-contrast"
+      )}
+    >
+      <h3
+        style={{ fontSize: toggleFontSize(1) }}
+        className={`common__menu-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
       >
-        <h3
-          style={{ fontSize: toggleFontSize(1) }}
-          className={`common__menu-title ${toggleClassName(
-            "title",
-            "title-white",
-            "title-black",
-            "title-contrast"
-          )}`}
-        >
-          Навигация{" "}
-        </h3>
+        Навигация раздела
+      </h3>
+      <ul style={{ fontSize: toggleFontSize(0.8) }}>
         <li>
           <NavLink
             className={({ isActive }) =>

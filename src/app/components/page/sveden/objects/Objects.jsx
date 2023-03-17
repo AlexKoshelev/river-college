@@ -35,7 +35,7 @@ const Ovz = observer(() => {
         указываемые в приложении к лицензии на осуществление образовательной
         деятельности:
       </h3>
-      <div className="scroll-table">
+      <div className="scroll-table struct__scrollTable">
         <table className="">
           <tbody>
             <tr>
@@ -115,7 +115,7 @@ const Ovz = observer(() => {
       >
         Сведения о наличии оборудованных учебных кабинетов
       </h3>
-      <div className="scroll-table">
+      <div className="scroll-table struct__scrollTable">
         <table className="">
           <tbody>
             <tr>
@@ -455,7 +455,7 @@ const Ovz = observer(() => {
       >
         Сведения о наличии объектов для проведения практических занятий
       </h3>
-      <div className="scroll-table">
+      <div className="scroll-table struct__scrollTable">
         <table className="">
           <tbody>
             <tr>
@@ -841,7 +841,7 @@ const Ovz = observer(() => {
         Сведения о наличии библиотек, объектов спорта, об условиях питания и
         охраны здоровья
       </h3>
-      <div className="scroll-table">
+      <div className="scroll-table struct__scrollTable">
         <table className="">
           <tbody>
             <tr>
@@ -1104,7 +1104,7 @@ const Ovz = observer(() => {
         вызова персонала. Дверные проемы расширенные. На 1 этаже 1 комната
         оборудована для проживания лиц с ОВЗ и (или) инвалидов.
       </p>
-      <div className="scroll-table">
+      <div className="scroll-table struct__scrollTable">
         <table className="">
           <tbody>
             <tr>
@@ -1252,7 +1252,7 @@ const Ovz = observer(() => {
           </li>
         </a>
       </ul>
-      <div className="scroll-table">
+      <div className="scroll-table struct__scrollTable">
         <table className="">
           <tbody>
             <tr>
@@ -1361,7 +1361,7 @@ const Ovz = observer(() => {
       >
         Информация о наличии объектов спорта
       </h3>
-      <div className="scroll-table">
+      <div className="scroll-table struct__scrollTable">
         <table className="">
           <tbody>
             <tr>

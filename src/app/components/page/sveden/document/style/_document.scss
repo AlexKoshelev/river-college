@@ -11,21 +11,21 @@
 }
 .btn-show{
     width: 100%;
-    height: 2em;
+    height: fit-content;
     border: solid 1px $MAIN_COLOR;
     border-radius: 10px;
     background-color: inherit;
     margin: 10px 0px;
-    padding: 0.5em 0;
+    padding: 0.5em;
   
     &-active{
         background-color: $BACK_BTN_SHOW;
         width: 100%;
-        height: 2em;
+        height: fit-content;
         border: solid 1px $MAIN_COLOR;
         border-radius: 10px;
         margin: 10px 0px;
-        padding: 0.5em 0;   
+        padding: 0.5em;   
        
     }
 }
@@ -91,4 +91,7 @@
         padding: 0.5em 0; 
        
     }
+}
+@media screen and (max-width:814px) {
+    
 }

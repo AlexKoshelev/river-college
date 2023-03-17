@@ -23,7 +23,7 @@ const Struct = observer(() => {
       >
         Структура и органы управления Уфимского филиала ФГБОУ ВО "ВГУВТ"
       </h1>
-      <div className="common__container scroll-table">
+      <div className="common__container scroll-table struct__scrollTable">
         <table style={{ fontSize: toggleFontSize(1) }}>
           <tbody>
             <tr>

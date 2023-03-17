@@ -92,7 +92,7 @@
 
 @media screen and (max-width:1300px) {
     .common__container{
-        max-width: 100%;
+       width: 100%;
         td {
             padding: 5px ;
             text-align: left;
@@ -104,18 +104,66 @@
     }
     
 }
-@media screen and (max-width:623px) {
-    
-}
 @media screen and (max-width:715px) {
-        .common__container{
-            font-size: 0.7rem;
-            table{
-                font-size: 0.6rem;
+    .common__container{
+        font-size: 0.7rem;
+        table{
+            font-size: 0.6rem;
+            td {
+                text-align: left;
+                min-width: 10px;
+               
             }
         }
     }
-    .common__scrollTable{
-       width: 623px;
-        overflow-x: auto;
+}
+
+@media screen and (max-width:623px) {
+    .common__container{
+        h1,h3,p{
+            font-size: 0.8rem;
+        }
+        
     }
+     .common__scrollTable{
+        padding: 0.5em;
+        border-top-left-radius: 0.5em;
+        border-left: solid 1px rgba(12, 29, 44, 0.139);
+        border-top: solid 1px rgba(12, 29, 44, 0.139);
+        width: 500px;
+        overflow-x: scroll;
+        margin: 0 auto;
+
+        table{
+            width: 623px;
+            td{
+               width: 220px;
+            }
+        }
+     }
+}
+@media screen and (max-width:500px) {
+
+
+     .common__scrollTable{
+        width: 400px;
+        table{
+            width: 623px;
+            td{
+               width: 180px;
+            }
+        }
+     }
+}
+@media screen and (max-width:400px) {
+    .common__scrollTable{
+       width: 280px;
+       table{
+           width: 623px;
+           td{
+              width: 140px;
+           }
+       }
+    }
+}
+

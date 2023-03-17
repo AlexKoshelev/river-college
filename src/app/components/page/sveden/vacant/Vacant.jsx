@@ -33,7 +33,7 @@ const Vacant = observer(() => {
         Информация о количестве вакантных мест для приема (перевода) на
         01.10.2022 г.
       </h3>
-      <div className="scroll-table">
+      <div className="scroll-table struct__scrollTable">
         <table className="">
           <tbody>
             <tr>
