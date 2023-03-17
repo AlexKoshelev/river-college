@@ -1,7 +1,8 @@
 import { observer } from "mobx-react-lite";
 import React from "react";
-import { toggleClassName } from "../../../utils/disabled";
-import EventCard from "../../common/eventCard/EventCard";
+import { toggleClassName } from "../../../../utils/disabled";
+
+import EventCard from "../../../common/eventCard/EventCard";
 
 const EventsPages = observer(() => {
   return (

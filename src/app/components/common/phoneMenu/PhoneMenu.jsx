@@ -11,6 +11,7 @@ import {
   toggleIconWidthSize,
 } from "../../../utils/disabled";
 import Button from "../button/Button";
+import { NavLink } from "react-router-dom";
 
 const PhoneMenu = () => {
   const [nav, setNav] = useState(false);
@@ -60,20 +61,27 @@ const PhoneMenu = () => {
           </div>
           <MenuLogo className="menuLogo" />
           <ul className="nav-menu">
-            <li>
-              <a href="">Главная</a>
+            <li onClick={() => setNav(!nav)}>
+              <NavLink to="">Главная</NavLink>
             </li>
-            <li>
-              <a href="">Образование</a>
+            <li onClick={() => setNav(!nav)}>
+              <NavLink to="">Образование</NavLink>
             </li>
-            <li>
-              <a href="">Абитурьенту</a>
+            <li onClick={() => setNav(!nav)}>
+              <NavLink to="">Абитурьенту</NavLink>
             </li>
-            <li>
-              <a href="">Повышение квалификации</a>
+            <li onClick={() => setNav(!nav)}>
+              <NavLink to="">Повышение квалификации</NavLink>
             </li>
-            <li>
-              <a href="">Студенческая жизнь</a>
+            <li onClick={() => setNav(!nav)}>
+              <NavLink to="">Студенческая жизнь</NavLink>
+            </li>
+          </ul>
+          <ul className="nav-menu">
+            <li onClick={() => setNav(!nav)} className="nav-menu-sveden">
+              <NavLink to="sveden/common">
+                Сведения об образовательной организации
+              </NavLink>
             </li>
           </ul>
         </div>

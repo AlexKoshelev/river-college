@@ -3,10 +3,10 @@ import React from "react";
 import { useParams } from "react-router";
 import ImageSlider from "../components/common/carousel/ImageSlider";
 import LiveCardContainer from "../components/common/liveCardContainer/LiveCardContainer";
-import ApplicantsPage from "../components/page/applicantsPage/ApplicantsPage";
-import EventsPages from "../components/page/eventsPages/EventsPages";
-import InfoPage from "../components/page/infoPage/InfoPage";
-import SecurityPage from "../components/page/securityPage/SecurityPage";
+import ApplicantsPage from "../components/page/infoContainer/applicantsPage/ApplicantsPage";
+import EventsPages from "../components/page/infoContainer/eventsPages/EventsPages";
+import InfoPage from "../components/page/infoContainer/infoPage/InfoPage";
+import SecurityPage from "../components/page/infoContainer/securityPage/SecurityPage";
 import NewsNavbar from "../components/ui/newsNavbar/NewsNavbar";
 import { toggleClassName } from "../utils/disabled";
 

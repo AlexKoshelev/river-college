@@ -1,8 +1,9 @@
 import { observer } from "mobx-react-lite";
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { toggleClassName } from "../../../utils/disabled";
-import Image from "../../common/image/Image";
+import { toggleClassName } from "../../../../utils/disabled";
+
+import Image from "../../../common/image/Image";
 const SecurityPage = observer(() => {
   return (
     <div className="applicantsPage">

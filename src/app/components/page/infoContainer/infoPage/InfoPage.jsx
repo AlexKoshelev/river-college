@@ -1,10 +1,10 @@
 import { observer } from "mobx-react-lite";
 import React from "react";
-import images from "../../../store/images";
-import { toggleClassName, toggleFontSize } from "../../../utils/disabled";
-import Image from "../../common/image/Image";
-import InfoContainer from "../../common/infoContainer/InfoContainer";
-import NewsCardContainer from "../../ui/newsCardContainer/NewsCardContainer";
+import images from "../../../../store/images";
+import { toggleClassName, toggleFontSize } from "../../../../utils/disabled";
+import Image from "../../../common/image/Image";
+import InfoContainer from "../../../common/infoContainer/InfoContainer";
+import NewsCardContainer from "../../../ui/newsCardContainer/NewsCardContainer";
 
 const InfoPage = observer(() => {
   return (
