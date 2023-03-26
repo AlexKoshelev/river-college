@@ -157,11 +157,11 @@ const Common = observer(() => {
               </tr>
               <tr>
                 <td>Адреса электронной почты</td>
-                <td itemProp="email">Приемная ukru@ufanet.ru</td>
+                <td itemProp="email">Приемная uf-vsuwt@uf-vsuwt.ru</td>
               </tr>
               <tr>
                 <td></td>
-                <td itemProp="email">Бухгалтерия buh-ukru@yandex.ru</td>
+                <td itemProp="email">Бухгалтерия buh@uf-vsuwt.ru</td>
               </tr>
             </tbody>
           </table>

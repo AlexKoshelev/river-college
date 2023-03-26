@@ -46,7 +46,6 @@ const CommonMenu = observer(() => {
             Основные сведения
           </NavLink>
         </li>
-
         <li>
           <NavLink
             className={({ isActive }) =>

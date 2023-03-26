@@ -1,5 +1,5 @@
-import React from "react";
-import { Menu, Space } from "antd";
+import React, { useState } from "react";
+import { Menu } from "antd";
 import { ReactComponent as Icon } from "../../../assets/svg/burger.svg";
 import theme from "../../../store/theme";
 import {
@@ -7,8 +7,17 @@ import {
   toggleIconHeightSize,
   toggleIconWidthSize,
 } from "../../../utils/disabled";
+import { NavLink, useNavigate } from "react-router-dom";
+import {
+  ApplicantMenu,
+  EducationMenu,
+  MainMenu,
+  StudentLifeMenu,
+  TrainingMenu,
+} from "./menuItems";
 
 const MenuNavbar = ({ toggleFontSize }) => {
+  const navigate = useNavigate();
   const toggleBackColor = () => {
     const currentTheme = theme.theme;
     if (currentTheme === "main") return "#0C1C2B";
@@ -22,6 +31,11 @@ const MenuNavbar = ({ toggleFontSize }) => {
     if (currentTheme === "white") return "black";
     if (currentTheme === "black") return "white";
     if (currentTheme === "contrast") return "#195183";
+  };
+  const [selectedKeys, setSelectedKeys] = useState([]);
+  const onEducationItemClick = (item) => {
+    console.log(item.key);
+    navigate(`learning/${item.key}`);
   };
   return (
     <>
@@ -63,7 +77,11 @@ const MenuNavbar = ({ toggleFontSize }) => {
               key: "education",
               children: [
                 {
-                  label: <EducationMenu />,
+                  label: (
+                    <EducationMenu
+                      onEducationItemClick={onEducationItemClick}
+                    />
+                  ),
                   key: "educationMenu",
                   style: {
                     height: "fit-content",
@@ -116,214 +134,5 @@ const MenuNavbar = ({ toggleFontSize }) => {
     </>
   );
 };
-function MainMenu() {
-  return (
-    <div
-      style={{
-        backgroundColor: "white",
-        margin: "0 auto",
-        display: "flex",
-        justifyContent: "center",
-      }}
-    >
-      <Space
-        style={{
-          backgroundColor: "white",
-          display: "flex",
-          justifyContent: "center",
-        }}
-        direction="horizontal"
-      >
-        <Menu
-          style={{
-            width: "400px",
-            border: "none",
-            boxShadow: "none",
-          }}
-          items={[
-            {
-              label: "О филиале",
-              key: "about",
-            },
-            {
-              label: "Историческая справка",
-              key: "history-reference",
-            },
-            { label: "Новости", key: "news" },
-            { label: "План мероприятия", key: "action_plan" },
-          ]}
-        ></Menu>
-      </Space>
-    </div>
-  );
-}
-function EducationMenu() {
-  return (
-    <div
-      style={{
-        backgroundColor: "white",
-        margin: "0 auto",
-        display: "flex",
 
-        justifyContent: "center",
-      }}
-    >
-      <Space
-        style={{
-          backgroundColor: "white",
-          display: "flex",
-          justifyContent: "center",
-        }}
-        direction="horizontal"
-      >
-        <Menu
-          style={{
-            width: "400px",
-            border: "none",
-            boxShadow: "none",
-          }}
-          items={[
-            {
-              label: "Курсантам",
-              key: "cadets",
-            },
-            {
-              label: "Заочникам",
-              key: "for-parttime-students",
-            },
-            { label: "Практика", key: "practice" },
-            { label: "Выпускникам", key: "graduates" },
-          ]}
-        ></Menu>
-      </Space>
-    </div>
-  );
-}
-function ApplicantMenu() {
-  return (
-    <div
-      style={{
-        backgroundColor: "white",
-        margin: "0 auto",
-        display: "flex",
-
-        justifyContent: "center",
-      }}
-    >
-      <Space
-        style={{
-          backgroundColor: "white",
-          display: "flex",
-          justifyContent: "center",
-        }}
-        direction="horizontal"
-      >
-        <Menu
-          style={{
-            width: "400px",
-            border: "none",
-            boxShadow: "none",
-          }}
-          items={[
-            {
-              label: "Основные сведения об университете",
-              key: "basic_information",
-            },
-            {
-              label: "Поступающим",
-              key: "applicants",
-            },
-            { label: "Дни открытых дверей", key: "open-day" },
-            {
-              label: "Подготовительные курсы",
-              key: "training-courses",
-            },
-            { label: "Олимпиады", key: "olympics" },
-          ]}
-        ></Menu>
-      </Space>
-    </div>
-  );
-}
-function TrainingMenu() {
-  return (
-    <div
-      style={{
-        backgroundColor: "white",
-        margin: "0 auto",
-        display: "flex",
-
-        justifyContent: "center",
-      }}
-    >
-      <Space
-        style={{
-          backgroundColor: "white",
-          display: "flex",
-          justifyContent: "center",
-        }}
-        direction="horizontal"
-      >
-        <Menu
-          style={{
-            width: "450px",
-            border: "none",
-            boxShadow: "none",
-          }}
-          items={[
-            {
-              label: "Программы подготовки членов экипажей морских судов",
-              key: "sea-boat",
-            },
-            {
-              label: "Программы подготовки членов экипажей речных судов",
-              key: "river-boat",
-            },
-          ]}
-        ></Menu>
-      </Space>
-    </div>
-  );
-}
-function StudentLifeMenu() {
-  return (
-    <div
-      style={{
-        backgroundColor: "white",
-        margin: "0 auto",
-        display: "flex",
-
-        justifyContent: "center",
-      }}
-    >
-      <Space
-        style={{
-          backgroundColor: "white",
-          display: "flex",
-          justifyContent: "center",
-        }}
-        direction="horizontal"
-      >
-        <Menu
-          style={{
-            width: "400px",
-            border: "none",
-            boxShadow: "none",
-          }}
-          items={[
-            {
-              label: "Новости",
-              key: "news",
-            },
-            {
-              label: "Мероприятия",
-              key: "events",
-            },
-            { label: "Наша гордость", key: "our-pride" },
-          ]}
-        ></Menu>
-      </Space>
-    </div>
-  );
-}
 export default MenuNavbar;

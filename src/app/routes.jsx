@@ -24,6 +24,18 @@ import OurPride from "./components/page/live/ourPride/OurPride";
 import Vacancies from "./components/page/live/vacancies/Vacancies";
 import Science from "./components/page/live/science/Science";
 import Teachers from "./components/page/live/teachers/Teachers";
+import Learning from "./layouts/Learning";
+
+import Practice from "./components/page/learning/Practice/Practice";
+import EmploymentService from "./components/page/learning/EmploymentService/EmploymentService";
+import About from "./components/page/learning/EmploymentService/about/About";
+import Faq from "./components/page/learning/EmploymentService/faq/Faq";
+import Partners from "./components/page/learning/EmploymentService/partners/Partners";
+import News from "./components/page/learning/EmploymentService/news/New";
+import JobFair from "./components/page/learning/EmploymentService/jobFair/JobFair";
+import Links from "./components/page/learning/EmploymentService/links/Links";
+import VacanciesFrom from "./components/page/learning/EmploymentService/vacanciesFrom/VacanciesFrom";
+import Feedback from "./components/page/learning/EmploymentService/feedback/Feedback";
 
 const routes = () => [
   {
@@ -129,6 +141,54 @@ const routes = () => [
       {
         path: "vacancies",
         element: <Vacancies />,
+      },
+    ],
+  },
+  {
+    path: "learning",
+    element: <Learning />,
+    children: [
+      {
+        path: "practice",
+        element: <Practice />,
+      },
+      {
+        path: "employmentService",
+        element: <EmploymentService />,
+        children: [
+          {
+            path: "",
+            element: <About />,
+          },
+          {
+            path: "faq",
+            element: <Faq />,
+          },
+          {
+            path: "partners",
+            element: <Partners />,
+          },
+          {
+            path: "news",
+            element: <News />,
+          },
+          {
+            path: "jobFair",
+            element: <JobFair />,
+          },
+          {
+            path: "vacanciesFrom",
+            element: <VacanciesFrom />,
+          },
+          {
+            path: "feedback",
+            element: <Feedback />,
+          },
+          {
+            path: "links",
+            element: <Links />,
+          },
+        ],
       },
     ],
   },

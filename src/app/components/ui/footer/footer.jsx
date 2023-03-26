@@ -55,7 +55,7 @@ const Footer = observer(() => {
               </tr>
               <tr>
                 <td>e-mail:</td>
-                <td>ukru@ufanet.ru</td>
+                <td>uf-vsuwt@uf-vsuwt.ru</td>
               </tr>
             </tbody>
           </table>

@@ -1,0 +1,66 @@
+@import "../../../../style/variables";
+@import "../../../../style/mixins/response-mixins.scss";
+.education__container{
+    background-color: $BLUE;
+    color: $BLUE_FONT_COLOR;
+    padding: 1em 0.5em;
+    h1,h2{
+        font-weight: 500;
+    }
+
+    &-title{
+        text-align: center;
+    }
+    &-image{
+        padding: 1em;
+    }
+    &-content{
+            h1{
+                text-align: center;
+                padding-bottom: 1em;
+            }
+            h2{
+                text-indent: 2em;
+                padding-bottom: 1em;
+            }
+            h3{
+                font-style: italic;
+            }
+            p{
+                text-indent: 2em;
+                text-align: justify;
+            }
+            ul{
+                li{
+                    margin-bottom: 0.5em;
+                    list-style-type:"— ";
+                    text-align: justify;
+                }
+                .cursive{
+                    padding: 0.5em;
+                   font-style: italic;
+                }
+    
+            }
+            a{
+                text-decoration: underline;
+                color: $MAIN_COLOR;
+                font-weight: 500;
+            }
+            
+   
+        
+    }
+}
+.employment__image{
+    float: left;
+    margin: 0 0.3em 0em 0;
+}
+@include tablets {
+    .education__container{
+        font-size: 0.8rem;
+        padding: 0.5em 0.3em;
+            &-image{
+                padding: 0.3em;
+            }}
+}
