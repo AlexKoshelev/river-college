@@ -13,44 +13,49 @@ const ChapterMenu = ({ title, linksArray }) => {
           "chapter__menu-contrast"
         )}
       >
-        <h3
-          style={{ fontSize: toggleFontSize(1) }}
-          className={`chapter__menu-title ${toggleClassName(
-            "title",
-            "title-white",
-            "title-black",
-            "title-contrast"
-          )}`}
-        >
-          {title}
-        </h3>
-        <ul style={{ fontSize: toggleFontSize(0.8) }}>
-          {linksArray.map((element) => (
-            <li key={element.path}>
-              <NavLink
-                className={({ isActive }) =>
-                  isActive
-                    ? toggleClassName(
-                        "chapter__menu-active",
-                        "chapter__menu-white-active",
-                        "chapter__menu-black-active",
-                        "chapter__menu-contrast-active"
-                      )
-                    : toggleClassName(
-                        "chapter__menu-item",
-                        "chapter__menu-white-item",
-                        "chapter__menu-black-item",
-                        "chapter__menu-contrast-item"
-                      )
-                }
-                to={element.path}
-                end
-              >
-                {element.title}
-              </NavLink>
-            </li>
-          ))}
-        </ul>
+        {title ? (
+          <h3
+            style={{ fontSize: toggleFontSize(1) }}
+            className={`chapter__menu-title ${toggleClassName(
+              "title",
+              "title-white",
+              "title-black",
+              "title-contrast"
+            )}`}
+          >
+            {title}
+          </h3>
+        ) : null}
+
+        {linksArray ? (
+          <ul style={{ fontSize: toggleFontSize(0.8) }}>
+            {linksArray.map((element) => (
+              <li key={element.path}>
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive
+                      ? toggleClassName(
+                          "chapter__menu-active",
+                          "chapter__menu-white-active",
+                          "chapter__menu-black-active",
+                          "chapter__menu-contrast-active"
+                        )
+                      : toggleClassName(
+                          "chapter__menu-item",
+                          "chapter__menu-white-item",
+                          "chapter__menu-black-item",
+                          "chapter__menu-contrast-item"
+                        )
+                  }
+                  to={element.path}
+                  end
+                >
+                  {element.title}
+                </NavLink>
+              </li>
+            ))}
+          </ul>
+        ) : null}
       </div>
     </>
   );

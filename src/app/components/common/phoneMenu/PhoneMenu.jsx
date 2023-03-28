@@ -65,7 +65,7 @@ const PhoneMenu = () => {
               <NavLink to="">Главная</NavLink>
             </li>
             <li onClick={() => setNav(!nav)}>
-              <NavLink to="">Образование</NavLink>
+              <NavLink to="learning">Образование</NavLink>
             </li>
             <li onClick={() => setNav(!nav)}>
               <NavLink to="">Абитурьенту</NavLink>

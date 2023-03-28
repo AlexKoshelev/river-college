@@ -6,7 +6,6 @@ import Logo4 from "../../../../../assets/img/learning/employmentServices/logo4.p
 import Logo5 from "../../../../../assets/img/learning/employmentServices/logo5.png";
 import Logo6 from "../../../../../assets/img/learning/employmentServices/logo6.jpg";
 import Logo7 from "../../../../../assets/img/learning/employmentServices/logo7.png";
-import Logo8 from "../../../../../assets/img/learning/employmentServices/logo4.png";
 import Image from "../../../../common/image/Image";
 import { observer } from "mobx-react-lite";
 import { toggleClassName } from "../../../../../utils/disabled";

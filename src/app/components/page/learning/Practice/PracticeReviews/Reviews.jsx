@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import Image from "../../../../common/image/Image";
+import React from "react";
 import Practica1 from "../../../../../assets/img/learning/practice/practica1.jpg";
 import Practica2 from "../../../../../assets/img/learning/practice/practica2.jpg";
 import Practica3 from "../../../../../assets/img/learning/practice/practica3.jpg";

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Menu } from "antd";
 import { ReactComponent as Icon } from "../../../assets/svg/burger.svg";
 import theme from "../../../store/theme";
@@ -7,7 +7,7 @@ import {
   toggleIconHeightSize,
   toggleIconWidthSize,
 } from "../../../utils/disabled";
-import { NavLink, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import {
   ApplicantMenu,
   EducationMenu,
@@ -32,9 +32,8 @@ const MenuNavbar = ({ toggleFontSize }) => {
     if (currentTheme === "black") return "white";
     if (currentTheme === "contrast") return "#195183";
   };
-  const [selectedKeys, setSelectedKeys] = useState([]);
+
   const onEducationItemClick = (item) => {
-    console.log(item.key);
     navigate(`learning/${item.key}`);
   };
   return (

@@ -202,3 +202,11 @@
          }
      }
 }
+.chapter__menu-show{
+    display: none;
+}
+@media screen and (max-width:1270px){
+	.chapter__menu-show{
+        display: block;
+    }
+}
