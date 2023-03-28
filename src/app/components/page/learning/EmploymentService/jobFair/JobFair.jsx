@@ -1,5 +1,7 @@
+import { observer } from "mobx-react-lite";
 import React from "react";
-const JobFair = () => {
+import { toggleClassName } from "../../../../../utils/disabled";
+const JobFair = observer(() => {
   return (
     <>
       <section>
@@ -24,6 +26,12 @@ const JobFair = () => {
             href="https://marlow-navigation.com/ru/marlow-russia-ru.asp"
             target={"_blank"}
             rel="noreferrer"
+            className={toggleClassName(
+              "education__link",
+              "education__link-white",
+              "education__link-black",
+              "education__link-contrast"
+            )}
           >
             Марлоу Навигейшн Россия
           </a>{" "}
@@ -35,7 +43,17 @@ const JobFair = () => {
         </p>
         <h3>Baltic Group International (BGI)</h3>
         <p>
-          <a href="https://www.bgicrew.com/" target={"_blank"} rel="noreferrer">
+          <a
+            href="https://www.bgicrew.com/"
+            target={"_blank"}
+            rel="noreferrer"
+            className={toggleClassName(
+              "education__link",
+              "education__link-white",
+              "education__link-black",
+              "education__link-contrast"
+            )}
+          >
             BGI
           </a>{" "}
           BGI - рекрутинг морского персонала для работы на всех типах грузовых
@@ -48,7 +66,17 @@ const JobFair = () => {
         <h2>Кадровые агентства береговых специальностей</h2>
         <h3>Портал «Работа в России»</h3>
         <p>
-          <a href="https://trudvsem.ru/" target={"_blank"} rel="noreferrer">
+          <a
+            href="https://trudvsem.ru/"
+            target={"_blank"}
+            rel="noreferrer"
+            className={toggleClassName(
+              "education__link",
+              "education__link-white",
+              "education__link-black",
+              "education__link-contrast"
+            )}
+          >
             Портал «Работа в России»
           </a>{" "}
           является федеральной государственной информационной системой
@@ -60,7 +88,17 @@ const JobFair = () => {
         <h3>Neuvoo</h3>
         <p>
           Ищете работу? На{" "}
-          <a href="https://neuvoo.ru/" target={"_blank"} rel="noreferrer">
+          <a
+            href="https://neuvoo.ru/"
+            target={"_blank"}
+            rel="noreferrer"
+            className={toggleClassName(
+              "education__link",
+              "education__link-white",
+              "education__link-black",
+              "education__link-contrast"
+            )}
+          >
             Neuvoo{" "}
           </a>{" "}
           Вы найдете все возможные вакансии, доступные в Вашем регионе. Ваш
@@ -68,7 +106,17 @@ const JobFair = () => {
         </p>
         <h3>«Молодой Специалист»</h3>
         <p>
-          <a href="https://msrabota.ru/" target={"_blank"} rel="noreferrer">
+          <a
+            href="https://msrabota.ru/"
+            target={"_blank"}
+            rel="noreferrer"
+            className={toggleClassName(
+              "education__link",
+              "education__link-white",
+              "education__link-black",
+              "education__link-contrast"
+            )}
+          >
             Всероссийский информационно-поисковый портал «Молодой Специалист»
           </a>{" "}
           портал для абитуриентов, студентов, молодых специалистов и молодых
@@ -84,7 +132,17 @@ const JobFair = () => {
         <h2>Государственные органы трудоустройства</h2>
         <h3>ГКУ Центр занятости населения города Уфы</h3>
         <p>
-          <a href="http://ufa.bashzan.ru" target={"_blank"} rel="noreferrer">
+          <a
+            href="http://ufa.bashzan.ru"
+            target={"_blank"}
+            rel="noreferrer"
+            className={toggleClassName(
+              "education__link",
+              "education__link-white",
+              "education__link-black",
+              "education__link-contrast"
+            )}
+          >
             ГКУ Центр занятости населения города Уфы.
           </a>{" "}
           Соискатели и работодатели, заинтересованные в поиске и предоставлении
@@ -101,6 +159,12 @@ const JobFair = () => {
             href="https://rabota.bashkortostan.ru/"
             target={"_blank"}
             rel="noreferrer"
+            className={toggleClassName(
+              "education__link",
+              "education__link-white",
+              "education__link-black",
+              "education__link-contrast"
+            )}
           >
             Интерактивный портал службы занятости населения Республики
             Башкортостан
@@ -109,5 +173,5 @@ const JobFair = () => {
       </section>
     </>
   );
-};
+});
 export default JobFair;

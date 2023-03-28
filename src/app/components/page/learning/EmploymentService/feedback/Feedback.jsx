@@ -1,5 +1,7 @@
+import { observer } from "mobx-react-lite";
 import React from "react";
-const Feedback = () => {
+import { toggleClassName } from "../../../../../utils/disabled";
+const Feedback = observer(() => {
   return (
     <section>
       <h1>Уважаемые выпускники!</h1>
@@ -14,10 +16,16 @@ const Feedback = () => {
         href="https://forms.yandex.ru/cloud/63dc8f6ceb6146d241e66e4c/"
         target="_blank"
         rel="noopener noreferrer"
+        className={toggleClassName(
+          "education__link",
+          "education__link-white",
+          "education__link-black",
+          "education__link-contrast"
+        )}
       >
         Анкета выпускника
       </a>
     </section>
   );
-};
+});
 export default Feedback;

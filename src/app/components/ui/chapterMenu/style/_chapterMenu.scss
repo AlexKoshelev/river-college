@@ -12,9 +12,11 @@
     ul{
         padding: 0.5em;
         columns: 3;
+        
         li {
+            text-align: center;
+            margin:10px;
            
-            margin: 10px 0;
             a{
                 color: $LINK_COLOR;
                 margin: 10px 0px;
@@ -23,6 +25,7 @@
                     color: $ACTIV_LINK_COLOR;
                 }
             }
+            
         }
     }
     &-title {
@@ -40,7 +43,7 @@
 }
 .chapter__menu-white {
     display: block;
-    width: 280px;
+    width: 100%;
     font-size: 0.8rem;
     margin: 20px 10px;
     padding: 10px;
@@ -49,7 +52,8 @@
         padding: 1em;
         columns: 3;
         li {
-            margin: 10px 0;
+            text-align: center;
+            margin:10px ;
             a{
                 color: $DISABLED_FONT_COLOR;
                 margin: 10px 0px;
@@ -76,7 +80,7 @@
 }
 .chapter__menu-black {
     display: block;
-    width: 280px;
+    width: 100%;
     font-size: 0.8rem;
     margin: 20px 10px;
     padding: 10px;
@@ -85,7 +89,8 @@
         padding: 1em;
         columns: 3;
         li {
-            margin: 10px 0;
+            text-align: center;
+            margin:10px ;
             a{
                 color: $WHITE_FONT_COLOR;
                 margin: 10px 0px;
@@ -112,7 +117,7 @@
 }
 .chapter__menu-contrast {
     display: block;
-    width: 280px;
+    width: 100%;
     font-size: 0.8rem;
     margin: 20px 10px;
     padding: 10px;
@@ -121,8 +126,8 @@
         padding: 1em;
         columns: 3;
         li {
-           
-            margin: 10px 0;
+            text-align: center;
+            margin:10px ;
             a{
                 color:  $FONT_CONTRAST;
                 margin: 10px 0px;
@@ -175,6 +180,7 @@
      }
 }
 @include phones{
+    
     .chapter__menu{
          ul{
              columns: 1;

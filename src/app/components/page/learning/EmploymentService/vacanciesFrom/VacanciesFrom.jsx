@@ -8,7 +8,9 @@ import Logo6 from "../../../../../assets/img/learning/employmentServices/logo6.j
 import Logo7 from "../../../../../assets/img/learning/employmentServices/logo7.png";
 import Logo8 from "../../../../../assets/img/learning/employmentServices/logo4.png";
 import Image from "../../../../common/image/Image";
-const VacanciesFrom = () => {
+import { observer } from "mobx-react-lite";
+import { toggleClassName } from "../../../../../utils/disabled";
+const VacanciesFrom = observer(() => {
   return (
     <>
       <section>
@@ -33,7 +35,17 @@ const VacanciesFrom = () => {
           <a href="https://tough-staff.ru/" target={"_blank"} rel="noreferrer">
             <Image src={Logo1} height={"100px"} className="employment__image" />
           </a>{" "}
-          <a href="https://tough-staff.ru/" target={"_blank"} rel="noreferrer">
+          <a
+            href="https://tough-staff.ru/"
+            target={"_blank"}
+            rel="noreferrer"
+            className={toggleClassName(
+              "education__link",
+              "education__link-white",
+              "education__link-black",
+              "education__link-contrast"
+            )}
+          >
             Кадровое агентство «Тафф Стафф»
           </a>{" "}
           занимается разработкой стратегий и тактик карьерного продвижения для
@@ -51,7 +63,17 @@ const VacanciesFrom = () => {
             <Image src={Logo2} width={"280px"} className="employment__image" />
           </a>{" "}
           Головной офис{" "}
-          <a href="http://bashvt.ru/" target={"_blank"} rel="noreferrer">
+          <a
+            href="http://bashvt.ru/"
+            target={"_blank"}
+            rel="noreferrer"
+            className={toggleClassName(
+              "education__link",
+              "education__link-white",
+              "education__link-black",
+              "education__link-contrast"
+            )}
+          >
             ЗАО СК Башволготанкер{" "}
           </a>{" "}
           расположен в г. Уфа. Структурные подразделения компании находятся в
@@ -70,7 +92,17 @@ const VacanciesFrom = () => {
           <a href="https://vodohod.com/" target={"_blank"} rel="noreferrer">
             <Image src={Logo3} height={"100px"} className="employment__image" />
           </a>{" "}
-          <a href="https://vodohod.com/" target={"_blank"} rel="noreferrer">
+          <a
+            href="https://vodohod.com/"
+            target={"_blank"}
+            rel="noreferrer"
+            className={toggleClassName(
+              "education__link",
+              "education__link-white",
+              "education__link-black",
+              "education__link-contrast"
+            )}
+          >
             ВодоходЪ
           </a>{" "}
           — крупнейший российский оператор речных круизов и туристический
@@ -95,6 +127,12 @@ const VacanciesFrom = () => {
             href="https://www.volgaflot.com/"
             target={"_blank"}
             rel="noreferrer"
+            className={toggleClassName(
+              "education__link",
+              "education__link-white",
+              "education__link-black",
+              "education__link-contrast"
+            )}
           >
             Волжское пароходство
           </a>{" "}
@@ -112,7 +150,17 @@ const VacanciesFrom = () => {
             <Image src={Logo5} height={"100px"} className="employment__image" />
           </a>{" "}
           Основной сферой деятельности компании{" "}
-          <a href="https://gama-nn.ru/" target={"_blank"} rel="noreferrer">
+          <a
+            href="https://gama-nn.ru/"
+            target={"_blank"}
+            rel="noreferrer"
+            className={toggleClassName(
+              "education__link",
+              "education__link-white",
+              "education__link-black",
+              "education__link-contrast"
+            )}
+          >
             ГАМА
           </a>{" "}
           являются речные круизы по рекам Волге, Оке, Каме на комфортабельных
@@ -131,7 +179,17 @@ const VacanciesFrom = () => {
           <a href="https://oirp.ru/" target={"_blank"} rel="noreferrer">
             <Image src={Logo6} height={"100px"} className="employment__image" />
           </a>{" "}
-          <a href="https://oirp.ru/" target={"_blank"} rel="noreferrer">
+          <a
+            href="https://oirp.ru/"
+            target={"_blank"}
+            rel="noreferrer"
+            className={toggleClassName(
+              "education__link",
+              "education__link-white",
+              "education__link-black",
+              "education__link-contrast"
+            )}
+          >
             АО «ОИРП»
           </a>{" "}
           — одно из крупнейших предприятий водного транспорта в Западной и
@@ -149,7 +207,17 @@ const VacanciesFrom = () => {
           <a href="http://lorp.ru/" target={"_blank"} rel="noreferrer">
             <Image src={Logo7} width={"280px"} className="employment__image" />
           </a>{" "}
-          <a href="http://lorp.ru/" target={"_blank"} rel="noreferrer">
+          <a
+            href="http://lorp.ru/"
+            target={"_blank"}
+            rel="noreferrer"
+            className={toggleClassName(
+              "education__link",
+              "education__link-white",
+              "education__link-black",
+              "education__link-contrast"
+            )}
+          >
             Ленское объединенное речное пароходство
           </a>{" "}
           – флагман водного речного транспорта Якутии и одно из ведущих
@@ -175,6 +243,12 @@ const VacanciesFrom = () => {
             href="http://www.bely-lebed.ru/"
             target={"_blank"}
             rel="noreferrer"
+            className={toggleClassName(
+              "education__link",
+              "education__link-white",
+              "education__link-black",
+              "education__link-contrast"
+            )}
           >
             «Белый лебедь»
           </a>{" "}
@@ -192,7 +266,17 @@ const VacanciesFrom = () => {
         <h2>ООО "Речфлот"</h2>
         <p>
           Компания{" "}
-          <a href="https://www.rechflot.ru/" target={"_blank"} rel="noreferrer">
+          <a
+            href="https://www.rechflot.ru/"
+            target={"_blank"}
+            rel="noreferrer"
+            className={toggleClassName(
+              "education__link",
+              "education__link-white",
+              "education__link-black",
+              "education__link-contrast"
+            )}
+          >
             «Речфлот»
           </a>{" "}
           не первый год занимается организацией речных круизов на современных
@@ -218,7 +302,17 @@ const VacanciesFrom = () => {
         </p>
         <h2>ООО "Волга Тур"</h2>
         <p>
-          <a href="https://volgatour.ru/" target={"_blank"} rel="noreferrer">
+          <a
+            href="https://volgatour.ru/"
+            target={"_blank"}
+            rel="noreferrer"
+            className={toggleClassName(
+              "education__link",
+              "education__link-white",
+              "education__link-black",
+              "education__link-contrast"
+            )}
+          >
             В ООО "Волга Тур"
           </a>{" "}
           На двухпалубный теплоход СРОЧНО требуется:
@@ -236,6 +330,12 @@ const VacanciesFrom = () => {
               href="https://uchaly.superjob.ru/vakansii/"
               target="_blank"
               rel="noopener noreferrer"
+              className={toggleClassName(
+                "education__link",
+                "education__link-white",
+                "education__link-black",
+                "education__link-contrast"
+              )}
             >
               Superjob
             </a>
@@ -245,6 +345,12 @@ const VacanciesFrom = () => {
               href="https://www.trud.com/"
               target="_blank"
               rel="noopener noreferrer"
+              className={toggleClassName(
+                "education__link",
+                "education__link-white",
+                "education__link-black",
+                "education__link-contrast"
+              )}
             >
               Trud.com
             </a>
@@ -254,6 +360,12 @@ const VacanciesFrom = () => {
               href="https://ufa.hh.ru/employer"
               target="_blank"
               rel="noopener noreferrer"
+              className={toggleClassName(
+                "education__link",
+                "education__link-white",
+                "education__link-black",
+                "education__link-contrast"
+              )}
             >
               HEADHUNTER.RU
             </a>
@@ -263,6 +375,12 @@ const VacanciesFrom = () => {
               href="https://ufa.rabota.ru/"
               target="_blank"
               rel="noopener noreferrer"
+              className={toggleClassName(
+                "education__link",
+                "education__link-white",
+                "education__link-black",
+                "education__link-contrast"
+              )}
             >
               RABOTA.RU
             </a>
@@ -272,6 +390,12 @@ const VacanciesFrom = () => {
               href="https://www.zarplata.ru/"
               target="_blank"
               rel="noopener noreferrer"
+              className={toggleClassName(
+                "education__link",
+                "education__link-white",
+                "education__link-black",
+                "education__link-contrast"
+              )}
             >
               ZARPLATA.RU
             </a>
@@ -281,6 +405,12 @@ const VacanciesFrom = () => {
               href="https://jobsora.com/"
               target="_blank"
               rel="noopener noreferrer"
+              className={toggleClassName(
+                "education__link",
+                "education__link-white",
+                "education__link-black",
+                "education__link-contrast"
+              )}
             >
               ru.jobsora.com
             </a>
@@ -289,5 +419,5 @@ const VacanciesFrom = () => {
       </section>
     </>
   );
-};
+});
 export default VacanciesFrom;

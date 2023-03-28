@@ -1,6 +1,8 @@
+import { observer } from "mobx-react-lite";
 import React from "react";
 import Doc1 from "../../../../../assets/pdf/employmentService/pismo_vopros.pdf";
-const Faq = () => {
+import { toggleClassName } from "../../../../../utils/disabled";
+const Faq = observer(() => {
   return (
     <section>
       <h1>
@@ -10,11 +12,31 @@ const Faq = () => {
         На этой странице размещены популярные вопросы по организации практики и
         трудоустройства и ответы на эти вопросы. Задать свой вопрос или
         комментировать ответ Вы можете сообщением в нашей группе{" "}
-        <a href="https://vk.com/vgavtufa" target={"_blank"} rel="noreferrer">
+        <a
+          href="https://vk.com/vgavtufa"
+          target={"_blank"}
+          rel="noreferrer"
+          className={toggleClassName(
+            "education__link",
+            "education__link-white",
+            "education__link-black",
+            "education__link-contrast"
+          )}
+        >
           ВКонтакте
         </a>{" "}
         или по{" "}
-        <a href="mailto:opp@uf-vsuwt.ru" target={"_blank"} rel="noreferrer">
+        <a
+          href="mailto:opp@uf-vsuwt.ru"
+          target={"_blank"}
+          rel="noreferrer"
+          className={toggleClassName(
+            "education__link",
+            "education__link-white",
+            "education__link-black",
+            "education__link-contrast"
+          )}
+        >
           электронным адресам службы трудоустройства.
         </a>
       </p>
@@ -34,12 +56,22 @@ const Faq = () => {
       </p>
       <p>
         <b>Источник: </b>{" "}
-        <a href={Doc1} target={"_blank"} rel="noreferrer">
+        <a
+          href={Doc1}
+          target={"_blank"}
+          rel="noreferrer"
+          className={toggleClassName(
+            "education__link",
+            "education__link-white",
+            "education__link-black",
+            "education__link-contrast"
+          )}
+        >
           Письмо Минобрнауки России от 30.10.2020 № МН-5/20730 "О направлении
           вопросов-ответов" (вопрос №4)
         </a>
       </p>
     </section>
   );
-};
+});
 export default Faq;

@@ -3,7 +3,9 @@ import { Outlet } from "react-router";
 import Port from "../../../../assets/img/education/port.jpg";
 import Image from "../../../common/image/Image";
 import ChapterMenu from "../../../ui/chapterMenu/ChapterMenu";
-const EmploymentService = () => {
+import { toggleClassName } from "../../../../utils/disabled";
+import { observer } from "mobx-react-lite";
+const EmploymentService = observer(() => {
   const linksMenu = [
     { title: "О службе трудоустройства выпускников", path: "" },
     {
@@ -31,7 +33,14 @@ const EmploymentService = () => {
   ];
 
   return (
-    <div className="education__container">
+    <div
+      className={toggleClassName(
+        "education__container",
+        "education__container-white",
+        "education__container-black",
+        "education__container-contrast"
+      )}
+    >
       <h1 className="education__container-title">
         Служба трудоустройства выпускников Уфимского филиала ФГБОУ ВО «ВГУВТ»
       </h1>
@@ -46,5 +55,5 @@ const EmploymentService = () => {
       </div>
     </div>
   );
-};
+});
 export default EmploymentService;

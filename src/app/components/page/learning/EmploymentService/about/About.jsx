@@ -1,5 +1,7 @@
+import { observer } from "mobx-react-lite";
 import React from "react";
-const About = () => {
+import { toggleClassName } from "../../../../../utils/disabled";
+const About = observer(() => {
   return (
     <section>
       <h1>Служба трудоустройства выпускников филиала </h1>
@@ -30,6 +32,12 @@ const About = () => {
               href="https://vk.com/vgavtufa"
               target={"_blank"}
               rel="noreferrer"
+              className={toggleClassName(
+                "education__link",
+                "education__link-white",
+                "education__link-black",
+                "education__link-contrast"
+              )}
             >
               Мы Вконтакте
             </a>
@@ -120,5 +128,5 @@ const About = () => {
       </div>
     </section>
   );
-};
+});
 export default About;

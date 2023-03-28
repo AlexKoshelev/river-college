@@ -1,22 +1,39 @@
 @import "../../../../style/variables";
+._ibg{
+	position: relative;
+}
+._ibg img {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	 left:0; 
+	object-fit: cover;
+}
 .item {
     display: flex;
     align-items: center;
     justify-content: center;
     user-select: none;
-    height: 800px;
+    height: 700px;
     width: 100%;
 }
-.item-1 {
-    background-color: orange;
+.swiperSlideFirs__title{
+    position: absolute;
+    z-index: 2;
+    font-size: 2em;
 }
-.item-2 {
-    background-color:aqua;
+.swiperSlideFirs__text{
+    position: absolute;
+    z-index: 2;
 }
-.item-3 {
-    background-color:rgb(2, 14, 14);
+.swiperSlideFirs__list{
+    position: absolute;
+    z-index: 2;
 }
-
+.swiperSlideFirs__btn{
+    position: absolute;
+    z-index: 2;
+}
 .arrow {
     cursor: pointer;
 }

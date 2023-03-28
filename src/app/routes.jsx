@@ -36,6 +36,10 @@ import JobFair from "./components/page/learning/EmploymentService/jobFair/JobFai
 import Links from "./components/page/learning/EmploymentService/links/Links";
 import VacanciesFrom from "./components/page/learning/EmploymentService/vacanciesFrom/VacanciesFrom";
 import Feedback from "./components/page/learning/EmploymentService/feedback/Feedback";
+import AboutPractice from "./components/page/learning/Practice/aboutPracrice/AboutPracice";
+import PracticeReviews from "./components/page/learning/Practice/PracticeReviews/Reviews";
+import ShedulePractice from "./components/page/learning/Practice/shedulePractice/ShedulePractice";
+import Utc from "./components/page/learning/Practice/utc/Utc";
 
 const routes = () => [
   {
@@ -151,6 +155,24 @@ const routes = () => [
       {
         path: "practice",
         element: <Practice />,
+        children: [
+          {
+            path: "",
+            element: <AboutPractice />,
+          },
+          {
+            path: "reviews",
+            element: <PracticeReviews />,
+          },
+          {
+            path: "utc",
+            element: <Utc />,
+          },
+          {
+            path: "shedule",
+            element: <ShedulePractice />,
+          },
+        ],
       },
       {
         path: "employmentService",
