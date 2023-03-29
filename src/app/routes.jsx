@@ -13,19 +13,16 @@ import Struct from "./components/page/sveden/struct/Struct";
 import Vacant from "./components/page/sveden/vacant/Vacant";
 import Main from "./layouts/main";
 import Sveden from "./layouts/sveden/Sveden";
-
 import Live from "./layouts/live";
 import StudentsLive from "./components/page/live/studentsLive/StudentsLive";
 import Rest from "./components/page/live/rest/Rest";
 import Sport from "./components/page/live/sport/Sport";
 import PhotoGallery from "./components/page/live/photoGallery/PhotoGallery";
 import OurPride from "./components/page/live/ourPride/OurPride";
-
 import Vacancies from "./components/page/live/vacancies/Vacancies";
 import Science from "./components/page/live/science/Science";
 import Teachers from "./components/page/live/teachers/Teachers";
 import Learning from "./layouts/Learning";
-
 import Practice from "./components/page/learning/Practice/Practice";
 import EmploymentService from "./components/page/learning/EmploymentService/EmploymentService";
 import About from "./components/page/learning/EmploymentService/about/About";
@@ -40,6 +37,17 @@ import AboutPractice from "./components/page/learning/Practice/aboutPracrice/Abo
 import PracticeReviews from "./components/page/learning/Practice/PracticeReviews/Reviews";
 import ShedulePractice from "./components/page/learning/Practice/shedulePractice/ShedulePractice";
 import Utc from "./components/page/learning/Practice/utc/Utc";
+import Enrolly from "./layouts/Enrollee";
+import ApplicantsEnrollee from "./components/page/enrollee/applicants/ApplicantsEnrollee";
+import OpenDay from "./components/page/enrollee/openDay/OpenDay";
+import ApplicantsInfo from "./components/page/enrollee/applicants/applicantsInfo/ApplicantsInfo";
+import Message from "./components/page/enrollee/applicants/message/Message";
+import Monitoring from "./components/page/enrollee/applicants/monitoring/Monitoring";
+import Reception from "./components/page/enrollee/applicants/reception/Reception";
+import SubmissionDoc from "./components/page/enrollee/applicants/submissionDoc/SubmissionDoc";
+import EducationCosts from "./components/page/enrollee/applicants/reception/educationCosts/EducationCosts";
+import ReceptionPlaces from "./components/page/enrollee/applicants/reception/receptionPlaces/ReceptionPlaces";
+import ReceptionTiming from "./components/page/enrollee/applicants/reception/receptionTiming/ReceptionTiming";
 
 const routes = () => [
   {
@@ -145,6 +153,68 @@ const routes = () => [
       {
         path: "vacancies",
         element: <Vacancies />,
+      },
+    ],
+  },
+  {
+    path: "enrollee",
+    element: <Enrolly />,
+    children: [
+      {
+        path: "applicants",
+        element: <ApplicantsEnrollee />,
+        children: [
+          {
+            path: "applicantsInfo",
+            element: <ApplicantsInfo />,
+          },
+          {
+            path: "message",
+            element: <Message />,
+          },
+          {
+            path: "monitoring",
+            element: <Monitoring />,
+          },
+          {
+            path: "reception",
+            element: <Reception />,
+            /*  children: [
+              {
+                path: "educationCosts",
+                element: <EducationCosts />,
+              },
+              {
+                path: "receptionPlaces",
+                element: <ReceptionPlaces />,
+              },
+              {
+                path: "receptionTiming",
+                element: <ReceptionTiming />,
+              },
+            ], */
+          },
+          {
+            path: "submissionDoc",
+            element: <SubmissionDoc />,
+          },
+          {
+            path: "educationCosts",
+            element: <EducationCosts />,
+          },
+          {
+            path: "receptionPlaces",
+            element: <ReceptionPlaces />,
+          },
+          {
+            path: "receptionTiming",
+            element: <ReceptionTiming />,
+          },
+        ],
+      },
+      {
+        path: "open-day",
+        element: <OpenDay />,
       },
     ],
   },

@@ -12,14 +12,17 @@
     ul{
         padding: 0.5em;
         columns: 3;
-        
+        -webkit-columns: 3;
+        -moz-columns: 3;
+
+
         li {
             text-align: center;
-            margin:10px;
-           
+           margin-bottom: 20px;
+           width: 100%;
             a{
                 color: $LINK_COLOR;
-                margin: 10px 0px;
+    
                 &:hover {
                     border-bottom: solid 1px $MAIN_COLOR;
                     color: $ACTIV_LINK_COLOR;
@@ -123,6 +126,7 @@
     padding: 10px;
     border:solid 1px  $FONT_CONTRAST;
     ul{
+    
         padding: 1em;
         columns: 3;
         li {

@@ -86,7 +86,7 @@ export function EducationMenu({ onEducationItemClick }) {
     </div>
   );
 }
-export function ApplicantMenu() {
+export function ApplicantMenu({ onEnrolleeItemClick }) {
   return (
     <div
       style={{
@@ -111,21 +111,13 @@ export function ApplicantMenu() {
             border: "none",
             boxShadow: "none",
           }}
+          onClick={onEnrolleeItemClick}
           items={[
             {
-              label: "Основные сведения об университете",
-              key: "basic_information",
-            },
-            {
-              label: "Поступающим",
+              label: "Абитурьенту",
               key: "applicants",
             },
             { label: "Дни открытых дверей", key: "open-day" },
-            {
-              label: "Подготовительные курсы",
-              key: "training-courses",
-            },
-            { label: "Олимпиады", key: "olympics" },
           ]}
         ></Menu>
       </Space>

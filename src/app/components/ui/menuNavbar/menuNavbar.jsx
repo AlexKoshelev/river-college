@@ -36,6 +36,9 @@ const MenuNavbar = ({ toggleFontSize }) => {
   const onEducationItemClick = (item) => {
     navigate(`learning/${item.key}`);
   };
+  const onEnrolleeItemClick = (item) => {
+    navigate(`enrollee/${item.key}`);
+  };
   return (
     <>
       <nav className="header__navbar">
@@ -90,10 +93,12 @@ const MenuNavbar = ({ toggleFontSize }) => {
             },
             {
               label: "Абитурьенту",
-              key: "applicant",
+              key: "enrollee",
               children: [
                 {
-                  label: <ApplicantMenu />,
+                  label: (
+                    <ApplicantMenu onEnrolleeItemClick={onEnrolleeItemClick} />
+                  ),
                   key: "applicantMenu",
                   style: {
                     height: "fit-content",
@@ -102,8 +107,9 @@ const MenuNavbar = ({ toggleFontSize }) => {
               ],
             },
             {
-              label: "Повышение квалификации",
+              label: "Дополнительное образование",
               key: "training",
+
               children: [
                 {
                   label: <TrainingMenu />,
