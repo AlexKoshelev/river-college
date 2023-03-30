@@ -192,7 +192,7 @@ const Common = observer(() => {
             </tr>
             <tr>
               <td>Режим и график работы</td>
-              <td>-</td>
+              <td>-</td>{" "}
             </tr>
             <tr>
               <td>Контактные телефоны</td>
