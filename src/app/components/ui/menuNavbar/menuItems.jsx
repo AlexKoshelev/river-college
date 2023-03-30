@@ -69,7 +69,7 @@ export function EducationMenu({ onEducationItemClick }) {
             boxShadow: "none",
           }}
           items={[
-            {
+            /*  {
               label: "Курсантам",
               key: "cadets",
             },
@@ -77,7 +77,7 @@ export function EducationMenu({ onEducationItemClick }) {
               label: "Заочникам",
               key: "for-parttime-students",
             },
-            { label: "Выпускникам", key: "graduates" },
+            { label: "Выпускникам", key: "graduates" }, */
             { label: "Практическая подготовка", key: "practice" },
             { label: "Служба трудоустройства", key: "employmentService" },
           ]}
@@ -124,7 +124,7 @@ export function ApplicantMenu({ onEnrolleeItemClick }) {
     </div>
   );
 }
-export function TrainingMenu() {
+export function TrainingMenu({ onTrainingItemClick }) {
   return (
     <div
       style={{
@@ -149,14 +149,19 @@ export function TrainingMenu() {
             border: "none",
             boxShadow: "none",
           }}
+          onClick={onTrainingItemClick}
           items={[
             {
-              label: "Программы подготовки членов экипажей морских судов",
-              key: "sea-boat",
+              label: "О центре конвенционной подготовки и доп. образования",
+              key: "aboutCdo",
             },
             {
-              label: "Программы подготовки членов экипажей речных судов",
-              key: "river-boat",
+              label: "Программы повышения квалификации членов экипажей",
+              key: "advancedTraining",
+            },
+            {
+              label: "Дистанционное обучение",
+              key: "distanceLearning",
             },
           ]}
         ></Menu>

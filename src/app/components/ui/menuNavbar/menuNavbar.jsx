@@ -39,6 +39,9 @@ const MenuNavbar = ({ toggleFontSize }) => {
   const onEnrolleeItemClick = (item) => {
     navigate(`enrollee/${item.key}`);
   };
+  const onTrainingItemClick = (item) => {
+    navigate(`training/${item.key}`);
+  };
   return (
     <>
       <nav className="header__navbar">
@@ -112,7 +115,9 @@ const MenuNavbar = ({ toggleFontSize }) => {
 
               children: [
                 {
-                  label: <TrainingMenu />,
+                  label: (
+                    <TrainingMenu onTrainingItemClick={onTrainingItemClick} />
+                  ),
                   key: "trainingMenu",
                   style: {
                     height: "fit-content",

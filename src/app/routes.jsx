@@ -48,6 +48,10 @@ import SubmissionDoc from "./components/page/enrollee/applicants/submissionDoc/S
 import EducationCosts from "./components/page/enrollee/applicants/reception/educationCosts/EducationCosts";
 import ReceptionPlaces from "./components/page/enrollee/applicants/reception/receptionPlaces/ReceptionPlaces";
 import ReceptionTiming from "./components/page/enrollee/applicants/reception/receptionTiming/ReceptionTiming";
+import Training from "./layouts/Training";
+import AboutCdo from "./components/page/training/aboutCdo/AboutCdo";
+import AdvancedTraining from "./components/page/training/advancedTraining/AdvancedTraining";
+import DistanceLearning from "./components/page/training/distanceLearning/DistanceLearning";
 
 const routes = () => [
   {
@@ -179,20 +183,6 @@ const routes = () => [
           {
             path: "reception",
             element: <Reception />,
-            /*  children: [
-              {
-                path: "educationCosts",
-                element: <EducationCosts />,
-              },
-              {
-                path: "receptionPlaces",
-                element: <ReceptionPlaces />,
-              },
-              {
-                path: "receptionTiming",
-                element: <ReceptionTiming />,
-              },
-            ], */
           },
           {
             path: "submissionDoc",
@@ -281,6 +271,24 @@ const routes = () => [
             element: <Links />,
           },
         ],
+      },
+    ],
+  },
+  {
+    path: "training",
+    element: <Training />,
+    children: [
+      {
+        path: "aboutCdo",
+        element: <AboutCdo />,
+      },
+      {
+        path: "advancedTraining",
+        element: <AdvancedTraining />,
+      },
+      {
+        path: "distanceLearning",
+        element: <DistanceLearning />,
       },
     ],
   },
