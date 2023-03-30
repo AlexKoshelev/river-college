@@ -1,6 +1,6 @@
 import { Menu, Space } from "antd";
 
-export function MainMenu() {
+export function MainMenu({ onMainItemClick }) {
   return (
     <div
       style={{
@@ -24,17 +24,22 @@ export function MainMenu() {
             border: "none",
             boxShadow: "none",
           }}
+          onClick={onMainItemClick}
           items={[
             {
+              label: "Главная",
+              key: "main",
+            },
+            {
               label: "О филиале",
-              key: "about",
+              key: "aboutBranch",
             },
             {
               label: "Историческая справка",
-              key: "history-reference",
+              key: "historicalReference",
             },
-            { label: "Новости", key: "news" },
-            { label: "План мероприятия", key: "action_plan" },
+            { label: "Новости", key: "univercityNews" },
+            { label: "План мероприятия", key: "univercityEvents" },
           ]}
         ></Menu>
       </Space>

@@ -42,6 +42,13 @@ const MenuNavbar = ({ toggleFontSize }) => {
   const onTrainingItemClick = (item) => {
     navigate(`training/${item.key}`);
   };
+  const onMainItemClick = (item) => {
+    if (item.key === "main") {
+      navigate(`/`);
+    } else {
+      navigate(`home/${item.key}`);
+    }
+  };
   return (
     <>
       <nav className="header__navbar">
@@ -69,7 +76,7 @@ const MenuNavbar = ({ toggleFontSize }) => {
 
               children: [
                 {
-                  label: <MainMenu />,
+                  label: <MainMenu onMainItemClick={onMainItemClick} />,
                   key: "mainMenu",
                   style: {
                     height: "fit-content",

@@ -52,6 +52,11 @@ import Training from "./layouts/Training";
 import AboutCdo from "./components/page/training/aboutCdo/AboutCdo";
 import AdvancedTraining from "./components/page/training/advancedTraining/AdvancedTraining";
 import DistanceLearning from "./components/page/training/distanceLearning/DistanceLearning";
+import Home from "./layouts/Home";
+import AboutBranch from "./components/page/homePage/aboutBranch/AboutBranch";
+import HistoricalReference from "./components/page/homePage/historicalReference/HistoricalReference";
+import UniversityNews from "./components/page/homePage/universityNews/UniversityNews";
+import UniversityEvents from "./components/page/homePage/universityEvents/UniversityEvents";
 
 const routes = () => [
   {
@@ -289,6 +294,28 @@ const routes = () => [
       {
         path: "distanceLearning",
         element: <DistanceLearning />,
+      },
+    ],
+  },
+  {
+    path: "home",
+    element: <Home />,
+    children: [
+      {
+        path: "aboutBranch",
+        element: <AboutBranch />,
+      },
+      {
+        path: "historicalReference",
+        element: <HistoricalReference />,
+      },
+      {
+        path: "univercityNews",
+        element: <UniversityNews />,
+      },
+      {
+        path: "univercityEvents",
+        element: <UniversityEvents />,
       },
     ],
   },
