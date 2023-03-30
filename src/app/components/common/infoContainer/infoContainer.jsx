@@ -8,6 +8,7 @@ import {
   toggleFontSize,
   toggleIconColor,
 } from "../../../utils/disabled";
+import { NavLink } from "react-router-dom";
 
 const InfoContainer = observer(
   ({ title, btnTitle, image, children, newsTitle }) => {
@@ -31,18 +32,20 @@ const InfoContainer = observer(
           </div>
           {btnTitle ? (
             <div className="infocontainer__button">
-              <Button
-                style={{ fontSize: toggleFontSize(1) }}
-                className={toggleClassName(
-                  "infopage__button",
-                  "white white-radius",
-                  "black black-radius",
-                  "contrast contrast-radius"
-                )}
-              >
-                <span>{btnTitle}</span>
-                {<ArrowButton fill={toggleIconColor("#C80000")} />}
-              </Button>
+              <NavLink to="home/univercityNews">
+                <Button
+                  style={{ fontSize: toggleFontSize(1) }}
+                  className={toggleClassName(
+                    "infopage__button",
+                    "white white-radius",
+                    "black black-radius",
+                    "contrast contrast-radius"
+                  )}
+                >
+                  <span>{btnTitle}</span>
+                  {<ArrowButton fill={toggleIconColor("#C80000")} />}
+                </Button>
+              </NavLink>
             </div>
           ) : null}
         </div>
