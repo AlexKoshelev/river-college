@@ -48,9 +48,7 @@ const ApplicantsPage = observer(() => {
           >
             <li>
               {" "}
-              <NavLink to={"enrollee/applicants/message"}>
-                Выбор профессии
-              </NavLink>
+              <NavLink to={"enrollee/applicants"}>Выбор профессии</NavLink>
             </li>
             <li>
               <NavLink to={"enrollee/applicants/reception"}>

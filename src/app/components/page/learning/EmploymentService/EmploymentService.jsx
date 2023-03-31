@@ -28,7 +28,7 @@ const EmploymentService = observer(() => {
     { title: "Полезные ссылки", path: "links" },
     {
       title: "Повышение квалификации и профессиональная переподготовка",
-      path: "testWay",
+      path: "../../training/advancedTraining",
     },
   ];
 

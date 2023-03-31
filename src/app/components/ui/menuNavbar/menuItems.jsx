@@ -174,7 +174,7 @@ export function TrainingMenu({ onTrainingItemClick }) {
     </div>
   );
 }
-export function StudentLifeMenu() {
+export function StudentLifeMenu({ onLiveItemClick }) {
   return (
     <div
       style={{
@@ -199,16 +199,17 @@ export function StudentLifeMenu() {
             border: "none",
             boxShadow: "none",
           }}
+          onClick={onLiveItemClick}
           items={[
             {
               label: "Новости",
-              key: "news",
+              key: "univercityNews",
             },
             {
               label: "Мероприятия",
-              key: "events",
+              key: "univercityEvents",
             },
-            { label: "Наша гордость", key: "our-pride" },
+            { label: "Наша гордость", key: "ourPride" },
           ]}
         ></Menu>
       </Space>

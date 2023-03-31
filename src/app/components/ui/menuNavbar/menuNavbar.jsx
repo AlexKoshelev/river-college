@@ -49,6 +49,13 @@ const MenuNavbar = ({ toggleFontSize }) => {
       navigate(`home/${item.key}`);
     }
   };
+  const onLiveItemClick = (item) => {
+    if (item.key === "ourPride") {
+      navigate(`live/${item.key}`);
+    } else {
+      navigate(`home/${item.key}`);
+    }
+  };
   return (
     <>
       <nav className="header__navbar">
@@ -137,7 +144,7 @@ const MenuNavbar = ({ toggleFontSize }) => {
               key: "studentLife",
               children: [
                 {
-                  label: <StudentLifeMenu />,
+                  label: <StudentLifeMenu onLiveItemClick={onLiveItemClick} />,
                   key: "studentLifeMenu",
                   style: {
                     height: "fit-content",

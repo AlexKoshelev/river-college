@@ -81,6 +81,73 @@ const BreadCrumbs = observer(() => {
                 return (routeTo = "/ Наука");
               case "/live/vacancies":
                 return (routeTo = "/ Вакансии");
+              /* Главная страница*/
+              case "/home":
+                return (routeTo = null);
+              case "/home/aboutBranch":
+                return (routeTo = "/ О филиале");
+              case "/home/historicalReference":
+                return (routeTo = "/ Историческая справка");
+              case "/home/univercityNews":
+                return (routeTo = "/ Новости");
+              case "/home/univercityEvents":
+                return (routeTo = "/ План мероприятий");
+              /* Образование*/
+              /* Практическая подготовка*/
+              case "/learning":
+                return (routeTo = null);
+              case "/learning/practice":
+                return (routeTo = "/ Отдел практической подготовки");
+              case "/learning/practice/reviews":
+                return (routeTo = "/ Курсанты и выпускники филиала о практике");
+              case "/learning/practice/shedule":
+                return (routeTo = "/ График практикие");
+              case "/learning/practice/utc":
+                return (routeTo = "/ Учебно-тренажерный центр");
+              /* Служба трудоустройства*/
+              case "/learning/employmentService":
+                return (routeTo = "/ О службе трудоустройства выпускников");
+              case "/learning/employmentService/faq":
+                return (routeTo = "/ Вопросы и ответы");
+              case "/learning/employmentService/partners":
+                return (routeTo = "/ Социальные партнеры филиала");
+              case "/learning/employmentService/news":
+                return (routeTo = "/ Новости трудоустройства 2023 года");
+              case "/learning/employmentService/jobFair":
+                return (routeTo = "/ Ярмарки вакансий");
+              case "/learning/employmentService/vacanciesFrom":
+                return (routeTo = "/ Вакансии от работодателей");
+              case "/learning/employmentService/feedback":
+                return (routeTo = "/ Обратная связь");
+              case "/learning/employmentService/links":
+                return (routeTo = "/ Полезные ссылки");
+              /* Абитуриенту*/
+              case "/enrollee":
+                return (routeTo = null);
+              case "/enrollee/applicants":
+                return (routeTo = "/ Выбор профессии");
+              case "/enrollee/applicants/reception":
+                return (routeTo = "/ Приемная кампания 2023");
+              case "/enrollee/applicants/submissionDoc":
+                return (routeTo = "/ Подача документов");
+              case "/enrollee/applicants/monitoring":
+                return (routeTo = "/ Мониторинг подачи документов");
+              case "/enrollee/applicants/applicantsInfo":
+                return (routeTo = "/ Как стать нашим курсантом");
+              case "/enrollee/open-day":
+                return (routeTo = "/ Дни открытых дверей");
+              /* ЦДО*/
+              /* Центр конвенционной подготовки и дополнительного образования*/
+              case "/training":
+                return (routeTo = null);
+              case "/training/aboutCdo":
+                return (routeTo =
+                  "/ Центр конвенционной подготовки и дополнительного образования");
+              case "/training/advancedTraining":
+                return (routeTo = "/ Программы повышения квалификации");
+              case "/training/distanceLearning":
+                return (routeTo = "/ Cистемa дистанционного обучения");
+
               default:
                 routeTo = null;
                 break;

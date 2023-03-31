@@ -1,5 +1,6 @@
 import React from "react";
 import { Outlet } from "react-router";
+import BreadCrumbs from "../components/common/breadCrumbs/BreadCrumbs";
 import ChapterMenu from "../components/ui/chapterMenu/ChapterMenu";
 const Learning = () => {
   const linksMenu = [
@@ -23,6 +24,7 @@ const Learning = () => {
   ];
   return (
     <div className="_container">
+      <BreadCrumbs />
       <div className="chapter__menu-show">
         <ChapterMenu linksArray={linksMenu} />
       </div>

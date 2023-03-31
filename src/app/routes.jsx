@@ -174,12 +174,12 @@ const routes = () => [
         element: <ApplicantsEnrollee />,
         children: [
           {
-            path: "applicantsInfo",
-            element: <ApplicantsInfo />,
+            path: "",
+            element: <Message />,
           },
           {
-            path: "message",
-            element: <Message />,
+            path: "applicantsInfo",
+            element: <ApplicantsInfo />,
           },
           {
             path: "monitoring",

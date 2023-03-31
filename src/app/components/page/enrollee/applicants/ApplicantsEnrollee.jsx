@@ -6,7 +6,7 @@ import { ReactComponent as Logo } from "../../../../assets/svg/riveruniversityLo
 import { observer } from "mobx-react-lite";
 const ApplicantsEnrollee = observer(() => {
   const linksMenu = [
-    { title: "Выбор профессии", path: "message" },
+    { title: "Выбор профессии", path: "" },
     {
       title: "Приемная кампания 2023",
       path: "reception",
