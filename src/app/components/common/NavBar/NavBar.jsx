@@ -186,11 +186,13 @@ const NavBar = observer(() => {
         <div className="_container">
           <div className="header__section2">
             <div className="signBoard__logo">
-              <object>
-                <RiverUniversityLogo
-                  fill={toggleIconColor("#0C1C2B", "", "#000")}
-                />
-              </object>
+              <NavLink to="">
+                <object>
+                  <RiverUniversityLogo
+                    fill={toggleIconColor("#0C1C2B", "", "#000")}
+                  />
+                </object>
+              </NavLink>
             </div>
             <div style={{ fontSize: "2rem" }} className="signBoard__tagline">
               СТАНЬ КАПИТАНОМ СВОЕЙ СУДЬБЫ!

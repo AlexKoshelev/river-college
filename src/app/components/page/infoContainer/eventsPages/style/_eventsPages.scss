@@ -42,6 +42,10 @@
     grid-template-areas: 
     "firstCard   secondCard   thirdCard   fourthCard";
 }
+.eventsBtn__container{
+    display: flex;
+    justify-content: space-between;
+}
 @media screen and (max-width:1190px) {
     .eventsPages{
         gap:20px;

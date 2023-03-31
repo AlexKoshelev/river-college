@@ -1,5 +1,6 @@
 import { observer } from "mobx-react-lite";
 import React from "react";
+import { NavLink } from "react-router-dom";
 import { ReactComponent as RiverUniversityLogo } from "../../../assets/svg/riveruniversityLogo.svg";
 import { ReactComponent as Vk } from "../../../assets/svg/vk.svg";
 import { toggleClassName, toggleIconColor } from "../../../utils/disabled";
@@ -21,11 +22,13 @@ const Footer = observer(() => {
           </a>
         </div>
         <div className="footer__logo">
-          <object>
-            <RiverUniversityLogo
-              fill={toggleIconColor("#0C1C2B", "", "#000")}
-            />
-          </object>
+          <NavLink to="">
+            <object>
+              <RiverUniversityLogo
+                fill={toggleIconColor("#0C1C2B", "", "#000")}
+              />
+            </object>
+          </NavLink>
         </div>
 
         <div className="footer__collegeInfo">
