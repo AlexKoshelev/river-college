@@ -11,7 +11,7 @@ const Enrolly = () => {
     },
   ];
   return (
-    <div className="_container">
+    <div className="_container min-height">
       <BreadCrumbs />
       <div className="chapter__menu-show">
         <ChapterMenu linksArray={linksMenu} />

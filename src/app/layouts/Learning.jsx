@@ -4,7 +4,7 @@ import BreadCrumbs from "../components/common/breadCrumbs/BreadCrumbs";
 import ChapterMenu from "../components/ui/chapterMenu/ChapterMenu";
 const Learning = () => {
   const linksMenu = [
-    { title: "Курсантам", path: "" },
+    /*  { title: "Курсантам", path: "" },
     {
       title: "Заочникам",
       path: "",
@@ -12,7 +12,7 @@ const Learning = () => {
     {
       title: "Выпускникам",
       path: "",
-    },
+    }, */
     {
       title: "Практическая подготовка",
       path: "practice",
@@ -23,7 +23,7 @@ const Learning = () => {
     },
   ];
   return (
-    <div className="_container">
+    <div className="_container min-height">
       <BreadCrumbs />
       <div className="chapter__menu-show">
         <ChapterMenu linksArray={linksMenu} />

@@ -5,6 +5,8 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay, Pagination, Navigation } from "swiper";
 import Arctica from "../../../assets/img/main/arctica.jpg";
+import Boat from "../../../assets/img/main/boat.png";
+import { NavLink } from "react-router-dom";
 
 const ImageSlider = ({ className, ...rest }) => {
   /*  const items = [
@@ -13,230 +15,27 @@ const ImageSlider = ({ className, ...rest }) => {
     <div className="item item-3">Item 3</div>,
   ]; */
   return (
-    <>
-      <Swiper
-        navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper"
-        mousewheel={true}
-        loop={true}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-        {...rest}
-      >
-        <SwiperSlide>
-          <div className="_container">
-            <h1 className="swiperSlideFirs__title">Наши выпускники!</h1>
-            <p className="swiperSlideFirs__text">
-              Статья о том, как сложилась судьба некоторых наших выпускников,
-              которые связали свою жизнь с морем!
-            </p>
-            <ul className="swiperSlideFirs__list">
-              <li>Преподаватель в родном училище</li>
-              <li>Капитан огромного ледокола в арктике!</li>
-              <li>И еще несколько интересных историй!</li>
-            </ul>
-            <div className="swiperSlideFirs__btn">Читать</div>
-            <div className="_ibg">
-              <img src={Arctica} alt="Картинка уплыла" />
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="_container">
-            <h1 className="swiperSlideFirs__title">Наши выпускники!</h1>
-            <p className="swiperSlideFirs__text">
-              Статья о том, как сложилась судьба некоторых наших выпускников,
-              которые связали свою жизнь с морем!
-            </p>
-            <ul className="swiperSlideFirs__list">
-              <li>Преподаватель в родном училище</li>
-              <li>Капитан огромного ледокола в арктике!</li>
-              <li>И еще несколько интересных историй!</li>
-            </ul>
-            <div className="swiperSlideFirs__btn">Читать</div>
-            <div className="_ibg">
-              <img src={Arctica} alt="Картинка уплыла" />
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="_container">
-            <h1 className="swiperSlideFirs__title">Наши выпускники!</h1>
-            <p className="swiperSlideFirs__text">
-              Статья о том, как сложилась судьба некоторых наших выпускников,
-              которые связали свою жизнь с морем!
-            </p>
-            <ul className="swiperSlideFirs__list">
-              <li>Преподаватель в родном училище</li>
-              <li>Капитан огромного ледокола в арктике!</li>
-              <li>И еще несколько интересных историй!</li>
-            </ul>
-            <div className="swiperSlideFirs__btn">Читать</div>
-            <div className="_ibg">
-              <img src={Arctica} alt="Картинка уплыла" />
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="_container">
-            <h1 className="swiperSlideFirs__title">Наши выпускники!</h1>
-            <p className="swiperSlideFirs__text">
-              Статья о том, как сложилась судьба некоторых наших выпускников,
-              которые связали свою жизнь с морем!
-            </p>
-            <ul className="swiperSlideFirs__list">
-              <li>Преподаватель в родном училище</li>
-              <li>Капитан огромного ледокола в арктике!</li>
-              <li>И еще несколько интересных историй!</li>
-            </ul>
-            <div className="swiperSlideFirs__btn">Читать</div>
-            <div className="_ibg">
-              <img src={Arctica} alt="Картинка уплыла" />
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="_container">
-            <h1 className="swiperSlideFirs__title">Наши выпускники!</h1>
-            <p className="swiperSlideFirs__text">
-              Статья о том, как сложилась судьба некоторых наших выпускников,
-              которые связали свою жизнь с морем!
-            </p>
-            <ul className="swiperSlideFirs__list">
-              <li>Преподаватель в родном училище</li>
-              <li>Капитан огромного ледокола в арктике!</li>
-              <li>И еще несколько интересных историй!</li>
-            </ul>
-            <div className="swiperSlideFirs__btn">Читать</div>
-            <div className="_ibg">
-              <img src={Arctica} alt="Картинка уплыла" />
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="_container">
-            <h1 className="swiperSlideFirs__title">Наши выпускники!</h1>
-            <p className="swiperSlideFirs__text">
-              Статья о том, как сложилась судьба некоторых наших выпускников,
-              которые связали свою жизнь с морем!
-            </p>
-            <ul className="swiperSlideFirs__list">
-              <li>Преподаватель в родном училище</li>
-              <li>Капитан огромного ледокола в арктике!</li>
-              <li>И еще несколько интересных историй!</li>
-            </ul>
-            <div className="swiperSlideFirs__btn">Читать</div>
-            <div className="_ibg">
-              <img src={Arctica} alt="Картинка уплыла" />
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="_container">
-            <h1 className="swiperSlideFirs__title">Наши выпускники!</h1>
-            <p className="swiperSlideFirs__text">
-              Статья о том, как сложилась судьба некоторых наших выпускников,
-              которые связали свою жизнь с морем!
-            </p>
-            <ul className="swiperSlideFirs__list">
-              <li>Преподаватель в родном училище</li>
-              <li>Капитан огромного ледокола в арктике!</li>
-              <li>И еще несколько интересных историй!</li>
-            </ul>
-            <div className="swiperSlideFirs__btn">Читать</div>
-            <div className="_ibg">
-              <img src={Arctica} alt="Картинка уплыла" />
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="_container">
-            <h1 className="swiperSlideFirs__title">Наши выпускники!</h1>
-            <p className="swiperSlideFirs__text">
-              Статья о том, как сложилась судьба некоторых наших выпускников,
-              которые связали свою жизнь с морем!
-            </p>
-            <ul className="swiperSlideFirs__list">
-              <li>Преподаватель в родном училище</li>
-              <li>Капитан огромного ледокола в арктике!</li>
-              <li>И еще несколько интересных историй!</li>
-            </ul>
-            <div className="swiperSlideFirs__btn">Читать</div>
-            <div className="_ibg">
-              <img src={Arctica} alt="Картинка уплыла" />
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="_container">
-            <h1 className="swiperSlideFirs__title">Наши выпускники!</h1>
-            <p className="swiperSlideFirs__text">
-              Статья о том, как сложилась судьба некоторых наших выпускников,
-              которые связали свою жизнь с морем!
-            </p>
-            <ul className="swiperSlideFirs__list">
-              <li>Преподаватель в родном училище</li>
-              <li>Капитан огромного ледокола в арктике!</li>
-              <li>И еще несколько интересных историй!</li>
-            </ul>
-            <div className="swiperSlideFirs__btn">Читать</div>
-            <div className="_ibg">
-              <img src={Arctica} alt="Картинка уплыла" />
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="_container">
-            <h1 className="swiperSlideFirs__title">Наши выпускники!</h1>
-            <p className="swiperSlideFirs__text">
-              Статья о том, как сложилась судьба некоторых наших выпускников,
-              которые связали свою жизнь с морем!
-            </p>
-            <ul className="swiperSlideFirs__list">
-              <li>Преподаватель в родном училище</li>
-              <li>Капитан огромного ледокола в арктике!</li>
-              <li>И еще несколько интересных историй!</li>
-            </ul>
-            <div className="swiperSlideFirs__btn">Читать</div>
-            <div className="_ibg">
-              <img src={Arctica} alt="Картинка уплыла" />
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="_container">
-            <h1 className="swiperSlideFirs__title">Наши выпускники!</h1>
-            <p className="swiperSlideFirs__text">
-              Статья о том, как сложилась судьба некоторых наших выпускников,
-              которые связали свою жизнь с морем!
-            </p>
-            <ul className="swiperSlideFirs__list">
-              <li>Преподаватель в родном училище</li>
-              <li>Капитан огромного ледокола в арктике!</li>
-              <li>И еще несколько интересных историй!</li>
-            </ul>
-            <div className="swiperSlideFirs__btn">Читать</div>
-            <div className="_ibg">
-              <img src={Arctica} alt="Картинка уплыла" />
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="item item-2">Item 2</div>
-        </SwiperSlide>
-        {/*    <SwiperSlide>
-          <div className="item item-3">Item 3</div>
-        </SwiperSlide> */}
-        {/* {items.map((item) => (
-          <SwiperSlide key={item} className={className}>
-            <img src={item} alt={item} className={className} />
-          </SwiperSlide>
-        ))} */}
-      </Swiper>
-    </>
+    <div className="imageSlider-show">
+      <div className="_container">
+        <div className="marquee-infinite">
+          <img src={Boat} alt="" width={"250px"} height={"96px"} />
+        </div>
+        <h1 className="swiperSlideFirs__title">Наши выпускники!</h1>
+        <div className="swiperSlideFirs__text">
+          Статья о том, как сложилась судьба некоторых наших выпускников,
+          которые связали свою жизнь с морем!
+        </div>
+        <ul className="swiperSlideFirs__list">
+          <li>Преподаватель в родном училище</li>
+          <li>Капитан огромного ледокола в арктике!</li>
+          <li>И еще несколько интересных историй!</li>
+        </ul>
+        <NavLink to={"home/univercityNews"}>
+          <div className="swiperSlideFirs__btn">Читать</div>
+        </NavLink>
+        <img src={Arctica} alt="Картинка уплыла" />
+      </div>
+    </div>
   );
 };
 
