@@ -1,42 +1,4 @@
 @import "../../../../style/variables";
-._ibg{
-	position: relative;
-}
-._ibg img {
-	position: absolute;
-	width: 100%;
-	top: 0;
-	 left:0; 
-	object-fit: cover;
-}
-.item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    user-select: none;
-    height: 500px;
-    width: 100%;
-}
-.swiperSlideFirs__title{
-    position: absolute;
-    z-index: 2;
-    font-size: 2em;
-}
-.swiperSlideFirs__text{
-    position: absolute;
-    z-index: 2;
-}
-.swiperSlideFirs__list{
-    position: absolute;
-    z-index: 2;
-}
-.swiperSlideFirs__btn{
-    position: absolute;
-    z-index: 2;
-}
-.arrow {
-    cursor: pointer;
-}
 .imageSlider-show{
     display: block;
     position: relative;
@@ -48,45 +10,56 @@
         object-fit: cover;
     }
 }
-.swiperSlideFirs__text{
-    position: absolute;
-    z-index: 10;
-    top: 7%;
-    left: 60%;
-    max-width: 500px;
-}
-.swiperSlideFirs__list{
-    position: absolute;
-    font-size: 0.8em;
-    z-index: 10;
-    left: 60%;
-    top: 35%;
-}
-.swiperSlideFirs__btn{
-    position: absolute;
-    z-index: 10;
-    left: 75%;
-    top: 70%;
-    padding: 0.7em 1em;
-    font-weight: 500;
-    background-color: hsla(207, 63%, 21%, 0.5);
-    border: solid 2px white;
-    color: white;
-    border-radius: 0.2em;
-    &:hover{
-        border: solid 2px $MAIN_COLOR;
-        color: $MAIN_COLOR;
-        cursor: pointer;
+.swiperSlideFirs{
+    &__title{
+        font-size: 2em;
+        position: absolute;
+        z-index: 10;
+        left: 10%;
+        top: 10%;
+        width: 200px;
+    }
+    &__text{
+        text-align: justify;
+        position: absolute;
+        z-index: 10;
+        top: 7%;
+        left: 63%;
+        max-width: 450px;
+    }
+    &__list{
+        position: absolute;
+        font-size: 0.8em;
+        z-index: 10;
+        left: 65%;
+        top: 35%;
+        li{
+            margin-bottom: 0.3em;
+        }
+    }
+    &__btn{
+        position: absolute;
+        z-index: 10;
+        left: 75%;
+        top: 70%;
+        padding: 0.7em 1em;
+        font-weight: 500;
+        background-color: hsla(207, 63%, 21%, 0.5);
+        border: solid 2px white;
+        color: white;
+        border-radius: 0.2em;
+        &:hover{
+            border: solid 2px $MAIN_COLOR;
+            color: $MAIN_COLOR;
+            cursor: pointer;
+        }
     }
 }
-.swiperSlideFirs__title{
-    position: absolute;
-    z-index: 10;
-    left: 10%;
-    top: 10%;
-    width: 200px;
 
+.arrow {
+    cursor: pointer;
 }
+
 .marquee-infinite {
     position: absolute;
     bottom: 0;
@@ -94,33 +67,30 @@
     width: 100%;
     overflow: hidden;
 }
-.marquee-infinite img {
-    display: flex;
-    height: 96px;
-    width: 250px;
-    animation: marquee-infinite 5s linear infinite;
+.marquee-infinite {
+    span {
+        width: 100%;
+        display: flex;
+        justify-content:left;
+        animation: marquee-infinite 5s linear infinite;
+    }
+    img {
+        height: 96px;
+        width: 250px;
+        display: flex;
+        justify-content: left;
+        align-items:start;
+    }
+    &:hover img {
+        animation-play-state: paused;
+    }
 }
-
-.marquee-infinite span {
-  
-    display: flex;
-    justify-content: space-around;
-}
-
-.marquee-infinite img {
-
-}
-
-.marquee-infinite:hover img {
-    animation-play-state: paused;
-}
-
 @keyframes marquee-infinite {
     0% {
         transform: translateX(0%);
     }
     100% {
-        transform: translateX(450%);
+        transform: translateX(100%);
     }
 }
 @media screen and (max-width:1270px){

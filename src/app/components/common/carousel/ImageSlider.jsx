@@ -16,10 +16,12 @@ const ImageSlider = ({ className, ...rest }) => {
   ]; */
   return (
     <div className="imageSlider-show">
-      <div className="_container">
-        <div className="marquee-infinite">
+      <div className="marquee-infinite">
+        <span>
           <img src={Boat} alt="" width={"250px"} height={"96px"} />
-        </div>
+        </span>
+      </div>
+      <div className="_container">
         <h1 className="swiperSlideFirs__title">Наши выпускники!</h1>
         <div className="swiperSlideFirs__text">
           Статья о том, как сложилась судьба некоторых наших выпускников,
@@ -33,8 +35,8 @@ const ImageSlider = ({ className, ...rest }) => {
         <NavLink to={"home/univercityNews"}>
           <div className="swiperSlideFirs__btn">Читать</div>
         </NavLink>
-        <img src={Arctica} alt="Картинка уплыла" />
       </div>
+      <img src={Arctica} alt="Картинка уплыла" />
     </div>
   );
 };
