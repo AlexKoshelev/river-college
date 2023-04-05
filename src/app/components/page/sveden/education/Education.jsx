@@ -2,6 +2,56 @@ import { observer } from "mobx-react-lite";
 import React from "react";
 import { toggleClassName, toggleFontSize } from "../../../../utils/disabled";
 import Licenz from "../../../../assets/pdf/documentPage/licenz_vip20220916.pdf";
+import { ReactComponent as PDF } from "../../../../assets/svg/office/pdf.svg";
+import d230201 from "../../../../assets/pdf/educationPage/disciplin230201.pdf";
+import d230203 from "../../../../assets/pdf/educationPage/disciplin260203.pdf";
+import d230205 from "../../../../assets/pdf/educationPage/disciplin260205.pdf";
+import d230206 from "../../../../assets/pdf/educationPage/disciplin260206.pdf";
+import Pologenie_Parus from "../../../../assets/pdf/educationPage/Pologenie_Parus.pdf";
+import Pologhenie_DO from "../../../../assets/pdf/educationPage/Pologhenie_DO.pdf";
+import Pologhenie_EL_Sreda from "../../../../assets/pdf/educationPage/Pologhenie_EL_Sreda.pdf";
+import Pologhenie_kontrolDO from "../../../../assets/pdf/educationPage/Pologhenie_kontrolDO.pdf";
+import FOS_IA_SV_uglubl from "../../../../assets/pdf/educationPage/260203/FOS_IA_SV_uglubl.pdf";
+import Pologenie_attest_vipusk from "../../../../assets/pdf/educationPage/260203/Pologenie_attest_vipusk.pdf";
+import Pologenie_OOP from "../../../../assets/pdf/educationPage/260203/Pologenie_OOP.pdf";
+import Programma_IA_SV_uglubl from "../../../../assets/pdf/educationPage/260203/Programma_IA_SV_uglubl.pdf";
+import Programma_IA_SM from "../../../../assets/pdf/educationPage/260206/Programma_IA_SM.pdf";
+import Programma_IA_EM from "../../../../assets/pdf/educationPage/260206/Programma_IA_EM.pdf";
+import FOS_IA_EM from "../../../../assets/pdf/educationPage/260205/FOS_IA_EM.pdf";
+import FOS_IA_SM from "../../../../assets/pdf/educationPage/260205/FOS_IA_SM.pdf";
+import FOS_IA_OP from "../../../../assets/pdf/educationPage/230201/FOS_IA_OP.pdf";
+import Programma_IA_OP from "../../../../assets/pdf/educationPage/230201/Programma_IA_OP.pdf";
+import KPV from "../../../../assets/pdf/educationPage/KPV.pdf";
+
+import RPV_OP from "../../../../assets/pdf/educationPage/230201/RPV_OP.pdf";
+import RPV_SV from "../../../../assets/pdf/educationPage/260203/RPV_SV.pdf";
+import RPV_SM from "../../../../assets/pdf/educationPage/260205/RPV_SM.pdf";
+import RPV_EM from "../../../../assets/pdf/educationPage/260206/RPV_EM.pdf";
+import Image1 from "../../../../assets/pdf/educationPage/260203/1.1.jpg";
+import Image2 from "../../../../assets/pdf/educationPage/260203/1.2.jpg";
+import Image3 from "../../../../assets/pdf/educationPage/260203/1.3.jpg";
+import Image4 from "../../../../assets/pdf/educationPage/260203/2.1.jpg";
+import Image5 from "../../../../assets/pdf/educationPage/260203/2.2.jpg";
+import Image6 from "../../../../assets/pdf/educationPage/260203/2.3.jpg";
+import Image7 from "../../../../assets/pdf/educationPage/260203/3.1.jpg";
+import Image8 from "../../../../assets/pdf/educationPage/260203/3.2.jpg";
+import Image9 from "../../../../assets/pdf/educationPage/260203/3.3.jpg";
+import Image10 from "../../../../assets/pdf/educationPage/260203/4.1.jpg";
+import Image11 from "../../../../assets/pdf/educationPage/260203/4.2.jpg";
+
+import Image12 from "../../../../assets/pdf/educationPage/260206/5.jpg";
+import Image13 from "../../../../assets/pdf/educationPage/260206/6.jpg";
+import Image14 from "../../../../assets/pdf/educationPage/260206/7.jpg";
+import Image15 from "../../../../assets/pdf/educationPage/260206/8.jpg";
+
+import Image16 from "../../../../assets/pdf/educationPage/260205/9.jpg";
+import Image17 from "../../../../assets/pdf/educationPage/260205/10.jpg";
+import Image18 from "../../../../assets/pdf/educationPage/260205/11.jpg";
+import Image19 from "../../../../assets/pdf/educationPage/260205/11.1.jpg";
+import Image20 from "../../../../assets/pdf/educationPage/260205/12.jpg";
+import Image21 from "../../../../assets/pdf/educationPage/260205/12.1.jpg";
+import Image22 from "../../../../assets/pdf/educationPage/230201/13.jpg";
+import Image23 from "../../../../assets/pdf/educationPage/230201/14.jpg";
 const Education = observer(() => {
   return (
     <div
@@ -25,6 +75,7 @@ const Education = observer(() => {
       </h1>
       <ul>
         <li className="doc__item">
+          <PDF height={"25px"} width={"25px"} />
           <a href={Licenz} target={"_blank"} rel="noreferrer">
             Выписка из реестра лицензий Федеральной службы по надзору в сфере
             образования и науки (16.09.2022)
@@ -939,26 +990,32 @@ const Education = observer(() => {
         дисциплины (модули), практики), в том числе адаптированные
       </h3>
       <ul>
-        <a href={"Ustav"} target={"_blank"} rel="noreferrer">
-          <li className="doc__item active__link">26.02.03 "Судовождение"</li>
-        </a>
-        <a href={"UstavChange1415"} target={"_blank"} rel="noreferrer">
-          <li className="doc__item active__link">
+        <li className="doc__item">
+          <PDF height={"25px"} width={"25px"} />
+          <a href={d230203} target={"_blank"} rel="noreferrer">
+            26.02.03 "Судовождение"{" "}
+          </a>
+        </li>
+        <li className="doc__item">
+          <PDF height={"25px"} width={"25px"} />
+          <a href={d230206} target={"_blank"} rel="noreferrer">
             26.02.06 "Эксплуатация судового электрооборудования и средств
             автоматики"
-          </li>
-        </a>
-        <a href={"UstavChange17"} target={"_blank"} rel="noreferrer">
-          <li className="doc__item active__link">
+          </a>
+        </li>
+        <li className="doc__item">
+          <PDF height={"25px"} width={"25px"} />
+          <a href={d230205} target={"_blank"} rel="noreferrer">
             26.02.05 "Эксплуатация судовых энергетических установок"
-          </li>
-        </a>
-        <a href={"UstavChange17"} target={"_blank"} rel="noreferrer">
-          <li className="doc__item active__link">
+          </a>
+        </li>
+        <li className="doc__item">
+          <PDF height={"25px"} width={"25px"} />
+          <a href={d230201} target={"_blank"} rel="noreferrer">
             23.02.01 "Организация перевозок и управление на транспорте (по
             видам)
-          </li>
-        </a>
+          </a>
+        </li>
       </ul>
       <h3
         className={`common__container-title ${toggleClassName(
@@ -1102,31 +1159,135 @@ const Education = observer(() => {
                 учебной практики (заочная)
               </td>
               <td>
-                Календарный учебный график для специальности 26.02.03
-                "Судовождение", на базе 9 классов, очная ЭЦП Календарный учебный
-                график для специальности 26.02.03 "Судовождение", на базе 11
-                классов, очная ЭЦП Календарный учебный график для специальности
-                26.02.03 "Судовождение", заочная ЭЦП
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Image1} target={"_blank"} rel="noreferrer">
+                      Календарный учебный график для специальности 26.02.03
+                      "Судовождение", на базе 9 классов, очная
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Image2} target={"_blank"} rel="noreferrer">
+                      Календарный учебный график для специальности 26.02.03
+                      "Судовождение", на базе 11 классов, очная
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Image3} target={"_blank"} rel="noreferrer">
+                      Календарный учебный график для специальности 26.02.03
+                      "Судовождение", заочная
+                    </a>
+                  </li>
+                </ul>
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={RPV_SV} target={"_blank"} rel="noreferrer">
+                      Рабочая программа воспитания по направлению подготовки
+                      (специальности) 26.02.03 "Судовождение"
+                    </a>
+                  </li>
+                </ul>
+              </td>
+              <td></td>
+              <td>
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={KPV} target={"_blank"} rel="noreferrer">
+                      Календарный план воспитательной работы
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
-                Рабочая программа воспитания по направлению подготовки
-                (специальности) 26.02.03 "Судовождение"
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologenie_attest_vipusk}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение об итоговой аттестации выпускников
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Pologenie_OOP} target={"_blank"} rel="noreferrer">
+                      Положение об основной образовательной программе
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Programma_IA_SV_uglubl}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Программа итоговой аттестации для специальности 260203
+                      "Судовождение" (углубленная)
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={FOS_IA_SV_uglubl}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Фонды оценочных средств итоговой аттестации для
+                      специальности 260203 "Судовождение" (углубленная)
+                    </a>
+                  </li>
+                </ul>
               </td>
-              <td>Календарный план воспитательной работы</td>
               <td>
-                Положение об итоговой аттестации выпускников Положение об
-                основной образовательной программе Программа итоговой аттестации
-                для специальности 260203 "Судовождение" (углубленная) ЭЦП Фонды
-                оценочных средств итоговой аттестации для специальности 260203
-                "Судовождение" (углубленная ЭЦП
-              </td>
-              <td>
-                Положение о дистанционном обучении Положение о создании
-                электронных учебных курсов в системе дистанционного обучения
-                "Парус" Положение о текущем контроле и промежуточной аттестации
-                обучающихся с применением дистанционных образовательных
-                технологий Положение об электронной
-                информационно-образовательной среде
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Pologhenie_DO} target={"_blank"} rel="noreferrer">
+                      Положение о дистанционном обучении
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologenie_Parus}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение о создании электронных учебных курсов в системе
+                      дистанционного обучения "Парус"
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologhenie_kontrolDO}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение о текущем контроле и промежуточной аттестации
+                      обучающихся с применением дистанционных образовательных
+                      технологий
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologhenie_EL_Sreda}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение об электронной информационно-образовательной
+                      среде
+                    </a>
+                  </li>
+                </ul>
               </td>
             </tr>
             <tr>
@@ -1154,32 +1315,136 @@ const Education = observer(() => {
                 учебной практики (заочная)
               </td>
               <td>
-                Календарный учебный график для специальности 26.02.03
-                "Судовождение", на базе 11 классов, заочная ЭЦП Календарный
-                учебный график для специальности 26.02.03 "Судовождение", на
-                базе 9 классов, заочная ЭЦП Календарный учебный график для
-                специальности 26.02.03 "Судовождение", на базе 9 классов, очная
-                ЭЦП
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Image4} target={"_blank"} rel="noreferrer">
+                      Календарный учебный график для специальности 26.02.03
+                      "Судовождение", на базе 11 классов, заочная
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Image5} target={"_blank"} rel="noreferrer">
+                      Календарный учебный график для специальности 26.02.03
+                      "Судовождение", на базе 9 классов, заочная
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Image6} target={"_blank"} rel="noreferrer">
+                      Календарный учебный график для специальности 26.02.03
+                      "Судовождение", на базе 9 классов, очная
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
-                Рабочая программа воспитания по направлению подготовки
-                (специальности) 26.02.03 "Судовождение"
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={RPV_SV} target={"_blank"} rel="noreferrer">
+                      Рабочая программа воспитания по направлению подготовки
+                      (специальности) 26.02.03 "Судовождение"
+                    </a>
+                  </li>
+                </ul>
               </td>
-              <td>Календарный план воспитательной работы</td>
               <td>
-                Положение об итоговой аттестации выпускников Положение об
-                основной образовательной программе Программа итоговой аттестации
-                для специальности 260203 "Судовождение" (углубленная) ЭЦП Фонды
-                оценочных средств итоговой аттестации для специальности 260203
-                "Судовождение" (углубленная ЭЦП
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={KPV} target={"_blank"} rel="noreferrer">
+                      Календарный план воспитательной работы
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
-                Положение о дистанционном обучении Положение о создании
-                электронных учебных курсов в системе дистанционного обучения
-                "Парус" Положение о текущем контроле и промежуточной аттестации
-                обучающихся с применением дистанционных образовательных
-                технологий Положение об электронной
-                информационно-образовательной среде
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologenie_attest_vipusk}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение об итоговой аттестации выпускников
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Pologenie_OOP} target={"_blank"} rel="noreferrer">
+                      Положение об основной образовательной программе
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Programma_IA_SV_uglubl}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Программа итоговой аттестации для специальности 260203
+                      "Судовождение" (углубленная)
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={FOS_IA_SV_uglubl}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Фонды оценочных средств итоговой аттестации для
+                      специальности 260203 "Судовождение" (углубленная)
+                    </a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Pologhenie_DO} target={"_blank"} rel="noreferrer">
+                      Положение о дистанционном обучении
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologenie_Parus}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение о создании электронных учебных курсов в системе
+                      дистанционного обучения "Парус"
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologhenie_kontrolDO}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение о текущем контроле и промежуточной аттестации
+                      обучающихся с применением дистанционных образовательных
+                      технологий
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologhenie_EL_Sreda}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение об электронной информационно-образовательной
+                      среде
+                    </a>
+                  </li>
+                </ul>
               </td>
             </tr>
             <tr>
@@ -1210,32 +1475,136 @@ const Education = observer(() => {
                 учебной практики (углубл., прием 2018, 3 г 10мес, заочная)
               </td>
               <td>
-                Календарный учебный график для специальности 26.02.03
-                "Судовождение", на базе 11 классов, заочная ЭЦП Календарный
-                учебный график для специальности 26.02.03 "Судовождение", на
-                базе 9 классов, очная ЭЦП Календарный учебный график для
-                специальности 26.02.03 "Судовождение", на базе 11 классов, очная
-                ЭЦП
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Image7} target={"_blank"} rel="noreferrer">
+                      Календарный учебный график для специальности 26.02.03
+                      "Судовождение", на базе 11 классов, заочная
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Image8} target={"_blank"} rel="noreferrer">
+                      Календарный учебный график для специальности 26.02.03
+                      "Судовождение", на базе 9 классов, очная
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Image9} target={"_blank"} rel="noreferrer">
+                      Календарный учебный график для специальности 26.02.03
+                      "Судовождение", на базе 11 классов, очная
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
-                Рабочая программа воспитания по направлению подготовки
-                (специальности) 26.02.03 "Судовождение"
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={RPV_SV} target={"_blank"} rel="noreferrer">
+                      Рабочая программа воспитания по направлению подготовки
+                      (специальности) 26.02.03 "Судовождение"
+                    </a>
+                  </li>
+                </ul>
               </td>
-              <td>Календарный план воспитательной работы</td>
               <td>
-                Положение об итоговой аттестации выпускников Положение об
-                основной образовательной программе Программа итоговой аттестации
-                для специальности 260203 "Судовождение" (углубленная) ЭЦП Фонды
-                оценочных средств итоговой аттестации для специальности 260203
-                "Судовождение" (углубленная ЭЦП
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={KPV} target={"_blank"} rel="noreferrer">
+                      Календарный план воспитательной работы
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
-                Положение о дистанционном обучении Положение о создании
-                электронных учебных курсов в системе дистанционного обучения
-                "Парус" Положение о текущем контроле и промежуточной аттестации
-                обучающихся с применением дистанционных образовательных
-                технологий Положение об электронной
-                информационно-образовательной среде
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologenie_attest_vipusk}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение об итоговой аттестации выпускников
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Pologenie_OOP} target={"_blank"} rel="noreferrer">
+                      Положение об основной образовательной программе
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Programma_IA_SV_uglubl}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Программа итоговой аттестации для специальности 260203
+                      "Судовождение" (углубленная)
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={FOS_IA_SV_uglubl}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Фонды оценочных средств итоговой аттестации для
+                      специальности 260203 "Судовождение" (углубленная)
+                    </a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Pologhenie_DO} target={"_blank"} rel="noreferrer">
+                      Положение о дистанционном обучении
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologenie_Parus}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение о создании электронных учебных курсов в системе
+                      дистанционного обучения "Парус"
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologhenie_kontrolDO}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение о текущем контроле и промежуточной аттестации
+                      обучающихся с применением дистанционных образовательных
+                      технологий
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologhenie_EL_Sreda}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение об электронной информационно-образовательной
+                      среде
+                    </a>
+                  </li>
+                </ul>
               </td>
             </tr>
             <tr>
@@ -1261,30 +1630,129 @@ const Education = observer(() => {
                 учебной практики (заочная)
               </td>
               <td>
-                Календарный учебный график для специальности 26.02.03
-                "Судовождение", на базе 11 классов, очная ЭЦП Календарный
-                учебный график для специальности 26.02.03 "Судовождение", на
-                базе 9 классов, очная ЭЦП
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Image10} target={"_blank"} rel="noreferrer">
+                      Календарный учебный график для специальности 26.02.03
+                      "Судовождение", на базе 11 классов, очная
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Image11} target={"_blank"} rel="noreferrer">
+                      Календарный учебный график для специальности 26.02.03
+                      "Судовождение", на базе 9 классов, очная
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
-                Рабочая программа воспитания по направлению подготовки
-                (специальности) 26.02.03 "Судовождение"
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={RPV_SV} target={"_blank"} rel="noreferrer">
+                      Рабочая программа воспитания по направлению подготовки
+                      (специальности) 26.02.03 "Судовождение"
+                    </a>
+                  </li>
+                </ul>
               </td>
-              <td>Календарный план воспитательной работы</td>
               <td>
-                Положение об итоговой аттестации выпускников Положение об
-                основной образовательной программе Программа итоговой аттестации
-                для специальности 260203 "Судовождение" (углубленная) ЭЦП Фонды
-                оценочных средств итоговой аттестации для специальности 260203
-                "Судовождение" (углубленная ЭЦП
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={KPV} target={"_blank"} rel="noreferrer">
+                      Календарный план воспитательной работы
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
-                Положение о дистанционном обучении Положение о создании
-                электронных учебных курсов в системе дистанционного обучения
-                "Парус" Положение о текущем контроле и промежуточной аттестации
-                обучающихся с применением дистанционных образовательных
-                технологий Положение об электронной
-                информационно-образовательной среде
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologenie_attest_vipusk}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение об итоговой аттестации выпускников
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Pologenie_OOP} target={"_blank"} rel="noreferrer">
+                      Положение об основной образовательной программе
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Programma_IA_SV_uglubl}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Программа итоговой аттестации для специальности 260203
+                      "Судовождение" (углубленная)
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={FOS_IA_SV_uglubl}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Фонды оценочных средств итоговой аттестации для
+                      специальности 260203 "Судовождение" (углубленная)
+                    </a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Pologhenie_DO} target={"_blank"} rel="noreferrer">
+                      Положение о дистанционном обучении
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologenie_Parus}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение о создании электронных учебных курсов в системе
+                      дистанционного обучения "Парус"
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologhenie_kontrolDO}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение о текущем контроле и промежуточной аттестации
+                      обучающихся с применением дистанционных образовательных
+                      технологий
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologhenie_EL_Sreda}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение об электронной информационно-образовательной
+                      среде
+                    </a>
+                  </li>
+                </ul>
               </td>
             </tr>
             <tr>
@@ -1333,28 +1801,124 @@ const Education = observer(() => {
                 преддипломной практике
               </td>
               <td>
-                Календарный учебный график для специальности 26.02.06
-                "Эксплуатация судового электрооборудования и средств автоматики"
-                ЭЦП
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Image12} target={"_blank"} rel="noreferrer">
+                      Календарный учебный график для специальности 26.02.06
+                      "Эксплуатация судового электрооборудования и средств
+                      автоматики"
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
-                Рабочая программа воспитания по направлению подготовки
-                (специальности) 26.02.06 "Эксплуатация судового
-                электрооборудования и средств автоматики"
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={RPV_EM} target={"_blank"} rel="noreferrer">
+                      Рабочая программа воспитания по направлению подготовки
+                      (специальности) 26.02.06 "Эксплуатация судового
+                      электрооборудования и средств автоматики"
+                    </a>
+                  </li>
+                </ul>
               </td>
-              <td>Календарный план воспитательной работы</td>
               <td>
-                Положение об итоговой аттестации выпускников Положение об
-                основной образовательной программе Программа итоговой аттестации
-                ЭЦП Фонды оценочных средств итоговой аттестации ЭЦП
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={KPV} target={"_blank"} rel="noreferrer">
+                      Календарный план воспитательной работы
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
-                Положение о дистанционном обучении Положение о создании
-                электронных учебных курсов в системе дистанционного обучения
-                "Парус" Положение о текущем контроле и промежуточной аттестации
-                обучающихся с применением дистанционных образовательных
-                технологий Положение об электронной
-                информационно-образовательной среде
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologenie_attest_vipusk}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение об итоговой аттестации выпускников
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Pologenie_OOP} target={"_blank"} rel="noreferrer">
+                      Положение об основной образовательной программе
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Programma_IA_EM}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Программа итоговой аттестации для специальности 260206
+                      "Судовождение" (углубленная)
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Programma_IA_SM}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Фонды оценочных средств итоговой аттестации для
+                      специальности 260206 "Судовождение" (углубленная)
+                    </a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Pologhenie_DO} target={"_blank"} rel="noreferrer">
+                      Положение о дистанционном обучении
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologenie_Parus}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение о создании электронных учебных курсов в системе
+                      дистанционного обучения "Парус"
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologhenie_kontrolDO}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение о текущем контроле и промежуточной аттестации
+                      обучающихся с применением дистанционных образовательных
+                      технологий
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologhenie_EL_Sreda}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение об электронной информационно-образовательной
+                      среде
+                    </a>
+                  </li>
+                </ul>
               </td>
             </tr>
             <tr>
@@ -1388,28 +1952,124 @@ const Education = observer(() => {
                 преддипломной практике
               </td>
               <td>
-                Календарный учебный график для специальности 26.02.06
-                "Эксплуатация судового электрооборудования и средств автоматики"
-                ЭЦП
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Image13} target={"_blank"} rel="noreferrer">
+                      Календарный учебный график для специальности 26.02.06
+                      "Эксплуатация судового электрооборудования и средств
+                      автоматики"
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
-                Рабочая программа воспитания по направлению подготовки
-                (специальности) 26.02.06 "Эксплуатация судового
-                электрооборудования и средств автоматики"
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={RPV_EM} target={"_blank"} rel="noreferrer">
+                      Рабочая программа воспитания по направлению подготовки
+                      (специальности) 26.02.06 "Эксплуатация судового
+                      электрооборудования и средств автоматики"
+                    </a>
+                  </li>
+                </ul>
               </td>
-              <td>Календарный план воспитательной работы</td>
               <td>
-                Положение об итоговой аттестации выпускников Положение об
-                основной образовательной программе Программа итоговой аттестации
-                ЭЦП Фонды оценочных средств итоговой аттестации ЭЦП
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={KPV} target={"_blank"} rel="noreferrer">
+                      Календарный план воспитательной работы
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
-                Положение о дистанционном обучении Положение о создании
-                электронных учебных курсов в системе дистанционного обучения
-                "Парус" Положение о текущем контроле и промежуточной аттестации
-                обучающихся с применением дистанционных образовательных
-                технологий Положение об электронной
-                информационно-образовательной среде
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologenie_attest_vipusk}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение об итоговой аттестации выпускников
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Pologenie_OOP} target={"_blank"} rel="noreferrer">
+                      Положение об основной образовательной программе
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Programma_IA_EM}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Программа итоговой аттестации для специальности 260206
+                      "Судовождение" (углубленная)
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Programma_IA_SM}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Фонды оценочных средств итоговой аттестации для
+                      специальности 260206 "Судовождение" (углубленная)
+                    </a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Pologhenie_DO} target={"_blank"} rel="noreferrer">
+                      Положение о дистанционном обучении
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologenie_Parus}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение о создании электронных учебных курсов в системе
+                      дистанционного обучения "Парус"
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologhenie_kontrolDO}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение о текущем контроле и промежуточной аттестации
+                      обучающихся с применением дистанционных образовательных
+                      технологий
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologhenie_EL_Sreda}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение об электронной информационно-образовательной
+                      среде
+                    </a>
+                  </li>
+                </ul>
               </td>
             </tr>
             <tr>
@@ -1443,28 +2103,124 @@ const Education = observer(() => {
                 преддипломной практике
               </td>
               <td>
-                Календарный учебный график для специальности 26.02.06
-                "Эксплуатация судового электрооборудования и средств автоматики"
-                ЭЦП
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Image14} target={"_blank"} rel="noreferrer">
+                      Календарный учебный график для специальности 26.02.06
+                      "Эксплуатация судового электрооборудования и средств
+                      автоматики"
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
-                Рабочая программа воспитания по направлению подготовки
-                (специальности) 26.02.06 "Эксплуатация судового
-                электрооборудования и средств автоматики"
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={RPV_EM} target={"_blank"} rel="noreferrer">
+                      Рабочая программа воспитания по направлению подготовки
+                      (специальности) 26.02.06 "Эксплуатация судового
+                      электрооборудования и средств автоматики"
+                    </a>
+                  </li>
+                </ul>
               </td>
-              <td>Календарный план воспитательной работы</td>
               <td>
-                Положение об итоговой аттестации выпускников Положение об
-                основной образовательной программе Программа итоговой аттестации
-                ЭЦП Фонды оценочных средств итоговой аттестации ЭЦП
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={KPV} target={"_blank"} rel="noreferrer">
+                      Календарный план воспитательной работы
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
-                Положение о дистанционном обучении Положение о создании
-                электронных учебных курсов в системе дистанционного обучения
-                "Парус" Положение о текущем контроле и промежуточной аттестации
-                обучающихся с применением дистанционных образовательных
-                технологий Положение об электронной
-                информационно-образовательной среде
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologenie_attest_vipusk}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение об итоговой аттестации выпускников
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Pologenie_OOP} target={"_blank"} rel="noreferrer">
+                      Положение об основной образовательной программе
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Programma_IA_EM}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Программа итоговой аттестации для специальности 260206
+                      "Судовождение" (углубленная)
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Programma_IA_SM}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Фонды оценочных средств итоговой аттестации для
+                      специальности 260206 "Судовождение" (углубленная)
+                    </a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Pologhenie_DO} target={"_blank"} rel="noreferrer">
+                      Положение о дистанционном обучении
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologenie_Parus}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение о создании электронных учебных курсов в системе
+                      дистанционного обучения "Парус"
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologhenie_kontrolDO}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение о текущем контроле и промежуточной аттестации
+                      обучающихся с применением дистанционных образовательных
+                      технологий
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologhenie_EL_Sreda}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение об электронной информационно-образовательной
+                      среде
+                    </a>
+                  </li>
+                </ul>
               </td>
             </tr>
             <tr>
@@ -1498,28 +2254,124 @@ const Education = observer(() => {
                 преддипломной практике
               </td>
               <td>
-                Календарный учебный график для специальности 26.02.06
-                "Эксплуатация судового электрооборудования и средств автоматики"
-                ЭЦП
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Image15} target={"_blank"} rel="noreferrer">
+                      Календарный учебный график для специальности 26.02.06
+                      "Эксплуатация судового электрооборудования и средств
+                      автоматики"
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
-                Рабочая программа воспитания по направлению подготовки
-                (специальности) 26.02.06 "Эксплуатация судового
-                электрооборудования и средств автоматики"
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={RPV_EM} target={"_blank"} rel="noreferrer">
+                      Рабочая программа воспитания по направлению подготовки
+                      (специальности) 26.02.06 "Эксплуатация судового
+                      электрооборудования и средств автоматики"
+                    </a>
+                  </li>
+                </ul>
               </td>
-              <td>Календарный план воспитательной работы</td>
               <td>
-                Положение об итоговой аттестации выпускников Положение об
-                основной образовательной программе Программа итоговой аттестации
-                ЭЦП Фонды оценочных средств итоговой аттестации ЭЦП
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={KPV} target={"_blank"} rel="noreferrer">
+                      Календарный план воспитательной работы
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
-                Положение о дистанционном обучении Положение о создании
-                электронных учебных курсов в системе дистанционного обучения
-                "Парус" Положение о текущем контроле и промежуточной аттестации
-                обучающихся с применением дистанционных образовательных
-                технологий Положение об электронной
-                информационно-образовательной среде
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologenie_attest_vipusk}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение об итоговой аттестации выпускников
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Pologenie_OOP} target={"_blank"} rel="noreferrer">
+                      Положение об основной образовательной программе
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Programma_IA_EM}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Программа итоговой аттестации для специальности 260206
+                      "Судовождение" (углубленная)
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Programma_IA_SM}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Фонды оценочных средств итоговой аттестации для
+                      специальности 260206 "Судовождение" (углубленная)
+                    </a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Pologhenie_DO} target={"_blank"} rel="noreferrer">
+                      Положение о дистанционном обучении
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologenie_Parus}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение о создании электронных учебных курсов в системе
+                      дистанционного обучения "Парус"
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologhenie_kontrolDO}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение о текущем контроле и промежуточной аттестации
+                      обучающихся с применением дистанционных образовательных
+                      технологий
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologhenie_EL_Sreda}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение об электронной информационно-образовательной
+                      среде
+                    </a>
+                  </li>
+                </ul>
               </td>
             </tr>
             <tr>
@@ -1584,27 +2436,123 @@ const Education = observer(() => {
                 оценочных средств по производственной практике
               </td>
               <td>
-                Календарный учебный график для специальности 26.02.05
-                "Эксплуатация судовых энергетических установок" ЭЦП
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Image16} target={"_blank"} rel="noreferrer">
+                      Календарный учебный график для специальности 26.02.05
+                      "Эксплуатация судовых энергетических установок"
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
-                Рабочая программа воспитания по направлению подготовки
-                (специальности) 26.02.05 "Эксплуатация судовых энергетических
-                установок"
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={RPV_SM} target={"_blank"} rel="noreferrer">
+                      Рабочая программа воспитания по направлению подготовки
+                      (специальности) 26.02.05 "Эксплуатация судовых
+                      энергетических установок"
+                    </a>
+                  </li>
+                </ul>
               </td>
-              <td>Календарный план воспитательной работы</td>
               <td>
-                Положение об итоговой аттестации выпускников Положение об
-                основной образовательной программе Программа итоговой аттестации
-                ЭЦП Фонды оценочных средств итоговой аттестации ЭЦП
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={KPV} target={"_blank"} rel="noreferrer">
+                      Календарный план воспитательной работы
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
-                Положение о дистанционном обучении Положение о создании
-                электронных учебных курсов в системе дистанционного обучения
-                "Парус" Положение о текущем контроле и промежуточной аттестации
-                обучающихся с применением дистанционных образовательных
-                технологий Положение об электронной
-                информационно-образовательной среде
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologenie_attest_vipusk}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение об итоговой аттестации выпускников
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Pologenie_OOP} target={"_blank"} rel="noreferrer">
+                      Положение об основной образовательной программе
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Programma_IA_EM}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Программа итоговой аттестации для специальности 260206
+                      "Судовождение" (углубленная)
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Programma_IA_SM}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Фонды оценочных средств итоговой аттестации для
+                      специальности 260206 "Судовождение" (углубленная)
+                    </a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Pologhenie_DO} target={"_blank"} rel="noreferrer">
+                      Положение о дистанционном обучении
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologenie_Parus}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение о создании электронных учебных курсов в системе
+                      дистанционного обучения "Парус"
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologhenie_kontrolDO}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение о текущем контроле и промежуточной аттестации
+                      обучающихся с применением дистанционных образовательных
+                      технологий
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologhenie_EL_Sreda}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение об электронной информационно-образовательной
+                      среде
+                    </a>
+                  </li>
+                </ul>
               </td>
             </tr>
             <tr>
@@ -1635,27 +2583,115 @@ const Education = observer(() => {
                 оценочных средств по производственной практике
               </td>
               <td>
-                Календарный учебный график для специальности 26.02.05
-                "Эксплуатация судовых энергетических установок" ЭЦП
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Image17} target={"_blank"} rel="noreferrer">
+                      Календарный учебный график для специальности 26.02.05
+                      "Эксплуатация судовых энергетических установок"
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
-                Рабочая программа воспитания по направлению подготовки
-                (специальности) 26.02.05 "Эксплуатация судовых энергетических
-                установок"
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={RPV_SM} target={"_blank"} rel="noreferrer">
+                      Рабочая программа воспитания по направлению подготовки
+                      (специальности) 26.02.05 "Эксплуатация судовых
+                      энергетических установок"
+                    </a>
+                  </li>
+                </ul>
               </td>
-              <td>Календарный план воспитательной работы</td>
               <td>
-                Положение об итоговой аттестации выпускников Положение об
-                основной образовательной программе Программа итоговой аттестации
-                ЭЦП Фонды оценочных средств итоговой аттестации ЭЦП
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={KPV} target={"_blank"} rel="noreferrer">
+                      Календарный план воспитательной работы
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
-                Положение о дистанционном обучении Положение о создании
-                электронных учебных курсов в системе дистанционного обучения
-                "Парус" Положение о текущем контроле и промежуточной аттестации
-                обучающихся с применением дистанционных образовательных
-                технологий Положение об электронной
-                информационно-образовательной среде
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologenie_attest_vipusk}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение об итоговой аттестации выпускников
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Pologenie_OOP} target={"_blank"} rel="noreferrer">
+                      Положение об основной образовательной программе
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={FOS_IA_EM} target={"_blank"} rel="noreferrer">
+                      Программа итоговой аттестации для специальности 260205
+                      "Судовождение" (углубленная)
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={FOS_IA_SM} target={"_blank"} rel="noreferrer">
+                      Фонды оценочных средств итоговой аттестации для
+                      специальности 260205 "Судовождение" (углубленная)
+                    </a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Pologhenie_DO} target={"_blank"} rel="noreferrer">
+                      Положение о дистанционном обучении
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologenie_Parus}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение о создании электронных учебных курсов в системе
+                      дистанционного обучения "Парус"
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologhenie_kontrolDO}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение о текущем контроле и промежуточной аттестации
+                      обучающихся с применением дистанционных образовательных
+                      технологий
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologhenie_EL_Sreda}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение об электронной информационно-образовательной
+                      среде
+                    </a>
+                  </li>
+                </ul>
               </td>
             </tr>
             <tr>
@@ -1686,30 +2722,124 @@ const Education = observer(() => {
                 оценочных средств по производственной практике
               </td>
               <td>
-                Календарный учебный график для специальности 26.02.05
-                "Эксплуатация судовых энергетических установок", на базе 9
-                классов, очная ЭЦП Календарный учебный график для специальности
-                26.02.05 "Эксплуатация судовых энергетических установок", на
-                базе 11 классов, заочная ЭЦП
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Image18} target={"_blank"} rel="noreferrer">
+                      Календарный учебный график для специальности 26.02.05
+                      "Эксплуатация судовых энергетических установок", на базе 9
+                      классов, очная
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Image19} target={"_blank"} rel="noreferrer">
+                      Календарный учебный график для специальности 26.02.05
+                      "Эксплуатация судовых энергетических установок", на базе
+                      11 классов, заочная
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
-                Рабочая программа воспитания по направлению подготовки
-                (специальности) 26.02.05 "Эксплуатация судовых энергетических
-                установок"
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={RPV_SM} target={"_blank"} rel="noreferrer">
+                      Рабочая программа воспитания по направлению подготовки
+                      (специальности) 26.02.05 "Эксплуатация судовых
+                      энергетических установок"
+                    </a>
+                  </li>
+                </ul>
               </td>
-              <td>Календарный план воспитательной работы</td>
               <td>
-                Положение об итоговой аттестации выпускников Положение об
-                основной образовательной программе Программа итоговой аттестации
-                ЭЦП Фонды оценочных средств итоговой аттестации ЭЦП
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={KPV} target={"_blank"} rel="noreferrer">
+                      Календарный план воспитательной работы
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
-                Положение о дистанционном обучении Положение о создании
-                электронных учебных курсов в системе дистанционного обучения
-                "Парус" Положение о текущем контроле и промежуточной аттестации
-                обучающихся с применением дистанционных образовательных
-                технологий Положение об электронной
-                информационно-образовательной среде
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologenie_attest_vipusk}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение об итоговой аттестации выпускников
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Pologenie_OOP} target={"_blank"} rel="noreferrer">
+                      Положение об основной образовательной программе
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={FOS_IA_EM} target={"_blank"} rel="noreferrer">
+                      Программа итоговой аттестации для специальности 260205
+                      "Судовождение" (углубленная)
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={FOS_IA_SM} target={"_blank"} rel="noreferrer">
+                      Фонды оценочных средств итоговой аттестации для
+                      специальности 260205 "Судовождение" (углубленная)
+                    </a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Pologhenie_DO} target={"_blank"} rel="noreferrer">
+                      Положение о дистанционном обучении
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologenie_Parus}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение о создании электронных учебных курсов в системе
+                      дистанционного обучения "Парус"
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologhenie_kontrolDO}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение о текущем контроле и промежуточной аттестации
+                      обучающихся с применением дистанционных образовательных
+                      технологий
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologhenie_EL_Sreda}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение об электронной информационно-образовательной
+                      среде
+                    </a>
+                  </li>
+                </ul>
               </td>
             </tr>
             <tr>
@@ -1743,29 +2873,122 @@ const Education = observer(() => {
                 практики, заочная
               </td>
               <td>
-                Календарный учебный график для специальности 26.02.05
-                "Эксплуатация судовых энергетических установок", очная ЭЦП
-                Календарный учебный график для специальности 26.02.05
-                "Эксплуатация судовых энергетических установок", заочная ЭЦП
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Image20} target={"_blank"} rel="noreferrer">
+                      Календарный учебный график для специальности 26.02.05
+                      "Эксплуатация судовых энергетических установок", очная
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Image21} target={"_blank"} rel="noreferrer">
+                      Календарный учебный график для специальности 26.02.05
+                      "Эксплуатация судовых энергетических установок", заочная
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
-                Рабочая программа воспитания по направлению подготовки
-                (специальности) 26.02.05 "Эксплуатация судовых энергетических
-                установок"
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={RPV_SM} target={"_blank"} rel="noreferrer">
+                      Рабочая программа воспитания по направлению подготовки
+                      (специальности) 26.02.05 "Эксплуатация судовых
+                      энергетических установок"
+                    </a>
+                  </li>
+                </ul>
               </td>
-              <td>Календарный план воспитательной работы</td>
               <td>
-                Положение об итоговой аттестации выпускников Положение об
-                основной образовательной программе Программа итоговой аттестации
-                ЭЦП Фонды оценочных средств итоговой аттестации ЭЦП
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={KPV} target={"_blank"} rel="noreferrer">
+                      Календарный план воспитательной работы
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
-                Положение о дистанционном обучении Положение о создании
-                электронных учебных курсов в системе дистанционного обучения
-                "Парус" Положение о текущем контроле и промежуточной аттестации
-                обучающихся с применением дистанционных образовательных
-                технологий Положение об электронной
-                информационно-образовательной среде
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologenie_attest_vipusk}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение об итоговой аттестации выпускников
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Pologenie_OOP} target={"_blank"} rel="noreferrer">
+                      Положение об основной образовательной программе
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={FOS_IA_EM} target={"_blank"} rel="noreferrer">
+                      Программа итоговой аттестации для специальности 260205
+                      "Судовождение" (углубленная)
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={FOS_IA_SM} target={"_blank"} rel="noreferrer">
+                      Фонды оценочных средств итоговой аттестации для
+                      специальности 260205 "Судовождение" (углубленная)
+                    </a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Pologhenie_DO} target={"_blank"} rel="noreferrer">
+                      Положение о дистанционном обучении
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologenie_Parus}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение о создании электронных учебных курсов в системе
+                      дистанционного обучения "Парус"
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologhenie_kontrolDO}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение о текущем контроле и промежуточной аттестации
+                      обучающихся с применением дистанционных образовательных
+                      технологий
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologhenie_EL_Sreda}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение об электронной информационно-образовательной
+                      среде
+                    </a>
+                  </li>
+                </ul>
               </td>
             </tr>
             <tr>
@@ -1813,27 +3036,119 @@ const Education = observer(() => {
                 преддипломной практике
               </td>
               <td>
-                Календарный учебный график для специальности 23.02.01
-                "Организация и управление на транспорте" (по видам) ЭЦП
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Image22} target={"_blank"} rel="noreferrer">
+                      Календарный учебный график для специальности 23.02.01
+                      "Организация и управление на транспорте" (по видам)
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
-                Рабочая программа воспитания по направлению подготовки
-                (специальности) 23.02.01 "Организация перевозок и управление на
-                транспорте (по видам) "
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={RPV_OP} target={"_blank"} rel="noreferrer">
+                      Рабочая программа воспитания по направлению подготовки
+                      (специальности) 23.02.01 "Организация перевозок и
+                      управление на транспорте (по видам)"
+                    </a>
+                  </li>
+                </ul>
               </td>
-              <td>Календарный план воспитательной работы</td>
               <td>
-                Положение об итоговой аттестации выпускников Положение об
-                основной образовательной программе Программа итоговой аттестации
-                ЭЦП Фонды оценочных средств итоговой аттестации ЭЦП
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={KPV} target={"_blank"} rel="noreferrer">
+                      Календарный план воспитательной работы
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
-                Положение о дистанционном обучении Положение о создании
-                электронных учебных курсов в системе дистанционного обучения
-                "Парус" Положение о текущем контроле и промежуточной аттестации
-                обучающихся с применением дистанционных образовательных
-                технологий Положение об электронной
-                информационно-образовательной среде
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologenie_attest_vipusk}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение об итоговой аттестации выпускников
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Pologenie_OOP} target={"_blank"} rel="noreferrer">
+                      Положение об основной образовательной программе
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Programma_IA_OP}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Программа итоговой аттестации для специальности 230201
+                      "Судовождение" (углубленная)
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={FOS_IA_OP} target={"_blank"} rel="noreferrer">
+                      Фонды оценочных средств итоговой аттестации для
+                      специальности 230201 "Судовождение" (углубленная)
+                    </a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Pologhenie_DO} target={"_blank"} rel="noreferrer">
+                      Положение о дистанционном обучении
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologenie_Parus}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение о создании электронных учебных курсов в системе
+                      дистанционного обучения "Парус"
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologhenie_kontrolDO}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение о текущем контроле и промежуточной аттестации
+                      обучающихся с применением дистанционных образовательных
+                      технологий
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologhenie_EL_Sreda}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение об электронной информационно-образовательной
+                      среде
+                    </a>
+                  </li>
+                </ul>
               </td>
             </tr>
             <tr>
@@ -1863,28 +3178,120 @@ const Education = observer(() => {
                 преддипломной практике
               </td>
               <td>
-                Календарный учебный график для специальности 23.02.01
-                "Организация и управление на транспорте" (по видам) (заочная)
-                ЭЦП
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Image23} target={"_blank"} rel="noreferrer">
+                      Календарный учебный график для специальности 23.02.01
+                      "Организация и управление на транспорте" (по видам)
+                      (заочная)
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
-                Рабочая программа воспитания по направлению подготовки
-                (специальности) 23.02.01 "Организация перевозок и управление на
-                транспорте (по видам) "
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={RPV_OP} target={"_blank"} rel="noreferrer">
+                      Рабочая программа воспитания по направлению подготовки
+                      (специальности) 23.02.01 "Организация перевозок и
+                      управление на транспорте (по видам)"
+                    </a>
+                  </li>
+                </ul>
               </td>
-              <td>Календарный план воспитательной работы</td>
               <td>
-                Положение об итоговой аттестации выпускников Положение об
-                основной образовательной программе Программа итоговой аттестации
-                ЭЦП Фонды оценочных средств итоговой аттестации ЭЦП
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={KPV} target={"_blank"} rel="noreferrer">
+                      Календарный план воспитательной работы
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
-                Положение о дистанционном обучении Положение о создании
-                электронных учебных курсов в системе дистанционного обучения
-                "Парус" Положение о текущем контроле и промежуточной аттестации
-                обучающихся с применением дистанционных образовательных
-                технологий Положение об электронной
-                информационно-образовательной среде
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologenie_attest_vipusk}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение об итоговой аттестации выпускников
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Pologenie_OOP} target={"_blank"} rel="noreferrer">
+                      Положение об основной образовательной программе
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Programma_IA_OP}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Программа итоговой аттестации для специальности 230201
+                      "Судовождение" (углубленная)
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={FOS_IA_OP} target={"_blank"} rel="noreferrer">
+                      Фонды оценочных средств итоговой аттестации для
+                      специальности 230201 "Судовождение" (углубленная)
+                    </a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Pologhenie_DO} target={"_blank"} rel="noreferrer">
+                      Положение о дистанционном обучении
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologenie_Parus}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение о создании электронных учебных курсов в системе
+                      дистанционного обучения "Парус"
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologhenie_kontrolDO}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение о текущем контроле и промежуточной аттестации
+                      обучающихся с применением дистанционных образовательных
+                      технологий
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologhenie_EL_Sreda}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение об электронной информационно-образовательной
+                      среде
+                    </a>
+                  </li>
+                </ul>
               </td>
             </tr>
           </tbody>
@@ -1933,7 +3340,17 @@ const Education = observer(() => {
               </td>
               <td>Ссылка на календарный учебный график</td>
               <td>Ссылка на рабочие программы воспитания</td>
-              <td>Ссылка на календарный план воспитательной работы</td>
+              <td>
+                Ссылка на{" "}
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={KPV} target={"_blank"} rel="noreferrer">
+                      Календарный план воспитательной работы
+                    </a>
+                  </li>
+                </ul>
+              </td>
               <td>
                 Ссылка на методические и иные документы, разработанные
                 образовательной организацией для обеспечения образовательного
@@ -2043,26 +3460,53 @@ const Education = observer(() => {
                 для специальности 260203 "Судовождение" (углубленная ЭЦП
               </td>
               <td>
-                Положение о дистанционном обучении Положение о создании
-                электронных учебных курсов в системе дистанционного обучения
-                "Парус" Положение о текущем контроле и промежуточной аттестации
-                обучающихся с применением дистанционных образовательных
-                технологий Положение об электронной
-                информационно-образовательной среде{" "}
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Pologhenie_DO} target={"_blank"} rel="noreferrer">
+                      Положение о дистанционном обучении
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologenie_Parus}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение о создании электронных учебных курсов в системе
+                      дистанционного обучения "Парус"
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologhenie_kontrolDO}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение о текущем контроле и промежуточной аттестации
+                      обучающихся с применением дистанционных образовательных
+                      технологий
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologhenie_EL_Sreda}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение об электронной информационно-образовательной
+                      среде
+                    </a>
+                  </li>
+                </ul>{" "}
               </td>
             </tr>
           </tbody>
         </table>
       </div>
-      <ul>
-        <a href={"Ustav"} target={"_blank"} rel="noreferrer">
-          <li className="doc__item active__link">
-            Информация о заключенных и планируемых к заключению договорах с
-            иностранными и (или) международными организациями по вопросам
-            образования и науки - договора отсутствуют.
-          </li>
-        </a>
-      </ul>
       <h3
         className={`common__container-title ${toggleClassName(
           "title",
@@ -2154,7 +3598,10 @@ const Education = observer(() => {
       </div>
       <ul>
         <a href={"Ustav"} target={"_blank"} rel="noreferrer">
-          <li className="doc__item active__link">
+          <li
+            className="doc__item active__link"
+            style={{ backgroundColor: "red" }}
+          >
             Направления и результаты научной (научно-исследовательской)
             деятельности и научно-исследовательская база для ее осуществления
           </li>

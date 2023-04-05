@@ -71,7 +71,6 @@ import { toggleClassName, toggleFontSize } from "../../../../utils/disabled";
 import { observer } from "mobx-react-lite";
 import { ReactComponent as PDF } from "../../../../assets/svg/office/pdf.svg";
 import { ReactComponent as EXCEL } from "../../../../assets/svg/office/excel.svg";
-import { ReactComponent as WORD } from "../../../../assets/svg/office/word.svg";
 
 const Document = observer(() => {
   return (
