@@ -69,10 +69,14 @@ import PolozPd from "../../../../assets/pdf/documentPage/Pologenie_PD.pdf";
 import DropDown from "../../../common/dropDown/DropDown";
 import { toggleClassName, toggleFontSize } from "../../../../utils/disabled";
 import { observer } from "mobx-react-lite";
+import { ReactComponent as PDF } from "../../../../assets/svg/office/pdf.svg";
+import { ReactComponent as EXCEL } from "../../../../assets/svg/office/excel.svg";
+import { ReactComponent as WORD } from "../../../../assets/svg/office/word.svg";
 
 const Document = observer(() => {
   return (
     <div
+      itemProp="copy"
       style={{ fontSize: toggleFontSize(1) }}
       className={toggleClassName(
         "common__container",
@@ -108,49 +112,65 @@ const Document = observer(() => {
         title={"Документы"}
       >
         <ul>
-          <a href={Ustav} target={"_blank"} rel="noreferrer">
-            <li itemProp="ustavDocLink" className="doc__item active__link">
+          <li itemProp="ustavDocLink" className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={Ustav} target={"_blank"} rel="noreferrer">
               Устав
-            </li>
-          </a>
-          <a href={UstavChange1415} target={"_blank"} rel="noreferrer">
-            <li className="doc__item active__link">
+            </a>
+          </li>
+
+          <li className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={UstavChange1415} target={"_blank"} rel="noreferrer">
               Распоряжения о внесении изменений в Устав 2014,2015
-            </li>
-          </a>
-          <a href={UstavChange17} target={"_blank"} rel="noreferrer">
-            <li className="doc__item active__link">
+            </a>
+          </li>
+
+          <li className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={UstavChange17} target={"_blank"} rel="noreferrer">
               Распоряжения о внесении изменений в Устав 2017
-            </li>
-          </a>
-          <a href={UstavChange18} target={"_blank"} rel="noreferrer">
-            <li className="doc__item active__link">
+            </a>
+          </li>
+
+          <li className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={UstavChange18} target={"_blank"} rel="noreferrer">
               Распоряжение в внесении изменений в Устав 2018
-            </li>
-          </a>
-          <a href={UstavChange19} target={"_blank"} rel="noreferrer">
-            <li className="doc__item active__link">
+            </a>
+          </li>
+
+          <li className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={UstavChange19} target={"_blank"} rel="noreferrer">
               Распоряжение в внесении изменений в Устав 2019 - №ЮЦ-55-р от
               04.03.19
-            </li>
-          </a>
-          <a href={UstavChange21} target={"_blank"} rel="noreferrer">
-            <li className="doc__item active__link">
+            </a>
+          </li>
+
+          <li className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={UstavChange21} target={"_blank"} rel="noreferrer">
               Распоряжение о внесении изменений в Устав 2021 - №АЛ-344-р от
               11.08.2021
-            </li>
-          </a>
-          <a href={Pologen22} target={"_blank"} rel="noreferrer">
-            <li className="doc__item active__link">Положение о филиале </li>
-          </a>
-          <a href={Pologen22Dop} target={"_blank"} rel="noreferrer">
-            <li className="doc__item active__link">
+            </a>
+          </li>
+
+          <li className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={Pologen22} target={"_blank"} rel="noreferrer">
+              Положение о филиале{" "}
+            </a>
+          </li>
+
+          <li className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={Pologen22Dop} target={"_blank"} rel="noreferrer">
               Изменения в Положение о филиале (приказ №42 от 01.04.2022)
-            </li>
-          </a>
+            </a>
+          </li>
         </ul>
       </DropDown>
-
       <DropDown
         className={`${toggleClassName(
           "btn-show",
@@ -167,106 +187,128 @@ const Document = observer(() => {
         title={"Аккредитация"}
       >
         <ul>
-          <a href={LicenzVip} target={"_blank"} rel="noreferrer">
-            <li className="doc__item active__link">
+          <li className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={LicenzVip} target={"_blank"} rel="noreferrer">
               Выписка из реестра лицензий Федеральной службы по надзору в сфере
               образования и науки (16.09.2022)
-            </li>
-          </a>
+            </a>
+          </li>
         </ul>
         <HrLine className="document__hrLine" />
 
         <ul>
-          <a href={AkrVsuwt} target={"_blank"} rel="noreferrer">
-            <li
-              itemProp="accreditationDocLink"
-              className="doc__item active__link"
-            >
+          <li itemProp="accreditationDocLink" className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={AkrVsuwt} target={"_blank"} rel="noreferrer">
               Свидетельство о государственной аккредитации № 2998 от 27.02.2019
               (ВГУВТ)
-            </li>
-          </a>
-          <a href={AkrVsuwtPril1} target={"_blank"} rel="noreferrer">
-            <li className="doc__item active__link">
+            </a>
+          </li>
+
+          <li className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={AkrVsuwtPril1} target={"_blank"} rel="noreferrer">
               Приложение №1 к свидетельству о государственной аккредитации
               (ВГУВТ)
-            </li>
-          </a>
-          <a href={AkrVsuwtPril2} target={"_blank"} rel="noreferrer">
-            <li className="doc__item active__link">
+            </a>
+          </li>
+
+          <li className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={AkrVsuwtPril2} target={"_blank"} rel="noreferrer">
               Приложение №2 к свидетельству о государственной аккредитации
               (Казанский филиал)
-            </li>
-          </a>
-          <a href={AkrVsuwtPril3} target={"_blank"} rel="noreferrer">
-            <li className="doc__item active__link">
+            </a>
+          </li>
+
+          <li className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={AkrVsuwtPril3} target={"_blank"} rel="noreferrer">
               Приложение №3 к свидетельству о государственной аккредитации
               (Каспийский институт морского и речного транспорта, филиал ВГУВТ)
-            </li>
-          </a>
-          <a href={AkrVsuwtPril4} target={"_blank"} rel="noreferrer">
-            <li className="doc__item active__link">
+            </a>
+          </li>
+
+          <li className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={AkrVsuwtPril4} target={"_blank"} rel="noreferrer">
               Приложение №4 к свидетельству о государственной аккредитации
               (Пермский филиал)
-            </li>
-          </a>
-          <a href={AkrVsuwtPril5} target={"_blank"} rel="noreferrer">
-            <li className="doc__item active__link">
+            </a>
+          </li>
+
+          <li className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={AkrVsuwtPril5} target={"_blank"} rel="noreferrer">
               Приложение №5 к свидетельству о государственной аккредитации
               (Рыбинский филиал)
-            </li>
-          </a>
-          <a href={AkrVsuwtPril6} target={"_blank"} rel="noreferrer">
-            <li className="doc__item active__link">
+            </a>
+          </li>
+
+          <li className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={AkrVsuwtPril6} target={"_blank"} rel="noreferrer">
               Приложение №6 к свидетельству о государственной аккредитации
               (Уфимский филиал)
-            </li>
-          </a>
-          <a href={AkrVsuwtPril9} target={"_blank"} rel="noreferrer">
-            <li className="doc__item active__link">
+            </a>
+          </li>
+
+          <li className="doc__item">
+            <a href={AkrVsuwtPril9} target={"_blank"} rel="noreferrer">
               Приложение №9 к свидетельству о государственной аккредитации
               (Магистратура ВГУВТ, Юриспруденция)
-            </li>
-          </a>
-          <a href={AkrVsuwtPril10} target={"_blank"} rel="noreferrer">
-            <li className="doc__item active__link">
+            </a>
+          </li>
+
+          <li className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={AkrVsuwtPril10} target={"_blank"} rel="noreferrer">
               Приложение №10 к свидетельству о государственной аккредитации
               (Уфимский филиал, ОП)
-            </li>
-          </a>
-          <a href={AkrVsuwtPril12} target={"_blank"} rel="noreferrer">
-            <li className="doc__item active__link">
+            </a>
+          </li>
+
+          <li className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={AkrVsuwtPril12} target={"_blank"} rel="noreferrer">
               Приложение №12 к свидетельству о государственной аккредитации
               (ВГУВТ)
-            </li>
-          </a>
-          <a href={AkrVsuwtPril13} target={"_blank"} rel="noreferrer">
-            <li className="doc__item active__link">
+            </a>
+          </li>
+
+          <li className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={AkrVsuwtPril13} target={"_blank"} rel="noreferrer">
               Приложение №13 к свидетельству о государственной аккредитации
               (Пермский филиал)
-            </li>
-          </a>
-          <a href={Prikaz706} target={"_blank"} rel="noreferrer">
-            <li className="doc__item active__link">
+            </a>
+          </li>
+
+          <li className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={Prikaz706} target={"_blank"} rel="noreferrer">
               Приказ Рособрнадзора №706 от 29.06.2020 "О переоформлении
               свидетельства о государственной аккредитации образовательной
               деятельности ФГБОУ ВО "ВГУВТ"
-            </li>
-          </a>
-          <a href={Prikaz734} target={"_blank"} rel="noreferrer">
-            <li className="doc__item active__link">
+            </a>
+          </li>
+          <li className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={Prikaz734} target={"_blank"} rel="noreferrer">
               Приказ Рособрнадзора №734 от 28.05.2021 "О переоформлении
               свидетельства о государственной аккредитации образовательной
               деятельности ФГБОУ ВО "ВГУВТ"
-            </li>
-          </a>
-          <a href={Prikaz950} target={"_blank"} rel="noreferrer">
-            <li className="doc__item active__link">
+            </a>
+          </li>
+          <li className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={Prikaz950} target={"_blank"} rel="noreferrer">
               Приказ Рособрнадзора №950 от 09.07.2021 "О переоформлении
               свидетельства о государственной аккредитации образовательной
               деятельности ФГБОУ ВО "ВГУВТ"
-            </li>
-          </a>
+            </a>
+          </li>
         </ul>
       </DropDown>
 
@@ -286,29 +328,35 @@ const Document = observer(() => {
         title={"План финансово-хозяйственной деятельности, расписание"}
       >
         <ul>
-          <a href={Plan_FHD_2021} target={"_blank"} rel="noreferrer">
-            <li className="doc__item active__link">
+          <li className="doc__item">
+            <EXCEL height={"40px"} width={"40px"} />
+            <a href={Plan_FHD_2021} target={"_blank"} rel="noreferrer">
               План финансово-хозяйственной деятельности
-            </li>
-          </a>
+            </a>
+          </li>
         </ul>
         <HrLine className="document__hrLine" />
         <ul>
-          <a href={PravPriem} target={"_blank"} rel="noreferrer">
-            <li itemProp="priemDocLink" className="doc__item active__link">
+          <li itemProp="priemDocLink" className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={PravPriem} target={"_blank"} rel="noreferrer">
               Правила приема обучающихся
-            </li>
-          </a>
-          <a href={Raspisanie} target={"_blank"} rel="noreferrer">
-            <li className="doc__item active__link">
-              Расписание учебных занятий ЭЦП
-            </li>
-          </a>
-          <a href={Rezim} target={"_blank"} rel="noreferrer">
-            <li itemProp="modeDocLink" className="doc__item active__link">
-              Режим занятий обучающихся ЭЦП
-            </li>
-          </a>
+            </a>
+          </li>
+
+          <li className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={Raspisanie} target={"_blank"} rel="noreferrer">
+              Расписание учебных занятий
+            </a>
+          </li>
+
+          <li itemProp="modeDocLink" className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={Rezim} target={"_blank"} rel="noreferrer">
+              Режим занятий обучающихся
+            </a>
+          </li>
         </ul>
       </DropDown>
       <DropDown
@@ -339,23 +387,26 @@ const Document = observer(() => {
         </h3>
         <HrLine className="document__hrLine" />
         <ul>
-          <a href={PolozOvz} target={"_blank"} rel="noreferrer">
-            <li className="doc__item active__link">
+          <li className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={PolozOvz} target={"_blank"} rel="noreferrer">
               Положение об организации учебного процесса для инвалидов и лиц с
               ограниченными возможностями здоровья
-            </li>
-          </a>
-          <a href={PolozPromItog} target={"_blank"} rel="noreferrer">
-            <li itemProp="tekKontrolDocLink" className="doc__item active__link">
+            </a>
+          </li>
+          <li itemProp="tekKontrolDocLink" className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={PolozPromItog} target={"_blank"} rel="noreferrer">
               Положение о проведении текущего контроля и промежуточной
               аттестации обучающихся
-            </li>
-          </a>
-          <a href={Pologenie_GIA} target={"_blank"} rel="noreferrer">
-            <li className="doc__item active__link">
+            </a>
+          </li>
+          <li className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={Pologenie_GIA} target={"_blank"} rel="noreferrer">
               Положение об итоговой аттестации выпускников
-            </li>
-          </a>
+            </a>
+          </li>
         </ul>
       </DropDown>
 
@@ -375,28 +426,26 @@ const Document = observer(() => {
         title={"Перевод и восстановление"}
       >
         <ul>
-          <a href={Perev21} target={"_blank"} rel="noreferrer">
-            <li itemProp="perevodDocLink" className="doc__item active__link">
+          <li itemProp="perevodDocLink" className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={Perev21} target={"_blank"} rel="noreferrer">
               Положение о переводе и восстановлении обучающихся
-            </li>
-          </a>
-          <a href={Otchisl21} target={"_blank"} rel="noreferrer">
-            <li className="doc__item active__link">
-              Положение об отчислении обучающихся
-            </li>
-          </a>
-          <a href={"/"} target={"_blank"} rel="noreferrer">
-            <li
-              style={{ backgroundColor: "red" }}
-              className="doc__item active__link"
-            >
+            </a>
+          </li>
+          <li className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={Otchisl21} target={"_blank"} rel="noreferrer">
+              Положение об отчислении обучающихся{" "}
+            </a>
+          </li>
+          <li style={{ backgroundColor: "red" }} className="doc__item">
+            <a href={"/"} target={"_blank"} rel="noreferrer">
               {console.log("Исправь ссылку")}
               Информация о результатах перевода, восстановления и отчисления
-            </li>
-          </a>
+            </a>
+          </li>
         </ul>
       </DropDown>
-
       <DropDown
         className={`${toggleClassName(
           "btn-show",
@@ -413,48 +462,53 @@ const Document = observer(() => {
         title={"Правила, договоры"}
       >
         <ul>
-          <a href={Otchisl17} target={"_blank"} rel="noreferrer">
-            <li itemProp="vozDocLink" className="doc__item active__link">
+          <li itemProp="vozDocLink" className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={Otchisl17} target={"_blank"} rel="noreferrer">
               Порядок оформления возникновения, приостановления и прекращения
               отношений между образовательной организацией и обучающимися и
               (или) родителями (законными представителями) несовершеннолетних
               обучающихся
-            </li>
-          </a>
+            </a>
+          </li>
         </ul>
         <HrLine className="document__hrLine" />
         <ul>
-          <a href={Raspor18} target={"_blank"} rel="noreferrer">
-            <li itemProp="localActStud" className="doc__item active__link">
+          <li itemProp="localActStud" className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={Raspor18} target={"_blank"} rel="noreferrer">
               Правила внутреннего распорядка обучающихся
-            </li>
-          </a>
-          <a href={TrudRasp17} target={"_blank"} rel="noreferrer">
-            <li itemProp="localActOrder" className="doc__item active__link">
+            </a>
+          </li>
+          <li itemProp="localActOrder" className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={TrudRasp17} target={"_blank"} rel="noreferrer">
               Правила внутреннего трудового распорядка
-            </li>
-          </a>
+            </a>
+          </li>
         </ul>
         <HrLine className="document__hrLine" />
         <ul>
-          <a href={KolDogov} target={"_blank"} rel="noreferrer">
-            <li itemProp="localActCollec" className="doc__item active__link">
+          <li itemProp="localActCollec" className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={KolDogov} target={"_blank"} rel="noreferrer">
               Коллективный договор
-            </li>
-          </a>
-          <a href={KolDogovPril} target={"_blank"} rel="noreferrer">
-            <li className="doc__item active__link">
-              Приложение к коллективному договору
-            </li>
-          </a>
-          <a href={KolDogovDop} target={"_blank"} rel="noreferrer">
-            <li className="doc__item active__link">
+            </a>
+          </li>
+          <li className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={KolDogovPril} target={"_blank"} rel="noreferrer">
+              Приложение к коллективному договору{" "}
+            </a>
+          </li>
+          <li className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={KolDogovDop} target={"_blank"} rel="noreferrer">
               Доп соглашение к коллективному договору
-            </li>
-          </a>
+            </a>
+          </li>
         </ul>
       </DropDown>
-
       <DropDown
         className={`${toggleClassName(
           "btn-show",
@@ -471,27 +525,29 @@ const Document = observer(() => {
         title={"Отчеты"}
       >
         <ul>
-          <a href={SamoobsOrchet19} target={"_blank"} rel="noreferrer">
-            <li itemProp="reportEduDocLink" className="doc__item active__link">
+          <li itemProp="reportEduDocLink" className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={SamoobsOrchet19} target={"_blank"} rel="noreferrer">
               Отчет о результатах самообследования Уфимского филиала ФГБОУ ВО
               "ВГУВТ" за 2019 год
-            </li>
-          </a>
-          <a href={SamoobsOrchet20} target={"_blank"} rel="noreferrer">
-            <li itemProp="reportEduDocLink" className="doc__item active__link">
+            </a>
+          </li>
+          <li itemProp="reportEduDocLink" className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={SamoobsOrchet20} target={"_blank"} rel="noreferrer">
               Отчет о результатах самообследования Уфимского филиала ФГБОУ ВО
               "ВГУВТ" за 2020 год ЭЦП
-            </li>
-          </a>
-          <a href={SamoobsOrchet21} target={"_blank"} rel="noreferrer">
-            <li itemProp="reportEduDocLink" className="doc__item active__link">
+            </a>
+          </li>
+          <li itemProp="reportEduDocLink" className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={SamoobsOrchet21} target={"_blank"} rel="noreferrer">
               Отчет о результатах самообследования Уфимского филиала ФГБОУ ВО
               "ВГУВТ" за 2021 год ЭЦП
-            </li>
-          </a>
+            </a>
+          </li>
         </ul>
       </DropDown>
-
       <DropDown
         className={`${toggleClassName(
           "btn-show",
@@ -508,25 +564,27 @@ const Document = observer(() => {
         title={"Платные услуги"}
       >
         <ul>
-          <a href={PoryadPlatnUslug} target={"_blank"} rel="noreferrer">
-            <li className="doc__item active__link">
+          <li className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={PoryadPlatnUslug} target={"_blank"} rel="noreferrer">
               Положение об оказании платных образовательных услуг
-            </li>
-          </a>
-          <a href={PoryadPlatnObrUslug21} target={"_blank"} rel="noreferrer">
-            <li className="doc__item active__link">
+            </a>
+          </li>
+          <li className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={PoryadPlatnObrUslug21} target={"_blank"} rel="noreferrer">
               Образец договора об оказании платных образовательных услуг
-            </li>
-          </a>
-          <a href={StoimObuch22} target={"_blank"} rel="noreferrer">
-            <li className="doc__item active__link">
+            </a>
+          </li>
+          <li className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={StoimObuch22} target={"_blank"} rel="noreferrer">
               Документ об утверждении стоимости обучения по каждой
               образовательной программе
-            </li>
-          </a>
+            </a>
+          </li>
         </ul>
       </DropDown>
-
       <DropDown
         className={`${toggleClassName(
           "btn-show",
@@ -543,8 +601,9 @@ const Document = observer(() => {
         title={"Общежитие"}
       >
         <ul>
-          <a href={OplProzivan20} target={"_blank"} rel="noreferrer">
-            <li className="doc__item active__link">
+          <li className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={OplProzivan20} target={"_blank"} rel="noreferrer">
               Документ об установлении размера платы, взимаемой с родителей
               (законных представителей) за присмотр и уход за детьми,
               осваивающими образовательные программы дошкольного образования в
@@ -557,21 +616,22 @@ const Document = observer(() => {
               группах продленного дня в образовательной организации, реализующей
               образовательные программы начального общего, основного общего или
               среднего общего образования.
-            </li>
-          </a>
-          <a href={OplProzivan} target={"_blank"} rel="noreferrer">
-            <li className="doc__item active__link">
+            </a>
+          </li>
+          <li className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={OplProzivan} target={"_blank"} rel="noreferrer">
               Смета стоимости проживания в общежитии с 01.07.2022
-            </li>
-          </a>
-          <a href={PolStDorm18} target={"_blank"} rel="noreferrer">
-            <li className="doc__item active__link">
+            </a>
+          </li>
+          <li className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={PolStDorm18} target={"_blank"} rel="noreferrer">
               Положение о студенческом общежитии
-            </li>
-          </a>
+            </a>
+          </li>
         </ul>
       </DropDown>
-
       <DropDown
         className={`${toggleClassName(
           "btn-show",
@@ -599,14 +659,14 @@ const Document = observer(() => {
           Предписания органов, осуществляющих государственный контроль в сфере
           образования и отчеты об их исполнении:
         </h3>
-
         <ul>
-          <a href={Predpis} target={"_blank"} rel="noreferrer">
-            <li className="doc__item active__link">
+          <li className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={Predpis} target={"_blank"} rel="noreferrer">
               Предписание Уфимской транспортной прокуратуры № 23/1-5-2020 от
               09.09.2020
-            </li>
-          </a>
+            </a>
+          </li>
         </ul>
         <HrLine className="document__hrLine" />
         <h3
@@ -620,15 +680,15 @@ const Document = observer(() => {
           Отчет об исполнении Предписаний:
         </h3>
         <ul>
-          <a href={PismoTransp} target={"_blank"} rel="noreferrer">
-            <li className="doc__item active__link">
+          <li className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={PismoTransp} target={"_blank"} rel="noreferrer">
               Письмо на предписание Уфимской транспортной прокуратуры №
               23/1-5-2020 от 09.09.2020 ЭЦП
-            </li>
-          </a>
+            </a>
+          </li>
         </ul>
       </DropDown>
-
       <DropDown
         className={`${toggleClassName(
           "btn-show",
@@ -645,65 +705,73 @@ const Document = observer(() => {
         title={"Письма и заключения"}
       >
         <ul>
-          <a href={Pismo_pozh} target={"_blank"} rel="noreferrer">
-            <li className="doc__item active__link">
+          <li className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={Pismo_pozh} target={"_blank"} rel="noreferrer">
               Письмо МЧС России № 533-2-4-28 от 17.05.2019
-            </li>
-          </a>
-          <a href={Zakl_pozh2} target={"_blank"} rel="noreferrer">
-            <li className="doc__item active__link">
+            </a>
+          </li>
+          <li className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={Zakl_pozh2} target={"_blank"} rel="noreferrer">
               Заключение №296/02 о соответствии объекта защиты обязательным
               требованиям пожарной безопасности
-            </li>
-          </a>
-          <a href={Zakl_pozh3} target={"_blank"} rel="noreferrer">
-            <li className="doc__item active__link">
+            </a>
+          </li>
+          <li className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={Zakl_pozh3} target={"_blank"} rel="noreferrer">
               Заключение №96/02 о соответствии объекта защиты обязательным
               требованиям пожарной безопасности (стадион "Нефтяник")
-            </li>
-          </a>
-          <a href={ZaklSanitar1} target={"_blank"} rel="noreferrer">
-            <li className="doc__item active__link">
+            </a>
+          </li>
+          <li className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={ZaklSanitar1} target={"_blank"} rel="noreferrer">
               Санитарно-эпидемиологическое заключение на здания, строения,
               сооружения, помещения, оборудование и иное имущество, используемое
               для осуществления образовательной деятельности по программам
               среднего профессионального образования (с приложением) по адресу
               г. Уфа, ул. Ахметова, д. 275
-            </li>
-          </a>
-          <a href={ZaklSanitar2} target={"_blank"} rel="noreferrer">
-            <li className="doc__item active__link">
+            </a>
+          </li>
+          <li className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={ZaklSanitar2} target={"_blank"} rel="noreferrer">
               Санитарно-эпидемиологическое заключение на здания, строения,
               сооружения, помещения, оборудование и иное имущество, используемое
               для осуществления образовательной деятельности по программам
               дополнительного образования и профессионального обучения
-            </li>
-          </a>
-          <a href={ZaklSanitar3} target={"_blank"} rel="noreferrer">
-            <li className="doc__item active__link">
+            </a>
+          </li>
+          <li className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={ZaklSanitar3} target={"_blank"} rel="noreferrer">
               Санитарно-эпидемиологическое заключение на здания, строения,
               сооружения, помещения, оборудование и иное имущество, используемое
               для осуществления образовательной деятельности по программам
               среднего профессионального образования по адресу: г. Уфа, ул.
               Комарова, д.9
-            </li>
-          </a>
-          <a href={ZaklSanitar4} target={"_blank"} rel="noreferrer">
-            <li className="doc__item active__link">
+            </a>
+          </li>
+          <li className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={ZaklSanitar4} target={"_blank"} rel="noreferrer">
               Санитарно-эпидемиологическое заключение на здания, строения,
               сооружения и (или) помещения для осуществления медицинской
               деятельности по адресу г. Уфа, ул. Ахметова, д. 275
-            </li>
-          </a>
-          <a href={ZaklSanitar5} target={"_blank"} rel="noreferrer">
-            <li className="doc__item active__link">
+            </a>
+          </li>
+          <li className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={ZaklSanitar5} target={"_blank"} rel="noreferrer">
               Санитарно-эпидемиологическое заключение на здания, строения,
               сооружения, помещения, оборудование и иное имущество, используемое
               для осуществления образовательной деятельности по программам
               среднего профессионального образования (с приложением) по адресу
               г. Уфа, ул. Союзная
-            </li>
-          </a>
+            </a>
+          </li>
         </ul>
       </DropDown>
       <DropDown
@@ -732,19 +800,21 @@ const Document = observer(() => {
           Дополнительные документы:
         </h3>
         <ul>
-          <a href={DoDop} target={"_blank"} rel="noreferrer">
-            <li className="doc__item active__link">
+          <li className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={DoDop} target={"_blank"} rel="noreferrer">
               Положение о порядке применения дистанционных образовательных
               технологий и электронного обучения при реализации программ
               дополнительного образования детей и взрослых, дополнительного
               профессионального образования и профессионального обучения
-            </li>
-          </a>
-          <a href={PolozPd} target={"_blank"} rel="noreferrer">
-            <li className="doc__item active__link">
+            </a>
+          </li>
+          <li className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={PolozPd} target={"_blank"} rel="noreferrer">
               Положение о защите персональных данных
-            </li>
-          </a>
+            </a>
+          </li>
         </ul>
       </DropDown>
     </div>

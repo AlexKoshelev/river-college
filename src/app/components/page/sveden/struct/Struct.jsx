@@ -1,9 +1,17 @@
 import { observer } from "mobx-react-lite";
 import React from "react";
 import { toggleClassName, toggleFontSize } from "../../../../utils/disabled";
+import Pologen22 from "../../../../assets/pdf/documentPage/Pologen_2022.pdf";
+import PolBuh from "../../../../assets/pdf/structPage/pol-buh.pdf";
+import PolHoz from "../../../../assets/pdf/structPage/pol-hoz.pdf";
+import PolOkp from "../../../../assets/pdf/structPage/pol-okp.pdf";
+import PolPopr from "../../../../assets/pdf/structPage/pol-popr.pdf";
+import PolPur from "../../../../assets/pdf/structPage/pol-pur.pdf";
+import PolVospit from "../../../../assets/pdf/structPage/pol-vospit.pdf";
 const Struct = observer(() => {
   return (
     <div
+      itemProp="copy"
       style={{ fontSize: toggleFontSize(1) }}
       className={toggleClassName(
         "common__container",
@@ -64,9 +72,45 @@ const Struct = observer(() => {
                 450017, Приволжский ФО, Республика Башкортостан, г. Уфа, ул.
                 Ахметова, 275
               </td>
-              <td>www.rivercollege.ru</td>
-              <td>ukru@ufanet.ru</td>
-              <td>Положение о филиале</td>
+              <td>
+                <a
+                  href="http://www.rivercollege.ru/"
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
+                  www.rivercollege.ru
+                </a>
+              </td>
+              <td>
+                <a
+                  href="mailto:uf-vsuwt@uf-vsuwt.ru"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={toggleClassName(
+                    "education__link",
+                    "education__link-white",
+                    "education__link-black",
+                    "education__link-contrast"
+                  )}
+                >
+                  uf-vsuwt@uf-vsuwt.ru
+                </a>
+              </td>
+              <td>
+                <a
+                  href={Pologen22}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={toggleClassName(
+                    "education__link",
+                    "education__link-white",
+                    "education__link-black",
+                    "education__link-contrast"
+                  )}
+                >
+                  Положение о филиале
+                </a>
+              </td>
             </tr>
             <tr>
               <td className="struct-title" colSpan="7">
@@ -81,9 +125,46 @@ const Struct = observer(() => {
                 450017, Приволжский ФО, Республика Башкортостан, г. Уфа, ул.
                 Ахметова, 275{" "}
               </td>
-              <td>www.rivercollege.ru/kursant.htm</td>
-              <td>gim_gim@mail.ru</td>
-              <td>Положение о подразделении учебной работы ЭЦП</td>
+              <td>
+                <a
+                  href="http://www.rivercollege.ru/"
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
+                  www.rivercollege.ru
+                </a>
+              </td>
+              <td>
+                <a
+                  href="mailto:pur@uf-vsuwt.ru"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={toggleClassName(
+                    "education__link",
+                    "education__link-white",
+                    "education__link-black",
+                    "education__link-contrast"
+                  )}
+                >
+                  pur@uf-vsuwt.ru
+                </a>
+              </td>
+              <td>
+                {" "}
+                <a
+                  href={PolPur}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={toggleClassName(
+                    "education__link",
+                    "education__link-white",
+                    "education__link-black",
+                    "education__link-contrast"
+                  )}
+                >
+                  Положение о подразделении учебной работы
+                </a>
+              </td>
             </tr>
             <tr>
               <td>Подразделение воспитательной работы </td>
@@ -93,21 +174,95 @@ const Struct = observer(() => {
                 450017, Приволжский ФО, Республика Башкортостан, г. Уфа, ул.
                 Ахметова, 275{" "}
               </td>
-              <td>www.rivercollege.ru/vospit.htm</td>
-              <td>anelya.ufa@mail.ru</td>
-              <td>Положение о подразделении учебной работы ЭЦП</td>
+              <td>
+                <a
+                  href="http://www.rivercollege.ru/"
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
+                  www.rivercollege.ru
+                </a>
+              </td>
+              <td>
+                <a
+                  href="mailto:pvr@uf-vsuwt.ru"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={toggleClassName(
+                    "education__link",
+                    "education__link-white",
+                    "education__link-black",
+                    "education__link-contrast"
+                  )}
+                >
+                  pvr@uf-vsuwt.ru
+                </a>
+              </td>
+              <td>
+                {" "}
+                <a
+                  href={PolVospit}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={toggleClassName(
+                    "education__link",
+                    "education__link-white",
+                    "education__link-black",
+                    "education__link-contrast"
+                  )}
+                >
+                  Положение о подразделении воспитательной работы
+                </a>
+              </td>
             </tr>
             <tr>
               <td>Центр организационно-правовой работы</td>
-              <td></td>
-              <td></td>
+              <td>Мукимов Ралиф Фаритович</td>
+              <td>Начальник центра организационно-правовой работы</td>
               <td>
                 450017, Приволжский ФО, Республика Башкортостан, г. Уфа, ул.
                 Ахметова, 275
               </td>
-              <td>www.rivercollege.ru/opr.htm</td>
-              <td></td>
-              <td>Положение о подразделении учебной работы ЭЦП</td>
+              <td>
+                <a
+                  href="http://www.rivercollege.ru/"
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
+                  www.rivercollege.ru
+                </a>
+              </td>
+              <td>
+                <a
+                  href="mailto:copr@uf-vsuwt.ru"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={toggleClassName(
+                    "education__link",
+                    "education__link-white",
+                    "education__link-black",
+                    "education__link-contrast"
+                  )}
+                >
+                  copr@uf-vsuwt.ru
+                </a>
+              </td>
+              <td>
+                {" "}
+                <a
+                  href={PolPopr}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={toggleClassName(
+                    "education__link",
+                    "education__link-white",
+                    "education__link-black",
+                    "education__link-contrast"
+                  )}
+                >
+                  Положение о подразделении организационно-правовой работы
+                </a>
+              </td>
             </tr>
             <tr>
               <td>Административно-хозяйственный отдел</td>
@@ -117,21 +272,95 @@ const Struct = observer(() => {
                 450017, Приволжский ФО, Республика Башкортостан, г. Уфа, ул.
                 Ахметова, 275
               </td>
-              <td>www.rivercollege.ru</td>
-              <td>rechflotufa@mail.ru</td>
-              <td>Положение о подразделении учебной работы ЭЦП</td>
+              <td>
+                <a
+                  href="http://www.rivercollege.ru/"
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
+                  www.rivercollege.ru
+                </a>
+              </td>
+              <td>
+                <a
+                  href="mailto:aho@uf-vsuwt.ru"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={toggleClassName(
+                    "education__link",
+                    "education__link-white",
+                    "education__link-black",
+                    "education__link-contrast"
+                  )}
+                >
+                  aho@uf-vsuwt.ru
+                </a>
+              </td>
+              <td>
+                {" "}
+                <a
+                  href={PolHoz}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={toggleClassName(
+                    "education__link",
+                    "education__link-white",
+                    "education__link-black",
+                    "education__link-contrast"
+                  )}
+                >
+                  Положение об административно-хозяйственном отделе
+                </a>
+              </td>
             </tr>
             <tr>
               <td>Бухгалтерия</td>
-              <td> Жоссан Елена Евгеньевна</td>
+              <td>Жоссан Елена Евгеньевна</td>
               <td>Главный бухгалтер</td>
               <td>
                 450017, Приволжский ФО, Республика Башкортостан, г. Уфа, ул.
                 Ахметова, 275
               </td>
-              <td>www.rivercollege.ru/bookkeeping.htm</td>
-              <td>buh-ukru@ufanet.ru</td>
-              <td>Положение о подразделении учебной работы ЭЦП</td>
+              <td>
+                <a
+                  href="http://www.rivercollege.ru/"
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
+                  www.rivercollege.ru
+                </a>
+              </td>
+              <td>
+                <a
+                  href="mailto:buh@uf-vsuwt.ru"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={toggleClassName(
+                    "education__link",
+                    "education__link-white",
+                    "education__link-black",
+                    "education__link-contrast"
+                  )}
+                >
+                  buh@uf-vsuwt.ru
+                </a>
+              </td>
+              <td>
+                {" "}
+                <a
+                  href={PolBuh}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={toggleClassName(
+                    "education__link",
+                    "education__link-white",
+                    "education__link-black",
+                    "education__link-contrast"
+                  )}
+                >
+                  Положение о бухгалтерии
+                </a>
+              </td>
             </tr>
             <tr>
               <td>Отдел коллективного питания</td>
@@ -141,9 +370,46 @@ const Struct = observer(() => {
                 450017, Приволжский ФО, Республика Башкортостан, г. Уфа, ул.
                 Ахметова, 275
               </td>
-              <td>www.rivercollege.ru/feeding.htm</td>
-              <td>ukru@ufanet.ru</td>
-              <td>Положение о подразделении учебной работы ЭЦП</td>
+              <td>
+                <a
+                  href="http://www.rivercollege.ru/"
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
+                  www.rivercollege.ru
+                </a>
+              </td>
+              <td>
+                <a
+                  href="mailto:kolpit@uf-vsuwt.ru"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={toggleClassName(
+                    "education__link",
+                    "education__link-white",
+                    "education__link-black",
+                    "education__link-contrast"
+                  )}
+                >
+                  kolpit@uf-vsuwt.ru
+                </a>
+              </td>
+              <td>
+                {" "}
+                <a
+                  href={PolOkp}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={toggleClassName(
+                    "education__link",
+                    "education__link-white",
+                    "education__link-black",
+                    "education__link-contrast"
+                  )}
+                >
+                  Положение об отделе коллективного питания
+                </a>
+              </td>
             </tr>
           </tbody>
         </table>

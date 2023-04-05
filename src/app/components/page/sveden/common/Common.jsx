@@ -7,6 +7,7 @@ const Common = observer(() => {
   return (
     <>
       <div
+        itemProp="copy"
         style={{ fontSize: toggleFontSize(1) }}
         className={toggleClassName(
           "common__container",

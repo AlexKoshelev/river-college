@@ -6,6 +6,38 @@
     &-title{
         text-align: center;
     }
+    table{
+        a{  
+            color: $MAIN_COLOR;
+            border-bottom: solid 1px $MAIN_COLOR;
+            font-weight: 500;
+            &:hover{
+                color: $MAIN_COLOR;
+                border-bottom: none;
+                text-decoration: none;
+            }
+        }
+    }
+    ul{
+        padding-left: 10px;
+        li{
+            line-height: 1.2rem;
+            margin-top: 0.5em;
+          
+            a{  
+            margin-left: 0.5em;
+               color: $MAIN_COLOR;
+               border-bottom: solid 1px $MAIN_COLOR;
+               font-weight: 500;
+               &:hover{
+                   color: $MAIN_COLOR;
+                   border-bottom: none;
+                   text-decoration: none;
+               }
+           }
+        }
+    }
+   
     p{
         text-indent: 2em;
     }

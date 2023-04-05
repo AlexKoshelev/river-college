@@ -1,6 +1,7 @@
 import { observer } from "mobx-react-lite";
 import React from "react";
 import { toggleClassName, toggleFontSize } from "../../../../utils/disabled";
+import Licenz from "../../../../assets/pdf/documentPage/licenz_vip20220916.pdf";
 const Education = observer(() => {
   return (
     <div
@@ -23,12 +24,12 @@ const Education = observer(() => {
         Образование
       </h1>
       <ul>
-        <a href={"Ustav"} target={"_blank"} rel="noreferrer">
-          <li className="doc__item active__link">
+        <li className="doc__item">
+          <a href={Licenz} target={"_blank"} rel="noreferrer">
             Выписка из реестра лицензий Федеральной службы по надзору в сфере
             образования и науки (16.09.2022)
-          </li>
-        </a>
+          </a>
+        </li>
       </ul>
       <h3
         className={`common__container-title ${toggleClassName(
