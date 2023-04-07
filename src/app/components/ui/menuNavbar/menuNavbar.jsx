@@ -14,7 +14,7 @@ import {
   MainMenu,
   StudentLifeMenu,
   TrainingMenu,
-} from "./menuItems";
+} from "./MenuItems";
 
 const MenuNavbar = ({ toggleFontSize }) => {
   const navigate = useNavigate();

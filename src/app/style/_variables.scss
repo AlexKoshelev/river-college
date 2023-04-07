@@ -100,7 +100,13 @@ $BACK_BTN_SHOW:rgb(158, 181, 217);
     border-left: solid 1px rgba(12, 29, 44, 0.139);
     border-top: solid 1px rgba(12, 29, 44, 0.139);
     max-width: 900px;
+    max-height: 350px;
     overflow: scroll;
+}
+@include laptop{
+    .scroll-table{
+        padding: 0.5em 0;
+    }
 }
 // links
 .active__link{

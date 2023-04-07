@@ -1,5 +1,5 @@
 import { observer } from "mobx-react-lite";
-import React from "react";
+import React, { useState } from "react";
 import { toggleClassName, toggleFontSize } from "../../../../utils/disabled";
 import Licenz from "../../../../assets/pdf/documentPage/licenz_vip20220916.pdf";
 import { ReactComponent as PDF } from "../../../../assets/svg/office/pdf.svg";
@@ -52,6 +52,7 @@ import Image20 from "../../../../assets/pdf/educationPage/260205/12.jpg";
 import Image21 from "../../../../assets/pdf/educationPage/260205/12.1.jpg";
 import Image22 from "../../../../assets/pdf/educationPage/230201/13.jpg";
 import Image23 from "../../../../assets/pdf/educationPage/230201/14.jpg";
+import TableWrapper from "../../../common/tableWrapper/TableWrapper";
 const Education = observer(() => {
   return (
     <div
@@ -82,19 +83,11 @@ const Education = observer(() => {
           </a>
         </li>
       </ul>
-      <h3
-        className={`common__container-title ${toggleClassName(
-          "title",
-          "title-white",
-          "title-black",
-          "title-contrast"
-        )}`}
+      <TableWrapper
+        title="Информация о сроке действия государственной аккредитации образовательной
+        программы, о языках, на которых осуществляется образование (обучение):"
       >
-        Информация о сроке действия государственной аккредитации образовательной
-        программы, о языках, на которых осуществляется образование (обучение):
-      </h3>
-      <div className="scroll-table struct__scrollTable">
-        <table className="">
+        <table>
           <tbody>
             <tr>
               <td>Код</td>
@@ -255,7 +248,7 @@ const Education = observer(() => {
             </tr>
           </tbody>
         </table>
-      </div>
+      </TableWrapper>
       <h3
         className={`common__container-title ${toggleClassName(
           "title",
@@ -291,22 +284,14 @@ const Education = observer(() => {
           </tbody>
         </table>
       </div>
-      <h3
-        className={`common__container-title ${toggleClassName(
-          "title",
-          "title-white",
-          "title-black",
-          "title-contrast"
-        )}`}
-      >
-        Информация о численности обучающихся по реализуемым образовательным
+      <TableWrapper
+        title=" Информация о численности обучающихся по реализуемым образовательным
         программам за счет бюджетных ассигнований федерального бюджета, бюджетов
         субъектов Российской Федерации, местных бюджетов и по договорам об
         образовании за счет средств физических и (или) юридических лиц на
-        01.10.2022:
-      </h3>
-      <div className="scroll-table struct__scrollTable">
-        <table className="">
+        01.10.2022:"
+      >
+        <table>
           <tbody>
             <tr>
               <td rowSpan="3">Код</td>
@@ -580,7 +565,7 @@ const Education = observer(() => {
             </tr>
           </tbody>
         </table>
-      </div>
+      </TableWrapper>
       <h3
         className={`common__container-title ${toggleClassName(
           "title",
@@ -592,24 +577,18 @@ const Education = observer(() => {
         Информация о численности обучающихся, являющихся иностранными
         гражданами: 3 обучающихся
       </h3>
-      <h3
-        className={`common__container-title ${toggleClassName(
-          "title",
-          "title-white",
-          "title-black",
-          "title-contrast"
-        )}`}
-      >
-        Информация о результатах приема по каждой профессии, специальности
+
+      <TableWrapper
+        title=" Информация о результатах приема по каждой профессии, специальности
         среднего профессионального образования (при наличии вступительных
         испытаний), каждому направлению подготовки или специальности высшего
         образования с различными условиями приема (на места за счет бюджетных
         ассигнований федерального бюджета, бюджетов субъектов Российской
         Федерации, местных бюджетов и по договорам об образовании за счет
-        средств физических и (или) юридических лиц):
-      </h3>
-      <div className="scroll-table struct__scrollTable">
-        <table className="">
+        средств физических и (или) юридических лиц):"
+      >
+        {" "}
+        <table>
           <tbody>
             <tr>
               <td rowSpan="2">Код</td>
@@ -818,20 +797,13 @@ const Education = observer(() => {
             </tr>
           </tbody>
         </table>
-      </div>
-      <h3
-        className={`common__container-title ${toggleClassName(
-          "title",
-          "title-white",
-          "title-black",
-          "title-contrast"
-        )}`}
+      </TableWrapper>
+
+      <TableWrapper
+        title="Информация о результатах перевода, восстановления и отчисления на
+        01.10.2022"
       >
-        Информация о результатах перевода, восстановления и отчисления на
-        01.10.2022
-      </h3>
-      <div className="scroll-table struct__scrollTable">
-        <table className="">
+        <table>
           <tbody>
             <tr>
               <td rowSpan="2">Код</td>
@@ -977,7 +949,8 @@ const Education = observer(() => {
             <tr></tr>
           </tbody>
         </table>
-      </div>
+      </TableWrapper>
+
       <h3
         className={`common__container-title ${toggleClassName(
           "title",
@@ -1017,18 +990,9 @@ const Education = observer(() => {
           </a>
         </li>
       </ul>
-      <h3
-        className={`common__container-title ${toggleClassName(
-          "title",
-          "title-white",
-          "title-black",
-          "title-contrast"
-        )}`}
-      >
-        Информация по неадаптированным образовательным программам:
-      </h3>
-      <div className="scroll-table struct__scrollTable">
-        <table className="">
+
+      <TableWrapper title="Информация по неадаптированным образовательным программам:">
+        <table>
           <tbody>
             <tr>
               <td>Код</td>
@@ -3296,22 +3260,14 @@ const Education = observer(() => {
             </tr>
           </tbody>
         </table>
-      </div>
-      * Информация по реализуемым общеобразовательным программам: программа
-      основного общего образования является частью Основных профессиональных
-      образовательных программ СПО по специальностям
-      <h3
-        className={`common__container-title ${toggleClassName(
-          "title",
-          "title-white",
-          "title-black",
-          "title-contrast"
-        )}`}
-      >
-        Информация по адаптированным образовательным программам:
-      </h3>
-      <div className="scroll-table struct__scrollTable">
-        <table className="">
+        * Информация по реализуемым общеобразовательным программам: программа
+        основного общего образования является частью Основных профессиональных
+        образовательных программ СПО по специальностям
+      </TableWrapper>
+
+      <TableWrapper title="Информация по адаптированным образовательным программам:">
+        {" "}
+        <table>
           <tbody>
             <tr>
               <td>Код</td>
@@ -3506,20 +3462,14 @@ const Education = observer(() => {
             </tr>
           </tbody>
         </table>
-      </div>
-      <h3
-        className={`common__container-title ${toggleClassName(
-          "title",
-          "title-white",
-          "title-black",
-          "title-contrast"
-        )}`}
+      </TableWrapper>
+
+      <TableWrapper
+        title=" Информация о направлениях и результатах научной
+        (научно-исследовательской) деятельности:"
       >
-        Информация о направлениях и результатах научной
-        (научно-исследовательской) деятельности:
-      </h3>
-      <div className="scroll-table struct__scrollTable">
-        <table className="">
+        {" "}
+        <table>
           <tbody>
             <tr>
               <td>Код</td>
@@ -3595,7 +3545,8 @@ const Education = observer(() => {
             </tr>
           </tbody>
         </table>
-      </div>
+      </TableWrapper>
+
       <ul>
         <a href={"Ustav"} target={"_blank"} rel="noreferrer">
           <li

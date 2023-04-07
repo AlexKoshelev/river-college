@@ -9,9 +9,7 @@ const Calendar = ({ selectedDay, handlSelectDay }) => {
   const firstCourse = ScheduleInfo.faculties.map((e) =>
     e.groups.filter((e) => e.course === 1)
   );
-  const fitCourse = groups.filter((e) => e.course === 1);
-  /*  const firstCourse = groups.filter((e) => e.course === 1); */
-  console.log(fitCourse);
+  const firstcourse = groups.filter((e) => e.course === 1);
 
   window.moment = moment;
   moment.updateLocale("ru", { week: { dow: 1 } });

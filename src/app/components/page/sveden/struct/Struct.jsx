@@ -8,6 +8,8 @@ import PolOkp from "../../../../assets/pdf/structPage/pol-okp.pdf";
 import PolPopr from "../../../../assets/pdf/structPage/pol-popr.pdf";
 import PolPur from "../../../../assets/pdf/structPage/pol-pur.pdf";
 import PolVospit from "../../../../assets/pdf/structPage/pol-vospit.pdf";
+import TableWrapper from "../../../common/tableWrapper/TableWrapper";
+import { ReactComponent as PDF } from "../../../../assets/svg/office/pdf.svg";
 const Struct = observer(() => {
   return (
     <div
@@ -20,18 +22,9 @@ const Struct = observer(() => {
         "common__container-contrast"
       )}
     >
-      <h1
-        itemProp="structOrgUprav"
-        className={`common__container-title ${toggleClassName(
-          "title",
-          "title-white",
-          "title-black",
-          "title-contrast"
-        )}`}
+      <TableWrapper
+        title={`Структура и органы управления Уфимского филиала ФГБОУ ВО "ВГУВТ"`}
       >
-        Структура и органы управления Уфимского филиала ФГБОУ ВО "ВГУВТ"
-      </h1>
-      <div className="common__container scroll-table struct__scrollTable">
         <table style={{ fontSize: toggleFontSize(1) }}>
           <tbody>
             <tr>
@@ -97,19 +90,24 @@ const Struct = observer(() => {
                 </a>
               </td>
               <td>
-                <a
-                  href={Pologen22}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={toggleClassName(
-                    "education__link",
-                    "education__link-white",
-                    "education__link-black",
-                    "education__link-contrast"
-                  )}
-                >
-                  Положение о филиале
-                </a>
+                <ul>
+                  <li>
+                    <PDF width={"25px"} height={"25px"} />
+                    <a
+                      href={Pologen22}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={toggleClassName(
+                        "education__link",
+                        "education__link-white",
+                        "education__link-black",
+                        "education__link-contrast"
+                      )}
+                    >
+                      Положение о филиале
+                    </a>
+                  </li>
+                </ul>
               </td>
             </tr>
             <tr>
@@ -150,20 +148,24 @@ const Struct = observer(() => {
                 </a>
               </td>
               <td>
-                {" "}
-                <a
-                  href={PolPur}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={toggleClassName(
-                    "education__link",
-                    "education__link-white",
-                    "education__link-black",
-                    "education__link-contrast"
-                  )}
-                >
-                  Положение о подразделении учебной работы
-                </a>
+                <ul>
+                  <li>
+                    <PDF width={"25px"} height={"25px"} />
+                    <a
+                      href={PolPur}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={toggleClassName(
+                        "education__link",
+                        "education__link-white",
+                        "education__link-black",
+                        "education__link-contrast"
+                      )}
+                    >
+                      Положение о подразделении учебной работы
+                    </a>
+                  </li>
+                </ul>
               </td>
             </tr>
             <tr>
@@ -199,20 +201,24 @@ const Struct = observer(() => {
                 </a>
               </td>
               <td>
-                {" "}
-                <a
-                  href={PolVospit}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={toggleClassName(
-                    "education__link",
-                    "education__link-white",
-                    "education__link-black",
-                    "education__link-contrast"
-                  )}
-                >
-                  Положение о подразделении воспитательной работы
-                </a>
+                <ul>
+                  <li>
+                    <PDF width={"25px"} height={"25px"} />
+                    <a
+                      href={PolVospit}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={toggleClassName(
+                        "education__link",
+                        "education__link-white",
+                        "education__link-black",
+                        "education__link-contrast"
+                      )}
+                    >
+                      Положение о подразделении воспитательной работы
+                    </a>
+                  </li>
+                </ul>
               </td>
             </tr>
             <tr>
@@ -248,20 +254,24 @@ const Struct = observer(() => {
                 </a>
               </td>
               <td>
-                {" "}
-                <a
-                  href={PolPopr}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={toggleClassName(
-                    "education__link",
-                    "education__link-white",
-                    "education__link-black",
-                    "education__link-contrast"
-                  )}
-                >
-                  Положение о подразделении организационно-правовой работы
-                </a>
+                <ul>
+                  <li>
+                    <PDF width={"25px"} height={"25px"} />
+                    <a
+                      href={PolPopr}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={toggleClassName(
+                        "education__link",
+                        "education__link-white",
+                        "education__link-black",
+                        "education__link-contrast"
+                      )}
+                    >
+                      Положение о подразделении организационно-правовой работы
+                    </a>
+                  </li>
+                </ul>
               </td>
             </tr>
             <tr>
@@ -297,20 +307,24 @@ const Struct = observer(() => {
                 </a>
               </td>
               <td>
-                {" "}
-                <a
-                  href={PolHoz}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={toggleClassName(
-                    "education__link",
-                    "education__link-white",
-                    "education__link-black",
-                    "education__link-contrast"
-                  )}
-                >
-                  Положение об административно-хозяйственном отделе
-                </a>
+                <ul>
+                  <li>
+                    <PDF width={"25px"} height={"25px"} />
+                    <a
+                      href={PolHoz}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={toggleClassName(
+                        "education__link",
+                        "education__link-white",
+                        "education__link-black",
+                        "education__link-contrast"
+                      )}
+                    >
+                      Положение об административно-хозяйственном отделе
+                    </a>
+                  </li>
+                </ul>
               </td>
             </tr>
             <tr>
@@ -346,20 +360,24 @@ const Struct = observer(() => {
                 </a>
               </td>
               <td>
-                {" "}
-                <a
-                  href={PolBuh}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={toggleClassName(
-                    "education__link",
-                    "education__link-white",
-                    "education__link-black",
-                    "education__link-contrast"
-                  )}
-                >
-                  Положение о бухгалтерии
-                </a>
+                <ul>
+                  <li>
+                    <PDF width={"25px"} height={"25px"} />
+                    <a
+                      href={PolBuh}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={toggleClassName(
+                        "education__link",
+                        "education__link-white",
+                        "education__link-black",
+                        "education__link-contrast"
+                      )}
+                    >
+                      Положение о бухгалтерии
+                    </a>
+                  </li>
+                </ul>
               </td>
             </tr>
             <tr>
@@ -395,25 +413,29 @@ const Struct = observer(() => {
                 </a>
               </td>
               <td>
-                {" "}
-                <a
-                  href={PolOkp}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={toggleClassName(
-                    "education__link",
-                    "education__link-white",
-                    "education__link-black",
-                    "education__link-contrast"
-                  )}
-                >
-                  Положение об отделе коллективного питания
-                </a>
+                <ul>
+                  <li>
+                    <PDF width={"25px"} height={"25px"} />
+                    <a
+                      href={PolOkp}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={toggleClassName(
+                        "education__link",
+                        "education__link-white",
+                        "education__link-black",
+                        "education__link-contrast"
+                      )}
+                    >
+                      Положение об отделе коллективного питания
+                    </a>
+                  </li>
+                </ul>
               </td>
             </tr>
           </tbody>
         </table>
-      </div>
+      </TableWrapper>
     </div>
   );
 });
