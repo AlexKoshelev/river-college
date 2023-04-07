@@ -57,6 +57,7 @@ import AboutBranch from "./components/page/homePage/aboutBranch/AboutBranch";
 import HistoricalReference from "./components/page/homePage/historicalReference/HistoricalReference";
 import UniversityNews from "./components/page/homePage/universityNews/UniversityNews";
 import UniversityEvents from "./components/page/homePage/universityEvents/UniversityEvents";
+import Schedule from "./components/page/schedule/Schedule";
 
 const routes = () => [
   {
@@ -68,6 +69,10 @@ const routes = () => [
         element: <Main />,
       },
     ],
+  },
+  {
+    path: "schedule",
+    element: <Schedule />,
   },
   {
     path: "sveden",
