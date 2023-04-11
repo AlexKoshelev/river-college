@@ -15,13 +15,10 @@ import Main from "./layouts/main";
 import Sveden from "./layouts/sveden/Sveden";
 import Live from "./layouts/live";
 import StudentsLive from "./components/page/live/studentsLive/StudentsLive";
-import Rest from "./components/page/live/rest/Rest";
 import Sport from "./components/page/live/sport/Sport";
-import PhotoGallery from "./components/page/live/photoGallery/PhotoGallery";
 import OurPride from "./components/page/live/ourPride/OurPride";
 import Vacancies from "./components/page/live/vacancies/Vacancies";
 import Science from "./components/page/live/science/Science";
-import Teachers from "./components/page/live/teachers/Teachers";
 import Learning from "./layouts/Learning";
 import Practice from "./components/page/learning/Practice/Practice";
 import EmploymentService from "./components/page/learning/EmploymentService/EmploymentService";
@@ -36,7 +33,6 @@ import Feedback from "./components/page/learning/EmploymentService/feedback/Feed
 import AboutPractice from "./components/page/learning/Practice/aboutPracrice/AboutPracice";
 import PracticeReviews from "./components/page/learning/Practice/PracticeReviews/Reviews";
 import ShedulePractice from "./components/page/learning/Practice/shedulePractice/ShedulePractice";
-import Utc from "./components/page/learning/Practice/utc/Utc";
 import Enrolly from "./layouts/Enrollee";
 import ApplicantsEnrollee from "./components/page/enrollee/applicants/ApplicantsEnrollee";
 import OpenDay from "./components/page/enrollee/openDay/OpenDay";
@@ -58,7 +54,10 @@ import HistoricalReference from "./components/page/homePage/historicalReference/
 import UniversityNews from "./components/page/homePage/universityNews/UniversityNews";
 import UniversityEvents from "./components/page/homePage/universityEvents/UniversityEvents";
 import Schedule from "./components/page/schedule/Schedule";
-
+import ListsOfPersonsWhoAppliedForAdmission from "./components/page/enrollee/applicants/monitoring/listsOfPersonsWhoAppliedForAdmission/ListsOfPersonsWhoAppliedForAdmission";
+import CompetitionLists from "./components/page/enrollee/applicants/monitoring/competitionLists/СompetitionLists";
+import EnlistedOrders from "./components/page/enrollee/applicants/monitoring/enlistedOrders/EnlistedOrders";
+import DraftOrdersForEnrollment from "./components/page/enrollee/applicants/monitoring/draftOrdersForEnrollment/DraftOrdersForEnrollment";
 const routes = () => [
   {
     path: "",
@@ -141,20 +140,8 @@ const routes = () => [
         element: <StudentsLive />,
       },
       {
-        path: "rest",
-        element: <Rest />,
-      },
-      {
         path: "sport",
         element: <Sport />,
-      },
-      {
-        path: "photoGallery",
-        element: <PhotoGallery />,
-      },
-      {
-        path: "teachers",
-        element: <Teachers />,
       },
       {
         path: "ourPride",
@@ -189,6 +176,22 @@ const routes = () => [
           {
             path: "monitoring",
             element: <Monitoring />,
+          },
+          {
+            path: "listsOfPersonsWhoAppliedForAdmission",
+            element: <ListsOfPersonsWhoAppliedForAdmission />,
+          },
+          {
+            path: "competitionLists",
+            element: <CompetitionLists />,
+          },
+          {
+            path: "draftOrdersForEnrollment",
+            element: <DraftOrdersForEnrollment />,
+          },
+          {
+            path: "enlistedOrders",
+            element: <EnlistedOrders />,
           },
           {
             path: "reception",
@@ -233,10 +236,6 @@ const routes = () => [
           {
             path: "reviews",
             element: <PracticeReviews />,
-          },
-          {
-            path: "utc",
-            element: <Utc />,
           },
           {
             path: "shedule",

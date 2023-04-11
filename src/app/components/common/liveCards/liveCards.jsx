@@ -21,23 +21,8 @@ const LiveCards = () => {
       />
 
       <LiveCard
-        title={"Отдых"}
-        className={"liveCardTwo"}
-        children={
-          <NavLink to="live/rest">
-            <Image
-              src="img/liveImg/relax.png"
-              alt="Фото уплыло:("
-              height="100%"
-              width="100%"
-            />
-          </NavLink>
-        }
-      />
-
-      <LiveCard
         title={"Спорт"}
-        className={"liveCardThree"}
+        className={"liveCardTwo"}
         children={
           <NavLink to="live/sport">
             <Image
@@ -51,23 +36,8 @@ const LiveCards = () => {
       />
 
       <LiveCard
-        title={"Фотогаллерея"}
-        className={"liveCardFour"}
-        children={
-          <NavLink to="live/photoGallery">
-            <Image
-              src="img/liveImg/photo.png"
-              alt="Фото уплыло:("
-              height="100%"
-              width="100%"
-            />
-          </NavLink>
-        }
-      />
-
-      <LiveCard
         title={"Наша гордость"}
-        className={"liveCardFive"}
+        className={"liveCardThree"}
         children={
           <NavLink to="live/ourPride">
             <Image
@@ -82,7 +52,7 @@ const LiveCards = () => {
 
       <LiveCard
         title={"Наука"}
-        className={"liveCardSix"}
+        className={"liveCardFour"}
         children={
           <NavLink to="live/science">
             <Image
@@ -96,10 +66,10 @@ const LiveCards = () => {
       />
 
       <LiveCard
-        title={"Преподаватели"}
-        className={"liveCardSeven"}
+        title={"Абитуриенту"}
+        className={"liveCardFive"}
         children={
-          <NavLink to="live/teachers">
+          <NavLink to="enrollee/applicants">
             <Image
               src="img/liveImg/prepod.png"
               alt="Фото уплыло:("
@@ -112,7 +82,7 @@ const LiveCards = () => {
 
       <LiveCard
         title={"Актуальные вакансии"}
-        className={"liveCardEight"}
+        className={"liveCardSix"}
         children={
           <NavLink to="live/vacancies">
             <Image

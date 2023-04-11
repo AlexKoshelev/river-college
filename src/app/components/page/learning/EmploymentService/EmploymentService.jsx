@@ -9,10 +9,6 @@ const EmploymentService = observer(() => {
   const linksMenu = [
     { title: "О службе трудоустройства выпускников", path: "" },
     {
-      title: "Документы подразделения",
-      path: "../../sveden/document",
-    },
-    {
       title:
         "Вопросы и ответы по организации практики и трудоустройства выпускников",
       path: "faq",
@@ -26,10 +22,6 @@ const EmploymentService = observer(() => {
     { title: "Вакансии от работодателей", path: "vacanciesFrom" },
     { title: "Мониторинг трудоустройства выпускников", path: "feedback" },
     { title: "Полезные ссылки", path: "links" },
-    {
-      title: "Повышение квалификации и профессиональная переподготовка",
-      path: "../../training/advancedTraining",
-    },
   ];
 
   return (

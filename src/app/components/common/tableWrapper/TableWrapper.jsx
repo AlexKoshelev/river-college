@@ -3,6 +3,7 @@ import { toggleClassName } from "../../../utils/disabled";
 import { observer } from "mobx-react-lite";
 import { ReactComponent as Exit } from "../../../assets/svg/exit.svg";
 import { ReactComponent as Exit1 } from "../../../assets/svg/exit1.svg";
+import PropTypes from "prop-types";
 const TableWrapper = observer(({ title, children }) => {
   const [tableSize, setTableSize] = useState(false);
   const toggleTableSize = () => {
@@ -57,4 +58,8 @@ const TableWrapper = observer(({ title, children }) => {
     </>
   );
 });
+TableWrapper.propTypes = {
+  title: PropTypes.string,
+  children: PropTypes.node,
+};
 export default TableWrapper;
