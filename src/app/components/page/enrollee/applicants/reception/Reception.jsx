@@ -1,6 +1,9 @@
 import { observer } from "mobx-react-lite";
 import React from "react";
-import { toggleClassName } from "../../../../../utils/disabled";
+import {
+  toggleClassName,
+  toggleIconColor,
+} from "../../../../../utils/disabled";
 import Rule from "../../../../../assets/pdf/applicant/pravila_priema_2023.pdf";
 import PrikazRule from "../../../../../assets/pdf/applicant/prikaz_pravila_priema_2023.pdf";
 import KCP from "../../../../../assets/pdf/applicant/КЦПСПО23-24.pdf";
@@ -10,9 +13,92 @@ import InfoMedOsmotr from "../../../../../assets/pdf/applicant/infoMedOsmotr.pdf
 import PerechenSpec from "../../../../../assets/pdf/applicant/priem2023_special_SPO.pdf";
 import Dogovor from "../../../../../assets/pdf/applicant/Dogovor_platn_obraz_uslug_2021.pdf";
 import { NavLink } from "react-router-dom";
+import { ReactComponent as Logo } from "../../../../../assets/svg/riveruniversityLogo.svg";
+
 const Reception = observer(() => {
   return (
     <>
+      <h1 className="education__container-title">Приемная КАМПАНИЯ 2023</h1>
+      <section className="margin-tb1 education__container-content">
+        <h1 className="education__container-title">
+          ЧАСЫ РАБОТЫ ПРИЕМНОЙ КОМИССИИ С ПОСЕТИТЕЛЯМИ В 2023 ГОДУ:
+        </h1>
+        <div className="margin-tb1 flex applicantsEnrollee-header">
+          <div className="applicantsEnrollee-header-body">
+            <p>
+              Пн-Чт: <b>с 9.00 до 17.15.</b>
+            </p>
+            <p>
+              Пт: <b>с 9.00 до 16.00 (с 16-00 до 17.15 работа с документами)</b>
+            </p>
+            <p>Обед с 12.00 до 13.00</p>
+            <p>
+              Сб, Вс: <b>Выходной</b>
+            </p>
+            <h1>Задать вопрос приемной комиссии:</h1>
+            <ul>
+              <li>
+                <a
+                  href="tel:+7 (347) 2782886"
+                  className={toggleClassName(
+                    "education__link",
+                    "education__link-white",
+                    "education__link-black",
+                    "education__link-contrast"
+                  )}
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
+                  +73472782886
+                </a>
+              </li>
+              <li>
+                {" "}
+                <a
+                  href="tel:+7 (347) 2782883"
+                  className={toggleClassName(
+                    "education__link",
+                    "education__link-white",
+                    "education__link-black",
+                    "education__link-contrast"
+                  )}
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
+                  +73472782883
+                </a>
+              </li>
+              <li>
+                {" "}
+                <a
+                  href="mailto:opp@uf-vsuwt.ru"
+                  target={"_blank"}
+                  rel="noreferrer"
+                  className={toggleClassName(
+                    "education__link",
+                    "education__link-white",
+                    "education__link-black",
+                    "education__link-contrast"
+                  )}
+                >
+                  UF-VSUWT@yandex.ru
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div className="applicantsEnrollee-header-logo">
+            <Logo
+              fill={toggleIconColor("#0C1C2B", "", "#000")}
+              width="50%"
+              height={"50%"}
+            />
+            <div className="applicantsEnrollee-header-title">
+              Свяжи свою <br /> жизнь с морем!
+            </div>
+          </div>
+        </div>
+      </section>
       <ol>
         <li>
           <a

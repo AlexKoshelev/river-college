@@ -2,7 +2,9 @@ import React from "react";
 import { Outlet } from "react-router";
 import BreadCrumbs from "../components/common/breadCrumbs/BreadCrumbs";
 import ChapterMenu from "../components/ui/chapterMenu/ChapterMenu";
-const Enrolly = () => {
+import { observer } from "mobx-react-lite";
+import { toggleClassName } from "../utils/disabled";
+const Enrolly = observer(() => {
   const linksMenu = [
     { title: "Приемная ампания 2023", path: "" },
     {
@@ -16,8 +18,19 @@ const Enrolly = () => {
       <div className="chapter__menu-show">
         <ChapterMenu linksArray={linksMenu} />
       </div>
-      <Outlet />
+      <div
+        className={toggleClassName(
+          "education__container",
+          "education__container-white",
+          "education__container-black",
+          "education__container-contrast"
+        )}
+      >
+        <div className="education__container-content">
+          <Outlet />
+        </div>
+      </div>
     </div>
   );
-};
+});
 export default Enrolly;

@@ -10,7 +10,7 @@ const Monitoring = observer(() => {
         <ul>
           <li>
             <NavLink
-              to="../listsOfPersonsWhoAppliedForAdmission"
+              to="listsOfPersonsWhoAppliedForAdmission"
               className={toggleClassName(
                 "education__link",
                 "education__link-white",
@@ -23,7 +23,7 @@ const Monitoring = observer(() => {
           </li>
           <li>
             <NavLink
-              to="../competitionLists"
+              to="competitionLists"
               className={toggleClassName(
                 "education__link",
                 "education__link-white",
@@ -36,7 +36,7 @@ const Monitoring = observer(() => {
           </li>
           <li>
             <NavLink
-              to="../draftOrdersForEnrollment"
+              to="draftOrdersForEnrollment"
               className={toggleClassName(
                 "education__link",
                 "education__link-white",
@@ -49,7 +49,7 @@ const Monitoring = observer(() => {
           </li>
           <li>
             <NavLink
-              to="../enlistedOrders"
+              to="enlistedOrders"
               className={toggleClassName(
                 "education__link",
                 "education__link-white",
@@ -62,6 +62,7 @@ const Monitoring = observer(() => {
           </li>
         </ul>
       </p>
+      <Outlet />
     </section>
   );
 });

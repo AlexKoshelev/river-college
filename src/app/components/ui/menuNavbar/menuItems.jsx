@@ -119,8 +119,24 @@ export function ApplicantMenu({ onEnrolleeItemClick }) {
           onClick={onEnrolleeItemClick}
           items={[
             {
-              label: "Абитурьенту",
-              key: "applicants",
+              label: "Приемная кампания 2023",
+              key: "reception",
+            },
+            {
+              label: "Подача документов",
+              key: "submissionDoc",
+            },
+            {
+              label: "Обращение директора",
+              key: "messageFromDirector",
+            },
+            {
+              label: "Мониторинг подачи документов",
+              key: "monitoring",
+            },
+            {
+              label: "Узнать как стать нашим курсантом",
+              key: "applicantsInfo",
             },
             { label: "Дни открытых дверей", key: "open-day" },
           ]}

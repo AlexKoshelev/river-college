@@ -124,15 +124,24 @@ const BreadCrumbs = observer(() => {
               /* Абитуриенту*/
               case "/enrollee":
                 return (routeTo = null);
-              case "/enrollee/applicants":
-                return (routeTo = "/ Выбор профессии");
-              case "/enrollee/applicants/reception":
+              case "/enrollee/messageFromDirector":
+                return (routeTo = "/ Обращение директора");
+              case "/enrollee/reception":
                 return (routeTo = "/ Приемная кампания 2023");
-              case "/enrollee/applicants/submissionDoc":
+              case "/enrollee/submissionDoc":
                 return (routeTo = "/ Подача документов");
-              case "/enrollee/applicants/monitoring":
+              case "/enrollee/monitoring":
                 return (routeTo = "/ Мониторинг подачи документов");
-              case "/enrollee/applicants/applicantsInfo":
+              case "/enrollee/monitoring/listsOfPersonsWhoAppliedForAdmission":
+                return (routeTo =
+                  "/ Списки лиц, подавших заявление на поступление");
+              case "/enrollee/monitoring/competitionLists":
+                return (routeTo = "/ Конкурсные списки");
+              case "/enrollee/monitoring/draftOrdersForEnrollment":
+                return (routeTo = "/ Проекты приказов на зачисление");
+              case "/enrollee/monitoring/enlistedOrders":
+                return (routeTo = "/ Приказы зачисленных");
+              case "/enrollee/applicantsInfo":
                 return (routeTo = "/ Как стать нашим курсантом");
               case "/enrollee/open-day":
                 return (routeTo = "/ Дни открытых дверей");

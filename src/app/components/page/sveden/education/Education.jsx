@@ -1,5 +1,5 @@
 import { observer } from "mobx-react-lite";
-import React, { useState } from "react";
+import React from "react";
 import { toggleClassName, toggleFontSize } from "../../../../utils/disabled";
 import Licenz from "../../../../assets/pdf/documentPage/licenz_vip20220916.pdf";
 import { ReactComponent as PDF } from "../../../../assets/svg/office/pdf.svg";
@@ -53,6 +53,7 @@ import Image21 from "../../../../assets/pdf/educationPage/260205/12.1.jpg";
 import Image22 from "../../../../assets/pdf/educationPage/230201/13.jpg";
 import Image23 from "../../../../assets/pdf/educationPage/230201/14.jpg";
 import TableWrapper from "../../../common/tableWrapper/TableWrapper";
+import { NavLink } from "react-router-dom";
 const Education = observer(() => {
   return (
     <div
@@ -1101,7 +1102,12 @@ const Education = observer(() => {
             </tr>
             <tr>
               <td>26.02.03 </td>
-              <td>Судовождение (углубленная подготовка), 2020 года набора</td>
+              <td>
+                <NavLink to="../../educationPrograms/navigation2020">
+                  {" "}
+                  Судовождение (углубленная подготовка), 2020 года набора
+                </NavLink>
+              </td>
               <td>среднее профессиональное образование</td>
               <td>очно-заочная </td>
               <td>ООП для специальности 26.02.03 "Судовождение" * ЭЦП</td>
@@ -1256,7 +1262,13 @@ const Education = observer(() => {
             </tr>
             <tr>
               <td>26.02.03 </td>
-              <td>Судовождение (углубленная подготовка), 2019 года набора</td>
+              <td>
+                {" "}
+                <NavLink to="../../educationPrograms/navigation2019">
+                  {" "}
+                  Судовождение (углубленная подготовка), 2019 года набора
+                </NavLink>
+              </td>
               <td>среднее профессиональное образование</td>
               <td>очно-заочная </td>
               <td>ООП для специальности 26.02.03 "Судовождение" * ЭЦП</td>
@@ -1413,7 +1425,12 @@ const Education = observer(() => {
             </tr>
             <tr>
               <td>26.02.03 </td>
-              <td>Судовождение (углубленная подготовка), 2018 года набора</td>
+              <td>
+                <NavLink to="../../educationPrograms/navigation2018">
+                  {" "}
+                  Судовождение (углубленная подготовка), 2018 года набора
+                </NavLink>
+              </td>
               <td>среднее профессиональное образование</td>
               <td>очно-заочная </td>
               <td>ООП для специальности 26.02.03 "Судовождение" * ЭЦП</td>
@@ -1573,7 +1590,12 @@ const Education = observer(() => {
             </tr>
             <tr>
               <td>26.02.03 </td>
-              <td>Судовождение (углубленная подготовка), 2017 года набора</td>
+              <td>
+                <NavLink to="../../educationPrograms/navigation2017">
+                  {" "}
+                  Судовождение (углубленная подготовка), 2017 года набора
+                </NavLink>
+              </td>
               <td>среднее профессиональное образование</td>
               <td>очно-заочная </td>
               <td>ООП для специальности 26.02.03 "Судовождение", очная* ЭЦП</td>
@@ -1737,8 +1759,11 @@ const Education = observer(() => {
             <tr>
               <td>26.02.06</td>
               <td>
-                "Эксплуатация судового электрооборудования и средств
-                автоматики", 2020 года набора
+                <NavLink to="../../educationPrograms/marineElectricalEquipment2020">
+                  {" "}
+                  "Эксплуатация судового электрооборудования и средств
+                  автоматики", 2020 года набора
+                </NavLink>
               </td>
               <td>среднее профессиональное образование </td>
               <td>очная</td>
@@ -1888,8 +1913,11 @@ const Education = observer(() => {
             <tr>
               <td>26.02.06</td>
               <td>
-                "Эксплуатация судового электрооборудования и средств
-                автоматики", 2019 года набора
+                <NavLink to="../../educationPrograms/marineElectricalEquipment2019">
+                  {" "}
+                  "Эксплуатация судового электрооборудования и средств
+                  автоматики", 2019 года набора
+                </NavLink>
               </td>
               <td>среднее профессиональное образование </td>
               <td>очная</td>
@@ -2039,8 +2067,11 @@ const Education = observer(() => {
             <tr>
               <td>26.02.06</td>
               <td>
-                "Эксплуатация судового электрооборудования и средств
-                автоматики", 2018 года набора
+                <NavLink to="../../educationPrograms/marineElectricalEquipment2018">
+                  {" "}
+                  "Эксплуатация судового электрооборудования и средств
+                  автоматики", 2018 года набора
+                </NavLink>
               </td>
               <td>среднее профессиональное образование </td>
               <td>очная</td>
@@ -2190,8 +2221,11 @@ const Education = observer(() => {
             <tr>
               <td>26.02.06</td>
               <td>
-                "Эксплуатация судового электрооборудования и средств
-                автоматики", 2017 года набора
+                <NavLink to="../../educationPrograms/marineElectricalEquipment2017">
+                  {" "}
+                  "Эксплуатация судового электрооборудования и средств
+                  автоматики", 2017 года набора
+                </NavLink>
               </td>
               <td>среднее профессиональное образование </td>
               <td>очная</td>
@@ -2375,8 +2409,10 @@ const Education = observer(() => {
             <tr>
               <td>26.02.05 </td>
               <td>
-                "Эксплуатация судовых энергетических установок", 2020 года
-                набора
+                <NavLink to="../../educationPrograms/shipPowerPlants2020">
+                  "Эксплуатация судовых энергетических установок", 2020 года
+                  набора
+                </NavLink>
               </td>
               <td>среднее профессиональное образование</td>
               <td>очная/заочная </td>
@@ -2522,8 +2558,10 @@ const Education = observer(() => {
             <tr>
               <td>26.02.05 </td>
               <td>
-                "Эксплуатация судовых энергетических установок", 2019 года
-                набора
+                <NavLink to="../../educationPrograms/shipPowerPlants2019">
+                  "Эксплуатация судовых энергетических установок", 2019 года
+                  набора
+                </NavLink>
               </td>
               <td>среднее профессиональное образование</td>
               <td>очная/заочная </td>
@@ -2661,7 +2699,9 @@ const Education = observer(() => {
             <tr>
               <td>26.02.05 </td>
               <td>
-                "Эксплуатация судовых энергетических установок" 2018 набора
+                <NavLink to="../../educationPrograms/shipPowerPlants2018">
+                  "Эксплуатация судовых энергетических установок" 2018 набора
+                </NavLink>
               </td>
               <td>среднее профессиональное образование</td>
               <td>очная/заочная </td>
@@ -2809,8 +2849,10 @@ const Education = observer(() => {
             <tr>
               <td>26.02.05 </td>
               <td>
-                "Эксплуатация судовых энергетических установок", 2016, 2017
-                годов набора
+                <NavLink to="../../educationPrograms/shipPowerPlants2017">
+                  "Эксплуатация судовых энергетических установок", 2016, 2017
+                  годов набора
+                </NavLink>
               </td>
               <td>среднее профессиональное образование</td>
               <td>очная/заочная </td>
@@ -2973,8 +3015,10 @@ const Education = observer(() => {
             <tr>
               <td>23.02.01</td>
               <td>
-                "Организация перевозок и управление на транспорте", 2020 года
-                набора
+                <NavLink to="../../educationPrograms/organizationOfTransportation2020">
+                  "Организация перевозок и управление на транспорте", 2020 года
+                  набора
+                </NavLink>
               </td>
               <td>среднее профессиональное образование</td>
               <td>очная/заочная </td>
@@ -3117,7 +3161,11 @@ const Education = observer(() => {
             </tr>
             <tr>
               <td>23.02.01</td>
-              <td>"Организация перевозок и управление на транспорте"</td>
+              <td>
+                <NavLink to="../../educationPrograms/organizationOfTransportation">
+                  "Организация перевозок и управление на транспорте"
+                </NavLink>
+              </td>
               <td>среднее профессиональное образование</td>
               <td>заочная</td>
               <td>
@@ -3378,8 +3426,10 @@ const Education = observer(() => {
             <tr>
               <td>26.02.03</td>
               <td>
-                Судовождение (углубленная подготовка), на базе основного общего
-                образования (9 классов),
+                <NavLink to="../../educationPrograms/navigationDepth">
+                  Судовождение (углубленная подготовка), на базе основного
+                  общего образования (9 классов)
+                </NavLink>
               </td>
               <td>среднее профессиональное образование</td>
               <td>очная</td>

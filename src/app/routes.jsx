@@ -58,6 +58,22 @@ import ListsOfPersonsWhoAppliedForAdmission from "./components/page/enrollee/app
 import CompetitionLists from "./components/page/enrollee/applicants/monitoring/competitionLists/СompetitionLists";
 import EnlistedOrders from "./components/page/enrollee/applicants/monitoring/enlistedOrders/EnlistedOrders";
 import DraftOrdersForEnrollment from "./components/page/enrollee/applicants/monitoring/draftOrdersForEnrollment/DraftOrdersForEnrollment";
+import EducationPrograms from "./layouts/EducationPrograms";
+import OrganizationOfTransportation from "./components/page/educationsPrograms/230201/OrganizationOfTransportation";
+import OrganizationOfTransportation2020 from "./components/page/educationsPrograms/230201/OrganizationOfTransportation2020";
+import Navigation2017 from "./components/page/educationsPrograms/260203/Navigation2017";
+import Navigation2018 from "./components/page/educationsPrograms/260203/Navigation2018";
+import Navigation2019 from "./components/page/educationsPrograms/260203/Navigation2019";
+import Navigation2020 from "./components/page/educationsPrograms/260203/Navigation2020";
+import NavigationDepth from "./components/page/educationsPrograms/260203/NavigationDepth";
+import ShipPowerPlants2017 from "./components/page/educationsPrograms/260205/ShipPowerPlants2017";
+import ShipPowerPlants2019 from "./components/page/educationsPrograms/260205/ShipPowerPlants2019";
+import ShipPowerPlants2018 from "./components/page/educationsPrograms/260205/ShipPowerPlants2018";
+import ShipPowerPlants2020 from "./components/page/educationsPrograms/260205/ShipPowerPlants2020";
+import MarineElectricalEquipment2017 from "./components/page/educationsPrograms/260206/MarineElectricalEquipment2017";
+import MarineElectricalEquipment2018 from "./components/page/educationsPrograms/260206/MarineElectricalEquipment2018";
+import MarineElectricalEquipment2019 from "./components/page/educationsPrograms/260206/MarineElectricalEquipment2019";
+import MarineElectricalEquipment2020 from "./components/page/educationsPrograms/260206/MarineElectricalEquipment2020";
 const routes = () => [
   {
     path: "",
@@ -66,6 +82,72 @@ const routes = () => [
       {
         path: ":element",
         element: <Main />,
+      },
+    ],
+  },
+  {
+    path: "educationPrograms",
+    element: <EducationPrograms />,
+    children: [
+      {
+        path: "organizationOfTransportation",
+        element: <OrganizationOfTransportation />,
+      },
+      {
+        path: "organizationOfTransportation2020",
+        element: <OrganizationOfTransportation2020 />,
+      },
+      {
+        path: "navigation2017",
+        element: <Navigation2017 />,
+      },
+      {
+        path: "navigation2018",
+        element: <Navigation2018 />,
+      },
+      {
+        path: "navigation2019",
+        element: <Navigation2019 />,
+      },
+      {
+        path: "navigation2020",
+        element: <Navigation2020 />,
+      },
+      {
+        path: "navigationDepth",
+        element: <NavigationDepth />,
+      },
+      {
+        path: "shipPowerPlants2017",
+        element: <ShipPowerPlants2017 />,
+      },
+      {
+        path: "shipPowerPlants2018",
+        element: <ShipPowerPlants2018 />,
+      },
+      {
+        path: "shipPowerPlants2019",
+        element: <ShipPowerPlants2019 />,
+      },
+      {
+        path: "shipPowerPlants2020",
+        element: <ShipPowerPlants2020 />,
+      },
+      {
+        path: "marineElectricalEquipment2017",
+        element: <MarineElectricalEquipment2017 />,
+      },
+      {
+        path: "marineElectricalEquipment2018",
+        element: <MarineElectricalEquipment2018 />,
+      },
+      {
+        path: "marineElectricalEquipment2019",
+        element: <MarineElectricalEquipment2019 />,
+      },
+      {
+        path: "marineElectricalEquipment2020",
+        element: <MarineElectricalEquipment2020 />,
       },
     ],
   },
@@ -164,19 +246,19 @@ const routes = () => [
       {
         path: "applicants",
         element: <ApplicantsEnrollee />,
+      },
+      {
+        path: "messageFromDirector",
+        element: <Message />,
+      },
+      {
+        path: "applicantsInfo",
+        element: <ApplicantsInfo />,
+      },
+      {
+        path: "monitoring",
+        element: <Monitoring />,
         children: [
-          {
-            path: "",
-            element: <Message />,
-          },
-          {
-            path: "applicantsInfo",
-            element: <ApplicantsInfo />,
-          },
-          {
-            path: "monitoring",
-            element: <Monitoring />,
-          },
           {
             path: "listsOfPersonsWhoAppliedForAdmission",
             element: <ListsOfPersonsWhoAppliedForAdmission />,
@@ -193,27 +275,28 @@ const routes = () => [
             path: "enlistedOrders",
             element: <EnlistedOrders />,
           },
-          {
-            path: "reception",
-            element: <Reception />,
-          },
-          {
-            path: "submissionDoc",
-            element: <SubmissionDoc />,
-          },
-          {
-            path: "educationCosts",
-            element: <EducationCosts />,
-          },
-          {
-            path: "receptionPlaces",
-            element: <ReceptionPlaces />,
-          },
-          {
-            path: "receptionTiming",
-            element: <ReceptionTiming />,
-          },
         ],
+      },
+
+      {
+        path: "reception",
+        element: <Reception />,
+      },
+      {
+        path: "submissionDoc",
+        element: <SubmissionDoc />,
+      },
+      {
+        path: "educationCosts",
+        element: <EducationCosts />,
+      },
+      {
+        path: "receptionPlaces",
+        element: <ReceptionPlaces />,
+      },
+      {
+        path: "receptionTiming",
+        element: <ReceptionTiming />,
       },
       {
         path: "open-day",
