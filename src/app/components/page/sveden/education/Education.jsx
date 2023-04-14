@@ -54,6 +54,54 @@ import Image22 from "../../../../assets/pdf/educationPage/230201/13.jpg";
 import Image23 from "../../../../assets/pdf/educationPage/230201/14.jpg";
 import TableWrapper from "../../../common/tableWrapper/TableWrapper";
 import { NavLink } from "react-router-dom";
+
+import adOOP1 from "../../../../assets/pdf/educationPage/260203/oop/adOOP_260203.pdf";
+import OOP1 from "../../../../assets/pdf/educationPage/260203/oop/OOP1.pdf";
+import SigOOP1 from "../../../../assets/pdf/educationPage/260203/oop/OOP1.pdf.sig";
+import OOP2 from "../../../../assets/pdf/educationPage/260203/oop/OOP2.pdf";
+import SigOOP2 from "../../../../assets/pdf/educationPage/260203/oop/OOP2.pdf.sig";
+import OOP3 from "../../../../assets/pdf/educationPage/260203/oop/OOP3.pdf";
+import SigOOP3 from "../../../../assets/pdf/educationPage/260203/oop/OOP3.pdf.sig";
+import OOP4 from "../../../../assets/pdf/educationPage/260203/oop/OOP4.pdf";
+import OOP5 from "../../../../assets/pdf/educationPage/260206/oop/OOP5.pdf";
+import SigOOP5 from "../../../../assets/pdf/educationPage/260206/oop/OOP5.pdf.sig";
+import OOP6 from "../../../../assets/pdf/educationPage/260206/oop/OOP6.pdf";
+import SigOOP6 from "../../../../assets/pdf/educationPage/260206/oop/OOP6.pdf.sig";
+import OOP7 from "../../../../assets/pdf/educationPage/260206/oop/OOP7.pdf";
+import SigOOP7 from "../../../../assets/pdf/educationPage/260206/oop/OOP7.pdf.sig";
+import OOP8 from "../../../../assets/pdf/educationPage/260206/oop/OOP8.pdf";
+import OOP9 from "../../../../assets/pdf/educationPage/260205/oop/OOP9.pdf";
+import SigOOP9 from "../../../../assets/pdf/educationPage/260205/oop/OOP9.pdf.sig";
+import OOP10 from "../../../../assets/pdf/educationPage/260205/oop/OOP10.pdf";
+import SigOOP10 from "../../../../assets/pdf/educationPage/260205/oop/OOP10.pdf.sig";
+import OOP11 from "../../../../assets/pdf/educationPage/260205/oop/OOP11.pdf";
+import SigOOP11 from "../../../../assets/pdf/educationPage/260205/oop/OOP11.pdf.sig";
+import OOP12 from "../../../../assets/pdf/educationPage/260205/oop/OOP12.pdf";
+import OOP13 from "../../../../assets/pdf/educationPage/230201/oop/OOP13.pdf";
+import SigOOP13 from "../../../../assets/pdf/educationPage/230201/oop/OOP13.pdf.sig";
+import OOP14 from "../../../../assets/pdf/educationPage/230201/oop/OOP13.pdf";
+import SigOOP14 from "../../../../assets/pdf/educationPage/230201/oop/OOP14.pdf.sig";
+
+import UP1 from "../../../../assets/pdf/educationPage/260203/syllabus/UP_260203_1-1.pdf";
+import UP2 from "../../../../assets/pdf/educationPage/260203/syllabus/UP_260203_1-2.pdf";
+
+import UP3 from "../../../../assets/pdf/educationPage/260203/syllabus/UP_260203_2-1-3.pdf";
+import UP4 from "../../../../assets/pdf/educationPage/260203/syllabus/UP_260203_3-1-2.pdf";
+import UP5 from "../../../../assets/pdf/educationPage/260203/syllabus/UP_260203_3-3.pdf";
+import UP6 from "../../../../assets/pdf/educationPage/260203/syllabus/UP_260203_4-1.pdf";
+import UP7 from "../../../../assets/pdf/educationPage/260203/syllabus/UP_260203_4-2.pdf";
+import UP9 from "../../../../assets/pdf/educationPage/260206/syllabus/UP_260206_6.pdf";
+import UP10 from "../../../../assets/pdf/educationPage/260206/syllabus/UP_260206_7.pdf";
+import UP11 from "../../../../assets/pdf/educationPage/260206/syllabus/UP_260206_8.pdf";
+
+import UP12 from "../../../../assets/pdf/educationPage/260205/syllabus/UP_260205_9.pdf";
+import UP13 from "../../../../assets/pdf/educationPage/260205/syllabus/UP_260205_10.pdf";
+import UP14 from "../../../../assets/pdf/educationPage/260205/syllabus/UP_260205_11.pdf";
+import UP15 from "../../../../assets/pdf/educationPage/260205/syllabus/UP_260205_12.pdf";
+import UP16 from "../../../../assets/pdf/educationPage/260205/syllabus/UP_260205_12-1.pdf";
+import UP17 from "../../../../assets/pdf/educationPage/230201/syllabus/UP_230201_13.pdf";
+import UP18 from "../../../../assets/pdf/educationPage/230201/syllabus/UP_230201_14.pdf";
+import UP19 from "../../../../assets/pdf/educationPage/260203/syllabus/adUP_260203.pdf";
 const Education = observer(() => {
   return (
     <div
@@ -1110,11 +1158,38 @@ const Education = observer(() => {
               </td>
               <td>среднее профессиональное образование</td>
               <td>очно-заочная </td>
-              <td>ООП для специальности 26.02.03 "Судовождение" * ЭЦП</td>
               <td>
-                Учебный план 26.02.03 "Судовождение", на базе 9 классов,
-                очная/заочная Учебный план 26.02.03 "Судовождение", на базе 11
-                классов, очная
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={OOP1} target={"_blank"} rel="noreferrer">
+                      ООП для специальности 26.02.03 "Судовождение"
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <a href={SigOOP1} target={"_blank"} rel="noreferrer">
+                      ЭЦП
+                    </a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={UP1} target={"_blank"} rel="noreferrer">
+                      Учебный план 26.02.03 "Судовождение", на базе 9 классов,
+                      очная/заочная
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={UP2} target={"_blank"} rel="noreferrer">
+                      Учебный план 26.02.03 "Судовождение", на базе 11 классов,
+                      очная
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
                 Аннотации к рабочим программам дисциплин для специальности СПО
@@ -1271,12 +1346,53 @@ const Education = observer(() => {
               </td>
               <td>среднее профессиональное образование</td>
               <td>очно-заочная </td>
-              <td>ООП для специальности 26.02.03 "Судовождение" * ЭЦП</td>
               <td>
-                Учебный план 26.02.03 "Судовождение", на базе 11 классов,
-                заочная Учебный план 26.02.03 "Судовождение", на базе 9 классов,
-                заочная Учебный план 26.02.03 "Судовождение", на базе 9 классов,
-                очная
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={OOP2} target={"_blank"} rel="noreferrer">
+                      ООП для специальности 26.02.03 "Судовождение"
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <a href={SigOOP2} target={"_blank"} rel="noreferrer">
+                      ЭЦП
+                    </a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li
+                    itemProp="ustavDocLink"
+                    className="doc__item"
+                    style={{ backgroundColor: "red" }}
+                  >
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={"/"} target={"_blank"} rel="noreferrer">
+                      Учебный план 26.02.03 "Судовождение", на базе 11 классов,
+                      заочная
+                    </a>
+                  </li>
+                  <li
+                    itemProp="ustavDocLink"
+                    className="doc__item"
+                    style={{ backgroundColor: "red" }}
+                  >
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={"/"} target={"_blank"} rel="noreferrer">
+                      Учебный план 26.02.03 "Судовождение", на базе 9 классов,
+                      заочная
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={UP3} target={"_blank"} rel="noreferrer">
+                      Учебный план 26.02.03 "Судовождение", на базе 9 классов,
+                      очная
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
                 Аннотации к рабочим программам дисциплин для специальности СПО
@@ -1433,12 +1549,45 @@ const Education = observer(() => {
               </td>
               <td>среднее профессиональное образование</td>
               <td>очно-заочная </td>
-              <td>ООП для специальности 26.02.03 "Судовождение" * ЭЦП</td>
               <td>
-                Учебный план 26.02.03 "Судовождение", на базе 11 классов,
-                заочная Учебный план 26.02.03 "Судовождение", на базе 9 классов,
-                очная Учебный план 26.02.03 "Судовождение", на базе 11 классов,
-                очная
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={OOP3} target={"_blank"} rel="noreferrer">
+                      ООП для специальности 26.02.03 "Судовождение"
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <a href={SigOOP3} target={"_blank"} rel="noreferrer">
+                      ЭЦП
+                    </a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={UP4} target={"_blank"} rel="noreferrer">
+                      Учебный план 26.02.03 "Судовождение", на базе 11 классов,
+                      заочная
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={UP4} target={"_blank"} rel="noreferrer">
+                      Учебный план 26.02.03 "Судовождение", на базе 9 классов,
+                      заочная
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={UP5} target={"_blank"} rel="noreferrer">
+                      Учебный план 26.02.03 "Судовождение", на базе 9 классов,
+                      очная
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
                 Аннотации к рабочим программам дисциплин для специальности СПО
@@ -1598,10 +1747,33 @@ const Education = observer(() => {
               </td>
               <td>среднее профессиональное образование</td>
               <td>очно-заочная </td>
-              <td>ООП для специальности 26.02.03 "Судовождение", очная* ЭЦП</td>
               <td>
-                Учебный план 26.02.03 "Судовождение", на базе 11 классов, очная
-                Учебный план 26.02.03 "Судовождение", на базе 9 классов, очная
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={OOP4} target={"_blank"} rel="noreferrer">
+                      ООП для специальности 26.02.03 "Судовождение"
+                    </a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={UP6} target={"_blank"} rel="noreferrer">
+                      Учебный план 26.02.03 "Судовождение", на базе 11 классов,
+                      очная
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={UP7} target={"_blank"} rel="noreferrer">
+                      Учебный план 26.02.03 "Судовождение", на базе 9 классов,
+                      очная
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
                 Аннотации к рабочим программам дисциплин для специальности СПО
@@ -1768,12 +1940,36 @@ const Education = observer(() => {
               <td>среднее профессиональное образование </td>
               <td>очная</td>
               <td>
-                ООП для специальности 26.02.06 "Эксплуатация судового
-                электрооборудования и средств автоматики" * ЭЦП
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={OOP5} target={"_blank"} rel="noreferrer">
+                      ООП для специальности 26.02.06 "Эксплуатация судового
+                      электрооборудования и средств автоматики"
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <a href={SigOOP5} target={"_blank"} rel="noreferrer">
+                      ЭЦП
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
-                Учебный план 26.02.06 "Эксплуатация судового электрооборудования
-                и средств автоматики", на базе 9 классов
+                <ul>
+                  <li
+                    itemProp="ustavDocLink"
+                    className="doc__item"
+                    style={{ backgroundColor: "red" }}
+                  >
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={"/"} target={"_blank"} rel="noreferrer">
+                      Учебный план 26.02.06 "Эксплуатация судового
+                      электрооборудования и средств автоматики", на базе 9
+                      классов
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
                 Аннотации к рабочим программам дисциплин для специальности СПО
@@ -1922,12 +2118,32 @@ const Education = observer(() => {
               <td>среднее профессиональное образование </td>
               <td>очная</td>
               <td>
-                ООП для специальности 26.02.06 "Эксплуатация судового
-                электрооборудования и средств автоматики" * ЭЦП
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={OOP6} target={"_blank"} rel="noreferrer">
+                      ООП для специальности 26.02.06 "Эксплуатация судового
+                      электрооборудования и средств автоматики"
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <a href={SigOOP6} target={"_blank"} rel="noreferrer">
+                      ЭЦП
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
-                Учебный план 26.02.06 "Эксплуатация судового электрооборудования
-                и средств автоматики", на базе 9 классов
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={UP9} target={"_blank"} rel="noreferrer">
+                      Учебный план 26.02.06 "Эксплуатация судового
+                      электрооборудования и средств автоматики", на базе 9
+                      классов
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
                 Аннотации к рабочим программам дисциплин для специальности СПО
@@ -2076,12 +2292,32 @@ const Education = observer(() => {
               <td>среднее профессиональное образование </td>
               <td>очная</td>
               <td>
-                ООП для специальности 26.02.06 "Эксплуатация судового
-                электрооборудования и средств автоматики" * ЭЦП
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={OOP7} target={"_blank"} rel="noreferrer">
+                      ООП для специальности 26.02.06 "Эксплуатация судового
+                      электрооборудования и средств автоматики"
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <a href={SigOOP7} target={"_blank"} rel="noreferrer">
+                      ЭЦП
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
-                Учебный план 26.02.06 "Эксплуатация судового электрооборудования
-                и средств автоматики", на базе 9 классов
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={UP10} target={"_blank"} rel="noreferrer">
+                      Учебный план 26.02.06 "Эксплуатация судового
+                      электрооборудования и средств автоматики", на базе 9
+                      классов
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
                 Аннотации к рабочим программам дисциплин для специальности СПО
@@ -2230,12 +2466,27 @@ const Education = observer(() => {
               <td>среднее профессиональное образование </td>
               <td>очная</td>
               <td>
-                ООП для специальности 26.02.06 "Эксплуатация судового
-                электрооборудования и средств автоматики" * ЭЦП
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={OOP8} target={"_blank"} rel="noreferrer">
+                      ООП для специальности 26.02.06 "Эксплуатация судового
+                      электрооборудования и средств автоматики"
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
-                Учебный план 26.02.06 "Эксплуатация судового электрооборудования
-                и средств автоматики", на базе 9 классов
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={UP11} target={"_blank"} rel="noreferrer">
+                      Учебный план 26.02.06 "Эксплуатация судового
+                      электрооборудования и средств автоматики", на базе 9
+                      классов
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
                 Аннотации к рабочим программам дисциплин для специальности СПО
@@ -2417,12 +2668,31 @@ const Education = observer(() => {
               <td>среднее профессиональное образование</td>
               <td>очная/заочная </td>
               <td>
-                ООП для специальности 26.02.05 "Эксплуатация судовых
-                энергетических установок"* ЭЦП
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={OOP9} target={"_blank"} rel="noreferrer">
+                      ООП для специальности 26.02.05 "Эксплуатация судовых
+                      энергетических установок"
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <a href={SigOOP9} target={"_blank"} rel="noreferrer">
+                      ЭЦП
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
-                Учебный план 26.02.05 "Эксплуатация судовых энергетических
-                установок" (очная/заочная){" "}
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={UP12} target={"_blank"} rel="noreferrer">
+                      Учебный план 26.02.05 "Эксплуатация судовых энергетических
+                      установок" (очная/заочная){" "}
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
                 Аннотации к рабочим программам дисциплин для специальности СПО
@@ -2566,12 +2836,31 @@ const Education = observer(() => {
               <td>среднее профессиональное образование</td>
               <td>очная/заочная </td>
               <td>
-                ООП для специальности 26.02.05 "Эксплуатация судовых
-                энергетических установок"* ЭЦП
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={OOP10} target={"_blank"} rel="noreferrer">
+                      ООП для специальности 26.02.05 "Эксплуатация судовых
+                      энергетических установок"
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <a href={SigOOP10} target={"_blank"} rel="noreferrer">
+                      ЭЦП
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
-                Учебный план 26.02.05 "Эксплуатация судовых энергетических
-                установок" (очная/заочная){" "}
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={UP13} target={"_blank"} rel="noreferrer">
+                      Учебный план 26.02.05 "Эксплуатация судовых энергетических
+                      установок" (очная/заочная){" "}
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
                 Аннотации к рабочим программам дисциплин для специальности СПО
@@ -2706,13 +2995,32 @@ const Education = observer(() => {
               <td>среднее профессиональное образование</td>
               <td>очная/заочная </td>
               <td>
-                ООП для специальности 26.02.05 "Эксплуатация судовых
-                энергетических установок"* ЭЦП
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={OOP11} target={"_blank"} rel="noreferrer">
+                      ООП для специальности 26.02.05 "Эксплуатация судовых
+                      энергетических установок"
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <a href={SigOOP11} target={"_blank"} rel="noreferrer">
+                      ЭЦП
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
-                Учебный план 26.02.05 "Эксплуатация судовых энергетических
-                установок", на базе 9 классов, очная, на базе 11 классов,
-                заочная
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={UP14} target={"_blank"} rel="noreferrer">
+                      Учебный план 26.02.05 "Эксплуатация судовых энергетических
+                      установок", на базе 9 классов, очная, на базе 11 классов,
+                      заочная
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
                 Аннотации рабочим программам дисциплин для специальности СПО
@@ -2857,13 +3165,33 @@ const Education = observer(() => {
               <td>среднее профессиональное образование</td>
               <td>очная/заочная </td>
               <td>
-                ООП для специальности 26.02.05 "Эксплуатация судовых
-                энергетических установок", очная * ЭЦП
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={OOP12} target={"_blank"} rel="noreferrer">
+                      ООП для специальности 26.02.05 "Эксплуатация судовых
+                      энергетических установок"
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
-                Учебный план 26.02.05 "Эксплуатация судовых энергетических
-                установок" (очная) Учебный план 26.02.05 "Эксплуатация судовых
-                энергетических установок" (заочная)
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={UP15} target={"_blank"} rel="noreferrer">
+                      Учебный план 26.02.05 "Эксплуатация судовых энергетических
+                      установок" (очная)
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={UP16} target={"_blank"} rel="noreferrer">
+                      Учебный план 26.02.05 "Эксплуатация судовых энергетических
+                      установок" (заочная)
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
                 Аннотации к рабочим программам дисциплин для специальности СПО
@@ -3023,12 +3351,31 @@ const Education = observer(() => {
               <td>среднее профессиональное образование</td>
               <td>очная/заочная </td>
               <td>
-                Описание образовательной программы 23.02.01 "Организация
-                перевозок и управление на транспорте"* ЭЦП
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={OOP13} target={"_blank"} rel="noreferrer">
+                      Описание образовательной программы 23.02.01 "Организация
+                      перевозок и управление на транспорте"
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <a href={SigOOP13} target={"_blank"} rel="noreferrer">
+                      ЭЦП
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
-                Учебный план 23.02.01 "Организация перевозок и управление на
-                транспорте"
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={UP17} target={"_blank"} rel="noreferrer">
+                      Учебный план 23.02.01 "Организация перевозок и управление
+                      на транспорте"
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
                 Аннотации к рабочим программам дисциплин для специальности СПО
@@ -3169,12 +3516,31 @@ const Education = observer(() => {
               <td>среднее профессиональное образование</td>
               <td>заочная</td>
               <td>
-                Описание образовательной программы 23.02.01 "Организация
-                перевозок и управление на транспорте" ЭЦП
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={OOP14} target={"_blank"} rel="noreferrer">
+                      Описание образовательной программы 23.02.01 "Организация
+                      перевозок и управление на транспорте"
+                    </a>
+                  </li>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <a href={SigOOP14} target={"_blank"} rel="noreferrer">
+                      ЭЦП
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
-                Учебный план 23.02.01 "Организация перевозок и управление на
-                транспорте"
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={UP18} target={"_blank"} rel="noreferrer">
+                      Учебный план 23.02.01 "Организация перевозок и управление
+                      на транспорте"
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
                 Аннотации к рабочим программам дисциплин для специальности СПО
@@ -3434,10 +3800,26 @@ const Education = observer(() => {
               <td>среднее профессиональное образование</td>
               <td>очная</td>
               <td>
-                Адаптированная ООП для специальности 26.02.03 "Судовождение" на
-                базе 9 классов*
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={adOOP1} target={"_blank"} rel="noreferrer">
+                      Адаптированная ООП для специальности 26.02.03
+                      "Судовождение" на базе 9 классов
+                    </a>
+                  </li>
+                </ul>
               </td>
-              <td>Учебный план 26.02.03 "Судовождение"</td>
+              <td>
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={UP19} target={"_blank"} rel="noreferrer">
+                      Учебный план 26.02.03 "Судовождение"
+                    </a>
+                  </li>
+                </ul>
+              </td>
               <td>
                 Аннотации к рабочим программам дисциплин для специальности СПО
                 26.02.03 "Судовождение"
