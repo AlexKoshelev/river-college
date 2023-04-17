@@ -7,7 +7,6 @@ import {
 import Rule from "../../../../../assets/pdf/applicant/pravila_priema_2023.pdf";
 import PrikazRule from "../../../../../assets/pdf/applicant/prikaz_pravila_priema_2023.pdf";
 import KCP from "../../../../../assets/pdf/applicant/КЦПСПО23-24.pdf";
-import Trebov from "../../../../../assets/doc/applicant/trebov_urov_obr.docx";
 import Uslovie from "../../../../../assets/pdf/applicant/usloviePriemaDogovor.pdf";
 import InfoMedOsmotr from "../../../../../assets/pdf/applicant/infoMedOsmotr.pdf";
 import PerechenSpec from "../../../../../assets/pdf/applicant/priem2023_special_SPO.pdf";
@@ -147,34 +146,30 @@ const Reception = observer(() => {
           </a>
         </li>
         <li>
-          <a
-            href={Trebov}
+          <NavLink
+            to={"../educationLvlRequirements"}
             className={toggleClassName(
               "education__link",
               "education__link-white",
               "education__link-black",
               "education__link-contrast"
             )}
-            target={"_blank"}
-            rel="noreferrer"
           >
             Требования к уровню образования
-          </a>
+          </NavLink>
         </li>
         <li>
-          <a
-            href={Uslovie}
+          <NavLink
+            to={"../admissionConditions"}
             className={toggleClassName(
               "education__link",
               "education__link-white",
               "education__link-black",
               "education__link-contrast"
             )}
-            target={"_blank"}
-            rel="noreferrer"
           >
             Условия приема на обучение по договорам
-          </a>
+          </NavLink>
         </li>
         <li>
           <NavLink

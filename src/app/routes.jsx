@@ -74,6 +74,9 @@ import MarineElectricalEquipment2017 from "./components/page/educationsPrograms/
 import MarineElectricalEquipment2018 from "./components/page/educationsPrograms/260206/MarineElectricalEquipment2018";
 import MarineElectricalEquipment2019 from "./components/page/educationsPrograms/260206/MarineElectricalEquipment2019";
 import MarineElectricalEquipment2020 from "./components/page/educationsPrograms/260206/MarineElectricalEquipment2020";
+import EducationLvlRequirements from "./components/page/enrollee/applicants/reception/educationLvlRequirements/EducationLvlRequirements";
+import AdmissionConditions from "./components/page/enrollee/applicants/reception/admissionConditions/AdmissionConditions";
+import ProfessionalTrainingPrograms from "./components/page/training/professionalTrainingPrograms/ProfessionalTrainingPrograms";
 const routes = () => [
   {
     path: "",
@@ -302,6 +305,14 @@ const routes = () => [
         path: "open-day",
         element: <OpenDay />,
       },
+      {
+        path: "educationLvlRequirements",
+        element: <EducationLvlRequirements />,
+      },
+      {
+        path: "admissionConditions",
+        element: <AdmissionConditions />,
+      },
     ],
   },
   {
@@ -381,6 +392,10 @@ const routes = () => [
       {
         path: "distanceLearning",
         element: <DistanceLearning />,
+      },
+      {
+        path: "professionalTrainingPrograms",
+        element: <ProfessionalTrainingPrograms />,
       },
     ],
   },

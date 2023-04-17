@@ -102,6 +102,22 @@ import UP16 from "../../../../assets/pdf/educationPage/260205/syllabus/UP_260205
 import UP17 from "../../../../assets/pdf/educationPage/230201/syllabus/UP_230201_13.pdf";
 import UP18 from "../../../../assets/pdf/educationPage/230201/syllabus/UP_230201_14.pdf";
 import UP19 from "../../../../assets/pdf/educationPage/260203/syllabus/adUP_260203.pdf";
+import adAnnot from "../../../../assets/pdf/educationPage/260203/annot/annot_SV_AD.pdf";
+import Annot1 from "../../../../assets/pdf/educationPage/260203/annot/annot1.pdf";
+import Annot2 from "../../../../assets/pdf/educationPage/260203/annot/annot2.pdf";
+import Annot3 from "../../../../assets/pdf/educationPage/260203/annot/annot3.pdf";
+import Annot4 from "../../../../assets/pdf/educationPage/260203/annot/annot4.pdf";
+import Annot5 from "../../../../assets/pdf/educationPage/260206/annot/annot5.pdf";
+import Annot6 from "../../../../assets/pdf/educationPage/260206/annot/annot6.pdf";
+import Annot7 from "../../../../assets/pdf/educationPage/260206/annot/annot7.pdf";
+import Annot8 from "../../../../assets/pdf/educationPage/260206/annot/annot8.pdf";
+import Annot9 from "../../../../assets/pdf/educationPage/260205/annot/annot9.pdf";
+import Annot10 from "../../../../assets/pdf/educationPage/260205/annot/annot10.pdf";
+import Annot11 from "../../../../assets/pdf/educationPage/260205/annot/annot11.pdf";
+import Annot12 from "../../../../assets/pdf/educationPage/260205/annot/annot12.pdf";
+import annot_OP from "../../../../assets/pdf/educationPage/230201/annot/annot_OP.pdf";
+import annot_OP_ZO from "../../../../assets/pdf/educationPage/230201/annot/annot_OP_ZO.pdf";
+
 const Education = observer(() => {
   return (
     <div
@@ -1192,8 +1208,15 @@ const Education = observer(() => {
                 </ul>
               </td>
               <td>
-                Аннотации к рабочим программам дисциплин для специальности СПО
-                26.02.03 "Судовождение"
+                <ul>
+                  <li className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Annot1} target={"_blank"} rel="noreferrer">
+                      Аннотации к рабочим программам дисциплин для специальности
+                      СПО 26.02.03 "Судовождение"
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
                 Рабочие программы дисциплин для специальности СПО 26.02.03
@@ -1395,8 +1418,15 @@ const Education = observer(() => {
                 </ul>
               </td>
               <td>
-                Аннотации к рабочим программам дисциплин для специальности СПО
-                26.02.03 "Судовождение"
+                <ul>
+                  <li className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Annot2} target={"_blank"} rel="noreferrer">
+                      Аннотации к рабочим программам дисциплин для специальности
+                      СПО 26.02.03 "Судовождение"
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
                 Рабочие программы дисциплин для специальности СПО 26.02.03
@@ -1590,8 +1620,15 @@ const Education = observer(() => {
                 </ul>
               </td>
               <td>
-                Аннотации к рабочим программам дисциплин для специальности СПО
-                26.02.03 "Судовождение"
+                <ul>
+                  <li className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Annot3} target={"_blank"} rel="noreferrer">
+                      Аннотации к рабочим программам дисциплин для специальности
+                      СПО 26.02.03 "Судовождение"
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
                 Рабочие программы дисциплин для специальности СПО 26.02.03
@@ -1776,8 +1813,15 @@ const Education = observer(() => {
                 </ul>
               </td>
               <td>
-                Аннотации к рабочим программам дисциплин для специальности СПО
-                26.02.03 "Судовождение"
+                <ul>
+                  <li className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Annot4} target={"_blank"} rel="noreferrer">
+                      Аннотации к рабочим программам дисциплин для специальности
+                      СПО 26.02.03 "Судовождение"
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
                 Рабочие программы дисциплин для специальности СПО 26.02.03
@@ -1972,9 +2016,16 @@ const Education = observer(() => {
                 </ul>
               </td>
               <td>
-                Аннотации к рабочим программам дисциплин для специальности СПО
-                26.02.06 "Эксплуатация судового электрооборудования и средств
-                автоматики"
+                <ul>
+                  <li className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Annot5} target={"_blank"} rel="noreferrer">
+                      Аннотации к рабочим программам дисциплин для специальности
+                      СПО 26.02.06 "Эксплуатация судового электрооборудования и
+                      средств автоматики"
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
                 Рабочие программы дисциплин для специальности СПО 26.02.06
@@ -2146,9 +2197,16 @@ const Education = observer(() => {
                 </ul>
               </td>
               <td>
-                Аннотации к рабочим программам дисциплин для специальности СПО
-                26.02.06 "Эксплуатация судового электрооборудования и средств
-                автоматики"
+                <ul>
+                  <li className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Annot6} target={"_blank"} rel="noreferrer">
+                      Аннотации к рабочим программам дисциплин для специальности
+                      СПО 26.02.06 "Эксплуатация судового электрооборудования и
+                      средств автоматики"
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
                 Рабочие программы дисциплин для специальности СПО 26.02.06
@@ -2320,9 +2378,16 @@ const Education = observer(() => {
                 </ul>
               </td>
               <td>
-                Аннотации к рабочим программам дисциплин для специальности СПО
-                26.02.06 "Эксплуатация судового электрооборудования и средств
-                автоматики"
+                <ul>
+                  <li className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Annot7} target={"_blank"} rel="noreferrer">
+                      Аннотации к рабочим программам дисциплин для специальности
+                      СПО 26.02.06 "Эксплуатация судового электрооборудования и
+                      средств автоматики"
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
                 Рабочие программы дисциплин для специальности СПО 26.02.06
@@ -2489,9 +2554,16 @@ const Education = observer(() => {
                 </ul>
               </td>
               <td>
-                Аннотации к рабочим программам дисциплин для специальности СПО
-                26.02.06 "Эксплуатация судового электрооборудования и средств
-                автоматики"
+                <ul>
+                  <li className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Annot8} target={"_blank"} rel="noreferrer">
+                      Аннотации к рабочим программам дисциплин для специальности
+                      СПО 26.02.06 "Эксплуатация судового электрооборудования и
+                      средств автоматики"
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
                 Рабочие программы дисциплин для специальности СПО 26.02.06
@@ -2695,8 +2767,16 @@ const Education = observer(() => {
                 </ul>
               </td>
               <td>
-                Аннотации к рабочим программам дисциплин для специальности СПО
-                26.02.05 "Эксплуатация судовых энергетических установок"
+                <ul>
+                  <li className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Annot9} target={"_blank"} rel="noreferrer">
+                      Аннотации к рабочим программам дисциплин для специальности
+                      СПО 26.02.05 "Эксплуатация судовых энергетических
+                      установок"
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
                 Рабочие программы дисциплин для специальности СПО 26.02.05
@@ -2863,8 +2943,16 @@ const Education = observer(() => {
                 </ul>
               </td>
               <td>
-                Аннотации к рабочим программам дисциплин для специальности СПО
-                26.02.05 "Эксплуатация судовых энергетических установок"
+                <ul>
+                  <li className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Annot10} target={"_blank"} rel="noreferrer">
+                      Аннотации к рабочим программам дисциплин для специальности
+                      СПО 26.02.05 "Эксплуатация судовых энергетических
+                      установок"
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
                 Рабочие программы дисциплин для специальности СПО 26.02.05
@@ -3023,8 +3111,16 @@ const Education = observer(() => {
                 </ul>
               </td>
               <td>
-                Аннотации рабочим программам дисциплин для специальности СПО
-                26.02.05 "Эксплуатация судовых энергетических установок"
+                <ul>
+                  <li className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Annot11} target={"_blank"} rel="noreferrer">
+                      Аннотации к рабочим программам дисциплин для специальности
+                      СПО 26.02.05 "Эксплуатация судовых энергетических
+                      установок"
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
                 Рабочие программы дисциплин для специальности СПО 26.02.05
@@ -3194,8 +3290,16 @@ const Education = observer(() => {
                 </ul>
               </td>
               <td>
-                Аннотации к рабочим программам дисциплин для специальности СПО
-                26.02.05 "Эксплуатация судовых энергетических установок"
+                <ul>
+                  <li className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Annot12} target={"_blank"} rel="noreferrer">
+                      Аннотации к рабочим программам дисциплин для специальности
+                      СПО 26.02.05 "Эксплуатация судовых энергетических
+                      установок"
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
                 Рабочие программы дисциплин для специальности СПО 26.02.05
@@ -3378,8 +3482,16 @@ const Education = observer(() => {
                 </ul>
               </td>
               <td>
-                Аннотации к рабочим программам дисциплин для специальности СПО
-                23.02.01 "Организация перевозок и управление на транспорте"
+                <ul>
+                  <li className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={annot_OP} target={"_blank"} rel="noreferrer">
+                      Аннотации к рабочим программам дисциплин для специальности
+                      СПО 23.02.01 "Организация перевозок и управление на
+                      транспорте"
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
                 Аннотации и рабочие программы дисциплин для специальности СПО
@@ -3543,6 +3655,16 @@ const Education = observer(() => {
                 </ul>
               </td>
               <td>
+                <ul>
+                  <li className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={annot_OP_ZO} target={"_blank"} rel="noreferrer">
+                      Аннотации к рабочим программам дисциплин для специальности
+                      СПО 23.02.01 "Организация перевозок и управление на
+                      транспорте"
+                    </a>
+                  </li>
+                </ul>
                 Аннотации к рабочим программам дисциплин для специальности СПО
                 23.02.01 "Организация перевозок и управление на транспорте"
               </td>
@@ -3821,8 +3943,15 @@ const Education = observer(() => {
                 </ul>
               </td>
               <td>
-                Аннотации к рабочим программам дисциплин для специальности СПО
-                26.02.03 "Судовождение"
+                <ul>
+                  <li className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={adAnnot} target={"_blank"} rel="noreferrer">
+                      Аннотации к рабочим программам дисциплин для специальности
+                      СПО 26.02.03 "Судовождение"
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
                 Календарный учебный график для специальности 26.02.03

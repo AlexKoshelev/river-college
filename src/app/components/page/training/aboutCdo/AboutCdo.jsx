@@ -14,6 +14,7 @@ import ObrazecDiplomaOProfPodg from "../../../../assets/pdf/training/obrazecDipl
 import ObrazecProfRab from "../../../../assets/pdf/training/obrazecProfRab.pdf";
 import TrenazPodg from "../../../../assets/pdf/training/trenazPodg.pdf";
 import PovKval from "../../../../assets/pdf/training/povKval.pdf";
+import { NavLink } from "react-router-dom";
 
 const AboutCdo = observer(() => {
   return (
@@ -304,19 +305,17 @@ const AboutCdo = observer(() => {
               </a>
             </li>
             <li>
-              <a
-                href={PerechenProgramm}
+              <NavLink
+                to={"../professionalTrainingPrograms"}
                 className={toggleClassName(
                   "education__link",
                   "education__link-white",
                   "education__link-black",
                   "education__link-contrast"
                 )}
-                target={"_blank"}
-                rel="noreferrer"
               >
                 Перечень программ профессионального обучения
-              </a>
+              </NavLink>
             </li>
           </ul>
         </ul>
