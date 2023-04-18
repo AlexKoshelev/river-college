@@ -22,7 +22,6 @@ import FOS_IA_SM from "../../../../assets/pdf/educationPage/260205/FOS_IA_SM.pdf
 import FOS_IA_OP from "../../../../assets/pdf/educationPage/230201/FOS_IA_OP.pdf";
 import Programma_IA_OP from "../../../../assets/pdf/educationPage/230201/Programma_IA_OP.pdf";
 import KPV from "../../../../assets/pdf/educationPage/KPV.pdf";
-
 import RPV_OP from "../../../../assets/pdf/educationPage/230201/RPV_OP.pdf";
 import RPV_SV from "../../../../assets/pdf/educationPage/260203/RPV_SV.pdf";
 import RPV_SM from "../../../../assets/pdf/educationPage/260205/RPV_SM.pdf";
@@ -38,12 +37,10 @@ import Image8 from "../../../../assets/pdf/educationPage/260203/3.2.jpg";
 import Image9 from "../../../../assets/pdf/educationPage/260203/3.3.jpg";
 import Image10 from "../../../../assets/pdf/educationPage/260203/4.1.jpg";
 import Image11 from "../../../../assets/pdf/educationPage/260203/4.2.jpg";
-
 import Image12 from "../../../../assets/pdf/educationPage/260206/5.jpg";
 import Image13 from "../../../../assets/pdf/educationPage/260206/6.jpg";
 import Image14 from "../../../../assets/pdf/educationPage/260206/7.jpg";
 import Image15 from "../../../../assets/pdf/educationPage/260206/8.jpg";
-
 import Image16 from "../../../../assets/pdf/educationPage/260205/9.jpg";
 import Image17 from "../../../../assets/pdf/educationPage/260205/10.jpg";
 import Image18 from "../../../../assets/pdf/educationPage/260205/11.jpg";
@@ -54,7 +51,6 @@ import Image22 from "../../../../assets/pdf/educationPage/230201/13.jpg";
 import Image23 from "../../../../assets/pdf/educationPage/230201/14.jpg";
 import TableWrapper from "../../../common/tableWrapper/TableWrapper";
 import { NavLink } from "react-router-dom";
-
 import adOOP1 from "../../../../assets/pdf/educationPage/260203/oop/adOOP_260203.pdf";
 import OOP1 from "../../../../assets/pdf/educationPage/260203/oop/OOP1.pdf";
 import SigOOP1 from "../../../../assets/pdf/educationPage/260203/oop/OOP1.pdf.sig";
@@ -81,10 +77,8 @@ import OOP13 from "../../../../assets/pdf/educationPage/230201/oop/OOP13.pdf";
 import SigOOP13 from "../../../../assets/pdf/educationPage/230201/oop/OOP13.pdf.sig";
 import OOP14 from "../../../../assets/pdf/educationPage/230201/oop/OOP13.pdf";
 import SigOOP14 from "../../../../assets/pdf/educationPage/230201/oop/OOP14.pdf.sig";
-
 import UP1 from "../../../../assets/pdf/educationPage/260203/syllabus/UP_260203_1-1.pdf";
 import UP2 from "../../../../assets/pdf/educationPage/260203/syllabus/UP_260203_1-2.pdf";
-
 import UP3 from "../../../../assets/pdf/educationPage/260203/syllabus/UP_260203_2-1-3.pdf";
 import UP4 from "../../../../assets/pdf/educationPage/260203/syllabus/UP_260203_3-1-2.pdf";
 import UP5 from "../../../../assets/pdf/educationPage/260203/syllabus/UP_260203_3-3.pdf";
@@ -93,7 +87,6 @@ import UP7 from "../../../../assets/pdf/educationPage/260203/syllabus/UP_260203_
 import UP9 from "../../../../assets/pdf/educationPage/260206/syllabus/UP_260206_6.pdf";
 import UP10 from "../../../../assets/pdf/educationPage/260206/syllabus/UP_260206_7.pdf";
 import UP11 from "../../../../assets/pdf/educationPage/260206/syllabus/UP_260206_8.pdf";
-
 import UP12 from "../../../../assets/pdf/educationPage/260205/syllabus/UP_260205_9.pdf";
 import UP13 from "../../../../assets/pdf/educationPage/260205/syllabus/UP_260205_10.pdf";
 import UP14 from "../../../../assets/pdf/educationPage/260205/syllabus/UP_260205_11.pdf";
@@ -117,6 +110,34 @@ import Annot11 from "../../../../assets/pdf/educationPage/260205/annot/annot11.p
 import Annot12 from "../../../../assets/pdf/educationPage/260205/annot/annot12.pdf";
 import annot_OP from "../../../../assets/pdf/educationPage/230201/annot/annot_OP.pdf";
 import annot_OP_ZO from "../../../../assets/pdf/educationPage/230201/annot/annot_OP_ZO.pdf";
+
+import RP_260203 from "../../../../assets/pdf/educationPage/260203/RP_Uch_prakt_2018ugl_3-10.pdf";
+import FOS_UCH_PR_260203 from "../../../../assets/pdf/educationPage/260203/FOS_Uch_prakt_2018ugl_3-10.pdf";
+import RP_UCH_PR_260203 from "../../../../assets/pdf/educationPage/260203/RP_pr_prakt_2018ugl_3-10.pdf";
+import FOS_PR_PR_260203 from "../../../../assets/pdf/educationPage/260203/FOS_pr_prakt_2018ugl_3-10.pdf";
+import RP_PR_PR_260203 from "../../../../assets/pdf/educationPage/260203/RP_Pr_prakt_2018ugl_ZO_3-10.pdf";
+import RP_UCH_PR_Z_260203 from "../../../../assets/pdf/educationPage/260203/RP_Uch_prakt_2018ugl_ZO_3-10.pdf";
+
+import RP_260206 from "../../../../assets/pdf/educationPage/260206/RP_Uch_prakt_260206_2018.pdf";
+import FOS_UCH_PR_260206 from "../../../../assets/pdf/educationPage/260206/FOS_Uch_prakt_260206.pdf";
+import RP_UCH_PR_260206 from "../../../../assets/pdf/educationPage/260206/RP_Pr_prakt_260206_2018.pdf";
+import FOS_PR_PR_260206 from "../../../../assets/pdf/educationPage/260206/FOS_Pr_prakt_260206.pdf";
+import RP_PR_PR_260206 from "../../../../assets/pdf/educationPage/260206/RP_PDP_260206_2018.pdf";
+import RP_UCH_PR_Z_260206 from "../../../../assets/pdf/educationPage/260206/FOS_PDP_260206.pdf";
+
+import RP_260205 from "../../../../assets/pdf/educationPage/260205/RP_Uch_prakt_260205.pdf";
+import FOS_UCH_PR_260205 from "../../../../assets/pdf/educationPage/260205/FOS_Uch_prakt_260205.pdf";
+import RP_UCH_PR_260205 from "../../../../assets/pdf/educationPage/260205/RP_Pr_prakt_260205.pdf";
+import FOS_PR_PR_260205 from "../../../../assets/pdf/educationPage/260205/FOS_Pr_prakt_260205.pdf";
+import RP_PR_PR_260205 from "../../../../assets/pdf/educationPage/260205/RP_Uch_prakt_260205_2016-2017_ZO.pdf";
+import RP_UCH_PR_Z_260205 from "../../../../assets/pdf/educationPage/260205/RP_Pr_prakt_260205_2016-2017_ZO.pdf";
+
+import RP_230201 from "../../../../assets/pdf/educationPage/230201/RP_Uch_prakt_230201.pdf";
+import FOS_UCH_PR_230201 from "../../../../assets/pdf/educationPage/230201/FOS_Uch_prakt_230201.pdf";
+import RP_UCH_PR_230201 from "../../../../assets/pdf/educationPage/230201/RP_Pr_prakt_230201.pdf";
+import FOS_PR_PR_230201 from "../../../../assets/pdf/educationPage/230201/FOS_Pr_prakt_230201.pdf";
+import RP_PR_PR_230201 from "../../../../assets/pdf/educationPage/230201/RP_PDP_230201.pdf";
+import RP_UCH_PR_Z_230201 from "../../../../assets/pdf/educationPage/230201/FOS_PDP_230201.pdf";
 
 const Education = observer(() => {
   return (
@@ -1219,12 +1240,71 @@ const Education = observer(() => {
                 </ul>
               </td>
               <td>
-                Рабочие программы дисциплин для специальности СПО 26.02.03
-                "Судовождение" Рабочая программа учебной практики, (очная) ФОС
-                учебной практики (очная) Рабочая программа производственной
-                практики, (очная) ФОС производственной практики (очная) Рабочая
-                программа производственной практики, (заочная) Рабочая программа
-                учебной практики (заочная)
+                <ul>
+                  <li>
+                    <NavLink to="../../educationPrograms/navigation2020">
+                      {" "}
+                      Рабочие программы дисциплин для специальности СПО 26.02.03
+                      "Судовождение"
+                    </NavLink>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={RP_260203} target={"_blank"} rel="noreferrer">
+                      Рабочая программа учебной практики, (очная)
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={FOS_UCH_PR_260203}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      ФОС учебной практики (очная)
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={RP_UCH_PR_260203}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Рабочая программа производственной практики, (очная)
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={FOS_PR_PR_260203}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      ФОС производственной практики (очная)
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={RP_PR_PR_260203}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Рабочая программа производственной практики, (заочная)
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={RP_UCH_PR_Z_260203}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Рабочая программа учебной практики (заочная)
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
                 <ul>
@@ -1260,7 +1340,17 @@ const Education = observer(() => {
                   </li>
                 </ul>
               </td>
-              <td></td>
+              <td>
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={RPV_SV} target={"_blank"} rel="noreferrer">
+                      Рабочая программа воспитания по направлению подготовки
+                      (специальности) 26.02.03 "Судовождение"
+                    </a>
+                  </li>
+                </ul>
+              </td>
               <td>
                 <ul>
                   <li itemProp="ustavDocLink" className="doc__item">
@@ -1429,12 +1519,71 @@ const Education = observer(() => {
                 </ul>
               </td>
               <td>
-                Рабочие программы дисциплин для специальности СПО 26.02.03
-                "Судовождение" Рабочая программа учебной практики, (очная) ФОС
-                учебной практики (очная) Рабочая программа производственной
-                практики, (очная) ФОС производственной практики (очная) Рабочая
-                программа производственной практики, (заочная) Рабочая программа
-                учебной практики (заочная)
+                <ul>
+                  <li>
+                    <NavLink to="../../educationPrograms/navigation2019">
+                      {" "}
+                      Рабочие программы дисциплин для специальности СПО 26.02.03
+                      "Судовождение"
+                    </NavLink>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={RP_260203} target={"_blank"} rel="noreferrer">
+                      Рабочая программа учебной практики, (очная)
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={FOS_UCH_PR_260203}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      ФОС учебной практики (очная)
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={RP_UCH_PR_260203}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Рабочая программа производственной практики, (очная)
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={FOS_PR_PR_260203}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      ФОС производственной практики (очная)
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={RP_PR_PR_260203}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Рабочая программа производственной практики, (заочная)
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={RP_UCH_PR_Z_260203}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Рабочая программа учебной практики (заочная)
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
                 <ul>
@@ -1631,15 +1780,71 @@ const Education = observer(() => {
                 </ul>
               </td>
               <td>
-                Рабочие программы дисциплин для специальности СПО 26.02.03
-                "Судовождение" Рабочая программа учебной практики, (углубл,
-                прием 2018, 3 г 10 мес, очная) ФОС учебной практики (углубл,
-                прием 2018, 3 г 10 мес, очная) Рабочая программа
-                производственной практики, (углубл., прием 2018, 3 г 10мес,
-                очная) ФОС производственной практики (углубл., прием 2018, 3 г
-                10мес, очная) Рабочая программа производственной практики,
-                (углубл., прием 2018, 3 г 10мес, заочная) Рабочая программа
-                учебной практики (углубл., прием 2018, 3 г 10мес, заочная)
+                <ul>
+                  <li>
+                    <NavLink to="../../educationPrograms/navigation2018">
+                      {" "}
+                      Рабочие программы дисциплин для специальности СПО 26.02.03
+                      "Судовождение"
+                    </NavLink>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={RP_260203} target={"_blank"} rel="noreferrer">
+                      Рабочая программа учебной практики, (очная)
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={FOS_UCH_PR_260203}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      ФОС учебной практики (очная)
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={RP_UCH_PR_260203}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Рабочая программа производственной практики, (очная)
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={FOS_PR_PR_260203}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      ФОС производственной практики (очная)
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={RP_PR_PR_260203}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Рабочая программа производственной практики, (заочная)
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={RP_UCH_PR_Z_260203}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Рабочая программа учебной практики (заочная)
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
                 <ul>
@@ -1824,12 +2029,71 @@ const Education = observer(() => {
                 </ul>
               </td>
               <td>
-                Рабочие программы дисциплин для специальности СПО 26.02.03
-                "Судовождение" Рабочая программа учебной практики, (очная) ФОС
-                учебной практики (очная) Рабочая программа производственной
-                практики, (очная) ФОС производственной практики (очная) Рабочая
-                программа производственной практики, (заочная) Рабочая программа
-                учебной практики (заочная)
+                <ul>
+                  <li>
+                    {" "}
+                    <NavLink to="../../educationPrograms/navigation2017">
+                      {" "}
+                      Судовождение (углубленная подготовка), 2017 года набора
+                    </NavLink>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={RP_260203} target={"_blank"} rel="noreferrer">
+                      Рабочая программа учебной практики, (очная)
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={FOS_UCH_PR_260203}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      ФОС учебной практики (очная)
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={RP_UCH_PR_260203}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Рабочая программа производственной практики, (очная)
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={FOS_PR_PR_260203}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      ФОС производственной практики (очная)
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={RP_PR_PR_260203}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Рабочая программа производственной практики, (заочная)
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={RP_UCH_PR_Z_260203}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Рабочая программа учебной практики (заочная)
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
                 <ul>
@@ -2028,13 +2292,72 @@ const Education = observer(() => {
                 </ul>
               </td>
               <td>
-                Рабочие программы дисциплин для специальности СПО 26.02.06
-                "Эксплуатация судового электрооборудования и средств автоматики"
-                Рабочая программа учебной практики Фонд оценочных средств по
-                учебной практике Рабочая программа производственной практики
-                Фонд оценочных средств по производственной практике Рабочая
-                программа преддипломной практики Фонд оценочных средств по
-                преддипломной практике
+                <ul>
+                  <li>
+                    <NavLink to="../../educationPrograms/marineElectricalEquipment2020">
+                      {" "}
+                      Рабочие программы дисциплин для специальности СПО 26.02.06
+                      "Эксплуатация судового электрооборудования и средств
+                      автоматики"
+                    </NavLink>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={RP_260206} target={"_blank"} rel="noreferrer">
+                      Рабочая программа учебной практики
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={FOS_UCH_PR_260206}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Фонд оценочных средств по учебной практике
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={RP_UCH_PR_260206}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Рабочая программа производственной практики
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={FOS_PR_PR_260206}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Фонд оценочных средств по производственной практике
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={RP_PR_PR_260206}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Рабочая программа преддипломной практики
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={RP_UCH_PR_Z_260206}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Фонд оценочных средств по преддипломной практике
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
                 <ul>
@@ -2209,13 +2532,72 @@ const Education = observer(() => {
                 </ul>
               </td>
               <td>
-                Рабочие программы дисциплин для специальности СПО 26.02.06
-                "Эксплуатация судового электрооборудования и средств автоматики"
-                Рабочая программа учебной практики Фонд оценочных средств по
-                учебной практике Рабочая программа производственной практики
-                Фонд оценочных средств по производственной практике Рабочая
-                программа преддипломной практики Фонд оценочных средств по
-                преддипломной практике
+                <ul>
+                  <li>
+                    <NavLink to="../../educationPrograms/marineElectricalEquipment2019">
+                      {" "}
+                      Рабочие программы дисциплин для специальности СПО 26.02.06
+                      "Эксплуатация судового электрооборудования и средств
+                      автоматики"
+                    </NavLink>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={RP_260206} target={"_blank"} rel="noreferrer">
+                      Рабочая программа учебной практики
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={FOS_UCH_PR_260206}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Фонд оценочных средств по учебной практике
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={RP_UCH_PR_260206}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Рабочая программа производственной практики
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={FOS_PR_PR_260206}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Фонд оценочных средств по производственной практике
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={RP_PR_PR_260206}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Рабочая программа преддипломной практики
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={RP_UCH_PR_Z_260206}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Фонд оценочных средств по преддипломной практике
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
                 <ul>
@@ -2390,13 +2772,72 @@ const Education = observer(() => {
                 </ul>
               </td>
               <td>
-                Рабочие программы дисциплин для специальности СПО 26.02.06
-                "Эксплуатация судового электрооборудования и средств автоматики"
-                Рабочая программа учебной практики Фонд оценочных средств по
-                учебной практике Рабочая программа производственной практики
-                Фонд оценочных средств по производственной практике Рабочая
-                программа преддипломной практики Фонд оценочных средств по
-                преддипломной практике
+                <ul>
+                  <li>
+                    <NavLink to="../../educationPrograms/marineElectricalEquipment2018">
+                      {" "}
+                      Рабочие программы дисциплин для специальности СПО 26.02.06
+                      "Эксплуатация судового электрооборудования и средств
+                      автоматики"
+                    </NavLink>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={RP_260206} target={"_blank"} rel="noreferrer">
+                      Рабочая программа учебной практики
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={FOS_UCH_PR_260206}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Фонд оценочных средств по учебной практике
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={RP_UCH_PR_260206}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Рабочая программа производственной практики
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={FOS_PR_PR_260206}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Фонд оценочных средств по производственной практике
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={RP_PR_PR_260206}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Рабочая программа преддипломной практики
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={RP_UCH_PR_Z_260206}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Фонд оценочных средств по преддипломной практике
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
                 <ul>
@@ -2566,13 +3007,73 @@ const Education = observer(() => {
                 </ul>
               </td>
               <td>
-                Рабочие программы дисциплин для специальности СПО 26.02.06
-                "Эксплуатация судового электрооборудования и средств автоматики"
-                Рабочая программа учебной практики Фонд оценочных средств по
-                учебной практике Рабочая программа производственной практики
-                Фонд оценочных средств по производственной практике Рабочая
-                программа преддипломной практики Фонд оценочных средств по
-                преддипломной практике
+                <ul>
+                  <li>
+                    {" "}
+                    <NavLink to="../../educationPrograms/marineElectricalEquipment2017">
+                      {" "}
+                      Рабочие программы дисциплин для специальности СПО 26.02.06
+                      "Эксплуатация судового электрооборудования и средств
+                      автоматики"
+                    </NavLink>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={RP_260206} target={"_blank"} rel="noreferrer">
+                      Рабочая программа учебной практики
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={FOS_UCH_PR_260206}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Фонд оценочных средств по учебной практике
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={RP_UCH_PR_260206}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Рабочая программа производственной практики
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={FOS_PR_PR_260206}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Фонд оценочных средств по производственной практике
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={RP_PR_PR_260206}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Рабочая программа преддипломной практики
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={RP_UCH_PR_Z_260206}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Фонд оценочных средств по преддипломной практике
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
                 <ul>
@@ -2779,11 +3280,70 @@ const Education = observer(() => {
                 </ul>
               </td>
               <td>
-                Рабочие программы дисциплин для специальности СПО 26.02.05
-                "Эксплуатация судовых энергетических установок" Рабочая
-                программа учебной практики Фонд оценочных средств по учебной
-                практике Рабочая программа производственной практики Фонд
-                оценочных средств по производственной практике
+                <ul>
+                  <li>
+                    <NavLink to="../../educationPrograms/shipPowerPlants2020">
+                      Рабочие программы дисциплин для специальности СПО 26.02.05
+                      "Эксплуатация судовых энергетических установок"
+                    </NavLink>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={RP_260205} target={"_blank"} rel="noreferrer">
+                      Рабочая программа учебной практики
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={FOS_UCH_PR_260205}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Фонд оценочных средств по учебной практике
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={RP_UCH_PR_260205}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Рабочая программа производственной практики
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={FOS_PR_PR_260205}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Фонд оценочных средств по производственной практике
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={RP_PR_PR_260205}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Рабочая программа учебной практики, заочная
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={RP_UCH_PR_Z_260205}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Рабочая программа производственной практики, заочная
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
                 <ul>
@@ -2955,11 +3515,70 @@ const Education = observer(() => {
                 </ul>
               </td>
               <td>
-                Рабочие программы дисциплин для специальности СПО 26.02.05
-                "Эксплуатация судовых энергетических установок" Рабочая
-                программа учебной практики Фонд оценочных средств по учебной
-                практике Рабочая программа производственной практики Фонд
-                оценочных средств по производственной практике
+                <ul>
+                  <li>
+                    <NavLink to="../../educationPrograms/shipPowerPlants2019">
+                      Рабочие программы дисциплин для специальности СПО 26.02.05
+                      "Эксплуатация судовых энергетических установок"
+                    </NavLink>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={RP_260205} target={"_blank"} rel="noreferrer">
+                      Рабочая программа учебной практики
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={FOS_UCH_PR_260205}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Фонд оценочных средств по учебной практике
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={RP_UCH_PR_260205}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Рабочая программа производственной практики
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={FOS_PR_PR_260205}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Фонд оценочных средств по производственной практике
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={RP_PR_PR_260205}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Рабочая программа учебной практики, заочная
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={RP_UCH_PR_Z_260205}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Рабочая программа производственной практики, заочная
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
                 <ul>
@@ -3123,11 +3742,70 @@ const Education = observer(() => {
                 </ul>
               </td>
               <td>
-                Рабочие программы дисциплин для специальности СПО 26.02.05
-                "Эксплуатация судовых энергетических установок" Рабочая
-                программа учебной практики Фонд оценочных средств по учебной
-                практике Рабочая программа производственной практики Фонд
-                оценочных средств по производственной практике
+                <ul>
+                  <li>
+                    <NavLink to="../../educationPrograms/shipPowerPlants2018">
+                      Рабочие программы дисциплин для специальности СПО 26.02.05
+                      "Эксплуатация судовых энергетических установок"
+                    </NavLink>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={RP_260205} target={"_blank"} rel="noreferrer">
+                      Рабочая программа учебной практики
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={FOS_UCH_PR_260205}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Фонд оценочных средств по учебной практике
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={RP_UCH_PR_260205}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Рабочая программа производственной практики
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={FOS_PR_PR_260205}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Фонд оценочных средств по производственной практике
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={RP_PR_PR_260205}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Рабочая программа учебной практики, заочная
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={RP_UCH_PR_Z_260205}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Рабочая программа производственной практики, заочная
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
                 <ul>
@@ -3302,13 +3980,70 @@ const Education = observer(() => {
                 </ul>
               </td>
               <td>
-                Рабочие программы дисциплин для специальности СПО 26.02.05
-                "Эксплуатация судовых энергетических установок" Рабочая
-                программа учебной практики Фонд оценочных средств по учебной
-                практике Рабочая программа производственной практики Фонд
-                оценочных средств по производственной практике Рабочая программа
-                учебной практики, заочная Рабочая программа производственной
-                практики, заочная
+                <ul>
+                  <li>
+                    <NavLink to="../../educationPrograms/shipPowerPlants2017">
+                      Рабочие программы дисциплин для специальности СПО 26.02.05
+                      "Эксплуатация судовых энергетических установок"
+                    </NavLink>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={RP_260205} target={"_blank"} rel="noreferrer">
+                      Рабочая программа учебной практики
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={FOS_UCH_PR_260205}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Фонд оценочных средств по учебной практике
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={RP_UCH_PR_260205}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Рабочая программа производственной практики
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={FOS_PR_PR_260205}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Фонд оценочных средств по производственной практике
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={RP_PR_PR_260205}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Рабочая программа учебной практики, заочная
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={RP_UCH_PR_Z_260205}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Рабочая программа производственной практики, заочная
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
                 <ul>
@@ -3494,13 +4229,70 @@ const Education = observer(() => {
                 </ul>
               </td>
               <td>
-                Аннотации и рабочие программы дисциплин для специальности СПО
-                23.02.01 "Организация перевозок и управление на транспорте"
-                Рабочая программа учебной практики Фонд оценочных средств по
-                учебной практике Рабочая программа производственной практики
-                Фонд оценочных средств по производственной практике Рабочая
-                программа преддипломной практики Фонд оценочных средств по
-                преддипломной практике
+                <ul>
+                  <li>
+                    <NavLink to="../../educationPrograms/organizationOfTransportation2020">
+                      Рабочие программы дисциплин для специальности СПО 23.02.01
+                      "Организация перевозок и управление на транспорте"
+                    </NavLink>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={RP_230201} target={"_blank"} rel="noreferrer">
+                      Рабочая программа учебной практики
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={FOS_UCH_PR_230201}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Фонд оценочных средств по учебной практике
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={RP_UCH_PR_230201}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Рабочая программа производственной практики
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={FOS_PR_PR_230201}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Фонд оценочных средств по производственной практике
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={RP_PR_PR_230201}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Рабочая программа преддипломной практики
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={RP_UCH_PR_Z_230201}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Фонд оценочных средств по преддипломной практике
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
                 <ul>
@@ -3669,13 +4461,70 @@ const Education = observer(() => {
                 23.02.01 "Организация перевозок и управление на транспорте"
               </td>
               <td>
-                Аннотации и рабочие программы дисциплин для специальности СПО
-                23.02.01 "Организация перевозок и управление на транспорте"
-                Рабочая программа учебной практики Фонд оценочных средств по
-                учебной практике Рабочая программа производственной практики
-                Фонд оценочных средств по производственной практике Рабочая
-                программа преддипломной практики Фонд оценочных средств по
-                преддипломной практике
+                <ul>
+                  <li>
+                    <NavLink to="../../educationPrograms/organizationOfTransportation">
+                      Рабочие программы дисциплин для специальности СПО 23.02.01
+                      "Организация перевозок и управление на транспорте"
+                    </NavLink>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={RP_230201} target={"_blank"} rel="noreferrer">
+                      Рабочая программа учебной практики
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={FOS_UCH_PR_230201}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Фонд оценочных средств по учебной практике
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={RP_UCH_PR_230201}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Рабочая программа производственной практики
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={FOS_PR_PR_230201}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Фонд оценочных средств по производственной практике
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={RP_PR_PR_230201}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Рабочая программа преддипломной практики
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={RP_UCH_PR_Z_230201}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Фонд оценочных средств по преддипломной практике
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
                 <ul>
@@ -3958,12 +4807,70 @@ const Education = observer(() => {
                 "Судовождение" (на базе 9 классов)
               </td>
               <td>
-                Рабочие программы дисциплин для специальности СПО 26.02.03
-                "Судовождение" Рабочая программа учебной практики, (очная) ФОС
-                учебной практики (очная) Рабочая программа производственной
-                практики, (очная) ФОС производственной практики (очная) Рабочая
-                программа производственной практики, (заочная) Рабочая программа
-                учебной практики (заочная)
+                <ul>
+                  <li>
+                    <NavLink to="../../educationPrograms/navigationDepth">
+                      Рабочие программы дисциплин для специальности СПО 26.02.03
+                      "Судовождение"
+                    </NavLink>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={RP_260203} target={"_blank"} rel="noreferrer">
+                      Рабочая программа учебной практики, (очная)
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={FOS_UCH_PR_260203}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      ФОС учебной практики (очная)
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={RP_UCH_PR_260203}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Рабочая программа производственной практики, (очная)
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={FOS_PR_PR_260203}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      ФОС производственной практики (очная)
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={RP_PR_PR_260203}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Рабочая программа производственной практики, (заочная)
+                    </a>
+                  </li>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={RP_UCH_PR_Z_260203}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Рабочая программа учебной практики (заочная)
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>-</td>
               <td>

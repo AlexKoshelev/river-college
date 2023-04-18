@@ -8,7 +8,6 @@ import Pologenie from "../../../../assets/pdf/documentPage/Pologen_2022.pdf";
 import Akkr from "../../../../assets/pdf/documentPage/Akkr_VSUWT_2019.pdf";
 import PolozObObuch from "../../../../assets/pdf/training/polozObObuch.PDF";
 import PolozObPlatn from "../../../../assets/pdf/training/polozObPlatn.pdf";
-import PerechenProgramm from "../../../../assets/doc/training/perechenProgramm.docx";
 import ObrazecDiplomaOProfPerepodg from "../../../../assets/pdf/training/obrazecDiplomaOProfPerepodg.pdf";
 import ObrazecDiplomaOProfPodg from "../../../../assets/pdf/training/obrazecDiplomaOProfPodg.pdf";
 import ObrazecProfRab from "../../../../assets/pdf/training/obrazecProfRab.pdf";

@@ -7,7 +7,6 @@ import {
 import Rule from "../../../../../assets/pdf/applicant/pravila_priema_2023.pdf";
 import PrikazRule from "../../../../../assets/pdf/applicant/prikaz_pravila_priema_2023.pdf";
 import KCP from "../../../../../assets/pdf/applicant/КЦПСПО23-24.pdf";
-import Uslovie from "../../../../../assets/pdf/applicant/usloviePriemaDogovor.pdf";
 import InfoMedOsmotr from "../../../../../assets/pdf/applicant/infoMedOsmotr.pdf";
 import PerechenSpec from "../../../../../assets/pdf/applicant/priem2023_special_SPO.pdf";
 import Dogovor from "../../../../../assets/pdf/applicant/Dogovor_platn_obraz_uslug_2021.pdf";
