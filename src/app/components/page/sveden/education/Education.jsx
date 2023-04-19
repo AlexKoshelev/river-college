@@ -174,51 +174,83 @@ const Education = observer(() => {
         программы, о языках, на которых осуществляется образование (обучение):"
       >
         <table>
-          <tbody>
+          <tbody itemProp="eduAccred">
             <tr>
-              <td>Код</td>
-              <td>
+              <td itemProp="eduCode">Код</td>
+              <td itemProp="eduName">
                 Наименование профессии, специальности, направления подготовки
               </td>
-              <td>Уровень образования</td>
-              <td>Формы обучения</td>
-              <td>Срок получения образования</td>
-              <td>
+              <td itemProp="eduProf">
+                Образовательная программа, направленность, профиль, шифр и
+                наименование научной специальности
+              </td>
+              <td itemProp="eduLevel">Уровень образования</td>
+              <td itemProp="eduForm">Формы обучения</td>
+              <td itemProp="learningTerm">Срок получения образования</td>
+              <td itemProp="dateEnd">
                 Срок действия государственной аккредитации (дата окончания
                 действия свидетельства о государственной аккредитации)
               </td>
-              <td>Языки, на которых осуществляется образование (обучение)</td>
+              <td itemProp="language">
+                Языки, на которых осуществляется образование (обучение)
+              </td>
+              <td itemProp="eduCode">
+                Учебные предметы, курсы, дисциплины (модули), предусмотренные
+                соответствующей образовательной программой
+              </td>
+              <td itemProp="eduCode">
+                Практики, предусмотренные соответствующей образовательной
+                программой
+              </td>
+              <td itemProp="eduCode">
+                Информация об использовании при реализации образовательных
+                программ электронного обучения и дистанционных образовательных
+                технологий
+              </td>
             </tr>
             <tr>
               <td>-</td>
               <td>-</td>
+              <td style={{ backgroundColor: "red" }}>-</td>
               <td>высшее образование - бакалавриат</td>
               <td>-</td>
               <td>-</td>
               <td>-</td>
               <td>-</td>
+              <td style={{ backgroundColor: "red" }}>-</td>
+              <td style={{ backgroundColor: "red" }}>-</td>
+              <td style={{ backgroundColor: "red" }}>-</td>
             </tr>
             <tr>
               <td>-</td>
               <td>-</td>
+              <td style={{ backgroundColor: "red" }}>-</td>
               <td>высшее образование - специалитет</td>
               <td>-</td>
               <td>-</td>
               <td>-</td>
               <td>-</td>
+              <td style={{ backgroundColor: "red" }}>-</td>
+              <td style={{ backgroundColor: "red" }}>-</td>
+              <td style={{ backgroundColor: "red" }}>-</td>
             </tr>
             <tr>
               <td>-</td>
               <td>-</td>
+              <td style={{ backgroundColor: "red" }}>-</td>
               <td>высшее образование - магистратура</td>
               <td>-</td>
               <td>-</td>
               <td>-</td>
               <td>-</td>
+              <td style={{ backgroundColor: "red" }}>-</td>
+              <td style={{ backgroundColor: "red" }}>-</td>
+              <td style={{ backgroundColor: "red" }}>-</td>
             </tr>
             <tr>
               <td>-</td>
               <td>-</td>
+              <td style={{ backgroundColor: "red" }}>-</td>
               <td>
                 высшее образование - подготовка кадров высшей квалификации
               </td>
@@ -226,10 +258,16 @@ const Education = observer(() => {
               <td>-</td>
               <td>-</td>
               <td>-</td>
+              <td style={{ backgroundColor: "red" }}>-</td>
+              <td style={{ backgroundColor: "red" }}>-</td>
+              <td style={{ backgroundColor: "red" }}>-</td>
             </tr>
             <tr>
               <td rowSpan="3">26.02.03 </td>
               <td rowSpan="3">"Судовождение"</td>
+              <td rowSpan="3" style={{ backgroundColor: "red" }}>
+                -
+              </td>
               <td rowSpan="3">среднее профессиональное образование</td>
               <td>очная форма</td>
               <td>
@@ -237,6 +275,15 @@ const Education = observer(() => {
               </td>
               <td rowSpan="3">27.02.2025</td>
               <td rowSpan="3">Русский</td>
+              <td rowSpan="3" style={{ backgroundColor: "red" }}>
+                -
+              </td>
+              <td rowSpan="3" style={{ backgroundColor: "red" }}>
+                -
+              </td>
+              <td rowSpan="3" style={{ backgroundColor: "red" }}>
+                -
+              </td>
             </tr>
             <tr>
               <td>очно-заочная форма</td>
@@ -248,9 +295,13 @@ const Education = observer(() => {
                 4 года 10 мес <br /> 3 года 10 мес
               </td>
             </tr>
+
             <tr>
               <td rowSpan="3">26.02.03</td>
               <td rowSpan="3">"Судовождение" (углубленная подготовка)</td>
+              <td rowSpan="3" style={{ backgroundColor: "red" }}>
+                -
+              </td>
               <td rowSpan="3">среднее профессиональное образование</td>
               <td>очная форма</td>
               <td>
@@ -258,6 +309,15 @@ const Education = observer(() => {
               </td>
               <td rowSpan="3">27.02.2025</td>
               <td rowSpan="3">Русский</td>
+              <td rowSpan="3" style={{ backgroundColor: "red" }}>
+                -
+              </td>
+              <td rowSpan="3" style={{ backgroundColor: "red" }}>
+                -
+              </td>
+              <td rowSpan="3" style={{ backgroundColor: "red" }}>
+                -
+              </td>
             </tr>
             <tr>
               <td>очно-заочная форма</td>
@@ -275,6 +335,9 @@ const Education = observer(() => {
                 "Эксплуатация судовых энергетических установок" (базовый
                 уровень)
               </td>
+              <td rowSpan="3" style={{ backgroundColor: "red" }}>
+                -
+              </td>
               <td rowSpan="3">среднее профессиональное образование</td>
               <td>очная форма</td>
               <td>
@@ -282,6 +345,15 @@ const Education = observer(() => {
               </td>
               <td rowSpan="3">27.02.2025</td>
               <td rowSpan="3">Русский</td>
+              <td rowSpan="3" style={{ backgroundColor: "red" }}>
+                -
+              </td>
+              <td rowSpan="3" style={{ backgroundColor: "red" }}>
+                -
+              </td>
+              <td rowSpan="3" style={{ backgroundColor: "red" }}>
+                -
+              </td>
             </tr>
             <tr>
               <td>очно-заочная форма</td>
@@ -299,11 +371,23 @@ const Education = observer(() => {
                 "Эксплуатация судового электрооборудования и средств автоматики"
                 (базовый уровень)
               </td>
+              <td rowSpan="3" style={{ backgroundColor: "red" }}>
+                -
+              </td>
               <td rowSpan="3">среднее профессиональное образование</td>
               <td>очная форма</td>
               <td>3 года 10 мес</td>
               <td rowSpan="3">27.02.2025</td>
               <td rowSpan="3">Русский</td>
+              <td rowSpan="3" style={{ backgroundColor: "red" }}>
+                -
+              </td>
+              <td rowSpan="3" style={{ backgroundColor: "red" }}>
+                -
+              </td>
+              <td rowSpan="3" style={{ backgroundColor: "red" }}>
+                -
+              </td>
             </tr>
             <tr>
               <td>очно-заочная форма</td>
@@ -318,11 +402,23 @@ const Education = observer(() => {
               <td rowSpan="3">
                 "Организация перевозок и управление на транспорте (по видам)"
               </td>
+              <td rowSpan="3" style={{ backgroundColor: "red" }}>
+                -
+              </td>
               <td rowSpan="3">среднее профессиональное образование</td>
               <td>очная форма</td>
               <td>3 года 10 мес</td>
               <td rowSpan="3">27.02.2025</td>
               <td rowSpan="3">Русский</td>
+              <td rowSpan="3" style={{ backgroundColor: "red" }}>
+                -
+              </td>
+              <td rowSpan="3" style={{ backgroundColor: "red" }}>
+                -
+              </td>
+              <td rowSpan="3" style={{ backgroundColor: "red" }}>
+                -
+              </td>
             </tr>
             <tr>
               <td>очно-заочная форма</td>
@@ -336,6 +432,7 @@ const Education = observer(() => {
         </table>
       </TableWrapper>
       <h3
+        style={{ backgroundColor: "red" }}
         className={`common__container-title ${toggleClassName(
           "title",
           "title-white",
@@ -379,20 +476,25 @@ const Education = observer(() => {
       >
         <table>
           <tbody>
-            <tr>
-              <td rowSpan="3">Код</td>
-              <td rowSpan="3">
+            <tr itemProp="eduChislen">
+              <td itemProp="eduCode" rowSpan="3">
+                Код
+              </td>
+              <td itemProp="eduName" rowSpan="3">
                 Наименование специальности, направления подготовки, шифр и
                 наименование научной специальности
               </td>
-              <td rowSpan="3">Уровень образования</td>
-              <td rowSpan="3">Формы обучения</td>
+              <td itemProp="eduLevel" rowSpan="3">
+                Уровень образования
+              </td>
+              <td itemProp="eduForm" rowSpan="3">
+                Формы обучения
+              </td>
               <td colSpan="8">
                 Численность обучающихся за счет (количество человек):
               </td>
-              <td rowSpan="3">Общая численность обучающихся</td>
-              <td rowSpan="3">
-                Численность обучающихся, являющихся иностранными гражданами
+              <td itemProp="numberAll" rowSpan="3">
+                Общая численность обучающихся
               </td>
             </tr>
             <tr>
@@ -402,20 +504,19 @@ const Education = observer(() => {
               <td colSpan="2">средств физических и (или) юридических лиц</td>
             </tr>
             <tr>
-              <td>всего</td>
-              <td>в том числе иностранных граждан</td>
-              <td>всего</td>
-              <td>в том числе иностранных граждан</td>
-              <td>всего</td>
-              <td>в том числе иностранных граждан</td>
-              <td>всего</td>
-              <td>в том числе иностранных граждан</td>
+              <td itemProp="numberBF">всего</td>
+              <td itemProp="numberBFF">в том числе иностранных граждан</td>
+              <td itemProp="numberBR">всего</td>
+              <td itemProp="numberBRF">в том числе иностранных граждан</td>
+              <td itemProp="numberBM">всего</td>
+              <td itemProp="numberBMF">в том числе иностранных граждан</td>
+              <td itemProp="numberP">всего</td>
+              <td itemProp="numberPF">в том числе иностранных граждан</td>
             </tr>
             <tr>
               <td>-</td>
               <td>-</td>
               <td>высшее образование - бакалавриат</td>
-              <td>-</td>
               <td>-</td>
               <td>-</td>
               <td>-</td>
@@ -441,7 +542,6 @@ const Education = observer(() => {
               <td>-</td>
               <td>-</td>
               <td>-</td>
-              <td>-</td>
             </tr>
             <tr>
               <td>-</td>
@@ -457,7 +557,6 @@ const Education = observer(() => {
               <td>-</td>
               <td>-</td>
               <td>-</td>
-              <td>-</td>
             </tr>
             <tr>
               <td>-</td>
@@ -465,7 +564,6 @@ const Education = observer(() => {
               <td>
                 высшее образование - подготовка кадров высшей квалификации
               </td>
-              <td>-</td>
               <td>-</td>
               <td>-</td>
               <td>-</td>
@@ -493,7 +591,6 @@ const Education = observer(() => {
               <td>3</td>
               <td>-</td>
               <td>74</td>
-              <td>-</td>
             </tr>
             <tr>
               <td>очно-заочная</td>
@@ -506,11 +603,9 @@ const Education = observer(() => {
               <td>-</td>
               <td>-</td>
               <td>-</td>
-              <td>-</td>
             </tr>
             <tr>
               <td>заочная</td>
-              <td>-</td>
               <td>-</td>
               <td>-</td>
               <td>-</td>
@@ -535,7 +630,6 @@ const Education = observer(() => {
               <td>10</td>
               <td>-</td>
               <td>329</td>
-              <td>-</td>
             </tr>
             <tr>
               <td>очно-заочная</td>
@@ -548,7 +642,6 @@ const Education = observer(() => {
               <td>-</td>
               <td>-</td>
               <td></td>
-              <td>-</td>
             </tr>
             <tr>
               <td>заочная</td>
@@ -561,7 +654,6 @@ const Education = observer(() => {
               <td>75</td>
               <td>-</td>
               <td>75</td>
-              <td>-</td>
             </tr>
             <tr>
               <td rowSpan="3">23.02.05</td>
@@ -577,11 +669,9 @@ const Education = observer(() => {
               <td>8</td>
               <td>-</td>
               <td>195</td>
-              <td>-</td>
             </tr>
             <tr>
               <td>очно-заочная</td>
-              <td>-</td>
               <td>-</td>
               <td>-</td>
               <td>-</td>
@@ -603,7 +693,6 @@ const Education = observer(() => {
               <td>2</td>
               <td>-</td>
               <td>2</td>
-              <td>-</td>
             </tr>
             <tr>
               <td rowSpan="3">23.02.06</td>
@@ -621,7 +710,6 @@ const Education = observer(() => {
               <td>2</td>
               <td>-</td>
               <td>195</td>
-              <td>-</td>
             </tr>
             <tr>
               <td>очно-заочная</td>
@@ -634,11 +722,9 @@ const Education = observer(() => {
               <td>-</td>
               <td>-</td>
               <td>-</td>
-              <td>-</td>
             </tr>
             <tr>
               <td>заочная</td>
-              <td>-</td>
               <td>-</td>
               <td>-</td>
               <td>-</td>
@@ -676,25 +762,37 @@ const Education = observer(() => {
         {" "}
         <table>
           <tbody>
-            <tr>
-              <td rowSpan="2">Код</td>
-              <td rowSpan="2">
+            <tr itemProp="eduPriem">
+              <td itemProp="eduCode" rowSpan="2">
+                Код
+              </td>
+              <td itemProp="eduName" rowSpan="2">
                 Наименование специальности, направления подготовки
               </td>
-              <td rowSpan="2">Уровень образования</td>
-              <td rowSpan="2">Формы обучения</td>
+              <td itemProp="eduLevel" rowSpan="2">
+                Уровень образования
+              </td>
+              <td itemProp="eduForm" rowSpan="2">
+                Формы обучения
+              </td>
               <td colSpan="4">
                 Результаты приема обучающихся за счет (количество человек):
               </td>
-              <td rowSpan="2">
+              <td itemProp="score" rowSpan="2">
                 Средняя сумма набранных баллов по всем вступительным испытаниям
               </td>
             </tr>
             <tr>
-              <td>бюджетных ассигнований федерального бюджета</td>
-              <td>бюджетов субъектов Российской Федерации</td>
-              <td>местных бюджетов </td>
-              <td>средств физических и (или) юридических лиц</td>
+              <td itemProp="numberBF">
+                бюджетных ассигнований федерального бюджета
+              </td>
+              <td itemProp="numberBR">
+                бюджетов субъектов Российской Федерации
+              </td>
+              <td itemProp="numberBM">местных бюджетов </td>
+              <td itemProp="numberP">
+                средств физических и (или) юридических лиц
+              </td>
             </tr>
             <tr>
               <td>-</td>
@@ -891,25 +989,33 @@ const Education = observer(() => {
       >
         <table>
           <tbody>
-            <tr>
-              <td rowSpan="2">Код</td>
-              <td rowSpan="2">
+            <tr itemProp="eduPerevod">
+              <td itemProp="eduCode" rowSpan="2">
+                Код
+              </td>
+              <td itemProp="eduName" rowSpan="2">
                 Наименование специальности, направления подготовки
               </td>
-              <td rowSpan="2">Уровень образования</td>
-              <td rowSpan="2">Формы обучения</td>
+              <td itemProp="eduLevel" rowSpan="2">
+                Уровень образования
+              </td>
+              <td itemProp="eduForm" rowSpan="2">
+                Формы обучения
+              </td>
             </tr>
             <tr>
-              <td>
+              <td itemProp="numberOut">
                 Численность обучающихся, переведенных в другие образовательные
                 организации
               </td>
-              <td>
+              <td itemProp="numberTo">
                 Численность обучающихся, переведенных из других образовательных
                 организаций
               </td>
-              <td>Численность восстановленных обучающихся</td>
-              <td>Численность отчисленных обучающихся</td>
+              <td itemProp="numberRes">
+                Численность восстановленных обучающихся
+              </td>
+              <td itemProp="numberExp">Численность отчисленных обучающихся</td>
             </tr>
             <tr>
               <td>-</td>
@@ -1080,40 +1186,48 @@ const Education = observer(() => {
       <TableWrapper title="Информация по неадаптированным образовательным программам:">
         <table>
           <tbody>
-            <tr>
-              <td>Код</td>
-              <td>
+            <tr itemProp="eduOp">
+              <td itemProp="eduCode">Код</td>
+              <td itemProp="eduName">
                 Наименование специальности, направления подготовки, шифр и
                 наименование области науки, научной специальности
               </td>
-              <td>
+              <td itemProp="eduLevel">
                 Уровень образования: 1) высшее образование -бакалавриат; 2)
                 высшее образование - специалитет; 3) высшее образование -
                 магистратура; 4) высшее образование - подготовка кадров высшей
                 квалификации; 5) среднее профессиональное образование
               </td>
-              <td>
+              <td style={{ backgroundColor: "red" }} itemProp="eduProf">
+                Образовательная программа, направленность, профиль, шифр и
+                наименование научной специальности
+              </td>
+              <td itemProp="eduForm">
                 Реализуемые формы обучения: 1) очная; 2) очно-заочная; 3)
                 заочная
               </td>
-              <td>
+              <td itemProp="opMain">
                 Ссылка на описание образовательной программы с приложением ее
                 копии
               </td>
-              <td>Ссылка на учебный план</td>
-              <td>
+              <td itemProp="educationPlan">Ссылка на учебный план</td>
+              <td itemProp="educationAnnotation">
                 Ссылка на аннотации к рабочим программам дисциплин (по каждой
                 дисциплине в составе образовательной программы)
               </td>
-              <td>
+              <td itemProp="educationRpd">
                 Ссылка на рабочие программы дисциплин, рабочие программы
                 практик, предусмотренных соответствующей образовательной
                 программой
               </td>
-              <td>Ссылка на календарный учебный график</td>
-              <td>Ссылка на рабочие программы воспитания</td>
-              <td>Ссылка на календарный план воспитательной работы</td>
-              <td>
+              <td itemProp="educationShedule">
+                Ссылка на календарный учебный график
+              </td>
+              <td itemProp="eduPr">Ссылка на рабочие программы воспитания</td>
+              <td itemProp="methodology">
+                Ссылка на календарный план воспитательной работы
+              </td>
+              <td itemProp="methodology">
                 Ссылка на методические и иные документы, разработанные
                 образовательной организацией для обеспечения образовательного
                 процесса
@@ -1127,6 +1241,7 @@ const Education = observer(() => {
               <td>-</td>
               <td>-</td>
               <td>высшее образование - бакалавриат</td>
+              <td style={{ backgroundColor: "red" }} itemProp="eduProf"></td>
               <td>-</td>
               <td>-</td>
               <td>-</td>
@@ -1142,6 +1257,7 @@ const Education = observer(() => {
               <td>-</td>
               <td>-</td>
               <td>высшее образование - специалитет</td>
+              <td style={{ backgroundColor: "red" }} itemProp="eduProf"></td>
               <td>-</td>
               <td>-</td>
               <td>-</td>
@@ -1157,6 +1273,7 @@ const Education = observer(() => {
               <td>-</td>
               <td>-</td>
               <td> высшее образование - магистратура</td>
+              <td style={{ backgroundColor: "red" }} itemProp="eduProf"></td>
               <td>-</td>
               <td>-</td>
               <td>-</td>
@@ -1174,6 +1291,7 @@ const Education = observer(() => {
               <td>
                 высшее образование - подготовка кадров высшей квалификации
               </td>
+              <td style={{ backgroundColor: "red" }} itemProp="eduProf"></td>
               <td>-</td>
               <td>-</td>
               <td>-</td>
@@ -1194,6 +1312,7 @@ const Education = observer(() => {
                 </NavLink>
               </td>
               <td>среднее профессиональное образование</td>
+              <td style={{ backgroundColor: "red" }} itemProp="eduProf"></td>
               <td>очно-заочная </td>
               <td>
                 <ul>
@@ -1458,6 +1577,7 @@ const Education = observer(() => {
                 </NavLink>
               </td>
               <td>среднее профессиональное образование</td>
+              <td style={{ backgroundColor: "red" }} itemProp="eduProf"></td>
               <td>очно-заочная </td>
               <td>
                 <ul>
@@ -1727,6 +1847,7 @@ const Education = observer(() => {
                 </NavLink>
               </td>
               <td>среднее профессиональное образование</td>
+              <td style={{ backgroundColor: "red" }} itemProp="eduProf"></td>
               <td>очно-заочная </td>
               <td>
                 <ul>
@@ -1988,6 +2109,7 @@ const Education = observer(() => {
                 </NavLink>
               </td>
               <td>среднее профессиональное образование</td>
+              <td style={{ backgroundColor: "red" }} itemProp="eduProf"></td>
               <td>очно-заочная </td>
               <td>
                 <ul>
@@ -2225,6 +2347,7 @@ const Education = observer(() => {
               <td>26.02.03 </td>
               <td>Судовождение</td>
               <td>среднее профессиональное образование</td>
+              <td style={{ backgroundColor: "red" }} itemProp="eduProf"></td>
               <td>очно-заочная </td>
               <td>-</td>
               <td>-</td>
@@ -2246,6 +2369,7 @@ const Education = observer(() => {
                 </NavLink>
               </td>
               <td>среднее профессиональное образование </td>
+              <td style={{ backgroundColor: "red" }} itemProp="eduProf"></td>
               <td>очная</td>
               <td>
                 <ul>
@@ -2490,6 +2614,7 @@ const Education = observer(() => {
                 </NavLink>
               </td>
               <td>среднее профессиональное образование </td>
+              <td style={{ backgroundColor: "red" }} itemProp="eduProf"></td>
               <td>очная</td>
               <td>
                 <ul>
@@ -2730,6 +2855,7 @@ const Education = observer(() => {
                 </NavLink>
               </td>
               <td>среднее профессиональное образование </td>
+              <td style={{ backgroundColor: "red" }} itemProp="eduProf"></td>
               <td>очная</td>
               <td>
                 <ul>
@@ -2970,6 +3096,7 @@ const Education = observer(() => {
                 </NavLink>
               </td>
               <td>среднее профессиональное образование </td>
+              <td style={{ backgroundColor: "red" }} itemProp="eduProf"></td>
               <td>очная</td>
               <td>
                 <ul>
@@ -3202,6 +3329,7 @@ const Education = observer(() => {
                 "Эксплуатация судового электрооборудования и средств автоматики"
               </td>
               <td>среднее профессиональное образование </td>
+              <td style={{ backgroundColor: "red" }} itemProp="eduProf"></td>
               <td>заочная</td>
               <td>-</td>
               <td>-</td>
@@ -3219,6 +3347,7 @@ const Education = observer(() => {
                 "Эксплуатация судового электрооборудования и средств автоматики"
               </td>
               <td>среднее профессиональное образование </td>
+              <td style={{ backgroundColor: "red" }} itemProp="eduProf"></td>
               <td>очно-заочная </td>
               <td>-</td>
               <td>-</td>
@@ -3239,6 +3368,7 @@ const Education = observer(() => {
                 </NavLink>
               </td>
               <td>среднее профессиональное образование</td>
+              <td style={{ backgroundColor: "red" }} itemProp="eduProf"></td>
               <td>очная/заочная </td>
               <td>
                 <ul>
@@ -3474,6 +3604,7 @@ const Education = observer(() => {
                 </NavLink>
               </td>
               <td>среднее профессиональное образование</td>
+              <td style={{ backgroundColor: "red" }} itemProp="eduProf"></td>
               <td>очная/заочная </td>
               <td>
                 <ul>
@@ -3700,6 +3831,7 @@ const Education = observer(() => {
                 </NavLink>
               </td>
               <td>среднее профессиональное образование</td>
+              <td style={{ backgroundColor: "red" }} itemProp="eduProf"></td>
               <td>очная/заочная </td>
               <td>
                 <ul>
@@ -3937,6 +4069,7 @@ const Education = observer(() => {
                 </NavLink>
               </td>
               <td>среднее профессиональное образование</td>
+              <td style={{ backgroundColor: "red" }} itemProp="eduProf"></td>
               <td>очная/заочная </td>
               <td>
                 <ul>
@@ -4168,6 +4301,7 @@ const Education = observer(() => {
               <td>26.02.05 </td>
               <td>"Эксплуатация судовых энергетических установок"</td>
               <td>среднее профессиональное образование</td>
+              <td style={{ backgroundColor: "red" }} itemProp="eduProf"></td>
               <td>очная-заочная </td>
               <td>-</td>
               <td>-</td>
@@ -4188,6 +4322,7 @@ const Education = observer(() => {
                 </NavLink>
               </td>
               <td>среднее профессиональное образование</td>
+              <td style={{ backgroundColor: "red" }} itemProp="eduProf"></td>
               <td>очная/заочная </td>
               <td>
                 <ul>
@@ -4418,6 +4553,7 @@ const Education = observer(() => {
                 </NavLink>
               </td>
               <td>среднее профессиональное образование</td>
+              <td style={{ backgroundColor: "red" }} itemProp="eduProf"></td>
               <td>заочная</td>
               <td>
                 <ul>
@@ -4654,45 +4790,45 @@ const Education = observer(() => {
         {" "}
         <table>
           <tbody>
-            <tr>
-              <td>Код</td>
-              <td>
+            <tr itemProp="eduAdOp">
+              <td itemProp="eduCode">Код</td>
+              <td itemProp="eduName">
                 Наименование специальности, направления подготовки, шифр и
                 наименование области науки, научной специальности
               </td>
-              <td>
+              <td itemProp="eduLevel">
                 Уровень образования: 1) высшее образование -бакалавриат; 2)
                 высшее образование - специалитет; 3) высшее образование -
                 магистратура; 4) высшее образование - подготовка кадров высшей
                 квалификации; 5) среднее профессиональное образование
               </td>
-              <td>
+              <td style={{ backgroundColor: "red" }} itemProp="eduProf">
+                Образовательная программа, направленность, профиль, шифр и
+                наименование научной специальности
+              </td>
+              <td itemProp="eduForm">
                 Реализуемые формы обучения: 1) очная; 2) очно-заочная; 3)
                 заочная
               </td>
-              <td>
+              <td itemProp="opMain">
                 Ссылка на описание образовательной программы с приложением ее
                 копии
               </td>
-              <td>Ссылка на учебный план</td>
-              <td>
+              <td itemProp="educationPlan">Ссылка на учебный план</td>
+              <td itemProp="educationAnnotation">
                 Ссылка на аннотации к рабочим программам дисциплин (по каждой
                 дисциплине в составе образовательной программы)
               </td>
-              <td>Ссылка на календарный учебный график</td>
-              <td>Ссылка на рабочие программы воспитания</td>
-              <td>
-                Ссылка на{" "}
-                <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
-                    <PDF height={"25px"} width={"25px"} />
-                    <a href={KPV} target={"_blank"} rel="noreferrer">
-                      Календарный план воспитательной работы
-                    </a>
-                  </li>
-                </ul>
+              <td itemProp="educationShedule">
+                Ссылка на календарный учебный график
               </td>
-              <td>
+              <td itemProp="educationRpd">
+                Ссылка на рабочие программы воспитания
+              </td>
+              <td itemProp="eduPr">
+                Ссылка на календарный план воспитательной работы
+              </td>
+              <td itemProp="methodology">
                 Ссылка на методические и иные документы, разработанные
                 образовательной организацией для обеспечения образовательного
                 процесса
@@ -4706,6 +4842,7 @@ const Education = observer(() => {
               <td>-</td>
               <td>-</td>
               <td>высшее образование - бакалавриат</td>
+              <td>-</td>
               <td>-</td>
               <td>-</td>
               <td>-</td>
@@ -4729,11 +4866,13 @@ const Education = observer(() => {
               <td>-</td>
               <td>-</td>
               <td>-</td>
+              <td>-</td>
             </tr>
             <tr>
               <td>-</td>
               <td>-</td>
               <td> высшее образование - магистратура</td>
+              <td>-</td>
               <td>-</td>
               <td>-</td>
               <td>-</td>
@@ -4759,6 +4898,7 @@ const Education = observer(() => {
               <td>-</td>
               <td>-</td>
               <td>-</td>
+              <td>-</td>
             </tr>
             <tr>
               <td>26.02.03</td>
@@ -4769,6 +4909,7 @@ const Education = observer(() => {
                 </NavLink>
               </td>
               <td>среднее профессиональное образование</td>
+              <td>-</td>
               <td>очная</td>
               <td>
                 <ul>
@@ -4872,7 +5013,16 @@ const Education = observer(() => {
                   </li>
                 </ul>
               </td>
-              <td>-</td>
+              <td>
+                <ul>
+                  <li itemProp="ustavDocLink" className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={KPV} target={"_blank"} rel="noreferrer">
+                      Календарный план воспитательной работы
+                    </a>
+                  </li>
+                </ul>
+              </td>
               <td>
                 Положение об организации учебного процесса для инвалидов и лиц с
                 ограниченными возможностями здоровья Положение о порядке
@@ -4936,34 +5086,45 @@ const Education = observer(() => {
         title=" Информация о направлениях и результатах научной
         (научно-исследовательской) деятельности:"
       >
-        {" "}
         <table>
           <tbody>
-            <tr>
-              <td>Код</td>
-              <td>Наименование специальности/ направления подготовки </td>
-              <td>Уровень образования</td>
-              <td>
+            <tr itemProp="eduNir">
+              <td itemProp="eduCode">Код, шифр</td>
+              <td itemProp="eduName">
+                Наименование специальности, направления подготовки, наименование
+                группы научных специальностей
+              </td>
+              <td itemProp="perechenNir">
                 Перечень научных направлений, в рамках которых ведется научная
                 (научно-исследовательская) деятельность
               </td>
-              <td>
+              <td itemProp="eduProf">
+                Образовательная программа, направленность, профиль, шифр и
+                наименование научной специальности
+              </td>
+              <td itemProp="eduLevel">Уровень образования</td>
+              <td itemProp="napravNir">
+                Название научного направления/научной школы
+              </td>
+              <td itemProp="resultNir">
                 Результаты научной (научно-исследовательской) деятельности
               </td>
-              <td>
+              <td itemProp="baseNir">
                 Сведения о научно-исследовательской базе для осуществления
                 научной (научно-исследовательской) деятельности
               </td>
             </tr>
             <tr>
-              <td>26.02.03</td>
+              <td>26.02.03 </td>
               <td>Судовождение</td>
-              <td>среднее профессиональное образование</td>
-              <td rowSpan="4">
+              <td rowspan="4">
                 Инновационные технологии в преподавании дисциплин;
                 Компетентностный подход в системе СПО
               </td>
-              <td rowSpan="4">
+              <td></td>
+              <td rowspan="4">среднее профессиональное образование</td>
+              <td></td>
+              <td rowspan="4">
                 Публикация статей в сборник ежегодной НПК преподавателей филиала
                 «Инновационные технологии в преподавании дисциплин»; Участие в
                 работе НПК, в том числе международного уровня (свыше 20
@@ -4973,7 +5134,7 @@ const Education = observer(() => {
                 деятельностью курсантов – участников предметных и
                 профессиональных олимпиад, конкурсов проф.мастерства
               </td>
-              <td rowSpan="4">
+              <td rowspan="4">
                 Научно-образовательный портал Znanium (new.znanium.com)
                 Электронно-библиотечная система "Лань" Электронная библиотечная
                 система «Юрайт» biblio-online.ru Система дистанционного обучения
@@ -4995,21 +5156,24 @@ const Education = observer(() => {
             <tr>
               <td>26.02.05</td>
               <td>Эксплуатация судовых энергетических установок</td>
-              <td>среднее профессиональное образование</td>
+              <td></td>
+              <td></td>
             </tr>
             <tr>
               <td>26.02.06</td>
               <td>
                 Эксплуатация судового электрооборудования и средств автоматики
               </td>
-              <td>среднее профессиональное образование</td>
+              <td></td>
+              <td></td>
             </tr>
             <tr>
               <td>26.02.01</td>
               <td>
                 Организация перевозок и управление на транспорте (по видам)
               </td>
-              <td>среднее профессиональное образование</td>
+              <td></td>
+              <td></td>
             </tr>
           </tbody>
         </table>

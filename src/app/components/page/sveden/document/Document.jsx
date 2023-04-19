@@ -62,11 +62,13 @@ import Zakl_pozh3 from "../../../../assets/pdf/documentPage/zakl_pozh_3.pdf";
 import ZaklSanitar1 from "../../../../assets/pdf/documentPage/zakl_sanitar_1.pdf";
 import ZaklSanitar2 from "../../../../assets/pdf/documentPage/zakl_sanitar_2.pdf";
 import ZaklSanitar3 from "../../../../assets/pdf/documentPage/zakl_sanitar_3.pdf";
-import ZaklSanitar4 from "../../../../assets/pdf/documentPage/zakl_sanitar_4.pdf";
 import ZaklSanitar5 from "../../../../assets/pdf/documentPage/zakl_sanitar_5.pdf";
 import DoDop from "../../../../assets/pdf/documentPage/DO_dop.pdf";
 import PolozPd from "../../../../assets/pdf/documentPage/Pologenie_PD.pdf";
 import DropDown from "../../../common/dropDown/DropDown";
+
+import vipiska_iz_reestra11042023 from "../../../../assets/pdf/documentPage/vipiska_iz_reestra11.04.2023.pdf";
+import SEZ_predreisovaya from "../../../../assets/pdf/documentPage/SEZ_predreisovaya.pdf";
 import { toggleClassName, toggleFontSize } from "../../../../utils/disabled";
 import { observer } from "mobx-react-lite";
 import { ReactComponent as PDF } from "../../../../assets/svg/office/pdf.svg";
@@ -755,10 +757,20 @@ const Document = observer(() => {
           </li>
           <li className="doc__item">
             <PDF height={"40px"} width={"40px"} />
-            <a href={ZaklSanitar4} target={"_blank"} rel="noreferrer">
+            <a href={SEZ_predreisovaya} target={"_blank"} rel="noreferrer">
               Санитарно-эпидемиологическое заключение на здания, строения,
               сооружения и (или) помещения для осуществления медицинской
               деятельности по адресу г. Уфа, ул. Ахметова, д. 275
+            </a>
+          </li>
+          <li className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a
+              href={vipiska_iz_reestra11042023}
+              target={"_blank"}
+              rel="noreferrer"
+            >
+              Выписка из реестра лицензий по состоянию на 15:02 11.04.2023 г.
             </a>
           </li>
           <li className="doc__item">
