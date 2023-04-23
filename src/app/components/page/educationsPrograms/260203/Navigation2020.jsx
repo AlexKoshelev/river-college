@@ -1,5 +1,5 @@
 import React from "react";
-import PDF from "../../../../assets/svg/office/pdf.svg";
+import { ReactComponent as PDF } from "../../../../assets/svg/office/pdf.svg";
 import astronom1 from "../../../../assets/pdf/educationPage/260203/workPrograms2020/astronom1.pdf";
 import astronom1Sig from "../../../../assets/pdf/educationPage/260203/workPrograms2020/astronom1.pdf.sig";
 import BGHD1 from "../../../../assets/pdf/educationPage/260203/workPrograms2020/BGHD1.pdf";
@@ -69,30 +69,563 @@ import TUS1Sig from "../../../../assets/pdf/educationPage/260203/workPrograms202
 
 const Navigation2020 = () => {
   return (
-    <>
+    <section className="workProgramm__wrapper">
       <h1>
         Основная профессиональная образовательная программа среднего
         профессионального образования для специальности 26.02.03 "Судовождение"
         (углубленная подготовка) (год набора 2020)
       </h1>
-      <h1>Рабочие программы</h1>
+      <h2>Рабочие программы</h2>
       <table>
         <thead>
           <tr>
-            <td>№ п/п</td>
-            <td>Наименование дисциплины</td>
-            <td>ЭЦП</td>
+            <th>№ п/п</th>
+            <th>Наименование дисциплины</th>
+            <th>ЭЦП</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>1</td>
-            <td></td>
-            <td></td>
+            <td>
+              {" "}
+              <PDF height={"25px"} width={"25px"} />
+              <a href={astronom1} target={"_blank"} rel="noreferrer">
+                Астрономия
+              </a>
+            </td>
+            <td>
+              <a href={astronom1Sig} target={"_blank"} rel="noreferrer">
+                ЭЦП
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>
+              {" "}
+              <PDF height={"25px"} width={"25px"} />
+              <a href={BGHD1} target={"_blank"} rel="noreferrer">
+                Безопасность жизнидеятельности
+              </a>
+            </td>
+            <td>
+              <a href={BGHD1Sig} target={"_blank"} rel="noreferrer">
+                ЭЦП
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>
+              {" "}
+              <PDF height={"25px"} width={"25px"} />
+              <a href={chimiya1} target={"_blank"} rel="noreferrer">
+                Химия
+              </a>
+            </td>
+            <td>
+              <a href={chimiya1Sig} target={"_blank"} rel="noreferrer">
+                ЭЦП
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>
+              {" "}
+              <PDF height={"25px"} width={"25px"} />
+              <a href={elektronika1} target={"_blank"} rel="noreferrer">
+                Электроника и электротехника
+              </a>
+            </td>
+            <td>
+              <a href={elektronika1Sig} target={"_blank"} rel="noreferrer">
+                ЭЦП
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>
+              {" "}
+              <PDF height={"25px"} width={"25px"} />
+              <a href={EOP1} target={"_blank"} rel="noreferrer">
+                Экологические основы природопользования
+              </a>
+            </td>
+            <td>
+              <a href={EOP1Sig} target={"_blank"} rel="noreferrer">
+                ЭЦП
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>
+              {" "}
+              <PDF height={"25px"} width={"25px"} />
+              <a href={expl_SEU1} target={"_blank"} rel="noreferrer">
+                Эксплуатация судовых энергетических установок на вспомогательном
+                уровне
+              </a>
+            </td>
+            <td>
+              <a href={expl_SEU1Sig} target={"_blank"} rel="noreferrer">
+                ЭЦП
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>
+              {" "}
+              <PDF height={"25px"} width={"25px"} />
+              <a href={filosof1} target={"_blank"} rel="noreferrer">
+                Основы философии
+              </a>
+            </td>
+            <td>
+              <a href={filosof1Sig} target={"_blank"} rel="noreferrer">
+                ЭЦП
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>
+              {" "}
+              <PDF height={"25px"} width={"25px"} />
+              <a href={fiz_kult1_1kurs} target={"_blank"} rel="noreferrer">
+                Физическая культура, 1 курс
+              </a>
+            </td>
+            <td>
+              <a href={fiz_kult1_1kursSig} target={"_blank"} rel="noreferrer">
+                ЭЦП
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>
+              {" "}
+              <PDF height={"25px"} width={"25px"} />
+              <a href={fiz_kult1} target={"_blank"} rel="noreferrer">
+                Физическая культура
+              </a>
+            </td>
+            <td>
+              <a href={fiz_kult1Sig} target={"_blank"} rel="noreferrer">
+                ЭЦП
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>
+              {" "}
+              <PDF height={"25px"} width={"25px"} />
+              <a href={fizika1} target={"_blank"} rel="noreferrer">
+                Физика
+              </a>
+            </td>
+            <td>
+              <a href={fizika1Sig} target={"_blank"} rel="noreferrer">
+                ЭЦП
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>
+              {" "}
+              <PDF height={"25px"} width={"25px"} />
+              <a href={inform1_1kurs} target={"_blank"} rel="noreferrer">
+                Информатика, 1 курс
+              </a>
+            </td>
+            <td>
+              <a href={inform1_1kursSig} target={"_blank"} rel="noreferrer">
+                ЭЦП
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>
+              {" "}
+              <PDF height={"25px"} width={"25px"} />
+              <a href={inform1} target={"_blank"} rel="noreferrer">
+                Информатика
+              </a>
+            </td>
+            <td>
+              <a href={inform1Sig} target={"_blank"} rel="noreferrer">
+                ЭЦП
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>
+              {" "}
+              <PDF height={"25px"} width={"25px"} />
+              <a href={ingh_grafika1} target={"_blank"} rel="noreferrer">
+                Инженерная графика
+              </a>
+            </td>
+            <td>
+              <a href={ingh_grafika1Sig} target={"_blank"} rel="noreferrer">
+                ЭЦП
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>
+              {" "}
+              <PDF height={"25px"} width={"25px"} />
+              <a href={inostr1} target={"_blank"} rel="noreferrer">
+                Иностранный язык, 1 курс
+              </a>
+            </td>
+            <td>
+              <a href={inostr1Sig} target={"_blank"} rel="noreferrer">
+                ЭЦП
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>
+              {" "}
+              <PDF height={"25px"} width={"25px"} />
+              <a href={inostr1} target={"_blank"} rel="noreferrer">
+                Иностранный язык
+              </a>
+            </td>
+            <td>
+              <a href={inostr1Sig} target={"_blank"} rel="noreferrer">
+                ЭЦП
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>16</td>
+            <td>
+              {" "}
+              <PDF height={"25px"} width={"25px"} />
+              <a href={istor1_1kurs} target={"_blank"} rel="noreferrer">
+                {" "}
+                История, 1 курс
+              </a>
+            </td>
+            <td>
+              <a href={istor1_1kursSig} target={"_blank"} rel="noreferrer">
+                ЭЦП
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>17</td>
+            <td>
+              {" "}
+              <PDF height={"25px"} width={"25px"} />
+              <a href={istor1} target={"_blank"} rel="noreferrer">
+                История
+              </a>
+            </td>
+            <td>
+              <a href={istor1Sig} target={"_blank"} rel="noreferrer">
+                ЭЦП
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>18</td>
+            <td>
+              {" "}
+              <PDF height={"25px"} width={"25px"} />
+              <a href={literatura1} target={"_blank"} rel="noreferrer">
+                Литература
+              </a>
+            </td>
+            <td>
+              <a href={literatura1Sig} target={"_blank"} rel="noreferrer">
+                ЭЦП
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>19</td>
+            <td>
+              {" "}
+              <PDF height={"25px"} width={"25px"} />
+              <a href={matem1_1kurs} target={"_blank"} rel="noreferrer">
+                Математика, 1 курс
+              </a>
+            </td>
+            <td>
+              <a href={matem1_1kursSig} target={"_blank"} rel="noreferrer">
+                ЭЦП
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>20</td>
+            <td>
+              {" "}
+              <PDF height={"25px"} width={"25px"} />
+              <a href={matem1} target={"_blank"} rel="noreferrer">
+                Математика
+              </a>
+            </td>
+            <td>
+              <a href={matem1Sig} target={"_blank"} rel="noreferrer">
+                ЭЦП
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>21</td>
+            <td>
+              {" "}
+              <PDF height={"25px"} width={"25px"} />
+              <a href={mechanika1} target={"_blank"} rel="noreferrer">
+                Механика
+              </a>
+            </td>
+            <td>
+              <a href={mechanika1Sig} target={"_blank"} rel="noreferrer">
+                ЭЦП
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>22</td>
+            <td>
+              {" "}
+              <PDF height={"25px"} width={"25px"} />
+              <a href={metrolog1} target={"_blank"} rel="noreferrer">
+                Метрология и стандартизация
+              </a>
+            </td>
+            <td>
+              <a href={metrolog1Sig} target={"_blank"} rel="noreferrer">
+                ЭЦП
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>23</td>
+            <td>
+              {" "}
+              <PDF height={"25px"} width={"25px"} />
+              <a href={OBGH1} target={"_blank"} rel="noreferrer">
+                Основы безопасности жизнедеятельности
+              </a>
+            </td>
+            <td>
+              <a href={OBGH1Sig} target={"_blank"} rel="noreferrer">
+                ЭЦП
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>24</td>
+            <td>
+              {" "}
+              <PDF height={"25px"} width={"25px"} />
+              <a href={PM01_uprabl_expl1} target={"_blank"} rel="noreferrer">
+                ПМ01. Управление и эксплуатация судна с правом эксплуатации
+                судовых энергетических установок
+              </a>
+            </td>
+            <td>
+              <a href={PM01_uprabl_expl1Sig} target={"_blank"} rel="noreferrer">
+                ЭЦП
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>25</td>
+            <td>
+              {" "}
+              <PDF height={"25px"} width={"25px"} />
+              <a
+                href={PM02_obesp_bezop_plav1}
+                target={"_blank"}
+                rel="noreferrer"
+              >
+                ПМ02. Обеспечение безопасности плавания
+              </a>
+            </td>
+            <td>
+              <a
+                href={PM02_obesp_bezop_plav1Sig}
+                target={"_blank"}
+                rel="noreferrer"
+              >
+                ЭЦП
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>26</td>
+            <td>
+              {" "}
+              <PDF height={"25px"} width={"25px"} />
+              <a
+                href={PM03_otrab_razm_gruza1}
+                target={"_blank"}
+                rel="noreferrer"
+              >
+                ПМ03. Обработка и размещение груза
+              </a>
+            </td>
+            <td>
+              <a
+                href={PM03_otrab_razm_gruza1Sig}
+                target={"_blank"}
+                rel="noreferrer"
+              >
+                ЭЦП
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>27</td>
+            <td>
+              {" "}
+              <PDF height={"25px"} width={"25px"} />
+              <a
+                href={PM04_analiz_effekt_sudna1}
+                target={"_blank"}
+                rel="noreferrer"
+              >
+                ПМ04. Анализ эффективности работы судна
+              </a>
+            </td>
+            <td>
+              <a
+                href={PM04_analiz_effekt_sudna1Sig}
+                target={"_blank"}
+                rel="noreferrer"
+              >
+                ЭЦП
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>28</td>
+            <td>
+              {" "}
+              <PDF height={"25px"} width={"25px"} />
+              <a href={PM05_proffes1} target={"_blank"} rel="noreferrer">
+                ПМ05. Выполнение работ по одной или нескольким профессиям
+                рабочих, должностям служащих
+              </a>
+            </td>
+            <td>
+              <a href={PM05_proffes1Sig} target={"_blank"} rel="noreferrer">
+                ЭЦП
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>29</td>
+            <td>
+              {" "}
+              <PDF height={"25px"} width={"25px"} />
+              <a href={POPD1} target={"_blank"} rel="noreferrer">
+                Правовые основы профессиональной деятельности
+              </a>
+            </td>
+            <td>
+              <a href={POPD1Sig} target={"_blank"} rel="noreferrer">
+                ЭЦП
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>30</td>
+            <td>
+              {" "}
+              <PDF height={"25px"} width={"25px"} />
+              <a href={psocholog1} target={"_blank"} rel="noreferrer">
+                Психология общения
+              </a>
+            </td>
+            <td>
+              <a href={psocholog1Sig} target={"_blank"} rel="noreferrer">
+                ЭЦП
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>31</td>
+            <td>
+              {" "}
+              <PDF height={"25px"} width={"25px"} />
+              <a href={rodn_yaz1} target={"_blank"} rel="noreferrer">
+                Родной язык
+              </a>
+            </td>
+            <td>
+              <a href={rodn_yaz1Sig} target={"_blank"} rel="noreferrer">
+                ЭЦП
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>32</td>
+            <td>
+              {" "}
+              <PDF height={"25px"} width={"25px"} />
+              <a href={russ_yaz1} target={"_blank"} rel="noreferrer">
+                Русский язык
+              </a>
+            </td>
+            <td>
+              <a href={russ_yaz1Sig} target={"_blank"} rel="noreferrer">
+                ЭЦП
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>33</td>
+            <td>
+              {" "}
+              <PDF height={"25px"} width={"25px"} />
+              <a href={TUS1} target={"_blank"} rel="noreferrer">
+                Теория и устройство судна
+              </a>
+            </td>
+            <td>
+              <a href={TUS1Sig} target={"_blank"} rel="noreferrer">
+                ЭЦП
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>34</td>
+            <td>
+              {" "}
+              <PDF height={"25px"} width={"25px"} />
+              <a href={prog_vospit1} target={"_blank"} rel="noreferrer">
+                Рабочая программа воспитания обучающихся
+              </a>
+            </td>
+            <td>
+              <a href={prog_vospit1Sig} target={"_blank"} rel="noreferrer">
+                ЭЦП
+              </a>
+            </td>
           </tr>
         </tbody>
       </table>
-    </>
+    </section>
   );
 };
 export default Navigation2020;
