@@ -208,19 +208,7 @@ const Education = observer(() => {
                 технологий
               </td>
             </tr>
-            <tr>
-              <td>-</td>
-              <td>-</td>
-              <td style={{ backgroundColor: "red" }}>-</td>
-              <td>высшее образование - бакалавриат</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td style={{ backgroundColor: "red" }}>-</td>
-              <td style={{ backgroundColor: "red" }}>-</td>
-              <td style={{ backgroundColor: "red" }}>-</td>
-            </tr>
+
             <tr>
               <td>-</td>
               <td>-</td>
@@ -234,74 +222,11 @@ const Education = observer(() => {
               <td style={{ backgroundColor: "red" }}>-</td>
               <td style={{ backgroundColor: "red" }}>-</td>
             </tr>
-            <tr>
-              <td>-</td>
-              <td>-</td>
-              <td style={{ backgroundColor: "red" }}>-</td>
-              <td>высшее образование - магистратура</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td style={{ backgroundColor: "red" }}>-</td>
-              <td style={{ backgroundColor: "red" }}>-</td>
-              <td style={{ backgroundColor: "red" }}>-</td>
-            </tr>
-            <tr>
-              <td>-</td>
-              <td>-</td>
-              <td style={{ backgroundColor: "red" }}>-</td>
-              <td>
-                высшее образование - подготовка кадров высшей квалификации
-              </td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td style={{ backgroundColor: "red" }}>-</td>
-              <td style={{ backgroundColor: "red" }}>-</td>
-              <td style={{ backgroundColor: "red" }}>-</td>
-            </tr>
-            <tr>
-              <td rowSpan="3">26.02.03 </td>
-              <td rowSpan="3">"Судовождение"</td>
-              <td rowSpan="3" style={{ backgroundColor: "red" }}>
-                -
-              </td>
-              <td rowSpan="3">среднее профессиональное образование</td>
-              <td>очная форма</td>
-              <td>
-                3 года 10 мес <br />2 года 10 мес
-              </td>
-              <td rowSpan="3">27.02.2025</td>
-              <td rowSpan="3">Русский</td>
-              <td rowSpan="3" style={{ backgroundColor: "red" }}>
-                -
-              </td>
-              <td rowSpan="3" style={{ backgroundColor: "red" }}>
-                -
-              </td>
-              <td rowSpan="3" style={{ backgroundColor: "red" }}>
-                -
-              </td>
-            </tr>
-            <tr>
-              <td>очно-заочная форма</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>заочная форма</td>
-              <td>
-                4 года 10 мес <br /> 3 года 10 мес
-              </td>
-            </tr>
 
             <tr>
               <td rowSpan="3">26.02.03</td>
               <td rowSpan="3">"Судовождение" (углубленная подготовка)</td>
-              <td rowSpan="3" style={{ backgroundColor: "red" }}>
-                -
-              </td>
+              <td rowSpan="3">"Судовождение" (углубленная подготовка)</td>
               <td rowSpan="3">среднее профессиональное образование</td>
               <td>очная форма</td>
               <td>
@@ -335,8 +260,9 @@ const Education = observer(() => {
                 "Эксплуатация судовых энергетических установок" (базовый
                 уровень)
               </td>
-              <td rowSpan="3" style={{ backgroundColor: "red" }}>
-                -
+              <td rowSpan="3">
+                "Эксплуатация судового электрооборудования и средств автоматики"
+                (базовый уровень)
               </td>
               <td rowSpan="3">среднее профессиональное образование</td>
               <td>очная форма</td>
@@ -371,8 +297,9 @@ const Education = observer(() => {
                 "Эксплуатация судового электрооборудования и средств автоматики"
                 (базовый уровень)
               </td>
-              <td rowSpan="3" style={{ backgroundColor: "red" }}>
-                -
+              <td rowSpan="3">
+                "Эксплуатация судовых энергетических установок" (базовый
+                уровень)
               </td>
               <td rowSpan="3">среднее профессиональное образование</td>
               <td>очная форма</td>
@@ -400,10 +327,12 @@ const Education = observer(() => {
             <tr>
               <td rowSpan="3">23.02.01</td>
               <td rowSpan="3">
-                "Организация перевозок и управление на транспорте (по видам)"
+                "Организация перевозок и управление на транспорте" (по видам)
+                (базовый уровень)
               </td>
-              <td rowSpan="3" style={{ backgroundColor: "red" }}>
-                -
+              <td rowSpan="3">
+                "Организация перевозок и управление на транспорте" (по видам)
+                (базовый уровень)
               </td>
               <td rowSpan="3">среднее профессиональное образование</td>
               <td>очная форма</td>
