@@ -1241,17 +1241,22 @@ const Education = observer(() => {
                 </NavLink>
               </td>
               <td>среднее профессиональное образование</td>
-              <td style={{ backgroundColor: "red" }} itemProp="eduProf"></td>
+              <td>
+                <NavLink to="../../educationPrograms/navigation2020">
+                  {" "}
+                  Судовождение (углубленная подготовка), 2020 года набора
+                </NavLink>
+              </td>
               <td>очно-заочная </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={OOP1} target={"_blank"} rel="noreferrer">
                       ООП для специальности 26.02.03 "Судовождение"
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <a href={SigOOP1} target={"_blank"} rel="noreferrer">
                       ЭЦП
                     </a>
@@ -1260,14 +1265,14 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={UP1} target={"_blank"} rel="noreferrer">
                       Учебный план 26.02.03 "Судовождение", на базе 9 классов,
                       очная/заочная
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={UP2} target={"_blank"} rel="noreferrer">
                       Учебный план 26.02.03 "Судовождение", на базе 11 классов,
@@ -1356,21 +1361,21 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={Image1} target={"_blank"} rel="noreferrer">
                       Календарный учебный график для специальности 26.02.03
                       "Судовождение", на базе 9 классов, очная
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={Image2} target={"_blank"} rel="noreferrer">
                       Календарный учебный график для специальности 26.02.03
                       "Судовождение", на базе 11 классов, очная
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={Image3} target={"_blank"} rel="noreferrer">
                       Календарный учебный график для специальности 26.02.03
@@ -1379,7 +1384,7 @@ const Education = observer(() => {
                   </li>
                 </ul>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={RPV_SV} target={"_blank"} rel="noreferrer">
                       Рабочая программа воспитания по направлению подготовки
@@ -1390,7 +1395,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={RPV_SV} target={"_blank"} rel="noreferrer">
                       Рабочая программа воспитания по направлению подготовки
@@ -1401,7 +1406,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={KPV} target={"_blank"} rel="noreferrer">
                       Календарный план воспитательной работы
@@ -1411,7 +1416,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologenie_attest_vipusk}
@@ -1421,13 +1426,13 @@ const Education = observer(() => {
                       Положение об итоговой аттестации выпускников
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={Pologenie_OOP} target={"_blank"} rel="noreferrer">
                       Положение об основной образовательной программе
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Programma_IA_SV_uglubl}
@@ -1438,7 +1443,7 @@ const Education = observer(() => {
                       "Судовождение" (углубленная)
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={FOS_IA_SV_uglubl}
@@ -1453,13 +1458,13 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={Pologhenie_DO} target={"_blank"} rel="noreferrer">
                       Положение о дистанционном обучении
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologenie_Parus}
@@ -1470,7 +1475,7 @@ const Education = observer(() => {
                       дистанционного обучения "Парус"
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologhenie_kontrolDO}
@@ -1482,7 +1487,7 @@ const Education = observer(() => {
                       технологий
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologhenie_EL_Sreda}
@@ -1499,24 +1504,28 @@ const Education = observer(() => {
             <tr>
               <td>26.02.03 </td>
               <td>
-                {" "}
                 <NavLink to="../../educationPrograms/navigation2019">
                   {" "}
                   Судовождение (углубленная подготовка), 2019 года набора
                 </NavLink>
               </td>
               <td>среднее профессиональное образование</td>
-              <td style={{ backgroundColor: "red" }} itemProp="eduProf"></td>
+              <td>
+                <NavLink to="../../educationPrograms/navigation2019">
+                  {" "}
+                  Судовождение (углубленная подготовка), 2019 года набора
+                </NavLink>
+              </td>
               <td>очно-заочная </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={OOP2} target={"_blank"} rel="noreferrer">
                       ООП для специальности 26.02.03 "Судовождение"
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <a href={SigOOP2} target={"_blank"} rel="noreferrer">
                       ЭЦП
                     </a>
@@ -1525,29 +1534,21 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li
-                    itemProp="ustavDocLink"
-                    className="doc__item"
-                    style={{ backgroundColor: "red" }}
-                  >
+                  <li className="doc__item" style={{ backgroundColor: "red" }}>
                     <PDF height={"25px"} width={"25px"} />
                     <a href={"/"} target={"_blank"} rel="noreferrer">
                       Учебный план 26.02.03 "Судовождение", на базе 11 классов,
                       заочная
                     </a>
                   </li>
-                  <li
-                    itemProp="ustavDocLink"
-                    className="doc__item"
-                    style={{ backgroundColor: "red" }}
-                  >
+                  <li className="doc__item" style={{ backgroundColor: "red" }}>
                     <PDF height={"25px"} width={"25px"} />
                     <a href={"/"} target={"_blank"} rel="noreferrer">
                       Учебный план 26.02.03 "Судовождение", на базе 9 классов,
                       заочная
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={UP3} target={"_blank"} rel="noreferrer">
                       Учебный план 26.02.03 "Судовождение", на базе 9 классов,
@@ -1636,21 +1637,21 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={Image4} target={"_blank"} rel="noreferrer">
                       Календарный учебный график для специальности 26.02.03
                       "Судовождение", на базе 11 классов, заочная
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={Image5} target={"_blank"} rel="noreferrer">
                       Календарный учебный график для специальности 26.02.03
                       "Судовождение", на базе 9 классов, заочная
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={Image6} target={"_blank"} rel="noreferrer">
                       Календарный учебный график для специальности 26.02.03
@@ -1661,7 +1662,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={RPV_SV} target={"_blank"} rel="noreferrer">
                       Рабочая программа воспитания по направлению подготовки
@@ -1672,7 +1673,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={KPV} target={"_blank"} rel="noreferrer">
                       Календарный план воспитательной работы
@@ -1682,7 +1683,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologenie_attest_vipusk}
@@ -1692,13 +1693,13 @@ const Education = observer(() => {
                       Положение об итоговой аттестации выпускников
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={Pologenie_OOP} target={"_blank"} rel="noreferrer">
                       Положение об основной образовательной программе
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Programma_IA_SV_uglubl}
@@ -1709,7 +1710,7 @@ const Education = observer(() => {
                       "Судовождение" (углубленная)
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={FOS_IA_SV_uglubl}
@@ -1724,13 +1725,13 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={Pologhenie_DO} target={"_blank"} rel="noreferrer">
                       Положение о дистанционном обучении
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologenie_Parus}
@@ -1741,7 +1742,7 @@ const Education = observer(() => {
                       дистанционного обучения "Парус"
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologhenie_kontrolDO}
@@ -1753,7 +1754,7 @@ const Education = observer(() => {
                       технологий
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologhenie_EL_Sreda}
@@ -1776,17 +1777,22 @@ const Education = observer(() => {
                 </NavLink>
               </td>
               <td>среднее профессиональное образование</td>
-              <td style={{ backgroundColor: "red" }} itemProp="eduProf"></td>
+              <td>
+                <NavLink to="../../educationPrograms/navigation2018">
+                  {" "}
+                  Судовождение (углубленная подготовка), 2018 года набора
+                </NavLink>
+              </td>
               <td>очно-заочная </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={OOP3} target={"_blank"} rel="noreferrer">
                       ООП для специальности 26.02.03 "Судовождение"
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <a href={SigOOP3} target={"_blank"} rel="noreferrer">
                       ЭЦП
                     </a>
@@ -1795,21 +1801,21 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={UP4} target={"_blank"} rel="noreferrer">
                       Учебный план 26.02.03 "Судовождение", на базе 11 классов,
                       заочная
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={UP4} target={"_blank"} rel="noreferrer">
                       Учебный план 26.02.03 "Судовождение", на базе 9 классов,
                       заочная
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={UP5} target={"_blank"} rel="noreferrer">
                       Учебный план 26.02.03 "Судовождение", на базе 9 классов,
@@ -1898,21 +1904,21 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={Image7} target={"_blank"} rel="noreferrer">
                       Календарный учебный график для специальности 26.02.03
                       "Судовождение", на базе 11 классов, заочная
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={Image8} target={"_blank"} rel="noreferrer">
                       Календарный учебный график для специальности 26.02.03
                       "Судовождение", на базе 9 классов, очная
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={Image9} target={"_blank"} rel="noreferrer">
                       Календарный учебный график для специальности 26.02.03
@@ -1923,7 +1929,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={RPV_SV} target={"_blank"} rel="noreferrer">
                       Рабочая программа воспитания по направлению подготовки
@@ -1934,7 +1940,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={KPV} target={"_blank"} rel="noreferrer">
                       Календарный план воспитательной работы
@@ -1944,7 +1950,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologenie_attest_vipusk}
@@ -1954,13 +1960,13 @@ const Education = observer(() => {
                       Положение об итоговой аттестации выпускников
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={Pologenie_OOP} target={"_blank"} rel="noreferrer">
                       Положение об основной образовательной программе
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Programma_IA_SV_uglubl}
@@ -1971,7 +1977,7 @@ const Education = observer(() => {
                       "Судовождение" (углубленная)
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={FOS_IA_SV_uglubl}
@@ -1986,13 +1992,13 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={Pologhenie_DO} target={"_blank"} rel="noreferrer">
                       Положение о дистанционном обучении
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologenie_Parus}
@@ -2003,7 +2009,7 @@ const Education = observer(() => {
                       дистанционного обучения "Парус"
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologhenie_kontrolDO}
@@ -2015,7 +2021,7 @@ const Education = observer(() => {
                       технологий
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologhenie_EL_Sreda}
@@ -2038,11 +2044,16 @@ const Education = observer(() => {
                 </NavLink>
               </td>
               <td>среднее профессиональное образование</td>
-              <td style={{ backgroundColor: "red" }} itemProp="eduProf"></td>
+              <td>
+                <NavLink to="../../educationPrograms/navigation2017">
+                  {" "}
+                  Судовождение (углубленная подготовка), 2017 года набора
+                </NavLink>
+              </td>
               <td>очно-заочная </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={OOP4} target={"_blank"} rel="noreferrer">
                       ООП для специальности 26.02.03 "Судовождение"
@@ -2052,14 +2063,14 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={UP6} target={"_blank"} rel="noreferrer">
                       Учебный план 26.02.03 "Судовождение", на базе 11 классов,
                       очная
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={UP7} target={"_blank"} rel="noreferrer">
                       Учебный план 26.02.03 "Судовождение", на базе 9 классов,
@@ -2148,14 +2159,14 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={Image10} target={"_blank"} rel="noreferrer">
                       Календарный учебный график для специальности 26.02.03
                       "Судовождение", на базе 11 классов, очная
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={Image11} target={"_blank"} rel="noreferrer">
                       Календарный учебный график для специальности 26.02.03
@@ -2166,7 +2177,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={RPV_SV} target={"_blank"} rel="noreferrer">
                       Рабочая программа воспитания по направлению подготовки
@@ -2177,7 +2188,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={KPV} target={"_blank"} rel="noreferrer">
                       Календарный план воспитательной работы
@@ -2187,7 +2198,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologenie_attest_vipusk}
@@ -2197,13 +2208,13 @@ const Education = observer(() => {
                       Положение об итоговой аттестации выпускников
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={Pologenie_OOP} target={"_blank"} rel="noreferrer">
                       Положение об основной образовательной программе
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Programma_IA_SV_uglubl}
@@ -2214,7 +2225,7 @@ const Education = observer(() => {
                       "Судовождение" (углубленная)
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={FOS_IA_SV_uglubl}
@@ -2229,13 +2240,13 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={Pologhenie_DO} target={"_blank"} rel="noreferrer">
                       Положение о дистанционном обучении
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologenie_Parus}
@@ -2246,7 +2257,7 @@ const Education = observer(() => {
                       дистанционного обучения "Парус"
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologhenie_kontrolDO}
@@ -2258,7 +2269,7 @@ const Education = observer(() => {
                       технологий
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologhenie_EL_Sreda}
@@ -2276,7 +2287,7 @@ const Education = observer(() => {
               <td>26.02.03 </td>
               <td>Судовождение</td>
               <td>среднее профессиональное образование</td>
-              <td style={{ backgroundColor: "red" }} itemProp="eduProf"></td>
+              <td>Судовождение</td>
               <td>очно-заочная </td>
               <td>-</td>
               <td>-</td>
@@ -2298,18 +2309,24 @@ const Education = observer(() => {
                 </NavLink>
               </td>
               <td>среднее профессиональное образование </td>
-              <td style={{ backgroundColor: "red" }} itemProp="eduProf"></td>
+              <td>
+                <NavLink to="../../educationPrograms/marineElectricalEquipment2020">
+                  {" "}
+                  "Эксплуатация судового электрооборудования и средств
+                  автоматики", 2020 года набора
+                </NavLink>
+              </td>{" "}
               <td>очная</td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={OOP5} target={"_blank"} rel="noreferrer">
                       ООП для специальности 26.02.06 "Эксплуатация судового
                       электрооборудования и средств автоматики"
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <a href={SigOOP5} target={"_blank"} rel="noreferrer">
                       ЭЦП
                     </a>
@@ -2318,11 +2335,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li
-                    itemProp="ustavDocLink"
-                    className="doc__item"
-                    style={{ backgroundColor: "red" }}
-                  >
+                  <li className="doc__item" style={{ backgroundColor: "red" }}>
                     <PDF height={"25px"} width={"25px"} />
                     <a href={"/"} target={"_blank"} rel="noreferrer">
                       Учебный план 26.02.06 "Эксплуатация судового
@@ -2414,7 +2427,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={Image12} target={"_blank"} rel="noreferrer">
                       Календарный учебный график для специальности 26.02.06
@@ -2426,7 +2439,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={RPV_EM} target={"_blank"} rel="noreferrer">
                       Рабочая программа воспитания по направлению подготовки
@@ -2438,7 +2451,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={KPV} target={"_blank"} rel="noreferrer">
                       Календарный план воспитательной работы
@@ -2448,7 +2461,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologenie_attest_vipusk}
@@ -2458,13 +2471,13 @@ const Education = observer(() => {
                       Положение об итоговой аттестации выпускников
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={Pologenie_OOP} target={"_blank"} rel="noreferrer">
                       Положение об основной образовательной программе
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Programma_IA_EM}
@@ -2475,7 +2488,7 @@ const Education = observer(() => {
                       "Судовождение" (углубленная)
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Programma_IA_SM}
@@ -2490,13 +2503,13 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={Pologhenie_DO} target={"_blank"} rel="noreferrer">
                       Положение о дистанционном обучении
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologenie_Parus}
@@ -2507,7 +2520,7 @@ const Education = observer(() => {
                       дистанционного обучения "Парус"
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologhenie_kontrolDO}
@@ -2519,7 +2532,7 @@ const Education = observer(() => {
                       технологий
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologhenie_EL_Sreda}
@@ -2543,18 +2556,24 @@ const Education = observer(() => {
                 </NavLink>
               </td>
               <td>среднее профессиональное образование </td>
-              <td style={{ backgroundColor: "red" }} itemProp="eduProf"></td>
+              <td>
+                <NavLink to="../../educationPrograms/marineElectricalEquipment2019">
+                  {" "}
+                  "Эксплуатация судового электрооборудования и средств
+                  автоматики", 2019 года набора
+                </NavLink>
+              </td>
               <td>очная</td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={OOP6} target={"_blank"} rel="noreferrer">
                       ООП для специальности 26.02.06 "Эксплуатация судового
                       электрооборудования и средств автоматики"
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <a href={SigOOP6} target={"_blank"} rel="noreferrer">
                       ЭЦП
                     </a>
@@ -2563,7 +2582,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={UP9} target={"_blank"} rel="noreferrer">
                       Учебный план 26.02.06 "Эксплуатация судового
@@ -2655,7 +2674,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={Image13} target={"_blank"} rel="noreferrer">
                       Календарный учебный график для специальности 26.02.06
@@ -2667,7 +2686,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={RPV_EM} target={"_blank"} rel="noreferrer">
                       Рабочая программа воспитания по направлению подготовки
@@ -2679,7 +2698,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={KPV} target={"_blank"} rel="noreferrer">
                       Календарный план воспитательной работы
@@ -2689,7 +2708,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologenie_attest_vipusk}
@@ -2699,13 +2718,13 @@ const Education = observer(() => {
                       Положение об итоговой аттестации выпускников
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={Pologenie_OOP} target={"_blank"} rel="noreferrer">
                       Положение об основной образовательной программе
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Programma_IA_EM}
@@ -2716,7 +2735,7 @@ const Education = observer(() => {
                       "Судовождение" (углубленная)
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Programma_IA_SM}
@@ -2731,13 +2750,13 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={Pologhenie_DO} target={"_blank"} rel="noreferrer">
                       Положение о дистанционном обучении
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologenie_Parus}
@@ -2748,7 +2767,7 @@ const Education = observer(() => {
                       дистанционного обучения "Парус"
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologhenie_kontrolDO}
@@ -2760,7 +2779,7 @@ const Education = observer(() => {
                       технологий
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologhenie_EL_Sreda}
@@ -2784,18 +2803,24 @@ const Education = observer(() => {
                 </NavLink>
               </td>
               <td>среднее профессиональное образование </td>
-              <td style={{ backgroundColor: "red" }} itemProp="eduProf"></td>
+              <td>
+                <NavLink to="../../educationPrograms/marineElectricalEquipment2018">
+                  {" "}
+                  "Эксплуатация судового электрооборудования и средств
+                  автоматики", 2018 года набора
+                </NavLink>
+              </td>
               <td>очная</td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={OOP7} target={"_blank"} rel="noreferrer">
                       ООП для специальности 26.02.06 "Эксплуатация судового
                       электрооборудования и средств автоматики"
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <a href={SigOOP7} target={"_blank"} rel="noreferrer">
                       ЭЦП
                     </a>
@@ -2804,7 +2829,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={UP10} target={"_blank"} rel="noreferrer">
                       Учебный план 26.02.06 "Эксплуатация судового
@@ -2896,7 +2921,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={Image14} target={"_blank"} rel="noreferrer">
                       Календарный учебный график для специальности 26.02.06
@@ -2908,7 +2933,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={RPV_EM} target={"_blank"} rel="noreferrer">
                       Рабочая программа воспитания по направлению подготовки
@@ -2920,7 +2945,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={KPV} target={"_blank"} rel="noreferrer">
                       Календарный план воспитательной работы
@@ -2930,7 +2955,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologenie_attest_vipusk}
@@ -2940,13 +2965,13 @@ const Education = observer(() => {
                       Положение об итоговой аттестации выпускников
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={Pologenie_OOP} target={"_blank"} rel="noreferrer">
                       Положение об основной образовательной программе
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Programma_IA_EM}
@@ -2957,7 +2982,7 @@ const Education = observer(() => {
                       "Судовождение" (углубленная)
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Programma_IA_SM}
@@ -2972,13 +2997,13 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={Pologhenie_DO} target={"_blank"} rel="noreferrer">
                       Положение о дистанционном обучении
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologenie_Parus}
@@ -2989,7 +3014,7 @@ const Education = observer(() => {
                       дистанционного обучения "Парус"
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologhenie_kontrolDO}
@@ -3001,7 +3026,7 @@ const Education = observer(() => {
                       технологий
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologhenie_EL_Sreda}
@@ -3025,11 +3050,17 @@ const Education = observer(() => {
                 </NavLink>
               </td>
               <td>среднее профессиональное образование </td>
-              <td style={{ backgroundColor: "red" }} itemProp="eduProf"></td>
+              <td>
+                <NavLink to="../../educationPrograms/marineElectricalEquipment2017">
+                  {" "}
+                  "Эксплуатация судового электрооборудования и средств
+                  автоматики", 2017 года набора
+                </NavLink>
+              </td>
               <td>очная</td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={OOP8} target={"_blank"} rel="noreferrer">
                       ООП для специальности 26.02.06 "Эксплуатация судового
@@ -3040,7 +3071,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={UP11} target={"_blank"} rel="noreferrer">
                       Учебный план 26.02.06 "Эксплуатация судового
@@ -3133,7 +3164,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={Image15} target={"_blank"} rel="noreferrer">
                       Календарный учебный график для специальности 26.02.06
@@ -3145,7 +3176,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={RPV_EM} target={"_blank"} rel="noreferrer">
                       Рабочая программа воспитания по направлению подготовки
@@ -3157,7 +3188,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={KPV} target={"_blank"} rel="noreferrer">
                       Календарный план воспитательной работы
@@ -3167,7 +3198,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologenie_attest_vipusk}
@@ -3177,13 +3208,13 @@ const Education = observer(() => {
                       Положение об итоговой аттестации выпускников
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={Pologenie_OOP} target={"_blank"} rel="noreferrer">
                       Положение об основной образовательной программе
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Programma_IA_EM}
@@ -3194,7 +3225,7 @@ const Education = observer(() => {
                       "Судовождение" (углубленная)
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Programma_IA_SM}
@@ -3209,13 +3240,13 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={Pologhenie_DO} target={"_blank"} rel="noreferrer">
                       Положение о дистанционном обучении
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologenie_Parus}
@@ -3226,7 +3257,7 @@ const Education = observer(() => {
                       дистанционного обучения "Парус"
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologhenie_kontrolDO}
@@ -3238,7 +3269,7 @@ const Education = observer(() => {
                       технологий
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologhenie_EL_Sreda}
@@ -3258,7 +3289,9 @@ const Education = observer(() => {
                 "Эксплуатация судового электрооборудования и средств автоматики"
               </td>
               <td>среднее профессиональное образование </td>
-              <td style={{ backgroundColor: "red" }} itemProp="eduProf"></td>
+              <td>
+                "Эксплуатация судового электрооборудования и средств автоматики"
+              </td>
               <td>заочная</td>
               <td>-</td>
               <td>-</td>
@@ -3276,7 +3309,9 @@ const Education = observer(() => {
                 "Эксплуатация судового электрооборудования и средств автоматики"
               </td>
               <td>среднее профессиональное образование </td>
-              <td style={{ backgroundColor: "red" }} itemProp="eduProf"></td>
+              <td>
+                "Эксплуатация судового электрооборудования и средств автоматики"
+              </td>{" "}
               <td>очно-заочная </td>
               <td>-</td>
               <td>-</td>
@@ -3297,18 +3332,23 @@ const Education = observer(() => {
                 </NavLink>
               </td>
               <td>среднее профессиональное образование</td>
-              <td style={{ backgroundColor: "red" }} itemProp="eduProf"></td>
+              <td>
+                <NavLink to="../../educationPrograms/shipPowerPlants2020">
+                  "Эксплуатация судовых энергетических установок", 2020 года
+                  набора
+                </NavLink>
+              </td>
               <td>очная/заочная </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={OOP9} target={"_blank"} rel="noreferrer">
                       ООП для специальности 26.02.05 "Эксплуатация судовых
                       энергетических установок"
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <a href={SigOOP9} target={"_blank"} rel="noreferrer">
                       ЭЦП
                     </a>
@@ -3317,7 +3357,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={UP12} target={"_blank"} rel="noreferrer">
                       Учебный план 26.02.05 "Эксплуатация судовых энергетических
@@ -3406,7 +3446,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={Image16} target={"_blank"} rel="noreferrer">
                       Календарный учебный график для специальности 26.02.05
@@ -3417,7 +3457,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={RPV_SM} target={"_blank"} rel="noreferrer">
                       Рабочая программа воспитания по направлению подготовки
@@ -3429,7 +3469,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={KPV} target={"_blank"} rel="noreferrer">
                       Календарный план воспитательной работы
@@ -3439,7 +3479,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologenie_attest_vipusk}
@@ -3449,13 +3489,13 @@ const Education = observer(() => {
                       Положение об итоговой аттестации выпускников
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={Pologenie_OOP} target={"_blank"} rel="noreferrer">
                       Положение об основной образовательной программе
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Programma_IA_EM}
@@ -3466,7 +3506,7 @@ const Education = observer(() => {
                       "Судовождение" (углубленная)
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Programma_IA_SM}
@@ -3481,13 +3521,13 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={Pologhenie_DO} target={"_blank"} rel="noreferrer">
                       Положение о дистанционном обучении
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologenie_Parus}
@@ -3498,7 +3538,7 @@ const Education = observer(() => {
                       дистанционного обучения "Парус"
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologhenie_kontrolDO}
@@ -3510,7 +3550,7 @@ const Education = observer(() => {
                       технологий
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologhenie_EL_Sreda}
@@ -3533,18 +3573,23 @@ const Education = observer(() => {
                 </NavLink>
               </td>
               <td>среднее профессиональное образование</td>
-              <td style={{ backgroundColor: "red" }} itemProp="eduProf"></td>
+              <td>
+                <NavLink to="../../educationPrograms/shipPowerPlants2019">
+                  "Эксплуатация судовых энергетических установок", 2019 года
+                  набора
+                </NavLink>
+              </td>
               <td>очная/заочная </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={OOP10} target={"_blank"} rel="noreferrer">
                       ООП для специальности 26.02.05 "Эксплуатация судовых
                       энергетических установок"
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <a href={SigOOP10} target={"_blank"} rel="noreferrer">
                       ЭЦП
                     </a>
@@ -3553,7 +3598,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={UP13} target={"_blank"} rel="noreferrer">
                       Учебный план 26.02.05 "Эксплуатация судовых энергетических
@@ -3642,7 +3687,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={Image17} target={"_blank"} rel="noreferrer">
                       Календарный учебный график для специальности 26.02.05
@@ -3653,7 +3698,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={RPV_SM} target={"_blank"} rel="noreferrer">
                       Рабочая программа воспитания по направлению подготовки
@@ -3665,7 +3710,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={KPV} target={"_blank"} rel="noreferrer">
                       Календарный план воспитательной работы
@@ -3675,7 +3720,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologenie_attest_vipusk}
@@ -3685,20 +3730,20 @@ const Education = observer(() => {
                       Положение об итоговой аттестации выпускников
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={Pologenie_OOP} target={"_blank"} rel="noreferrer">
                       Положение об основной образовательной программе
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={FOS_IA_EM} target={"_blank"} rel="noreferrer">
                       Программа итоговой аттестации для специальности 260205
                       "Судовождение" (углубленная)
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={FOS_IA_SM} target={"_blank"} rel="noreferrer">
                       Фонды оценочных средств итоговой аттестации для
@@ -3709,13 +3754,13 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={Pologhenie_DO} target={"_blank"} rel="noreferrer">
                       Положение о дистанционном обучении
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologenie_Parus}
@@ -3726,7 +3771,7 @@ const Education = observer(() => {
                       дистанционного обучения "Парус"
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologhenie_kontrolDO}
@@ -3738,7 +3783,7 @@ const Education = observer(() => {
                       технологий
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologhenie_EL_Sreda}
@@ -3760,18 +3805,22 @@ const Education = observer(() => {
                 </NavLink>
               </td>
               <td>среднее профессиональное образование</td>
-              <td style={{ backgroundColor: "red" }} itemProp="eduProf"></td>
+              <td>
+                <NavLink to="../../educationPrograms/shipPowerPlants2018">
+                  "Эксплуатация судовых энергетических установок" 2018 набора
+                </NavLink>
+              </td>{" "}
               <td>очная/заочная </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={OOP11} target={"_blank"} rel="noreferrer">
                       ООП для специальности 26.02.05 "Эксплуатация судовых
                       энергетических установок"
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <a href={SigOOP11} target={"_blank"} rel="noreferrer">
                       ЭЦП
                     </a>
@@ -3780,7 +3829,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={UP14} target={"_blank"} rel="noreferrer">
                       Учебный план 26.02.05 "Эксплуатация судовых энергетических
@@ -3870,7 +3919,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={Image18} target={"_blank"} rel="noreferrer">
                       Календарный учебный график для специальности 26.02.05
@@ -3878,7 +3927,7 @@ const Education = observer(() => {
                       классов, очная
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={Image19} target={"_blank"} rel="noreferrer">
                       Календарный учебный график для специальности 26.02.05
@@ -3890,7 +3939,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={RPV_SM} target={"_blank"} rel="noreferrer">
                       Рабочая программа воспитания по направлению подготовки
@@ -3902,7 +3951,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={KPV} target={"_blank"} rel="noreferrer">
                       Календарный план воспитательной работы
@@ -3912,7 +3961,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologenie_attest_vipusk}
@@ -3922,20 +3971,20 @@ const Education = observer(() => {
                       Положение об итоговой аттестации выпускников
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={Pologenie_OOP} target={"_blank"} rel="noreferrer">
                       Положение об основной образовательной программе
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={FOS_IA_EM} target={"_blank"} rel="noreferrer">
                       Программа итоговой аттестации для специальности 260205
                       "Судовождение" (углубленная)
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={FOS_IA_SM} target={"_blank"} rel="noreferrer">
                       Фонды оценочных средств итоговой аттестации для
@@ -3946,13 +3995,13 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={Pologhenie_DO} target={"_blank"} rel="noreferrer">
                       Положение о дистанционном обучении
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologenie_Parus}
@@ -3963,7 +4012,7 @@ const Education = observer(() => {
                       дистанционного обучения "Парус"
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologhenie_kontrolDO}
@@ -3975,7 +4024,7 @@ const Education = observer(() => {
                       технологий
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologhenie_EL_Sreda}
@@ -3998,11 +4047,16 @@ const Education = observer(() => {
                 </NavLink>
               </td>
               <td>среднее профессиональное образование</td>
-              <td style={{ backgroundColor: "red" }} itemProp="eduProf"></td>
+              <td>
+                <NavLink to="../../educationPrograms/shipPowerPlants2017">
+                  "Эксплуатация судовых энергетических установок", 2016, 2017
+                  годов набора
+                </NavLink>
+              </td>{" "}
               <td>очная/заочная </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={OOP12} target={"_blank"} rel="noreferrer">
                       ООП для специальности 26.02.05 "Эксплуатация судовых
@@ -4013,14 +4067,14 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={UP15} target={"_blank"} rel="noreferrer">
                       Учебный план 26.02.05 "Эксплуатация судовых энергетических
                       установок" (очная)
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={UP16} target={"_blank"} rel="noreferrer">
                       Учебный план 26.02.05 "Эксплуатация судовых энергетических
@@ -4109,14 +4163,14 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={Image20} target={"_blank"} rel="noreferrer">
                       Календарный учебный график для специальности 26.02.05
                       "Эксплуатация судовых энергетических установок", очная
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={Image21} target={"_blank"} rel="noreferrer">
                       Календарный учебный график для специальности 26.02.05
@@ -4127,7 +4181,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={RPV_SM} target={"_blank"} rel="noreferrer">
                       Рабочая программа воспитания по направлению подготовки
@@ -4139,7 +4193,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={KPV} target={"_blank"} rel="noreferrer">
                       Календарный план воспитательной работы
@@ -4149,7 +4203,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologenie_attest_vipusk}
@@ -4159,20 +4213,20 @@ const Education = observer(() => {
                       Положение об итоговой аттестации выпускников
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={Pologenie_OOP} target={"_blank"} rel="noreferrer">
                       Положение об основной образовательной программе
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={FOS_IA_EM} target={"_blank"} rel="noreferrer">
                       Программа итоговой аттестации для специальности 260205
                       "Судовождение" (углубленная)
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={FOS_IA_SM} target={"_blank"} rel="noreferrer">
                       Фонды оценочных средств итоговой аттестации для
@@ -4183,13 +4237,13 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={Pologhenie_DO} target={"_blank"} rel="noreferrer">
                       Положение о дистанционном обучении
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologenie_Parus}
@@ -4200,7 +4254,7 @@ const Education = observer(() => {
                       дистанционного обучения "Парус"
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologhenie_kontrolDO}
@@ -4212,7 +4266,7 @@ const Education = observer(() => {
                       технологий
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologhenie_EL_Sreda}
@@ -4230,7 +4284,7 @@ const Education = observer(() => {
               <td>26.02.05 </td>
               <td>"Эксплуатация судовых энергетических установок"</td>
               <td>среднее профессиональное образование</td>
-              <td style={{ backgroundColor: "red" }} itemProp="eduProf"></td>
+              <td>"Эксплуатация судовых энергетических установок"</td>
               <td>очная-заочная </td>
               <td>-</td>
               <td>-</td>
@@ -4251,18 +4305,23 @@ const Education = observer(() => {
                 </NavLink>
               </td>
               <td>среднее профессиональное образование</td>
-              <td style={{ backgroundColor: "red" }} itemProp="eduProf"></td>
+              <td>
+                <NavLink to="../../educationPrograms/organizationOfTransportation2020">
+                  "Организация перевозок и управление на транспорте", 2020 года
+                  набора
+                </NavLink>
+              </td>
               <td>очная/заочная </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={OOP13} target={"_blank"} rel="noreferrer">
                       Описание образовательной программы 23.02.01 "Организация
                       перевозок и управление на транспорте"
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <a href={SigOOP13} target={"_blank"} rel="noreferrer">
                       ЭЦП
                     </a>
@@ -4271,7 +4330,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={UP17} target={"_blank"} rel="noreferrer">
                       Учебный план 23.02.01 "Организация перевозок и управление
@@ -4360,7 +4419,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={Image22} target={"_blank"} rel="noreferrer">
                       Календарный учебный график для специальности 23.02.01
@@ -4371,7 +4430,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={RPV_OP} target={"_blank"} rel="noreferrer">
                       Рабочая программа воспитания по направлению подготовки
@@ -4383,7 +4442,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={KPV} target={"_blank"} rel="noreferrer">
                       Календарный план воспитательной работы
@@ -4393,7 +4452,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologenie_attest_vipusk}
@@ -4403,13 +4462,13 @@ const Education = observer(() => {
                       Положение об итоговой аттестации выпускников
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={Pologenie_OOP} target={"_blank"} rel="noreferrer">
                       Положение об основной образовательной программе
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Programma_IA_OP}
@@ -4420,7 +4479,7 @@ const Education = observer(() => {
                       "Судовождение" (углубленная)
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={FOS_IA_OP} target={"_blank"} rel="noreferrer">
                       Фонды оценочных средств итоговой аттестации для
@@ -4431,13 +4490,13 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={Pologhenie_DO} target={"_blank"} rel="noreferrer">
                       Положение о дистанционном обучении
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologenie_Parus}
@@ -4448,7 +4507,7 @@ const Education = observer(() => {
                       дистанционного обучения "Парус"
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologhenie_kontrolDO}
@@ -4460,7 +4519,7 @@ const Education = observer(() => {
                       технологий
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologhenie_EL_Sreda}
@@ -4482,18 +4541,22 @@ const Education = observer(() => {
                 </NavLink>
               </td>
               <td>среднее профессиональное образование</td>
-              <td style={{ backgroundColor: "red" }} itemProp="eduProf"></td>
+              <td>
+                <NavLink to="../../educationPrograms/organizationOfTransportation">
+                  "Организация перевозок и управление на транспорте"
+                </NavLink>
+              </td>
               <td>заочная</td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={OOP14} target={"_blank"} rel="noreferrer">
                       Описание образовательной программы 23.02.01 "Организация
                       перевозок и управление на транспорте"
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <a href={SigOOP14} target={"_blank"} rel="noreferrer">
                       ЭЦП
                     </a>
@@ -4502,7 +4565,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={UP18} target={"_blank"} rel="noreferrer">
                       Учебный план 23.02.01 "Организация перевозок и управление
@@ -4593,7 +4656,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={Image23} target={"_blank"} rel="noreferrer">
                       Календарный учебный график для специальности 23.02.01
@@ -4605,7 +4668,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={RPV_OP} target={"_blank"} rel="noreferrer">
                       Рабочая программа воспитания по направлению подготовки
@@ -4617,7 +4680,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={KPV} target={"_blank"} rel="noreferrer">
                       Календарный план воспитательной работы
@@ -4627,7 +4690,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologenie_attest_vipusk}
@@ -4637,13 +4700,13 @@ const Education = observer(() => {
                       Положение об итоговой аттестации выпускников
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={Pologenie_OOP} target={"_blank"} rel="noreferrer">
                       Положение об основной образовательной программе
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Programma_IA_OP}
@@ -4654,7 +4717,7 @@ const Education = observer(() => {
                       "Судовождение" (углубленная)
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={FOS_IA_OP} target={"_blank"} rel="noreferrer">
                       Фонды оценочных средств итоговой аттестации для
@@ -4665,13 +4728,13 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={Pologhenie_DO} target={"_blank"} rel="noreferrer">
                       Положение о дистанционном обучении
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologenie_Parus}
@@ -4682,7 +4745,7 @@ const Education = observer(() => {
                       дистанционного обучения "Парус"
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologhenie_kontrolDO}
@@ -4694,7 +4757,7 @@ const Education = observer(() => {
                       технологий
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologhenie_EL_Sreda}
@@ -4838,11 +4901,16 @@ const Education = observer(() => {
                 </NavLink>
               </td>
               <td>среднее профессиональное образование</td>
-              <td>-</td>
+              <td>
+                <NavLink to="../../educationPrograms/navigationDepth">
+                  Судовождение (углубленная подготовка), на базе основного
+                  общего образования (9 классов)
+                </NavLink>
+              </td>
               <td>очная</td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={adOOP1} target={"_blank"} rel="noreferrer">
                       Адаптированная ООП для специальности 26.02.03
@@ -4853,7 +4921,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={UP19} target={"_blank"} rel="noreferrer">
                       Учебный план 26.02.03 "Судовождение"
@@ -4944,7 +5012,7 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={KPV} target={"_blank"} rel="noreferrer">
                       Календарный план воспитательной работы
@@ -4964,13 +5032,13 @@ const Education = observer(() => {
               </td>
               <td>
                 <ul>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a href={Pologhenie_DO} target={"_blank"} rel="noreferrer">
                       Положение о дистанционном обучении
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologenie_Parus}
@@ -4981,7 +5049,7 @@ const Education = observer(() => {
                       дистанционного обучения "Парус"
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologhenie_kontrolDO}
@@ -4993,7 +5061,7 @@ const Education = observer(() => {
                       технологий
                     </a>
                   </li>
-                  <li itemProp="ustavDocLink" className="doc__item">
+                  <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
                       href={Pologhenie_EL_Sreda}
@@ -5050,9 +5118,9 @@ const Education = observer(() => {
                 Инновационные технологии в преподавании дисциплин;
                 Компетентностный подход в системе СПО
               </td>
-              <td></td>
+              <td>Судовождение</td>
               <td rowspan="4">среднее профессиональное образование</td>
-              <td></td>
+              <td>Судовождение</td>
               <td rowspan="4">
                 Публикация статей в сборник ежегодной НПК преподавателей филиала
                 «Инновационные технологии в преподавании дисциплин»; Участие в
@@ -5085,24 +5153,32 @@ const Education = observer(() => {
             <tr>
               <td>26.02.05</td>
               <td>Эксплуатация судовых энергетических установок</td>
-              <td></td>
-              <td></td>
+              <td>Эксплуатация судовых энергетических установок</td>
+              <td>Эксплуатация судовых энергетических установок</td>
             </tr>
             <tr>
               <td>26.02.06</td>
               <td>
                 Эксплуатация судового электрооборудования и средств автоматики
               </td>
-              <td></td>
-              <td></td>
+              <td>
+                Эксплуатация судового электрооборудования и средств автоматики
+              </td>
+              <td>
+                Эксплуатация судового электрооборудования и средств автоматики
+              </td>
             </tr>
             <tr>
               <td>26.02.01</td>
               <td>
                 Организация перевозок и управление на транспорте (по видам)
               </td>
-              <td></td>
-              <td></td>
+              <td>
+                Организация перевозок и управление на транспорте (по видам)
+              </td>
+              <td>
+                Организация перевозок и управление на транспорте (по видам)
+              </td>
             </tr>
           </tbody>
         </table>
