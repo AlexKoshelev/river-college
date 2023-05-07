@@ -77,6 +77,7 @@ import MarineElectricalEquipment2020 from "./components/page/educationsPrograms/
 import EducationLvlRequirements from "./components/page/enrollee/applicants/reception/educationLvlRequirements/EducationLvlRequirements";
 import AdmissionConditions from "./components/page/enrollee/applicants/reception/admissionConditions/AdmissionConditions";
 import ProfessionalTrainingPrograms from "./components/page/training/professionalTrainingPrograms/ProfessionalTrainingPrograms";
+import ShipPowerPlantsVO2023 from "./components/page/educationsPrograms/260506/ShipPowerPlantsVO2023";
 const routes = () => [
   {
     path: "",
@@ -136,6 +137,11 @@ const routes = () => [
         path: "shipPowerPlants2020",
         element: <ShipPowerPlants2020 />,
       },
+      {
+        path: "shipPowerPlantsVO2023",
+        element: <ShipPowerPlantsVO2023 />,
+      },
+
       {
         path: "marineElectricalEquipment2017",
         element: <MarineElectricalEquipment2017 />,

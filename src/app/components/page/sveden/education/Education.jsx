@@ -1183,8 +1183,13 @@ const Education = observer(() => {
               <td>-</td>
             </tr>
             <tr>
-              <td>-</td>
-              <td>-</td>
+              <td>26.05.06</td>
+              <td>
+                <NavLink to="../../educationPrograms/shipPowerPlantsVO2023">
+                  Судовождение (углубленная подготовка), на базе основного
+                  общего образования (9 классов)
+                </NavLink>
+              </td>
               <td>высшее образование - специалитет</td>
               <td style={{ backgroundColor: "red" }} itemProp="eduProf"></td>
               <td>-</td>
