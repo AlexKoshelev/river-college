@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { toggleClassName } from "../../../utils/disabled";
 import { observer } from "mobx-react-lite";
 import { ReactComponent as Exit } from "../../../assets/svg/exit.svg";
@@ -6,6 +6,15 @@ import { ReactComponent as Exit1 } from "../../../assets/svg/exit1.svg";
 import PropTypes from "prop-types";
 const TableWrapper = observer(({ title, children }) => {
   const [tableSize, setTableSize] = useState(false);
+  useEffect(() => {
+    document.addEventListener("keydown", detectKeyDown, true);
+  }, [tableSize]);
+  const detectKeyDown = (e) => {
+    if (e.key === "Escape") {
+      setTableSize(false);
+    }
+  };
+
   const toggleTableSize = () => {
     setTableSize(!tableSize);
   };

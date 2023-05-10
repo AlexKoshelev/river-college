@@ -1,6 +1,7 @@
 import { observer } from "mobx-react-lite";
 import React from "react";
 import { toggleClassName, toggleFontSize } from "../../../../utils/disabled";
+import TableWrapper from "../../../common/tableWrapper/TableWrapper";
 const Grants = observer(() => {
   return (
     <div
@@ -43,30 +44,33 @@ const Grants = observer(() => {
         мерах социальной поддержки обучающихся
       </h3>
       <ul>
-        <a href={"Ustav"} target={"_blank"} rel="noreferrer">
-          <li className="doc__item active__link">
+        <li className="doc__item">
+          <a href={"Ustav"} target={"_blank"} rel="noreferrer">
             Протокол заседания стипендиальной комиссии № 1 от 26.09.2022 об
             установлении размера стипендий
-          </li>
-        </a>
-        <a href={"Ustav"} target={"_blank"} rel="noreferrer">
-          <li className="doc__item active__link">
+          </a>
+        </li>
+
+        <li className="doc__item">
+          <a href={"Ustav"} target={"_blank"} rel="noreferrer">
             Приказ "О назначении стипендиальной комиссии" № 527-УФСПО-06 от
             23.09.2022 г
-          </li>
-        </a>
-        <a href={"Ustav"} target={"_blank"} rel="noreferrer">
-          <li className="doc__item active__link">
+          </a>
+        </li>
+
+        <li className="doc__item">
+          <a href={"Ustav"} target={"_blank"} rel="noreferrer">
             Положение о стипендиальном обеспечении и других формах материальной
             поддержки студентов и аспирантов
-          </li>
-        </a>
-        <a href={"Ustav"} target={"_blank"} rel="noreferrer">
-          <li className="doc__item active__link">
+          </a>
+        </li>
+
+        <li className="doc__item">
+          <a href={"Ustav"} target={"_blank"} rel="noreferrer">
             Постановление Правительства РФ от 17.12.2016 г. № 1390 "О
             ФОРМИРОВАНИИ СТИПЕНДИАЛЬНОГО ФОНДА"
-          </li>
-        </a>
+          </a>
+        </li>
       </ul>
       <h3
         className={`common__container-title ${toggleClassName(
@@ -79,11 +83,11 @@ const Grants = observer(() => {
         Информация об иных видах материальной поддержки обучающихся
       </h3>
       <ul>
-        <a href={"Ustav"} target={"_blank"} rel="noreferrer">
-          <li className="doc__item active__link">
+        <li className="doc__item">
+          <a href={"Ustav"} target={"_blank"} rel="noreferrer">
             Иные виды материальной поддержки обучающихся
-          </li>
-        </a>
+          </a>
+        </li>
       </ul>
       <h3
         className={`common__container-title ${toggleClassName(
@@ -126,7 +130,7 @@ const Grants = observer(() => {
       </p>
       <p>Адрес общежития: г.Уфа, ул. Ахметова, 275. </p>
       <div className="scroll-table struct__scrollTable">
-        <table className="">
+        <table>
           <tbody>
             <tr>
               <td>Наименование показателя</td>
@@ -170,20 +174,24 @@ const Grants = observer(() => {
         </table>
       </div>
       <ul>
-        <a href={"Ustav"} target={"_blank"} rel="noreferrer">
-          <li className="doc__item active__link">
+        <li className="doc__item">
+          <a href={"Ustav"} target={"_blank"} rel="noreferrer">
             Положение о студенческом общежитии
-          </li>
-        </a>
-        <a href={"Ustav"} target={"_blank"} rel="noreferrer">
-          <li className="doc__item active__link">Акт проверки общежития</li>
-        </a>
-        <a href={"Ustav"} target={"_blank"} rel="noreferrer">
-          <li className="doc__item active__link">
+          </a>
+        </li>
+
+        <li className="doc__item">
+          <a href={"Ustav"} target={"_blank"} rel="noreferrer">
+            Акт проверки общежития
+          </a>
+        </li>
+
+        <li className="doc__item">
+          <a href={"Ustav"} target={"_blank"} rel="noreferrer">
             Сведения о приспособленности общежития для использования инвалидами
             и лицами с ограниченными возможностями здоровья
-          </li>
-        </a>
+          </a>
+        </li>
       </ul>
       <h3
         className={`common__container-title ${toggleClassName(
@@ -197,16 +205,17 @@ const Grants = observer(() => {
         пользование жилым помещением и коммунальные услуги в общежитии
       </h3>
       <ul>
-        <a href={"Ustav"} target={"_blank"} rel="noreferrer">
-          <li className="doc__item active__link">
+        <li className="doc__item ">
+          <a href={"Ustav"} target={"_blank"} rel="noreferrer">
             Смета стоимости проживания в общежитии с 01.07.2022
-          </li>
-        </a>
-        <a href={"Ustav"} target={"_blank"} rel="noreferrer">
-          <li className="doc__item active__link">
+          </a>
+        </li>
+
+        <li className="doc__item">
+          <a href={"Ustav"} target={"_blank"} rel="noreferrer">
             Договор найма жилого помещения в общежитии
-          </li>
-        </a>
+          </a>
+        </li>
       </ul>
       <h3
         className={`common__container-title ${toggleClassName(
@@ -218,8 +227,8 @@ const Grants = observer(() => {
       >
         Информация о трудоустройстве выпускников образовательных организаций
       </h3>
-      <div className="scroll-table struct__scrollTable">
-        <table className="">
+      <TableWrapper>
+        <table>
           <tbody>
             <tr>
               <td>Код</td>
@@ -285,7 +294,7 @@ const Grants = observer(() => {
             </tr>
           </tbody>
         </table>
-      </div>
+      </TableWrapper>
     </div>
   );
 });

@@ -78,6 +78,7 @@ import EducationLvlRequirements from "./components/page/enrollee/applicants/rece
 import AdmissionConditions from "./components/page/enrollee/applicants/reception/admissionConditions/AdmissionConditions";
 import ProfessionalTrainingPrograms from "./components/page/training/professionalTrainingPrograms/ProfessionalTrainingPrograms";
 import ShipPowerPlantsVO2023 from "./components/page/educationsPrograms/260506/ShipPowerPlantsVO2023";
+import ShipPowerPlantsVO2023FOS from "./components/page/educationsPrograms/260506/ShipPowerPlantsVO2023FOS";
 const routes = () => [
   {
     path: "",
@@ -140,6 +141,10 @@ const routes = () => [
       {
         path: "shipPowerPlantsVO2023",
         element: <ShipPowerPlantsVO2023 />,
+      },
+      {
+        path: "shipPowerPlantsVO2023FOS",
+        element: <ShipPowerPlantsVO2023FOS />,
       },
 
       {

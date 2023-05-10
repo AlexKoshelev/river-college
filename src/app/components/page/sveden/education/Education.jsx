@@ -12,9 +12,13 @@ import Pologhenie_DO from "../../../../assets/pdf/educationPage/Pologhenie_DO.pd
 import Pologhenie_EL_Sreda from "../../../../assets/pdf/educationPage/Pologhenie_EL_Sreda.pdf";
 import Pologhenie_kontrolDO from "../../../../assets/pdf/educationPage/Pologhenie_kontrolDO.pdf";
 import FOS_IA_SV_uglubl from "../../../../assets/pdf/educationPage/260203/FOS_IA_SV_uglubl.pdf";
+import FOS_IA_SV_uglublSig from "../../../../assets/pdf/educationPage/260203/FOS_IA_SV_uglubl.pdf.sig";
+
 import Pologenie_attest_vipusk from "../../../../assets/pdf/educationPage/260203/Pologenie_attest_vipusk.pdf";
 import Pologenie_OOP from "../../../../assets/pdf/educationPage/260203/Pologenie_OOP.pdf";
 import Programma_IA_SV_uglubl from "../../../../assets/pdf/educationPage/260203/Programma_IA_SV_uglubl.pdf";
+import Programma_IA_SV_uglublSig from "../../../../assets/pdf/educationPage/260203/Programma_IA_SV_uglubl.pdf.sig";
+
 import Programma_IA_SM from "../../../../assets/pdf/educationPage/260206/Programma_IA_SM.pdf";
 import Programma_IA_EM from "../../../../assets/pdf/educationPage/260206/Programma_IA_EM.pdf";
 import FOS_IA_EM from "../../../../assets/pdf/educationPage/260205/FOS_IA_EM.pdf";
@@ -138,6 +142,16 @@ import RP_UCH_PR_230201 from "../../../../assets/pdf/educationPage/230201/RP_Pr_
 import FOS_PR_PR_230201 from "../../../../assets/pdf/educationPage/230201/FOS_Pr_prakt_230201.pdf";
 import RP_PR_PR_230201 from "../../../../assets/pdf/educationPage/230201/RP_PDP_230201.pdf";
 import RP_UCH_PR_Z_230201 from "../../../../assets/pdf/educationPage/230201/FOS_PDP_230201.pdf";
+import OOP2023vo from "../../../../assets/pdf/educationPage/260506/OOP2023vo.pdf";
+import OOP2023voSig from "../../../../assets/pdf/educationPage/260506/OOP2023vo.pdf";
+import Ucheb_plan_VO_260506_2023 from "../../../../assets/pdf/educationPage/260506/Ucheb_plan_VO_26.05.06_2023.pdf";
+import annot_2023_260506 from "../../../../assets/pdf/educationPage/260506/annot_2023_26.05.06.pdf";
+import KUG2023_260506 from "../../../../assets/pdf/educationPage/260506/KUG2023_26.05.06.pdf";
+import KUG2023_260506Sig from "../../../../assets/pdf/educationPage/260506/KUG2023_26.05.06.pdf";
+
+import adkug_260203 from "../../../../assets/pdf/educationPage/260203/adkug_260203.pdf";
+import Pologenie_ucheb_prozess_ovz_2017 from "../../../../assets/pdf/educationPage/260203/Pologenie_ucheb_prozess_ovz_2017.pdf";
+import Pologen_Fizra from "../../../../assets/pdf/educationPage/260203/Pologen_Fizra.pdf";
 
 const Education = observer(() => {
   return (
@@ -1127,7 +1141,7 @@ const Education = observer(() => {
                 магистратура; 4) высшее образование - подготовка кадров высшей
                 квалификации; 5) среднее профессиональное образование
               </td>
-              <td style={{ backgroundColor: "red" }} itemProp="eduProf">
+              <td itemProp="eduProf">
                 Образовательная программа, направленность, профиль, шифр и
                 наименование научной специальности
               </td>
@@ -1166,77 +1180,199 @@ const Education = observer(() => {
                 электронного обучения и дистанционных образовательных технологий
               </td>
             </tr>
-            <tr>
-              <td>-</td>
-              <td>-</td>
-              <td>высшее образование - бакалавриат</td>
-              <td style={{ backgroundColor: "red" }} itemProp="eduProf"></td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-            </tr>
+
             <tr>
               <td>26.05.06</td>
               <td>
                 <NavLink to="../../educationPrograms/shipPowerPlantsVO2023">
-                  Судовождение (углубленная подготовка), на базе основного
-                  общего образования (9 классов)
+                  Эксплуатация судовых энергетических установок
                 </NavLink>
               </td>
               <td>высшее образование - специалитет</td>
-              <td style={{ backgroundColor: "red" }} itemProp="eduProf"></td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>-</td>
-              <td>-</td>
-              <td> высшее образование - магистратура</td>
-              <td style={{ backgroundColor: "red" }} itemProp="eduProf"></td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-            </tr>
-            <tr>
+
+              <td>
+                <NavLink to="../../educationPrograms/shipPowerPlantsVO2023">
+                  Эксплуатация судовых энергетических установок
+                </NavLink>
+              </td>
+              <td>заочная</td>
+              <td>
+                <ul>
+                  <li className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={OOP2023vo} target={"_blank"} rel="noreferrer">
+                      ООП ВО 26.05.06 Эксплуатация судовых энергетических
+                      установок смешанного река-море плавания
+                    </a>
+                  </li>
+                  <li className="doc__item">
+                    <a href={OOP2023voSig} target={"_blank"} rel="noreferrer">
+                      ЭЦП
+                    </a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Ucheb_plan_VO_260506_2023}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Учебный план ООП ВО 26.05.06 Эксплуатация судовых
+                      энергетических установок смешанного река-море плавания
+                      заочная
+                    </a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={annot_2023_260506}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Аннотации к рабочим программам дисциплин ООП ВО 26.05.06
+                      "Эксплуатация судовых энергетических установок смешанного
+                      река-море плавания"
+                    </a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li className="doc__item">
+                    <NavLink to="../../educationPrograms/shipPowerPlantsVO2023">
+                      Рабочие программы дисциплин для ООП ВО 26.05.06
+                      "Эксплуатация судовых энергетических установок смешанного
+                      река-море плавания"
+                    </NavLink>
+                  </li>
+                  <li className="doc__item">
+                    <NavLink to="../../educationPrograms/shipPowerPlantsVO2023FOS">
+                      Ссылка на рабочие программы практик, предусмотренных
+                      образовательной программой "Эксплуатация судовых
+                      энергетических установок"
+                    </NavLink>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={KUG2023_260506} target={"_blank"} rel="noreferrer">
+                      Календарный учебный график для ООП ВО 26.05.06
+                      "Эксплуатация судовых энергетических установок смешанного
+                      река-море плавания"
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href={KUG2023_260506Sig}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      ЭЦП
+                    </a>
+                  </li>
+                </ul>
+              </td>
               <td>-</td>
               <td>-</td>
               <td>
-                высшее образование - подготовка кадров высшей квалификации
+                <ul>
+                  <li className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologenie_attest_vipusk}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение об итоговой аттестации выпускников
+                    </a>
+                  </li>
+                  <li className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Pologenie_OOP} target={"_blank"} rel="noreferrer">
+                      Положение об основной образовательной программе
+                    </a>
+                  </li>
+                  <li className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Programma_IA_SV_uglubl}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Программа итоговой аттестации для специальности 260203
+                      "Судовождение" (углубленная)
+                    </a>
+                  </li>
+                  <li className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={FOS_IA_SV_uglubl}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Фонды оценочных средств итоговой аттестации для
+                      специальности 260203 "Судовождение" (углубленная)
+                    </a>
+                  </li>
+                </ul>
               </td>
-              <td style={{ backgroundColor: "red" }} itemProp="eduProf"></td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
+              <td>
+                <ul>
+                  <li className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Pologhenie_DO} target={"_blank"} rel="noreferrer">
+                      Положение о дистанционном обучении
+                    </a>
+                  </li>
+                  <li className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologenie_Parus}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение о создании электронных учебных курсов в системе
+                      дистанционного обучения "Парус"
+                    </a>
+                  </li>
+                  <li className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologhenie_kontrolDO}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение о текущем контроле и промежуточной аттестации
+                      обучающихся с применением дистанционных образовательных
+                      технологий
+                    </a>
+                  </li>
+                  <li className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologhenie_EL_Sreda}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение об электронной информационно-образовательной
+                      среде
+                    </a>
+                  </li>
+                </ul>
+              </td>
             </tr>
+
             <tr>
               <td>26.02.03 </td>
               <td>
@@ -4946,8 +5082,11 @@ const Education = observer(() => {
                 </ul>
               </td>
               <td>
-                Календарный учебный график для специальности 26.02.03
-                "Судовождение" (на базе 9 классов)
+                <PDF height={"25px"} width={"25px"} />
+                <a href={adkug_260203} target={"_blank"} rel="noreferrer">
+                  Календарный учебный график для специальности 26.02.03
+                  "Судовождение" (на базе 9 классов)
+                </a>
               </td>
               <td>
                 <ul>
@@ -5026,14 +5165,68 @@ const Education = observer(() => {
                 </ul>
               </td>
               <td>
-                Положение об организации учебного процесса для инвалидов и лиц с
-                ограниченными возможностями здоровья Положение о порядке
-                проведения и объеме учебных занятий по физической культуре
-                очно-заочной, заочной формам обучения, а также для студентов
-                инвалидов и лиц с ограниченными возможностями здоровья Программа
-                итоговой аттестации для специальности 260203 "Судовождение"
-                (углубленная) ЭЦП Фонды оценочных средств итоговой аттестации
-                для специальности 260203 "Судовождение" (углубленная ЭЦП
+                <ul>
+                  <li className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Pologenie_ucheb_prozess_ovz_2017}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Положение об организации учебного процесса для инвалидов и
+                      лиц с ограниченными возможностями здоровья
+                    </a>
+                  </li>
+                  <li className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={Pologen_Fizra} target={"_blank"} rel="noreferrer">
+                      Положение о порядке проведения и объеме учебных занятий по
+                      физической культуре очно-заочной, заочной формам обучения,
+                      а также для студентов инвалидов и лиц с ограниченными
+                      возможностями здоровья
+                    </a>
+                  </li>
+                  <li className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={Programma_IA_SV_uglubl}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Программа итоговой аттестации для специальности 260203
+                      "Судовождение" (углубленная)
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href={Programma_IA_SV_uglublSig}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      ЭЦП{" "}
+                    </a>
+                  </li>
+                  <li className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a
+                      href={FOS_IA_SV_uglubl}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Фонды оценочных средств итоговой аттестации для
+                      специальности 260203 "Судовождение" (углубленная)
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href={FOS_IA_SV_uglublSig}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      ЭЦП{" "}
+                    </a>
+                  </li>
+                </ul>
               </td>
               <td>
                 <ul>

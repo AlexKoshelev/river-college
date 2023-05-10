@@ -91,22 +91,26 @@ const Budget = observer(() => {
         </tbody>
       </table>
       <ul>
-        <a href={"Ustav"} target={"_blank"} rel="noreferrer">
-          <li className="doc__item active__link">
+        <li className="doc__item">
+          <a href={"Ustav"} target={"_blank"} rel="noreferrer">
             Страница Уфимского филиала ФГБОУ ВО "ВГУВТ" на сайте bus.gov.ru
             (официальный сайт для размещения информации о государственных
             (муниципальных) учреждениях)
-          </li>
-        </a>
-        <a href={"Ustav"} target={"_blank"} rel="noreferrer">
-          <li className="doc__item active__link">
+          </a>
+        </li>
+
+        <li className="doc__item">
+          <a href={"Ustav"} target={"_blank"} rel="noreferrer">
             Информация о поступлении финансовых и материальных средств и об их
             расходовании по итогам финансового года, 2021
-          </li>
-        </a>
-        <a href={"Ustav"} target={"_blank"} rel="noreferrer">
-          <li className="doc__item active__link">План ФХД на 2022 год</li>
-        </a>
+          </a>
+        </li>
+
+        <li className="doc__item">
+          <a href={"Ustav"} target={"_blank"} rel="noreferrer">
+            План ФХД на 2022 год
+          </a>
+        </li>
       </ul>
       <div>
         <p>

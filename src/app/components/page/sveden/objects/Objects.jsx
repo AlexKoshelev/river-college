@@ -1,6 +1,7 @@
 import { observer } from "mobx-react-lite";
 import React from "react";
 import { toggleClassName, toggleFontSize } from "../../../../utils/disabled";
+import TableWrapper from "../../../common/tableWrapper/TableWrapper";
 const Ovz = observer(() => {
   return (
     <div
@@ -35,8 +36,8 @@ const Ovz = observer(() => {
         указываемые в приложении к лицензии на осуществление образовательной
         деятельности:
       </h3>
-      <div className="scroll-table struct__scrollTable">
-        <table className="">
+      <TableWrapper>
+        <table>
           <tbody>
             <tr>
               <td>№ п/п </td>
@@ -104,7 +105,7 @@ const Ovz = observer(() => {
             </tr>
           </tbody>
         </table>
-      </div>
+      </TableWrapper>
       <h3
         className={`common__container-title ${toggleClassName(
           "title",
@@ -115,8 +116,8 @@ const Ovz = observer(() => {
       >
         Сведения о наличии оборудованных учебных кабинетов
       </h3>
-      <div className="scroll-table struct__scrollTable">
-        <table className="">
+      <TableWrapper>
+        <table>
           <tbody>
             <tr>
               <td>Адрес</td>
@@ -444,7 +445,7 @@ const Ovz = observer(() => {
             </tr>
           </tbody>
         </table>
-      </div>
+      </TableWrapper>
       <h3
         className={`common__container-title ${toggleClassName(
           "title",
@@ -455,8 +456,8 @@ const Ovz = observer(() => {
       >
         Сведения о наличии объектов для проведения практических занятий
       </h3>
-      <div className="scroll-table struct__scrollTable">
-        <table className="">
+      <TableWrapper>
+        <table>
           <tbody>
             <tr>
               <td>Адрес </td>
@@ -829,7 +830,7 @@ const Ovz = observer(() => {
             </tr>
           </tbody>
         </table>
-      </div>
+      </TableWrapper>
       <h3
         className={`common__container-title ${toggleClassName(
           "title",
@@ -841,8 +842,8 @@ const Ovz = observer(() => {
         Сведения о наличии библиотек, объектов спорта, об условиях питания и
         охраны здоровья
       </h3>
-      <div className="scroll-table struct__scrollTable">
-        <table className="">
+      <TableWrapper>
+        <table>
           <tbody>
             <tr>
               <td>Вид помещения</td>
@@ -919,13 +920,13 @@ const Ovz = observer(() => {
             </tr>
           </tbody>
         </table>
-      </div>
+      </TableWrapper>
       <ul>
-        <a href={"Ustav"} target={"_blank"} rel="noreferrer">
-          <li className="doc__item active__link">
+        <li className="doc__item">
+          <a href={"Ustav"} target={"_blank"} rel="noreferrer">
             Сведения о наличии средств обучения и воспитания
-          </li>
-        </a>
+          </a>
+        </li>
       </ul>
       В филиале создана электронная информационно-образовательная среда,
       включающая в себя следующие элементы:
@@ -1104,8 +1105,8 @@ const Ovz = observer(() => {
         вызова персонала. Дверные проемы расширенные. На 1 этаже 1 комната
         оборудована для проживания лиц с ОВЗ и (или) инвалидов.
       </p>
-      <div className="scroll-table struct__scrollTable">
-        <table className="">
+      <TableWrapper>
+        <table>
           <tbody>
             <tr>
               <td>№ п\п</td>
@@ -1184,7 +1185,7 @@ const Ovz = observer(() => {
             </tr>
           </tbody>
         </table>
-      </div>
+      </TableWrapper>
       <h3
         className={`common__container-title ${toggleClassName(
           "title",
@@ -1245,15 +1246,15 @@ const Ovz = observer(() => {
         объектов государственного нежилого фонда, субаренду без права выкупа
       </p>
       <ul>
-        <a href={"Ustav"} target={"_blank"} rel="noreferrer">
-          <li className="doc__item active__link">
+        <li className="doc__item">
+          <a href={"Ustav"} target={"_blank"} rel="noreferrer">
             Договор о передаче объектов государственного нежилого фонда,
             субаренду без права выкупа
-          </li>
-        </a>
+          </a>
+        </li>
       </ul>
-      <div className="scroll-table struct__scrollTable">
-        <table className="">
+      <TableWrapper>
+        <table>
           <tbody>
             <tr>
               <td>Вид помещения</td>
@@ -1350,7 +1351,7 @@ const Ovz = observer(() => {
             </tr>
           </tbody>
         </table>
-      </div>
+      </TableWrapper>
       <h3
         className={`common__container-title ${toggleClassName(
           "title",
@@ -1361,7 +1362,7 @@ const Ovz = observer(() => {
       >
         Информация о наличии объектов спорта
       </h3>
-      <div className="scroll-table struct__scrollTable">
+      <TableWrapper>
         <table className="">
           <tbody>
             <tr>
@@ -1423,17 +1424,18 @@ const Ovz = observer(() => {
             </tr>
           </tbody>
         </table>
-      </div>
+      </TableWrapper>
       <ul>
-        <a href={"Ustav"} target={"_blank"} rel="noreferrer">
-          <li className="doc__item active__link">
+        <li className="doc__item">
+          <a href={"Ustav"} target={"_blank"} rel="noreferrer">
             Сведения о наличии средств обучения и воспитания, в том числе
             приспособленных для использования инвалидами и лицами с
             ограниченными возможностями здоровья
-          </li>
-        </a>
-        <a href={"Ustav"} target={"_blank"} rel="noreferrer">
-          <li className="doc__item active__link">
+          </a>
+        </li>
+
+        <li className="doc__item active__link">
+          <a href={"Ustav"} target={"_blank"} rel="noreferrer">
             Информация о наличии материально-технических условий,
             приспособленных для использования инвалидами и лицами с
             ограниченными возможностями здоровья, обеспечении возможности
@@ -1443,8 +1445,8 @@ const Ovz = observer(() => {
             образовательных ресурсах, о наличии специальных технических средств
             обучения коллективного и индивидуального использования для инвалидов
             и лиц с ограниченными возможностями здоровья
-          </li>
-        </a>
+          </a>
+        </li>
       </ul>
       <p>
         Доступ к информационным системам и информационно-телекоммуникационным

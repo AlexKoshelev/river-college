@@ -1,6 +1,7 @@
 import { observer } from "mobx-react-lite";
 import React from "react";
 import { toggleClassName, toggleFontSize } from "../../../../utils/disabled";
+import TableWrapper from "../../../common/tableWrapper/TableWrapper";
 const Employees = observer(() => {
   return (
     <div
@@ -33,7 +34,7 @@ const Employees = observer(() => {
         Информация о руководителе/заместителях руководителя Уфимского филиала
         ФГБОУ ВО "ВГУВТ"
       </h3>
-      <div className="scroll-table struct__scrollTable">
+      <TableWrapper>
         <table className="">
           <tbody>
             <tr>
@@ -46,35 +47,35 @@ const Employees = observer(() => {
               <td>Ахмадеева Фарида Шариповна </td>
               <td>Директор </td>
               <td>8 (347) 278-28-83 </td>
-              <td> ukru@ufanet.ru</td>
+              <td>uf-vsuwt@uf-vsuwt.ru</td>
             </tr>
             <tr>
               <td>Мусина Гульфия Ириковна </td>
               <td>Заместитель директора </td>
               <td>8 (347) 278-28-86 </td>
-              <td> gim_gim@mail.ru</td>
+              <td>pur@uf-vsuwt.ru</td>
             </tr>
             <tr>
               <td>Акбашева Альбина Галимзяновна </td>
               <td>Заместитель директора </td>
               <td>8 (347) 278-28-86 </td>
-              <td> anelya.ufa@mail.ru</td>
+              <td>pvr@uf-vsuwt.ru</td>
             </tr>
             <tr>
               <td>Жоссан Елена Евгеньевна </td>
               <td>Главный бухгалтер </td>
               <td>8 (347) 278-03-25 </td>
-              <td> lenazhossan@mail.ru</td>
+              <td>buh@uf-vsuwt.ru</td>
             </tr>
             <tr>
-              <td></td>
+              <td>Мукимов Ралиф Фаритович</td>
               <td>Начальник центра организационно-правовой работы </td>
               <td>8 (347) 278-28-83, 278-28-86, вн.110 </td>
-              <td></td>
+              <td>copr@uf-vsuwt.ru</td>
             </tr>
           </tbody>
         </table>
-      </div>
+      </TableWrapper>
       <h3
         className={`common__container-title ${toggleClassName(
           "title",
@@ -123,15 +124,15 @@ const Employees = observer(() => {
         Уфимского филиала ФГБОУ ВО "ВГУВТ"
       </h3>
       <ul>
-        <a href={"Ustav"} target={"_blank"} rel="noreferrer">
-          <li className="doc__item active__link">
+        <li className="doc__item">
+          <a href={"Ustav"} target={"_blank"} rel="noreferrer">
             Информация о составе педагогических (научно-педагогических)
             работников Уфимского филиала ФГБОУ ВО "ВГУВТ" ЭЦП
-          </li>
-        </a>
+          </a>
+        </li>
       </ul>
-      <div className="scroll-table struct__scrollTable">
-        <table class="iksweb">
+      <TableWrapper>
+        <table>
           <tbody>
             <tr>
               <td>ФИО преподавателя, реализующего программу </td>
@@ -2023,7 +2024,7 @@ const Employees = observer(() => {
             </tr>
           </tbody>
         </table>
-      </div>
+      </TableWrapper>
     </div>
   );
 });

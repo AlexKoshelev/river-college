@@ -37,24 +37,27 @@ const PaidEdu = () => {
         начала учебного года, семестра.
       </p>
       <ul>
-        <a href={"Ustav"} target={"_blank"} rel="noreferrer">
-          <li className="doc__item active__link">
+        <li className="doc__item">
+          <a href={"Ustav"} target={"_blank"} rel="noreferrer">
             Образец договора об оказании платных образовательных услуг
-          </li>
-        </a>
-        <a href={"Ustav"} target={"_blank"} rel="noreferrer">
-          <li className="doc__item active__link">
+          </a>
+        </li>
+
+        <li className="doc__item ">
+          <a href={"Ustav"} target={"_blank"} rel="noreferrer">
             Документ об утверждении стоимости обучения по каждой образовательной
             программе
-          </li>
-        </a>
-        <a href={"Ustav"} target={"_blank"} rel="noreferrer">
-          <li className="doc__item active__link">
+          </a>
+        </li>
+
+        <li className="doc__item ">
+          <a href={"Ustav"} target={"_blank"} rel="noreferrer">
             Порядок оказания платных образовательных услуг
-          </li>
-        </a>
-        <a href={"Ustav"} target={"_blank"} rel="noreferrer">
-          <li className="doc__item active__link">
+          </a>
+        </li>
+
+        <li className="doc__item ">
+          <a href={"Ustav"} target={"_blank"} rel="noreferrer">
             Документ об установлении размера платы, взимаемой с родителей
             (законных представителей) за присмотр и уход за детьми, осваивающими
             образовательные программы дошкольного образования в организациях,
@@ -66,8 +69,8 @@ const PaidEdu = () => {
             и ухода за детьми в группах продленного дня в образовательной
             организации, реализующей образовательные программы начального
             общего, основного общего или среднего общего образования.
-          </li>
-        </a>
+          </a>
+        </li>
       </ul>
     </div>
   );

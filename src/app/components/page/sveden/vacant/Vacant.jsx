@@ -1,6 +1,7 @@
 import { observer } from "mobx-react-lite";
 import React from "react";
 import { toggleClassName, toggleFontSize } from "../../../../utils/disabled";
+import TableWrapper from "../../../common/tableWrapper/TableWrapper";
 const Vacant = observer(() => {
   return (
     <div
@@ -33,8 +34,8 @@ const Vacant = observer(() => {
         Информация о количестве вакантных мест для приема (перевода) на
         01.10.2022 г.
       </h3>
-      <div className="scroll-table struct__scrollTable">
-        <table className="">
+      <TableWrapper>
+        <table>
           <tbody>
             <tr>
               <td rowspan="2">Код</td>
@@ -369,7 +370,7 @@ const Vacant = observer(() => {
             </tr>
           </tbody>
         </table>
-      </div>
+      </TableWrapper>
     </div>
   );
 });

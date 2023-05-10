@@ -42,16 +42,21 @@ const EduStandarts = observer(() => {
           <tr>
             <td>
               <ul>
-                <a href={"Ustav"} target={"_blank"} rel="noreferrer">
-                  <li className="doc__item active__link">
+                <li className="doc__item ">
+                  <a href={"Ustav"} target={"_blank"} rel="noreferrer">
                     ФГОС 26.02.03 Судовождение от 07.05.2014 № 441
-                  </li>
-                </a>
-                <a href={"UstavChange1415"} target={"_blank"} rel="noreferrer">
-                  <li className="doc__item active__link">
+                  </a>
+                </li>
+
+                <li className="doc__item ">
+                  <a
+                    href={"UstavChange1415"}
+                    target={"_blank"}
+                    rel="noreferrer"
+                  >
                     ФГОС 26.02.03 Судовождение от 02.12.2020 № 691
-                  </li>
-                </a>
+                  </a>
+                </li>
               </ul>
             </td>
             <td> 26.02.03</td>
@@ -59,18 +64,23 @@ const EduStandarts = observer(() => {
           <tr>
             <td>
               <ul>
-                <a href={"Ustav"} target={"_blank"} rel="noreferrer">
-                  <li className="doc__item active__link">
+                <li className="doc__item">
+                  <a href={"Ustav"} target={"_blank"} rel="noreferrer">
                     ФГОС 26.02.05 Эксплуатация судовых энергетических установок
                     от 07.05.2014 № 443
-                  </li>
-                </a>
-                <a href={"UstavChange1415"} target={"_blank"} rel="noreferrer">
-                  <li className="doc__item active__link">
+                  </a>
+                </li>
+
+                <li className="doc__item">
+                  <a
+                    href={"UstavChange1415"}
+                    target={"_blank"}
+                    rel="noreferrer"
+                  >
                     ФГОС 26.02.05 Эксплуатация судовых энергетических установок
                     от 26.11.2020 № 674
-                  </li>
-                </a>
+                  </a>
+                </li>
               </ul>
             </td>
             <td> 26.02.05</td>
@@ -78,18 +88,23 @@ const EduStandarts = observer(() => {
           <tr>
             <td>
               <ul>
-                <a href={"Ustav"} target={"_blank"} rel="noreferrer">
-                  <li className="doc__item active__link">
+                <li className="doc__item ">
+                  <a href={"Ustav"} target={"_blank"} rel="noreferrer">
                     ФГОС 26.02.06 Эксплуатация судового электрооборудования и
                     средств автоматики от 07.05.2014 № 444
-                  </li>
-                </a>
-                <a href={"UstavChange1415"} target={"_blank"} rel="noreferrer">
-                  <li className="doc__item active__link">
+                  </a>
+                </li>
+
+                <li className="doc__item ">
+                  <a
+                    href={"UstavChange1415"}
+                    target={"_blank"}
+                    rel="noreferrer"
+                  >
                     ФГОС 26.02.06 Эксплуатация судового электрооборудования и
                     средств автоматики от 26.11.2020 № 675
-                  </li>
-                </a>
+                  </a>
+                </li>
               </ul>
             </td>
             <td> 26.02.06</td>
@@ -97,12 +112,12 @@ const EduStandarts = observer(() => {
           <tr>
             <td>
               <ul>
-                <a href={"Ustav"} target={"_blank"} rel="noreferrer">
-                  <li className="doc__item active__link">
+                <li className="doc__item ">
+                  <a href={"Ustav"} target={"_blank"} rel="noreferrer">
                     ФГОС 23.02.01 Организация перевозок и управление на
                     транспорте (по видам) от 22.04.2014 № 376
-                  </li>
-                </a>
+                  </a>
+                </li>
               </ul>
             </td>
             <td>23.02.01</td>
