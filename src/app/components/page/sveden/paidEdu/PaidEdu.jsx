@@ -38,26 +38,46 @@ const PaidEdu = () => {
       </p>
       <ul>
         <li className="doc__item">
-          <a href={"Ustav"} target={"_blank"} rel="noreferrer">
+          <a
+            itemProp="paidDog"
+            href={"Ustav"}
+            target={"_blank"}
+            rel="noreferrer"
+          >
             Образец договора об оказании платных образовательных услуг
           </a>
         </li>
 
         <li className="doc__item ">
-          <a href={"Ustav"} target={"_blank"} rel="noreferrer">
+          <a
+            itemProp="paidSt"
+            href={"Ustav"}
+            target={"_blank"}
+            rel="noreferrer"
+          >
             Документ об утверждении стоимости обучения по каждой образовательной
             программе
           </a>
         </li>
 
         <li className="doc__item ">
-          <a href={"Ustav"} target={"_blank"} rel="noreferrer">
+          <a
+            itemProp="paidEdu"
+            href={"Ustav"}
+            target={"_blank"}
+            rel="noreferrer"
+          >
             Порядок оказания платных образовательных услуг
           </a>
         </li>
 
         <li className="doc__item ">
-          <a href={"Ustav"} target={"_blank"} rel="noreferrer">
+          <a
+            itemProp="paidParents"
+            href={"Ustav"}
+            target={"_blank"}
+            rel="noreferrer"
+          >
             Документ об установлении размера платы, взимаемой с родителей
             (законных представителей) за присмотр и уход за детьми, осваивающими
             образовательные программы дошкольного образования в организациях,

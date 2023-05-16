@@ -35,7 +35,7 @@ const Budget = observer(() => {
       <table className="">
         <tbody>
           <tr>
-            <td colspan="2">
+            <td colSpan="2">
               Объем образовательной деятельности, финансовое обеспечение которой
               осуществляется
             </td>
@@ -44,22 +44,22 @@ const Budget = observer(() => {
             <td>
               за счет бюджетных ассигнований федерального бюджета (тыс. руб.){" "}
             </td>
-            <td>47846 </td>
+            <td itemProp="finBFVolume">47846 </td>
           </tr>
           <tr>
             <td>за счет субъектов Российской Федерации (тыс. руб.) </td>
-            <td>-</td>
+            <td itemProp="finBRVolume">-</td>
           </tr>
           <tr>
             <td>за счет местных бюджетов (тыс. руб.) </td>
-            <td>-</td>
+            <td itemProp="finBMVolume">-</td>
           </tr>
           <tr>
             <td>
               по договорам об образовании за счет средств физических и (или)
               юридических лиц (тыс. руб.)
             </td>
-            <td>10539</td>
+            <td itemProp="finPVolume">10539</td>
           </tr>
         </tbody>
       </table>
@@ -74,17 +74,17 @@ const Budget = observer(() => {
         Сведения о поступлении финансовых и материальных средств и об их
         расходовании
       </h3>
-      <table className="">
-        <tbody>
-          <tr>
+      <table>
+        <tbody itemProp="volume">
+          <tr itemProp="finYear">
             <td>Год</td>
             <td>2021</td>
           </tr>
-          <tr>
+          <tr itemProp="finPost">
             <td>Поступившие финансовые и материальные средства </td>
             <td>103067,2</td>
           </tr>
-          <tr>
+          <tr itemProp="finRas">
             <td>Расходованные финансовые и материальные средства</td>
             <td>95209,6</td>
           </tr>
@@ -107,7 +107,12 @@ const Budget = observer(() => {
         </li>
 
         <li className="doc__item">
-          <a href={"Ustav"} target={"_blank"} rel="noreferrer">
+          <a
+            itemProp="finPlanDocLink"
+            href={"Ustav"}
+            target={"_blank"}
+            rel="noreferrer"
+          >
             План ФХД на 2022 год
           </a>
         </li>

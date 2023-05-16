@@ -33,7 +33,7 @@ const EduStandarts = observer(() => {
         Федеральные государственные образовательные стандарты среднего
         профессионального образования (ФГОС СПО) III + поколения
       </h3>
-      <table className="">
+      <table>
         <tbody>
           <tr>
             <td>Стандарт образовательной программы</td>
@@ -43,13 +43,19 @@ const EduStandarts = observer(() => {
             <td>
               <ul>
                 <li className="doc__item ">
-                  <a href={"Ustav"} target={"_blank"} rel="noreferrer">
+                  <a
+                    itemProp="eduFedDoc"
+                    href={"Ustav"}
+                    target={"_blank"}
+                    rel="noreferrer"
+                  >
                     ФГОС 26.02.03 Судовождение от 07.05.2014 № 441
                   </a>
                 </li>
 
                 <li className="doc__item ">
                   <a
+                    itemProp="eduFedDoc"
                     href={"UstavChange1415"}
                     target={"_blank"}
                     rel="noreferrer"
@@ -65,7 +71,12 @@ const EduStandarts = observer(() => {
             <td>
               <ul>
                 <li className="doc__item">
-                  <a href={"Ustav"} target={"_blank"} rel="noreferrer">
+                  <a
+                    itemProp="eduFedDoc"
+                    href={"Ustav"}
+                    target={"_blank"}
+                    rel="noreferrer"
+                  >
                     ФГОС 26.02.05 Эксплуатация судовых энергетических установок
                     от 07.05.2014 № 443
                   </a>
@@ -73,6 +84,7 @@ const EduStandarts = observer(() => {
 
                 <li className="doc__item">
                   <a
+                    itemProp="eduFedDoc"
                     href={"UstavChange1415"}
                     target={"_blank"}
                     rel="noreferrer"
@@ -89,7 +101,12 @@ const EduStandarts = observer(() => {
             <td>
               <ul>
                 <li className="doc__item ">
-                  <a href={"Ustav"} target={"_blank"} rel="noreferrer">
+                  <a
+                    itemProp="eduFedDoc"
+                    href={"Ustav"}
+                    target={"_blank"}
+                    rel="noreferrer"
+                  >
                     ФГОС 26.02.06 Эксплуатация судового электрооборудования и
                     средств автоматики от 07.05.2014 № 444
                   </a>
@@ -97,6 +114,7 @@ const EduStandarts = observer(() => {
 
                 <li className="doc__item ">
                   <a
+                    itemProp="eduFedDoc"
                     href={"UstavChange1415"}
                     target={"_blank"}
                     rel="noreferrer"
@@ -113,7 +131,12 @@ const EduStandarts = observer(() => {
             <td>
               <ul>
                 <li className="doc__item ">
-                  <a href={"Ustav"} target={"_blank"} rel="noreferrer">
+                  <a
+                    itemProp="eduFedDoc"
+                    href={"Ustav"}
+                    target={"_blank"}
+                    rel="noreferrer"
+                  >
                     ФГОС 23.02.01 Организация перевозок и управление на
                     транспорте (по видам) от 22.04.2014 № 376
                   </a>

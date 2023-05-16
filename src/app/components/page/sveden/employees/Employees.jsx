@@ -43,35 +43,39 @@ const Employees = observer(() => {
               <td>Контактные телефоны</td>
               <td>Адреса электронной почты</td>
             </tr>
-            <tr>
-              <td>Ахмадеева Фарида Шариповна </td>
-              <td>Директор </td>
-              <td>8 (347) 278-28-83 </td>
-              <td>uf-vsuwt@uf-vsuwt.ru</td>
+            <tr itemProp="rucovodstvo">
+              <td itemProp="fio">Ахмадеева Фарида Шариповна </td>
+              <td itemProp="post">Директор </td>
+              <td itemProp="telephone">8 (347) 278-28-83 </td>
+              <td itemProp="email">uf-vsuwt@uf-vsuwt.ru</td>
             </tr>
-            <tr>
-              <td>Мусина Гульфия Ириковна </td>
-              <td>Заместитель директора </td>
-              <td>8 (347) 278-28-86 </td>
-              <td>pur@uf-vsuwt.ru</td>
+            <tr itemProp="rucovodstvo">
+              <td itemProp="fio">Мусина Гульфия Ириковна </td>
+              <td itemProp="post">Заместитель директора </td>
+              <td itemProp="telephone">8 (347) 278-28-86 </td>
+              <td itemProp="email">pur@uf-vsuwt.ru</td>
             </tr>
-            <tr>
-              <td>Акбашева Альбина Галимзяновна </td>
-              <td>Заместитель директора </td>
-              <td>8 (347) 278-28-86 </td>
-              <td>pvr@uf-vsuwt.ru</td>
+            <tr itemProp="rucovodstvo">
+              <td itemProp="fio">Акбашева Альбина Галимзяновна </td>
+              <td itemProp="post">Заместитель директора </td>
+              <td itemProp="telephone">8 (347) 278-28-86 </td>
+              <td itemProp="email">pvr@uf-vsuwt.ru</td>
             </tr>
-            <tr>
-              <td>Жоссан Елена Евгеньевна </td>
-              <td>Главный бухгалтер </td>
-              <td>8 (347) 278-03-25 </td>
-              <td>buh@uf-vsuwt.ru</td>
+            <tr itemProp="rucovodstvo">
+              <td itemProp="fio">Жоссан Елена Евгеньевна </td>
+              <td itemProp="post">Главный бухгалтер </td>
+              <td itemProp="telephone">8 (347) 278-03-25 </td>
+              <td itemProp="email">buh@uf-vsuwt.ru</td>
             </tr>
-            <tr>
-              <td>Мукимов Ралиф Фаритович</td>
-              <td>Начальник центра организационно-правовой работы </td>
-              <td>8 (347) 278-28-83, 278-28-86, вн.110 </td>
-              <td>copr@uf-vsuwt.ru</td>
+            <tr itemProp="rucovodstvo">
+              <td itemProp="fio">Мукимов Ралиф Фаритович</td>
+              <td itemProp="post">
+                Начальник центра организационно-правовой работы{" "}
+              </td>
+              <td itemProp="telephone">
+                8 (347) 278-28-83, 278-28-86, вн.110{" "}
+              </td>
+              <td itemProp="email">copr@uf-vsuwt.ru</td>
             </tr>
           </tbody>
         </table>
@@ -171,21 +175,23 @@ const Employees = observer(() => {
               <td>Стаж работы педагогического работника по специальности</td>
             </tr>
             <tr>
-              <td colspan="12">
+              <td itemProp="teachingOp" colSpan="12">
                 26.02.03 «Судовождение» (углубленная подготовка)
               </td>
             </tr>
-            <tr>
-              <td>Абкадиров Ильдар Ангамович </td>
-              <td>Преподаватель первой квалификационной категории </td>
-              <td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Абкадиров Ильдар Ангамович </td>
+              <td itemProp="post">
+                Преподаватель первой квалификационной категории{" "}
+              </td>
+              <td itemProp="teachingDiscipline">
                 Мореходная астрономия; Радионавигационные системы;
                 Радиооборудование судов; РЛС И САРП ; Судов. Радиооборудование и
                 ГМССБ; ЭНП и С{" "}
               </td>
-              <td>-</td>
-              <td>Высшее</td>
-              <td>Инженер - судоводитель </td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">Инженер - судоводитель</td>
               <td>-</td>
               <td>-</td>
               <td>Судовождение на морских путях </td>
@@ -194,35 +200,36 @@ const Employees = observer(() => {
                 требований профессионального стандарта"(2020); "Оказание первой
                 медицинской помощи"(2020) .{" "}
               </td>
-              <td>27</td>
-              <td>22</td>
+              <td itemProp="genExperience">27</td>
+              <td itemProp="specExperience">22</td>
             </tr>
-            <tr>
-              <td>Акбарова Залия Шамсуновна </td>
-              <td>Преподаватель высшей квалификационной категории </td>
-              <td>Математика </td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Акбарова Залия Шамсуновна </td>
+              <td itemProp="post">
+                Преподаватель высшей квалификационной категории{" "}
+              </td>
+              <td itemProp="teachingDiscipline">Математика </td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">Учитель физики и математики </td>
+              <td itemProp="degree">Кандидат педагогических наук </td>
               <td>-</td>
-              <td>Высшее</td>
-              <td>Учитель физики и математики </td>
-              <td>Кандидат педагогических наук </td>
-              <td>-</td>
-              <td> Физика и математика</td>
-              <td>
+              <td>Физика и математика</td>
+              <td itemProp="profDevelopment">
                 "Математика: Методика обучения в основной и средней школе в
                 условиях реализации ФГОС ОО" (2019); "Оказание первой
                 медицинской помощи" (2020){" "}
               </td>
-              <td>23</td>
-              <td>22</td>
+              <td itemProp="genExperience">23</td>
+              <td itemProp="specExperience">22</td>
             </tr>
-            <tr>
-              <td>Акбашева Альбина Галимзяновна</td>
-              <td>Заместитель директора</td>
-              <td>ПОПД</td>
-              <td>-</td>
-              <td>Высшее</td>
-              <td>
-                {" "}
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Акбашева Альбина Галимзяновна</td>
+              <td itemProp="post">Заместитель директора</td>
+              <td itemProp="teachingDiscipline">ПОПД</td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">
                 Магистр «Специалист по государственному и муниципальному
                 управлению»
               </td>
@@ -233,373 +240,416 @@ const Employees = observer(() => {
                 муниципальному управлению"
               </td>
               <td>-</td>
-              <td>12</td>
-              <td>10</td>
+              <td itemProp="genExperience">12</td>
+              <td itemProp="specExperience">10</td>
             </tr>
-            <tr>
-              <td>Арсланова Наталья Анатольевна</td>
-              <td>Медицинская сестра</td>
-              <td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Арсланова Наталья Анатольевна</td>
+              <td itemProp="post">Медицинская сестра</td>
+              <td itemProp="teachingDiscipline">
                 ОБЖ. Основы мед. знаний, Безопасность жизнедеятельности (Основы
                 Медицинских знаний), Иностранный язык
               </td>
-              <td>-</td>
-              <td>Высшее</td>
-              <td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">
                 Сестринское дело (медицинская сестра) Лингвист, переводчик
                 немецкого и английского языка
               </td>
               <td>-</td>
               <td>-</td>
               <td>Сестринское дело Перевод и переводоведение</td>
-              <td>
+              <td itemProp="profDevelopment">
                 «Проведение предсменных, предрейсовых и послесменных,
                 послерейсовых медицинских осмотров» (2020)
               </td>
-              <td>14</td>
-              <td>3</td>
+              <td itemProp="genExperience">14</td>
+              <td itemProp="specExperience">3</td>
             </tr>
-            <tr>
-              <td>Ахметшин Максут Раянович </td>
-              <td>Преподаватель первой квалификационной категории </td>
-              <td>Метрология и стандартизация, Механика </td>
-              <td>-</td>
-              <td>Высшее</td>
-              <td>Инженер-механик </td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Ахметшин Максут Раянович </td>
+              <td itemProp="post">
+                Преподаватель первой квалификационной категории{" "}
+              </td>
+              <td itemProp="teachingDiscipline">
+                Метрология и стандартизация, Механика{" "}
+              </td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">Инженер-механик </td>
               <td>-</td>
               <td>-</td>
               <td>Механизация сельского хозяйства</td>
-              <td>
-                Стажировка на учебном -судне тренажере "Штурман Альбанов" по
-                теме "Эксплуатация судовых энергетических установок,
-                эксплуатация судового электрооборудования и средств
-                автоматики"(2019); "Использование инновационных интерактивных
-                технологий в системе СПО" (2019); "Подготовка по оказанию первой
-                медицинской помощи" (2019); "Организация и сопровождение
-                инклюзивного образования" (2019) ; "Особенности деятельности
-                педагогических работников СПО в свете требований
-                профессионального стандарта"(2020){" "}
+              <td itemProp="profDevelopment">
+                Стажировка на учебном судне-тренажере "Штурман Альбанов" по теме
+                "Эксплуатация судовых энергетических установок, эксплуатация
+                судового электрооборудования и средств автоматики"(2019);
+                "Использование инновационных интерактивных технологий в системе
+                СПО" (2019); "Подготовка по оказанию первой медицинской помощи"
+                (2019); "Организация и сопровождение инклюзивного образования"
+                (2019) ; "Особенности деятельности педагогических работников СПО
+                в свете требований профессионального стандарта"(2020){" "}
               </td>
-              <td>31</td>
-              <td>19</td>
+              <td itemProp="genExperience">31</td>
+              <td itemProp="specExperience">19</td>
             </tr>
-            <tr>
-              <td>Белобородова Наталья Павловна </td>
-              <td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Белобородова Наталья Павловна </td>
+              <td itemProp="post">
                 Начальник отдела конвенционной подготовки и дополнительного
                 образования{" "}
               </td>
-              <td>Инженерная графика </td>
-              <td> -</td>
-              <td>Высшее </td>
-              <td> Инженер - механик</td>
+              <td itemProp="teachingDiscipline">Инженерная графика </td>
+              <td itemProp="employeeQualification"> -</td>
+              <td itemProp="teachingLevel">Высшее </td>
+              <td itemProp="teachingQual"> Инженер - механик</td>
               <td>-</td>
               <td>-</td>
               <td>Авиационные двигатели</td>
               <td>-</td>
-              <td>42</td>
-              <td>31</td>
+              <td itemProp="genExperience">42</td>
+              <td itemProp="specExperience">31</td>
             </tr>
-            <tr>
-              <td>Бублис Юрий Федорович </td>
-              <td>Преподаватель высшей квалификационной категории </td>
-              <td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Бублис Юрий Федорович </td>
+              <td itemProp="post">
+                Преподаватель высшей квалификационной категории{" "}
+              </td>
+              <td itemProp="teachingDiscipline">
                 СВМ и системы, теория устройства судна Обслуживание и ремонт
                 судовых энергетических установок{" "}
               </td>
-              <td>-</td>
-              <td> Высшее</td>
-              <td>Инженер кораблестроитель</td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">Инженер кораблестроитель</td>
               <td>-</td>
               <td>-</td>
               <td>Судостроение и судоремонт</td>
-              <td>"Педагогика и психология в системе СПО" (2021)</td>
-              <td>50</td>
-              <td>22</td>
+              <td itemProp="profDevelopment">
+                "Педагогика и психология в системе СПО" (2021)
+              </td>
+              <td itemProp="genExperience">50</td>
+              <td itemProp="specExperience">22</td>
             </tr>
-            <tr>
-              <td>Гайнетдинова Эльвера Галихановна</td>
-              <td>Преподаватель высшей квалификационной категории</td>
-              <td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Гайнетдинова Эльвера Галихановна</td>
+              <td itemProp="post">
+                Преподаватель высшей квалификационной категории
+              </td>
+              <td itemProp="teachingDiscipline">
                 СЭУ (включая тренажер машинного отделения),Судовые
                 энергетические установки и их эксплуатация (включая тренажер
                 вахтенного механика)
               </td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel"> Высшее</td>
+              <td itemProp="teachingQual">Инженер-механик</td>
               <td>-</td>
-              <td> Высшее</td>
-              <td> инженер-механик</td>
               <td>-</td>
-              <td>-</td>
-              <td> «Судовые машины и механизмы»</td>
-              <td>"Педагогика и психология в системе СПО" (2021)</td>
-              <td>42</td>
-              <td>40</td>
+              <td>«Судовые машины и механизмы»</td>
+              <td itemProp="profDevelopment">
+                "Педагогика и психология в системе СПО" (2021)
+              </td>
+              <td itemProp="genExperience">42</td>
+              <td itemProp="specExperience">40</td>
             </tr>
-            <tr>
-              <td>Галлямова Раушания Харисовна</td>
-              <td>Преподаватель высшей квалификационной категории</td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Галлямова Раушания Харисовна</td>
+              <td itemProp="post">
+                Преподаватель высшей квалификационной категории
+              </td>
+              <td itemProp="teachingDiscipline">Физика</td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">Физик</td>
+              <td>-</td>
+              <td>-</td>
               <td>Физика</td>
               <td>-</td>
-              <td>Высшее</td>
-              <td>Физик</td>
-              <td>-</td>
-              <td>-</td>
-              <td>Физика</td>
-              <td>-</td>
-              <td>27</td>
-              <td>21</td>
+              <td itemProp="genExperience">27</td>
+              <td itemProp="specExperience">21</td>
             </tr>
-            <tr>
-              <td>Гарифуллина Зульфия Муратовна</td>
-              <td>Преподаватель первой квалификационной категории</td>
-              <td>Иностранный язык; Родной язык/ родная литература</td>
-              <td>-</td>
-              <td> Высшее</td>
-              <td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Гарифуллина Зульфия Муратовна</td>
+              <td itemProp="post">
+                Преподаватель первой квалификационной категории
+              </td>
+              <td itemProp="teachingDiscipline">
+                Иностранный язык; Родной язык/ родная литература
+              </td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">
                 Учитель башкирского языка, литературы и английского языка.
               </td>
               <td>-</td>
               <td>-</td>
               <td>Родной язык, литература и иностранный язык</td>
               <td>-</td>
-              <td>12</td>
-              <td>6</td>
+              <td itemProp="genExperience">12</td>
+              <td itemProp="specExperience">6</td>
             </tr>
-            <tr>
-              <td>Гафаров Ильшат Радмирович</td>
-              <td>Руководитель физического воспитания</td>
-              <td>Физическая культура</td>
-              <td>-</td>
-              <td>Высшее </td>
-              <td>специалист по адаптивной физической культуре</td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Гафаров Ильшат Радмирович</td>
+              <td itemProp="post">Руководитель физического воспитания</td>
+              <td itemProp="teachingDiscipline">Физическая культура</td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">
+                специалист по адаптивной физической культуре
+              </td>
               <td>-</td>
               <td>-</td>
               <td>
                 Физическая культура для лиц с отклонениями в состоянии здоровья
                 (Адаптивная физическая культура)
               </td>
-              <td>
-                "Организационно- методические основы организации уроков
+              <td itemProp="profDevelopment">
+                "Организационно-методические основы организации уроков
                 физической культуры и внеурочных мероприятий с учетом стандарта
                 Вордскилс по компетенции "Физическая культура, спорт и
                 фитнес"(2021)
               </td>
-              <td>23</td>
-              <td>21</td>
+              <td itemProp="genExperience">23</td>
+              <td itemProp="specExperience">21</td>
             </tr>
-            <tr>
-              <td>Еникеев Алик Гайсинович</td>
-              <td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Еникеев Алик Гайсинович</td>
+              <td itemProp="post">
                 Заместитель директора, преподаватель высшей квалификационной
                 категории
               </td>
-              <td>
+              <td itemProp="teachingDiscipline">
                 Общая и спец. лоция ВВП; Матрос; ПП и управление судами на ВПП;
                 Управление судном на ВВП; Лоция ВВП, Использование РЛС на ВВП,
                 Управление судном.
               </td>
-              <td>-</td>
-              <td>Высшее</td>
-              <td>Инженер</td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">Инженер</td>
               <td>-</td>
               <td>-</td>
               <td>Судовождение</td>
-              <td>
+              <td itemProp="profDevelopment">
                 "Оказание первой помощи "(2020); " Особенности деятельности
                 педагогических работников СПО в свете требований
                 профессионального стандарта"(2020) "Организация и и проведение
                 демонстративного экзамена по стандартам Вордскилс в 2021 году"
               </td>
-              <td>5</td>
-              <td>3</td>
+              <td itemProp="genExperience">5</td>
+              <td itemProp="specExperience">3</td>
             </tr>
-            <tr>
-              <td>Жилина Анна Викторовна</td>
-              <td>Преподаватель высшей квалификационной категории</td>
-              <td>Информатика</td>
-              <td>-</td>
-              <td>Высшее</td>
-              <td>Учитель математики и информатики</td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Жилина Анна Викторовна</td>
+              <td itemProp="post">
+                Преподаватель высшей квалификационной категории
+              </td>
+              <td itemProp="teachingDiscipline">Информатика</td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">Учитель математики и информатики</td>
               <td>-</td>
               <td>-</td>
               <td>Математика и информатика</td>
-              <td>
+              <td itemProp="profDevelopment">
                 "Применение современных компьютерных технологий в процессе
                 обучения информатики в условиях реализации ФГОС"(2020)
               </td>
-              <td>20</td>
-              <td>19</td>
+              <td itemProp="genExperience">20</td>
+              <td itemProp="specExperience">19</td>
             </tr>
-            <tr>
-              <td>Зараев Ильшат Фаритович</td>
-              <td>Преподаватель первой квалификационной категории</td>
-              <td>Астрономия; Химия;</td>
-              <td>-</td>
-              <td>Высшее </td>
-              <td>Учитель биологии и химии</td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Зараев Ильшат Фаритович</td>
+              <td itemProp="post">
+                Преподаватель первой квалификационной категории
+              </td>
+              <td itemProp="teachingDiscipline">Астрономия; Химия;</td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее </td>
+              <td itemProp="teachingQual">Учитель биологии и химии</td>
               <td>-</td>
               <td>-</td>
               <td>Биология и химия</td>
-              <td>
+              <td itemProp="profDevelopment">
                 "Современные образовательные технологии в преподавании химии с
                 учетом ФГОС" (2020); "Основы предмета "Экология в соответствии с
                 требованиями ФГОС" (2020); "Методика преподавания астрономии при
                 подготовке специалистов среднего звена" (2020)
               </td>
-              <td>14</td>
-              <td>11</td>
+              <td itemProp="genExperience">14</td>
+              <td itemProp="specExperience">11</td>
             </tr>
-            <tr>
-              <td>Миниярова Лилия Вансеттаевна</td>
-              <td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Миниярова Лилия Вансеттаевна</td>
+              <td itemProp="post">
                 главный специалист отдела информационных технологий,
                 Преподаватель первой квалификационной категории
               </td>
-              <td>Информатика</td>
-              <td>-</td>
-              <td>Высшее</td>
-              <td>Инженер</td>
+              <td itemProp="teachingDiscipline">Информатика</td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">Инженер</td>
               <td>-</td>
               <td>-</td>
               <td>
                 Автоматизированные системы обработки информации и управления
               </td>
-              <td>
+              <td itemProp="profDevelopment">
                 "Оказание первой помощи"(2020); "Особенности деятельности
                 педагогических работников СПО в свете требований
                 профессионального стандарта"(2020); "Обеспечение безопасности
                 персональных данных " (2021)
               </td>
-              <td>20</td>
-              <td>18</td>
+              <td itemProp="genExperience">20</td>
+              <td itemProp="specExperience">18</td>
             </tr>
-            <tr>
-              <td>Зкриева Гульнара Робертовна</td>
-              <td>Преподаватель высшей квалификационной категории</td>
-              <td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Зкриева Гульнара Робертовна</td>
+              <td itemProp="post">
+                Преподаватель высшей квалификационной категории
+              </td>
+              <td itemProp="teachingDiscipline">
                 Электрооборудование судов; Судовые энергетические установки и
                 электрооборудование судов
               </td>
-              <td>-</td>
-              <td>Высшее</td>
-              <td>Инженер-электрик </td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">Инженер-электрик </td>
               <td>-</td>
               <td>-</td>
               <td>Электрофикация и автоматизация сельского хозяйства</td>
-              <td>"Педагогика и психология в системе СПО" (2021)</td>
-              <td>26</td>
-              <td>25</td>
+              <td itemProp="profDevelopment">
+                "Педагогика и психология в системе СПО" (2021)
+              </td>
+              <td itemProp="genExperience">26</td>
+              <td itemProp="specExperience">25</td>
             </tr>
-            <tr>
-              <td>Исхакова Лилия Лутфулловна</td>
-              <td>Преподаватель первой квалификационной категории</td>
-              <td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Исхакова Лилия Лутфулловна</td>
+              <td itemProp="post">
+                Преподаватель первой квалификационной категории
+              </td>
+              <td itemProp="teachingDiscipline">
                 Техника безопасности на судах, Коммерческая эксплуатация,
                 Технология перевозок, Основы анализа эффективности работы судна
                 с применением информационных технологий
               </td>
-              <td>-</td>
-              <td>Высшее образование</td>
-              <td>Бакалавр</td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее образование</td>
+              <td itemProp="teachingQual">Бакалавр</td>
               <td>-</td>
               <td>-</td>
               <td>Технология транспортных процессов</td>
-              <td>"Педагогика и психология в системе СПО" (2021)</td>
-              <td>20</td>
-              <td>3</td>
+              <td itemProp="profDevelopment">
+                "Педагогика и психология в системе СПО" (2021)
+              </td>
+              <td itemProp="genExperience">20</td>
+              <td itemProp="specExperience">3</td>
             </tr>
-            <tr>
-              <td>Козырь Снежана Андреевна</td>
-              <td>Преподаватель высшей квалификационной категории</td>
-              <td>Русский язык</td>
-              <td> -</td>
-              <td>Высшее</td>
-              <td>Бакалавр</td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Козырь Снежана Андреевна</td>
+              <td itemProp="post">
+                Преподаватель высшей квалификационной категории
+              </td>
+              <td itemProp="teachingDiscipline">Русский язык</td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">Бакалавр</td>
               <td>-</td>
               <td>-</td>
               <td>Филология</td>
-              <td>
-                "Оказание первой медицинской помощи"(2020); " Особенности
+              <td itemProp="profDevelopment">
+                "Оказание первой медицинской помощи"(2020); "Особенности
                 деятельности педагогических работников СПО в свете требований
                 профессионального стандарта"(2020); "Исследовательская
                 технология на уроках русского языка и литературы по ФГОС"(2020)
               </td>
-              <td>5</td>
-              <td>3</td>
+              <td itemProp="genExperience">5</td>
+              <td itemProp="specExperience">3</td>
             </tr>
-            <tr>
-              <td>Крикунов Сергей Петрович</td>
-              <td>Преподаватель высшей квалификационной категории</td>
-              <td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Крикунов Сергей Петрович</td>
+              <td itemProp="post">
+                Преподаватель высшей квалификационной категории
+              </td>
+              <td itemProp="teachingDiscipline">
                 Навигация и лоция, Навиг. гидрометеорология, Использование РЛС
                 на ВВП, Тренажерная подготовка. Использование ЭКНИС, Основы
                 картографии и НК, Управление судном
               </td>
-              <td>-</td>
-              <td>Высшее</td>
-              <td>Инженер-судоводитель</td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">Инженер-судоводитель</td>
               <td>-</td>
               <td>-</td>
               <td>Судовождение на внутренних водных путях</td>
-              <td>"Педагогика и психология в системе СПО" (2021)</td>
-              <td>45</td>
-              <td>44</td>
+              <td itemProp="profDevelopment">
+                "Педагогика и психология в системе СПО" (2021)
+              </td>
+              <td itemProp="genExperience">45</td>
+              <td itemProp="specExperience">44</td>
             </tr>
-            <tr>
-              <td>Муратов Раис Фаритович</td>
-              <td>Преподаватель</td>
-              <td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Муратов Раис Фаритович</td>
+              <td itemProp="post">Преподаватель</td>
+              <td itemProp="teachingDiscipline">
                 Основы анализа эффективности работы судна с применением
                 информационных технологий, Эксплуатация судовых энергетических
                 установок на вспомогательном уровне, Судовые энергетические
                 установки (включая тренажер вахтенного механика)
               </td>
-              <td>-</td>
-              <td>Высшее</td>
-              <td>Инженер -электромеханик</td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">Инженер -электромеханик</td>
               <td>-</td>
               <td>-</td>
               <td>Электрические машины</td>
-              <td>
+              <td itemProp="profDevelopment">
                 "Особенности деятельности педагогических работников СПО в свете
                 требований профессионального стандарта"(2020)
               </td>
-              <td>41</td>
-              <td>10</td>
+              <td itemProp="genExperience">41</td>
+              <td itemProp="specExperience">10</td>
             </tr>
-            <tr>
-              <td>Мусина Гульфия Ириковна</td>
-              <td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Мусина Гульфия Ириковна</td>
+              <td itemProp="post">
                 Заместитель директора; Преподаватель высшей квалификационной
                 категории
               </td>
-              <td>Литература</td>
-              <td>-</td>
-              <td> Высшее</td>
-              <td>Учитель русского языка и литературы Учитель истории</td>
+              <td itemProp="teachingDiscipline">Литература</td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">
+                Учитель русского языка и литературы Учитель истории
+              </td>
               <td>-</td>
               <td>-</td>
               <td> Русский язык и литература</td>
-              <td>
+              <td itemProp="profDevelopment">
                 "Оказание первой помощи"(2020); "Профессиональная компетентность
                 педагогов в условиях внедрения ФГОС" (2020); "Реализация
                 образовательных программ среднего профессионального образования
                 с учетом специфики WordSkills" (2021)
               </td>
-              <td>26</td>
-              <td>26</td>
+              <td itemProp="genExperience">26</td>
+              <td itemProp="specExperience">26</td>
             </tr>
-            <tr>
-              <td>Мухутдинова Лилия Ирековна</td>
-              <td>Преподаватель высшей квалификационной категории</td>
-              <td>Иностранный язык</td>
-              <td>-</td>
-              <td>Высшее</td>
-              <td>Филолог. Преподаватель немецкого языка</td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Мухутдинова Лилия Ирековна</td>
+              <td itemProp="post">
+                Преподаватель высшей квалификационной категории
+              </td>
+              <td itemProp="teachingDiscipline">Иностранный язык</td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">
+                Филолог. Преподаватель немецкого языка
+              </td>
               <td>-</td>
               <td>-</td>
               <td>Филология</td>
-              <td>
+              <td itemProp="profDevelopment">
                 "Психофизические особенности инвалидов и лиц с ограниченными
                 возможностями здоровья, специфика приема передачи учебной
                 информации , применение специальных технических средств обучения
@@ -608,64 +658,68 @@ const Employees = observer(() => {
                 педагогических работников СПО в свете требований
                 профессионального стандарта"(2020);
               </td>
-              <td>28</td>
-              <td>27</td>
+              <td itemProp="genExperience">28</td>
+              <td itemProp="specExperience">27</td>
             </tr>
-            <tr>
-              <td>Немцев Сергей Николаевич</td>
-              <td>Преподаватель высшей квалификационной категории</td>
-              <td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Немцев Сергей Николаевич</td>
+              <td itemProp="post">
+                Преподаватель высшей квалификационной категории
+              </td>
+              <td itemProp="teachingDiscipline">
                 Судовые энергетические установки и электрооборудование судов
               </td>
-              <td>-</td>
-              <td>Высшее</td>
-              <td>Инженер-электромеханик</td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">Инженер-электромеханик</td>
               <td>-</td>
               <td>-</td>
               <td>Электрические машины</td>
-              <td>
+              <td itemProp="profDevelopment">
                 "Особенности деятельности педагогических работников СПО в свете
                 требований профессионального стандарта"(2020)
               </td>
-              <td>42</td>
-              <td>31</td>
+              <td itemProp="genExperience">42</td>
+              <td itemProp="specExperience">31</td>
             </tr>
-            <tr>
-              <td>Решетников Виталий Евгеньевич</td>
-              <td>Преподаватель</td>
-              <td>Основы философии , История </td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Решетников Виталий Евгеньевич</td>
+              <td itemProp="post">Преподаватель</td>
+              <td itemProp="teachingDiscipline">Основы философии , История </td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">Историк, преподаватель истории</td>
               <td>-</td>
-              <td>Высшее</td>
-              <td>Историк, преподаватель истории</td>
               <td>-</td>
-              <td>-</td>
-              <td> История</td>
-              <td>
+              <td>История</td>
+              <td itemProp="profDevelopment">
                 "Философия: Теория и методика преподавания в условиях реализации
                 ФГОС" (2019); "Подготовка по оказанию первой медицинской помощи"
-                "(2019); " Организация и сопровождение инклюзивного образования"
+                "(2019); "Организация и сопровождение инклюзивного образования"
                 (2019);{" "}
               </td>
-              <td>18</td>
-              <td>10</td>
+              <td itemProp="genExperience">18</td>
+              <td itemProp="specExperience">10</td>
             </tr>
-            <tr>
-              <td>Рома нов Зульфир Вахитович</td>
-              <td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Рома нов Зульфир Вахитович</td>
+              <td itemProp="post">
                 Преподаватель-организатор основ безопасности жизнедеятельности
                 высшей категории
               </td>
-              <td>ОБЖ Безопасность жизнедеятельности, БЖ военные сборы</td>
-              <td>-</td>
-              <td>Высшее</td>
-              <td>
+              <td itemProp="teachingDiscipline">
+                ОБЖ Безопасность жизнедеятельности, БЖ военные сборы
+              </td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">
                 Историк. Преподаватель истории. Специалист по гражданской
                 обороне
               </td>
               <td>-</td>
               <td>-</td>
               <td>История</td>
-              <td>
+              <td itemProp="profDevelopment">
                 "Психофизические особенности инвалидов и лиц с ограниченными
                 возможностями здоровья, специфика приема передачи учебной
                 информации , применение специальных технических средств обучения
@@ -673,19 +727,21 @@ const Employees = observer(() => {
                 Профессиональная переподготовка " Гражданская оборона и защита
                 населения от чрезвычайных ситуаций для должностных лиц"
               </td>
-              <td>11</td>
-              <td>5</td>
+              <td itemProp="genExperience">11</td>
+              <td itemProp="specExperience">5</td>
             </tr>
-            <tr>
-              <td>Сиразетдинова Эльвира Раисовна</td>
-              <td>Преподаватель первой квалификационной категории</td>
-              <td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Сиразетдинова Эльвира Раисовна</td>
+              <td itemProp="post">
+                Преподаватель первой квалификационной категории
+              </td>
+              <td itemProp="teachingDiscipline">
                 История; Экологические основы природопользования, Предупреждение
                 и предотвращение загрязнения окружающей среды
               </td>
-              <td>-</td>
-              <td>Высшее</td>
-              <td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">
                 {" "}
                 Историк. Преподаватель истории. Профессиональная переподготовка
                 "Специалист по экологической безопасности"
@@ -693,65 +749,71 @@ const Employees = observer(() => {
               <td>-</td>
               <td>-</td>
               <td>История</td>
-              <td>
+              <td itemProp="profDevelopment">
                 "Организация и сопровождение инклюзивного образования" (2019);
                 "Подготовка по оказанию первой медицинской помощи"(2019)
                 "Педагогика и психология в системе СПО" (2021)
               </td>
-              <td>22</td>
-              <td>3</td>
+              <td itemProp="genExperience">22</td>
+              <td itemProp="specExperience">3</td>
             </tr>
-            <tr>
-              <td>Султангалиева Диана Римовна </td>
-              <td>Заведующий отделом практической подготовки</td>
-              <td>Психология общения</td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Султангалиева Диана Римовна </td>
+              <td itemProp="post">
+                Заведующий отделом практической подготовки
+              </td>
+              <td itemProp="teachingDiscipline">Психология общения</td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">
+                Психолог. Преподаватель психологии
+              </td>
               <td>-</td>
-              <td>Высшее</td>
-              <td>Психолог. Преподаватель психологии</td>
               <td>-</td>
+              <td>Психология</td>
               <td>-</td>
-              <td> Психология</td>
-              <td>-</td>
-              <td>6</td>
-              <td>2</td>
+              <td itemProp="genExperience">6</td>
+              <td itemProp="specExperience">2</td>
             </tr>
-            <tr>
-              <td>Тарба Растан Александрович</td>
-              <td>Преподаватель первой квалификационной категории</td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Тарба Растан Александрович</td>
+              <td itemProp="post">
+                Преподаватель первой квалификационной категории
+              </td>
               <td>
                 Эксплуатация судовых энергетических установок на вспомогательном
                 уровне, Судовые энергетические установки и их эксплуатация
                 (включая тренажер вахтенного механика)
               </td>
-              <td>-</td>
-              <td>Высшее</td>
-              <td>Бакалавр</td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">Бакалавр</td>
               <td>-</td>
               <td>-</td>
               <td>Технологические машины и оборудование</td>
-              <td>
+              <td itemProp="profDevelopment">
                 "Организация и сопровождение инклюзивного образования" (2019);
                 "Подготовка по оказанию первой медицинской помощи"(2019)
                 "Педагогика и психология в системе СПО" (2021)
               </td>
-              <td>6</td>
-              <td>2</td>
+              <td itemProp="genExperience">6</td>
+              <td itemProp="specExperience">2</td>
             </tr>
-            <tr>
-              <td>Фомичев Сергей Юрьевич</td>
-              <td>Преподаватель</td>
-              <td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Фомичев Сергей Юрьевич</td>
+              <td itemProp="post">Преподаватель</td>
+              <td itemProp="teachingDiscipline">
                 Судовая автоматика и КИП, Обслуживание и ремонт судового
                 электрического и электронного оборудования, Электрооборудование
                 судов
               </td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">Инженер- электрик</td>
               <td>-</td>
-              <td>Высшее</td>
-              <td>Инженер- электрик</td>
               <td>-</td>
-              <td>-</td>
-              <td> Электропривод и автоматизация промышленных установок,</td>
-              <td>
+              <td>Электропривод и автоматизация промышленных установок,</td>
+              <td itemProp="profDevelopment">
                 Особенности деятельности педагогических работников СПО в свете
                 требований профессионального стандарта (2020); "Оказание первой
                 медицинской помощи"(2020); "Психофизические особенности
@@ -760,69 +822,77 @@ const Employees = observer(() => {
                 специальных технических средств обучения с учетом различных
                 нарушений функций организма человека" (2020);
               </td>
-              <td>31</td>
-              <td>1</td>
+              <td itemProp="genExperience">31</td>
+              <td itemProp="specExperience">1</td>
             </tr>
-            <tr>
-              <td>Щербакова Амина Байраковна</td>
-              <td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Щербакова Амина Байраковна</td>
+              <td itemProp="post">
                 Заведующий учебным отделом, преподаватель высшей
                 квалификационной категории
               </td>
-              <td>Литература</td>
+              <td itemProp="teachingDiscipline">Литература</td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">
+                Историк, преподаватель истории и обществоведения
+              </td>
               <td>-</td>
-              <td>Высшее</td>
-              <td> Историк, преподаватель истории и обществоведения</td>
               <td>-</td>
-              <td>-</td>
-              <td> История</td>
-              <td>
+              <td>История</td>
+              <td itemProp="profDevelopment">
                 {" "}
                 "Оказание первой помощи"(2019); " Современные требования
                 преподавания курса "История России" в свете требований ФГОС и
-                Историку- культурного стандарта" (2019); " Нормативно - правовые
-                , теоретико -методологические и методические основы преподавания
-                предмета обществознание" (2019)
+                Историку- культурного стандарта" (2019); " Нормативно -
+                правовые, теоретико -методологические и методические основы
+                преподавания предмета обществознание" (2019)
               </td>
-              <td>25</td>
-              <td>23</td>
+              <td itemProp="genExperience">25</td>
+              <td itemProp="specExperience">23</td>
             </tr>
             <tr>
-              <td colspan="12">
-                26.02.05«Эксплуатация судовых энергетических установок»
+              <td itemProp="teachingOp" colSpan="12">
+                26.02.05 «Эксплуатация судовых энергетических установок»
               </td>
             </tr>
-            <tr>
-              <td>Арсланова Наталья Анатольевна</td>
-              <td>Медицинская сестра</td>
-              <td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Арсланова Наталья Анатольевна</td>
+              <td itemProp="post">Медицинская сестра</td>
+              <td itemProp="teachingDiscipline">
                 ОБЖ. Основы мед. знаний, Безопасность жизнедеятельности (Основы
                 Медицинских знаний),
               </td>
-              <td>-</td>
-              <td>Высшее</td>
-              <td>Сестринское дело (медицинская сестра)</td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">
+                Сестринское дело (медицинская сестра)
+              </td>
               <td>-</td>
               <td>-</td>
               <td>Сестринское дело</td>
-              <td>
+              <td itemProp="profDevelopment">
                 «Проведение предсменных, предрейсовых и послесменных,
                 послерейсовых медицинских осмотров» (2020)
               </td>
-              <td>14</td>
-              <td>3</td>
+              <td itemProp="genExperience">14</td>
+              <td itemProp="specExperience">3</td>
             </tr>
-            <tr>
-              <td>Ахметшин Максут Раянович</td>
-              <td>Преподаватель первой квалификационной категории</td>
-              <td>Метрология и стандартизация, Механика</td>
-              <td>-</td>
-              <td>Высшее</td>
-              <td> Инженер-механик</td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Ахметшин Максут Раянович</td>
+              <td itemProp="post">
+                Преподаватель первой квалификационной категории
+              </td>
+              <td itemProp="teachingDiscipline">
+                Метрология и стандартизация, Механика
+              </td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">Инженер-механик</td>
               <td>-</td>
               <td>-</td>
               <td>Механизация сельского хозяйства</td>
-              <td>
+              <td itemProp="profDevelopment">
                 Стажировка на учебном -судне тренажере "Штурман Альбанов" по
                 теме "Эксплуатация судовых энергетических установок,
                 эксплуатация судового электрооборудования и средств
@@ -833,150 +903,174 @@ const Employees = observer(() => {
                 педагогических работников СПО в свете требований
                 профессионального стандарта"(2020)
               </td>
-              <td>31</td>
-              <td>19</td>
+              <td itemProp="genExperience">31</td>
+              <td itemProp="specExperience">19</td>
             </tr>
-            <tr>
-              <td>Баширова Альфия Анваровна</td>
-              <td>Педагог- организатор</td>
-              <td>Родной язык ; Родная литература</td>
-              <td>-</td>
-              <td>Высшее</td>
-              <td>Учитель Башкирского языка и литературы</td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Баширова Альфия Анваровна</td>
+              <td itemProp="post">Педагог- организатор</td>
+              <td itemProp="teachingDiscipline">
+                Родной язык; Родная литература
+              </td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">
+                Учитель Башкирского языка и литературы
+              </td>
               <td>-</td>
               <td>-</td>
               <td>Филология</td>
-              <td>
+              <td itemProp="profDevelopment">
                 "Методические аспекты при изучении русской литературы последней
                 трети XIX века в современной школе"(2020)
               </td>
-              <td>13</td>
-              <td>1</td>
+              <td itemProp="genExperience">13</td>
+              <td itemProp="specExperience">1</td>
             </tr>
-            <tr>
-              <td>Бублис Юрий Федорович</td>
-              <td>Преподаватель высшей квалификационной категории</td>
-              <td>Теория устройства судна</td>
-              <td>-</td>
-              <td>Высшее</td>
-              <td>Инженер кораблестроитель</td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Бублис Юрий Федорович</td>
+              <td itemProp="post">
+                Преподаватель высшей квалификационной категории
+              </td>
+              <td itemProp="teachingDiscipline">Теория устройства судна</td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">Инженер кораблестроитель</td>
               <td>-</td>
               <td>-</td>
               <td>Судостроение и судоремонт</td>
-              <td> "Педагогика и психология в системе СПО" (2021)</td>
-              <td>50</td>
-              <td>22</td>
+              <td itemProp="profDevelopment">
+                "Педагогика и психология в системе СПО" (2021)
+              </td>
+              <td itemProp="genExperience">50</td>
+              <td itemProp="specExperience">22</td>
             </tr>
-            <tr>
-              <td>Гайнетдинова Эльвера Галихановна</td>
-              <td>Преподаватель высшей квалификационной категории</td>
-              <td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Гайнетдинова Эльвера Галихановна</td>
+              <td itemProp="post">
+                Преподаватель высшей квалификационной категории
+              </td>
+              <td itemProp="teachingDiscipline">
                 Судовые энергетические установки и их эксплуатация (включая
                 тренажер вахтенного механика),Материаловедение
               </td>
-              <td>-</td>
-              <td>Высшее</td>
-              <td> инженер-механик</td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">Инженер-механик</td>
               <td>-</td>
               <td>-</td>
               <td>«Судовые машины и механизмы»</td>
-              <td>"Педагогика и психология в системе СПО" (2021)</td>
-              <td>42</td>
-              <td>40</td>
+              <td itemProp="profDevelopment">
+                "Педагогика и психология в системе СПО" (2021)
+              </td>
+              <td itemProp="genExperience">42</td>
+              <td itemProp="specExperience">40</td>
             </tr>
-            <tr>
-              <td>Галлямова Раушания Харисовна</td>
-              <td>Преподаватель высшей квалификационной категории</td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Галлямова Раушания Харисовна</td>
+              <td itemProp="post">
+                Преподаватель высшей квалификационной категории
+              </td>
+              <td itemProp="teachingDiscipline">Физика</td>
+              <td>-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">Физик</td>
+              <td>-</td>
+              <td>-</td>
               <td>Физика</td>
               <td>-</td>
-              <td>Высшее</td>
-              <td>Физик</td>
-              <td>-</td>
-              <td>-</td>
-              <td>Физика</td>
-              <td>-</td>
-              <td>27</td>
-              <td>21</td>
+              <td itemProp="genExperience">27</td>
+              <td itemProp="specExperience">21</td>
             </tr>
-            <tr>
-              <td>Гарифуллина Зульфия Муратовна</td>
-              <td>Преподаватель первой квалификационной категории</td>
-              <td>Иностранный язык</td>
-              <td>-</td>
-              <td>Высшее</td>
-              <td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Гарифуллина Зульфия Муратовна</td>
+              <td itemProp="post">
+                Преподаватель первой квалификационной категории
+              </td>
+              <td itemProp="teachingDiscipline">Иностранный язык</td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">
                 Учитель башкирского языка, литературы и английского языка.
               </td>
               <td>-</td>
               <td>-</td>
               <td>Родной язык, литература и иностранный язык</td>
               <td>-</td>
-              <td>12</td>
-              <td>6</td>
+              <td itemProp="genExperience">12</td>
+              <td itemProp="specExperience">6</td>
             </tr>
-            <tr>
-              <td>Гафаров Ильшат Радмирович</td>
-              <td>Руководитель физического воспитания</td>
-              <td>Физическая культура</td>
-              <td>-</td>
-              <td>Высшее</td>
-              <td>специалист по адаптивной физической культуре</td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Гафаров Ильшат Радмирович</td>
+              <td itemProp="post">Руководитель физического воспитания</td>
+              <td itemProp="teachingDiscipline">Физическая культура</td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">
+                специалист по адаптивной физической культуре
+              </td>
               <td>-</td>
               <td>-</td>
               <td>
                 Физическая культура для лиц с отклонениями в состоянии здоровья
                 (Адаптивная физическая культура)
               </td>
-              <td>
+              <td itemProp="profDevelopment">
                 "Организационно- методические основы организации уроков
                 физической культуры и внеурочных мероприятий с учетом стандарта
                 Вордскилс по компетенции "Физическая культура, спорт и
                 фитнес"(2021)
               </td>
-              <td>23</td>
-              <td>21</td>
+              <td itemProp="genExperience">23</td>
+              <td itemProp="specExperience">21</td>
             </tr>
-            <tr>
-              <td>Жилина Анна Викторовна</td>
-              <td>Преподаватель высшей квалификационной категории</td>
-              <td>Информатика; компьютерная графика</td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Жилина Анна Викторовна</td>
+              <td itemProp="post">
+                Преподаватель высшей квалификационной категории
+              </td>
+              <td itemProp="teachingDiscipline">
+                Информатика; компьютерная графика
+              </td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">Учитель математики и информатики</td>
               <td>-</td>
-              <td>Высшее</td>
-              <td> Учитель математики и информатики</td>
               <td>-</td>
-              <td>-</td>
-              <td> Математика и информатика</td>
-              <td>
+              <td>Математика и информатика</td>
+              <td itemProp="profDevelopment">
                 "Применение современных компьютерных технологий в процессе
                 обучения информатики в условиях реализации ФГОС"(2020)
               </td>
-              <td>20</td>
-              <td>19</td>
+              <td itemProp="genExperience">20</td>
+              <td itemProp="specExperience">19</td>
             </tr>
-            <tr>
-              <td>Зараев Ильшат Фаритович</td>
-              <td>Преподаватель первой квалификационной категории</td>
-              <td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Зараев Ильшат Фаритович</td>
+              <td itemProp="post">
+                Преподаватель первой квалификационной категории
+              </td>
+              <td itemProp="teachingDiscipline">
                 Астрономия; Химия; Экологические основы природопользования.
               </td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">Учитель биологии и химии</td>
               <td>-</td>
-              <td>Высшее</td>
-              <td>Учитель биологии и химии</td>
               <td>-</td>
-              <td>-</td>
-              <td> Биология и химия</td>
-              <td>
+              <td>Биология и химия</td>
+              <td itemProp="profDevelopment">
                 "Современные образовательные технологии в преподавании химии с
                 учетом ФГОС" (2020); "Основы предмета "Экология в соответствии с
                 требованиями ФГОС" (2020); "Методика преподавания астрономии при
                 подготовке специалистов среднего звена" (2020)
               </td>
-              <td>14</td>
-              <td>11</td>
+              <td itemProp="genExperience">14</td>
+              <td itemProp="specExperience">11</td>
             </tr>
-            <tr>
-              <td>Зкриева Гульнара Робертовна</td>
-              <td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Зкриева Гульнара Робертовна</td>
+              <td itemProp="post">
                 категории Астрономия; Химия; Экологические основы
                 природопользования. - Высшее Учитель биологии и химии - -
                 Биология и химия "Современные образовательные технологии в
@@ -986,87 +1080,97 @@ const Employees = observer(() => {
                 звена" (2020) 14 11 Зкриева Гульнара Робертовна Преподаватель
                 высшей квалификационной категории
               </td>
-              <td>
+              <td itemProp="teachingDiscipline">
                 Электрооборудование судов; Гидравлика Электроника и
                 электротехника
               </td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">Инженер-электрик </td>
               <td>-</td>
-              <td>Высшее</td>
-              <td>Инженер-электрик </td>
               <td>-</td>
-              <td>-</td>
-              <td> Электрофикация и автоматизация сельского хозяйства</td>
-              <td>"Педагогика и психология в системе СПО" (2021)</td>
-              <td>26</td>
-              <td>25</td>
+              <td>Электрофикация и автоматизация сельского хозяйства</td>
+              <td itemProp="profDevelopment">
+                "Педагогика и психология в системе СПО" (2021)
+              </td>
+              <td itemProp="genExperience">26</td>
+              <td itemProp="specExperience">25</td>
             </tr>
-            <tr>
-              <td>Исхакова Лилия Лутфулловна</td>
-              <td>Преподаватель</td>
-              <td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Исхакова Лилия Лутфулловна</td>
+              <td itemProp="post">Преподаватель</td>
+              <td itemProp="teachingDiscipline">
                 Планирование и руководство работы структурного подразделения
               </td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">Бакалавр</td>
               <td>-</td>
-              <td>Высшее</td>
-              <td>Бакалавр</td>
               <td>-</td>
-              <td>-</td>
-              <td> Технология транспортных процессов</td>
-              <td> "Педагогика и психология в системе СПО" (2021)</td>
-              <td>20</td>
-              <td>3</td>
+              <td>Технология транспортных процессов</td>
+              <td itemProp="profDevelopment">
+                "Педагогика и психология в системе СПО" (2021)
+              </td>
+              <td itemProp="genExperience">20</td>
+              <td itemProp="specExperience">3</td>
             </tr>
-            <tr>
-              <td>Козырь Снежана Андреевна</td>
-              <td>Преподаватель высшей квалификационной категории</td>
-              <td>Русский язык; Литература</td>
-              <td>-</td>
-              <td>Высшее</td>
-              <td>Бакалавр</td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Козырь Снежана Андреевна</td>
+              <td itemProp="post">
+                Преподаватель высшей квалификационной категории
+              </td>
+              <td itemProp="teachingDiscipline">Русский язык; Литература</td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">Бакалавр</td>
               <td>-</td>
               <td>-</td>
               <td>Филология</td>
-              <td>
-                "Оказание первой медицинской помощи"(2020); " Особенности
+              <td itemProp="profDevelopment">
+                "Оказание первой медицинской помощи"(2020); "Особенности
                 деятельности педагогических работников СПО в свете требований
                 профессионального стандарта"(2020); "Исследовательская
                 технология на уроках русского языка и литературы по ФГОС"(2020)
               </td>
-              <td>5</td>
-              <td>3</td>
+              <td itemProp="genExperience">5</td>
+              <td itemProp="specExperience">3</td>
             </tr>
-            <tr>
-              <td>Муратов Раис Фаритович</td>
-              <td>Преподаватель</td>
-              <td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Муратов Раис Фаритович</td>
+              <td itemProp="post">Преподаватель</td>
+              <td itemProp="teachingDiscipline">
                 Национальные и международные требования по эксплуатации судна,
                 Планирование и руководство работы структурного подразделения,
                 Анализ деятельности структурного подразделения
               </td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">Инженер -электромеханик</td>
               <td>-</td>
-              <td>Высшее</td>
-              <td>Инженер -электромеханик</td>
               <td>-</td>
-              <td>-</td>
-              <td> Электрические машины</td>
-              <td>
+              <td>Электрические машины</td>
+              <td itemProp="profDevelopment">
                 "Особенности деятельности педагогических работников СПО в свете
                 требований профессионального стандарта"(2020){" "}
               </td>
-              <td>41</td>
-              <td>10</td>
+              <td itemProp="genExperience">41</td>
+              <td itemProp="specExperience">10</td>
             </tr>
-            <tr>
-              <td>Мухутдинова Лилия Ирековна</td>
-              <td>Преподаватель высшей квалификационной категории</td>
-              <td>Иностранный язык</td>
-              <td>-</td>
-              <td>Высшее</td>
-              <td>Филолог. Преподаватель немецкого языка</td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Мухутдинова Лилия Ирековна</td>
+              <td itemProp="post">
+                Преподаватель высшей квалификационной категории
+              </td>
+              <td itemProp="teachingDiscipline">Иностранный язык</td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">
+                Филолог. Преподаватель немецкого языка
+              </td>
               <td>-</td>
               <td>-</td>
               <td>Филология</td>
-              <td>
+              <td itemProp="profDevelopment">
                 "Психофизические особенности инвалидов и лиц с ограниченными
                 возможностями здоровья, специфика приема передачи учебной
                 информации , применение специальных технических средств обучения
@@ -1075,63 +1179,69 @@ const Employees = observer(() => {
                 педагогических работников СПО в свете требований
                 профессионального стандарта"(2020);
               </td>
-              <td>28</td>
-              <td>27</td>
+              <td itemProp="genExperience">28</td>
+              <td itemProp="specExperience">27</td>
             </tr>
-            <tr>
-              <td>Немцев Сергей Николаевич</td>
-              <td>Преподаватель первой квалификационной категории</td>
-              <td>Электроника и электротехника</td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Немцев Сергей Николаевич</td>
+              <td itemProp="post">
+                Преподаватель первой квалификационной категории
+              </td>
+              <td itemProp="teachingDiscipline">
+                Электроника и электротехника
+              </td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">Инженер-электромеханик</td>
               <td>-</td>
-              <td>Высшее</td>
-              <td>Инженер-электромеханик</td>
               <td>-</td>
-              <td>-</td>
-              <td> Электрические машины</td>
-              <td>
+              <td>Электрические машины</td>
+              <td itemProp="profDevelopment">
                 {" "}
                 "Особенности деятельности педагогических работников СПО в свете
                 требований профессионального стандарта"(2020)
               </td>
-              <td>42</td>
-              <td>31</td>
+              <td itemProp="genExperience">42</td>
+              <td itemProp="specExperience">31</td>
             </tr>
-            <tr>
-              <td>Решетников Виталий Евгеньевич</td>
-              <td>Преподаватель</td>
-              <td>Основы философии , История</td>
-              <td>-</td>
-              <td>Высшее</td>
-              <td> Историк, преподаватель истории</td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Решетников Виталий Евгеньевич</td>
+              <td itemProp="post">Преподаватель</td>
+              <td itemProp="teachingDiscipline">Основы философии , История</td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">Историк, преподаватель истории</td>
               <td>-</td>
               <td>-</td>
               <td> История</td>
-              <td>
+              <td itemProp="profDevelopment">
                 "Философия: Теория и методика преподавания в условиях реализации
                 ФГОС" (2019); "Подготовка по оказанию первой медицинской помощи"
                 "(2019); " Организация и сопровождение инклюзивного образования"
                 (2019);{" "}
               </td>
-              <td>18</td>
-              <td>10</td>
+              <td itemProp="genExperience">18</td>
+              <td itemProp="specExperience">10</td>
             </tr>
-            <tr>
-              <td>Романов Зульфир Вахитович</td>
-              <td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Романов Зульфир Вахитович</td>
+              <td itemProp="post">
                 Преподаватель-организатор основ безопасности жизнедеятельности
                 высшей квалификационной категории
               </td>
-              <td>ОБЖ Безопасность жизнедеятельности, БЖ военные сборы</td>
-              <td>-</td>
-              <td>Высшее</td>
-              <td>
+              <td itemProp="teachingDiscipline">
+                ОБЖ Безопасность жизнедеятельности, БЖ военные сборы
+              </td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">
                 Историк. Преподаватель истории. Специалист по гражданской
                 обороне
               </td>
               <td>-</td>
               <td>-</td>
-              <td> История</td>
-              <td>
+              <td>История</td>
+              <td itemProp="profDevelopment">
                 {" "}
                 "Психофизические особенности инвалидов и лиц с ограниченными
                 возможностями здоровья, специфика приема передачи учебной
@@ -1140,40 +1250,42 @@ const Employees = observer(() => {
                 Профессиональная переподготовка " Гражданская оборона и защита
                 населения от чрезвычайных ситуаций для должностных лиц"
               </td>
-              <td>11</td>
-              <td>5</td>
+              <td itemProp="genExperience">11</td>
+              <td itemProp="specExperience">5</td>
             </tr>
-            <tr>
-              <td>Сиразетдинова Эльвира Раисовна</td>
-              <td>Преподаватель</td>
-              <td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Сиразетдинова Эльвира Раисовна</td>
+              <td itemProp="post">Преподаватель</td>
+              <td itemProp="teachingDiscipline">
                 История; Предотвращение загрязнения окружающей среды;
                 Экологические основы природопользования{" "}
               </td>
-              <td>-</td>
-              <td>Высшее</td>
-              <td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">
                 Историк. Преподаватель истории. Профессиональная переподготовка
                 "Специалист по экологической безопасности"
               </td>
               <td>-</td>
               <td>-</td>
               <td>История</td>
-              <td>
+              <td itemProp="profDevelopment">
                 "Организация и сопровождение инклюзивного образования" (2019);
                 "Подготовка по оказанию первой медицинской помощи"(2019)
                 "Педагогика и психология в системе СПО" (2021){" "}
               </td>
-              <td>22</td>
-              <td>16</td>
+              <td itemProp="genExperience">22</td>
+              <td itemProp="specExperience">16</td>
             </tr>
-            <tr>
-              <td>Тазиева Гульдар Гайсаровна</td>
-              <td>Специалист по охране труда </td>
-              <td>Охрана труда и ТБ на судах, СВМ и их эксплуатация </td>
-              <td>-</td>
-              <td>Высшее</td>
-              <td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Тазиева Гульдар Гайсаровна</td>
+              <td itemProp="post">Специалист по охране труда </td>
+              <td itemProp="teachingDiscipline">
+                Охрана труда и ТБ на судах, СВМ и их эксплуатация{" "}
+              </td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">
                 Инженер по организации и управлению на транспорте; Специалист по
                 охране труда
               </td>
@@ -1183,7 +1295,7 @@ const Employees = observer(() => {
                 Организация перевозок и управление на транспорте (водном)
                 «Техносферная безопасность. Охрана труда»{" "}
               </td>
-              <td>
+              <td itemProp="profDevelopment">
                 "Психофизические особенности инвалидов и лиц с ограниченными
                 возможностями здоровья, специфика приема передачи учебной
                 информации , применение специальных технических средств обучения
@@ -1192,47 +1304,49 @@ const Employees = observer(() => {
                 педагогических работников СПО в свете требований
                 профессионального стандарта"(2019);{" "}
               </td>
-              <td>21</td>
-              <td>2</td>
+              <td itemProp="genExperience">21</td>
+              <td itemProp="specExperience">2</td>
             </tr>
-            <tr>
-              <td>Тарба Растан Александрович </td>
-              <td>Преподаватель первой квалификационной категории </td>
-              <td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Тарба Растан Александрович </td>
+              <td itemProp="post">
+                Преподаватель первой квалификационной категории{" "}
+              </td>
+              <td itemProp="teachingDiscipline">
                 Эксплуатация судовых энергетических установок на вспомогательном
                 уровне, Эксплуатация судна на вспомогательном уровне, Моторист
                 (машинист),{" "}
               </td>
-              <td>-</td>
-              <td>Высшее</td>
-              <td>Бакалавр</td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">Бакалавр</td>
               <td>-</td>
               <td>-</td>
               <td>Технологические машины и оборудование </td>
-              <td>
+              <td itemProp="profDevelopment">
                 {" "}
                 "Организация и сопровождение инклюзивного образования" (2019);
                 "Подготовка по оказанию первой медицинской помощи"(2019)
                 "Педагогика и психология в системе СПО" (2021){" "}
               </td>
-              <td>6</td>
-              <td>2</td>
+              <td itemProp="genExperience">6</td>
+              <td itemProp="specExperience">2</td>
             </tr>
-            <tr>
-              <td>Фомичев Сергей Юрьевич </td>
-              <td>Преподаватель</td>
-              <td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Фомичев Сергей Юрьевич </td>
+              <td itemProp="post">Преподаватель</td>
+              <td itemProp="teachingDiscipline">
                 Судовые вспомогательные механизмы и их эксплуатация, Техническое
                 обслуживание и ремонт судового оборудования, Техническая
                 эксплуатация судовой автоматики{" "}
               </td>
-              <td>-</td>
-              <td>Высшее</td>
-              <td>Инженер- электрик</td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">Инженер- электрик</td>
               <td>-</td>
               <td>-</td>
               <td>Электропривод и автоматизация промышленных установок, </td>
-              <td>
+              <td itemProp="profDevelopment">
                 Особенности деятельности педагогических работников СПО в свете
                 требований профессионального стандарта (2020); "Оказание первой
                 медицинской помощи"(2020); "Психофизические особенности
@@ -1241,67 +1355,73 @@ const Employees = observer(() => {
                 специальных технических средств обучения с учетом различных
                 нарушений функций организма человека" (2020);{" "}
               </td>
-              <td>37</td>
-              <td>1</td>
+              <td itemProp="genExperience">37</td>
+              <td itemProp="specExperience">1</td>
             </tr>
             <tr>
-              <td colspan="12">
+              <td itemProp="teachingOp" colSpan="12">
                 26.02.06.«Эксплуатация судового электрооборудования и средств
                 автоматики»
               </td>
             </tr>
-            <tr>
-              <td>Акбарова Залия Шамсуновна </td>
-              <td>Преподаватель высшей квалификационной категории </td>
-              <td>Математика </td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Акбарова Залия Шамсуновна </td>
+              <td itemProp="post">
+                Преподаватель высшей квалификационной категории{" "}
+              </td>
+              <td itemProp="teachingDiscipline">Математика </td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">Учитель физики и математики </td>
+              <td itemProp="degree">Кандидат педагогических наук </td>
               <td>-</td>
-              <td>Высшее</td>
-              <td>Учитель физики и математики </td>
-              <td>Кандидат педагогических наук </td>
-              <td>-</td>
-              <td> Физика и математика</td>
-              <td>
+              <td>Физика и математика</td>
+              <td itemProp="profDevelopment">
                 "Математика: Методика обучения в основной и средней школе в
                 условиях реализации ФГОС ОО" (2019); "Оказание первой
                 медицинской помощи" (2020){" "}
               </td>
-              <td>23</td>
-              <td>22</td>
+              <td itemProp="genExperience">23</td>
+              <td itemProp="specExperience">22</td>
             </tr>
-            <tr>
-              <td>Арсланова Наталья Анатольевна</td>
-              <td>Медицинская сестра</td>
-              <td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Арсланова Наталья Анатольевна</td>
+              <td itemProp="post">Медицинская сестра</td>
+              <td itemProp="teachingDiscipline">
                 ОБЖ. Основы мед. знаний, Безопасность жизнедеятельности (Основы
                 Медицинских знаний), Иностранный язык
               </td>
-              <td>-</td>
-              <td>Высшее</td>
-              <td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">
                 Сестринское дело (медицинская сестра) Лингвист, переводчик
                 немецкого и английского языка
               </td>
               <td>-</td>
               <td>-</td>
               <td>Сестринское дело Перевод и переводоведение</td>
-              <td>
+              <td itemProp="profDevelopment">
                 «Проведение предсменных, предрейсовых и послесменных,
                 послерейсовых медицинских осмотров» (2020)
               </td>
-              <td>14</td>
-              <td>3</td>
+              <td itemProp="genExperience">14</td>
+              <td itemProp="specExperience">3</td>
             </tr>
-            <tr>
-              <td>Ахметшин Максут Раянович </td>
-              <td>Преподаватель первой квалификационной категории </td>
-              <td>Метрология и стандартизация, Механика </td>
-              <td>-</td>
-              <td>Высшее</td>
-              <td>Инженер-механик </td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Ахметшин Максут Раянович </td>
+              <td itemProp="post">
+                Преподаватель первой квалификационной категории{" "}
+              </td>
+              <td itemProp="teachingDiscipline">
+                Метрология и стандартизация, Механика{" "}
+              </td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">Инженер-механик </td>
               <td>-</td>
               <td>-</td>
               <td>Механизация сельского хозяйства</td>
-              <td>
+              <td itemProp="profDevelopment">
                 Стажировка на учебном -судне тренажере "Штурман Альбанов" по
                 теме "Эксплуатация судовых энергетических установок,
                 эксплуатация судового электрооборудования и средств
@@ -1312,77 +1432,93 @@ const Employees = observer(() => {
                 педагогических работников СПО в свете требований
                 профессионального стандарта"(2020){" "}
               </td>
-              <td>31</td>
-              <td>19</td>
+              <td itemProp="genExperience">31</td>
+              <td itemProp="specExperience">19</td>
             </tr>
-            <tr>
-              <td>Баширова Альфия Анваровна</td>
-              <td>Педагог- организатор</td>
-              <td>Родной язык ; Родная литература</td>
-              <td>-</td>
-              <td>Высшее</td>
-              <td>Учитель Башкирского языка и литературы</td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Баширова Альфия Анваровна</td>
+              <td itemProp="post">Педагог- организатор</td>
+              <td itemProp="teachingDiscipline">
+                Родной язык ; Родная литература
+              </td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">
+                Учитель Башкирского языка и литературы
+              </td>
               <td>-</td>
               <td>-</td>
               <td>Филология</td>
-              <td>
+              <td itemProp="profDevelopment">
                 "Методические аспекты при изучении русской литературы последней
                 трети XIX века в современной школе"(2020)
               </td>
-              <td>13</td>
-              <td>1</td>
+              <td itemProp="genExperience">13</td>
+              <td itemProp="specExperience">1</td>
             </tr>
-            <tr>
-              <td>Бублис Юрий Федорович</td>
-              <td>Преподаватель высшей квалификационной категории</td>
-              <td>Теория устройства судна</td>
-              <td>-</td>
-              <td>Высшее</td>
-              <td>Инженер кораблестроитель</td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Бублис Юрий Федорович</td>
+              <td itemProp="post">
+                Преподаватель высшей квалификационной категории
+              </td>
+              <td itemProp="teachingDiscipline">Теория устройства судна</td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">Инженер кораблестроитель</td>
               <td>-</td>
               <td>-</td>
               <td>Судостроение и судоремонт</td>
-              <td> "Педагогика и психология в системе СПО" (2021)</td>
-              <td>50</td>
-              <td>22</td>
+              <td itemProp="profDevelopment">
+                "Педагогика и психология в системе СПО" (2021)
+              </td>
+              <td itemProp="genExperience">50</td>
+              <td itemProp="specExperience">22</td>
             </tr>
-            <tr>
-              <td>Гайнетдинова Эльвера Галихановна</td>
-              <td>Преподаватель высшей квалификационной категории</td>
-              <td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Гайнетдинова Эльвера Галихановна</td>
+              <td itemProp="post">
+                Преподаватель высшей квалификационной категории
+              </td>
+              <td itemProp="teachingDiscipline">
                 Судовые энергетические установки и их эксплуатация (включая
                 тренажер вахтенного механика),Материаловедение
               </td>
-              <td>-</td>
-              <td>Высшее</td>
-              <td> инженер-механик</td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">Инженер-механик</td>
               <td>-</td>
               <td>-</td>
               <td>«Судовые машины и механизмы»</td>
-              <td>"Педагогика и психология в системе СПО" (2021)</td>
-              <td>42</td>
-              <td>40</td>
+              <td itemProp="profDevelopment">
+                "Педагогика и психология в системе СПО" (2021)
+              </td>
+              <td itemProp="genExperience">42</td>
+              <td itemProp="specExperience">40</td>
             </tr>
-            <tr>
-              <td>Галлямова Раушания Харисовна</td>
-              <td>Преподаватель высшей квалификационной категории</td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Галлямова Раушания Харисовна</td>
+              <td itemProp="post">
+                Преподаватель высшей квалификационной категории
+              </td>
+              <td itemProp="teachingDiscipline">Физика</td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">Физик</td>
+              <td>-</td>
+              <td>-</td>
               <td>Физика</td>
               <td>-</td>
-              <td>Высшее</td>
-              <td>Физик</td>
-              <td>-</td>
-              <td>-</td>
-              <td>Физика</td>
-              <td>-</td>
-              <td>27</td>
-              <td>21</td>
+              <td itemProp="genExperience">27</td>
+              <td itemProp="specExperience">21</td>
             </tr>
-            <tr>
-              <td>Гарифуллина Зульфия Муратовна</td>
-              <td>Преподаватель первой квалификационной категории</td>
-              <td>Иностранный язык</td>
-              <td>-</td>
-              <td>Высшее</td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Гарифуллина Зульфия Муратовна</td>
+              <td itemProp="post">
+                Преподаватель первой квалификационной категории
+              </td>
+              <td itemProp="teachingDiscipline">Иностранный язык</td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
               <td>
                 Учитель башкирского языка, литературы и английского языка.
               </td>
@@ -1390,72 +1526,80 @@ const Employees = observer(() => {
               <td>-</td>
               <td>Родной язык, литература и иностранный язык</td>
               <td>-</td>
-              <td>12</td>
-              <td>6</td>
+              <td itemProp="genExperience">12</td>
+              <td itemProp="specExperience">6</td>
             </tr>
-            <tr>
-              <td>Гафаров Ильшат Радмирович</td>
-              <td>Руководитель физического воспитания</td>
-              <td>Физическая культура</td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Гафаров Ильшат Радмирович</td>
+              <td itemProp="post">Руководитель физического воспитания</td>
+              <td itemProp="teachingDiscipline">Физическая культура</td>
               <td>-</td>
-              <td>Высшее</td>
-              <td>специалист по адаптивной физической культуре</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">
+                Специалист по адаптивной физической культуре
+              </td>
               <td>-</td>
               <td>-</td>
               <td>
                 Физическая культура для лиц с отклонениями в состоянии здоровья
                 (Адаптивная физическая культура)
               </td>
-              <td>
-                "Организационно- методические основы организации уроков
+              <td itemProp="profDevelopment">
+                "Организационно-методические основы организации уроков
                 физической культуры и внеурочных мероприятий с учетом стандарта
                 Вордскилс по компетенции "Физическая культура, спорт и
                 фитнес"(2021)
               </td>
-              <td>23</td>
-              <td>21</td>
+              <td itemProp="genExperience">23</td>
+              <td itemProp="specExperience">21</td>
             </tr>
-            <tr>
-              <td>Жилина Анна Викторовна</td>
-              <td>Преподаватель высшей квалификационной категории</td>
-              <td>Информатика; компьютерная графика</td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Жилина Анна Викторовна</td>
+              <td itemProp="post">
+                Преподаватель высшей квалификационной категории
+              </td>
+              <td itemProp="teachingDiscipline">
+                Информатика; компьютерная графика
+              </td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">Учитель математики и информатики</td>
               <td>-</td>
-              <td>Высшее</td>
-              <td> Учитель математики и информатики</td>
               <td>-</td>
-              <td>-</td>
-              <td> Математика и информатика</td>
-              <td>
+              <td>Математика и информатика</td>
+              <td itemProp="profDevelopment">
                 "Применение современных компьютерных технологий в процессе
                 обучения информатики в условиях реализации ФГОС"(2020)
               </td>
-              <td>20</td>
-              <td>19</td>
+              <td itemProp="genExperience">20</td>
+              <td itemProp="specExperience">19</td>
             </tr>
-            <tr>
-              <td>Зараев Ильшат Фаритович</td>
-              <td>Преподаватель первой квалификационной категории</td>
-              <td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Зараев Ильшат Фаритович</td>
+              <td itemProp="post">
+                Преподаватель первой квалификационной категории
+              </td>
+              <td itemProp="teachingDiscipline">
                 Астрономия; Химия; Экологические основы природопользования.
               </td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">Учитель биологии и химии</td>
               <td>-</td>
-              <td>Высшее</td>
-              <td>Учитель биологии и химии</td>
               <td>-</td>
-              <td>-</td>
-              <td> Биология и химия</td>
-              <td>
+              <td>Биология и химия</td>
+              <td itemProp="profDevelopment">
                 "Современные образовательные технологии в преподавании химии с
                 учетом ФГОС" (2020); "Основы предмета "Экология в соответствии с
                 требованиями ФГОС" (2020); "Методика преподавания астрономии при
                 подготовке специалистов среднего звена" (2020)
               </td>
-              <td>14</td>
-              <td>11</td>
+              <td itemProp="genExperience">14</td>
+              <td itemProp="specExperience">11</td>
             </tr>
-            <tr>
-              <td>Зкриева Гульнара Робертовна</td>
-              <td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Зкриева Гульнара Робертовна</td>
+              <td itemProp="post">
                 категории Астрономия; Химия; Экологические основы
                 природопользования. - Высшее Учитель биологии и химии - -
                 Биология и химия "Современные образовательные технологии в
@@ -1465,183 +1609,198 @@ const Employees = observer(() => {
                 звена" (2020) 14 11 Зкриева Гульнара Робертовна Преподаватель
                 высшей квалификационной категории
               </td>
-              <td>
+              <td itemProp="teachingDiscipline">
                 Электрооборудование судов; Гидравлика Электроника и
                 электротехника
               </td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">Инженер-электрик </td>
               <td>-</td>
-              <td>Высшее</td>
-              <td>Инженер-электрик </td>
               <td>-</td>
-              <td>-</td>
-              <td> Электрофикация и автоматизация сельского хозяйства</td>
-              <td>"Педагогика и психология в системе СПО" (2021)</td>
-              <td>26</td>
-              <td>25</td>
+              <td>Электрофикация и автоматизация сельского хозяйства</td>
+              <td itemProp="profDevelopment">
+                "Педагогика и психология в системе СПО" (2021)
+              </td>
+              <td itemProp="genExperience">26</td>
+              <td itemProp="specExperience">25</td>
             </tr>
-            <tr>
-              <td>Козырь Снежана Андреевна</td>
-              <td>Преподаватель высшей квалификационной категории</td>
-              <td>Русский язык</td>
-              <td> -</td>
-              <td>Высшее</td>
-              <td>Бакалавр</td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Козырь Снежана Андреевна</td>
+              <td itemProp="post">
+                Преподаватель высшей квалификационной категории
+              </td>
+              <td itemProp="teachingDiscipline">Русский язык</td>
+              <td itemProp="employeeQualification"> -</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">Бакалавр</td>
               <td>-</td>
               <td>-</td>
               <td>Филология</td>
-              <td>
-                "Оказание первой медицинской помощи"(2020); " Особенности
+              <td itemProp="profDevelopment">
+                "Оказание первой медицинской помощи"(2020); "Особенности
                 деятельности педагогических работников СПО в свете требований
                 профессионального стандарта"(2020); "Исследовательская
                 технология на уроках русского языка и литературы по ФГОС"(2020)
               </td>
-              <td>5</td>
-              <td>3</td>
+              <td itemProp="genExperience">5</td>
+              <td itemProp="specExperience">3</td>
             </tr>
-            <tr>
-              <td>Муратов Раис Фаритович</td>
-              <td>Преподаватель</td>
-              <td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Муратов Раис Фаритович</td>
+              <td itemProp="post">Преподаватель</td>
+              <td itemProp="teachingDiscipline">
                 Основы анализа эффективности работы судна с применением
                 информационных технологий, Эксплуатация судовых энергетических
                 установок на вспомогательном уровне, Судовые энергетические
                 установки (включая тренажер вахтенного механика)
               </td>
-              <td>-</td>
-              <td>Высшее</td>
-              <td>Инженер -электромеханик</td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">Инженер-электромеханик</td>
               <td>-</td>
               <td>-</td>
               <td>Электрические машины</td>
-              <td>
+              <td itemProp="profDevelopment">
                 "Особенности деятельности педагогических работников СПО в свете
                 требований профессионального стандарта"(2020)
               </td>
-              <td>41</td>
-              <td>10</td>
+              <td itemProp="genExperience">41</td>
+              <td itemProp="specExperience">10</td>
             </tr>
-            <tr>
-              <td>Мусина Гульфия Ириковна</td>
-              <td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Мусина Гульфия Ириковна</td>
+              <td itemProp="post">
                 Заместитель директора; Преподаватель высшей квалификационной
                 категории
               </td>
-              <td>Литература</td>
+              <td itemProp="teachingDiscipline">Литература</td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">
+                Учитель русского языка и литературы Учитель истории
+              </td>
               <td>-</td>
-              <td> Высшее</td>
-              <td>Учитель русского языка и литературы Учитель истории</td>
               <td>-</td>
-              <td>-</td>
-              <td> Русский язык и литература</td>
-              <td>
+              <td>Русский язык и литература</td>
+              <td itemProp="profDevelopment">
                 "Оказание первой помощи"(2020); "Профессиональная компетентность
                 педагогов в условиях внедрения ФГОС" (2020); "Реализация
                 образовательных программ среднего профессионального образования
                 с учетом специфики WordSkills" (2021)
               </td>
-              <td>26</td>
-              <td>26</td>
+              <td itemProp="genExperience">26</td>
+              <td itemProp="specExperience">26</td>
             </tr>
-            <tr>
-              <td>Мухутдинова Лилия Ирековна</td>
-              <td>Преподаватель высшей квалификационной категории</td>
-              <td>Иностранный язык</td>
-              <td>-</td>
-              <td>Высшее</td>
-              <td>Филолог. Преподаватель немецкого языка</td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Мухутдинова Лилия Ирековна</td>
+              <td itemProp="post">
+                Преподаватель высшей квалификационной категории
+              </td>
+              <td itemProp="teachingDiscipline">Иностранный язык</td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">
+                Филолог. Преподаватель немецкого языка
+              </td>
               <td>-</td>
               <td>-</td>
               <td>Филология</td>
-              <td>
+              <td itemProp="profDevelopment">
                 "Психофизические особенности инвалидов и лиц с ограниченными
                 возможностями здоровья, специфика приема передачи учебной
-                информации , применение специальных технических средств обучения
+                информации, применение специальных технических средств обучения
                 с учетом различных нарушений функций организма человека" (2019);
                 "Оказание первой помощи"(2020); "Особенности деятельности
                 педагогических работников СПО в свете требований
                 профессионального стандарта"(2020);
               </td>
-              <td>28</td>
-              <td>27</td>
+              <td itemProp="genExperience">28</td>
+              <td itemProp="specExperience">27</td>
             </tr>
-            <tr>
-              <td>Решетников Виталий Евгеньевич</td>
-              <td>Преподаватель</td>
-              <td>Основы философии , История </td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Решетников Виталий Евгеньевич</td>
+              <td itemProp="post">Преподаватель</td>
+              <td itemProp="teachingDiscipline">Основы философии , История </td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">Историк, преподаватель истории</td>
               <td>-</td>
-              <td>Высшее</td>
-              <td>Историк, преподаватель истории</td>
               <td>-</td>
-              <td>-</td>
-              <td> История</td>
-              <td>
+              <td>История</td>
+              <td itemProp="profDevelopment">
                 "Философия: Теория и методика преподавания в условиях реализации
                 ФГОС" (2019); "Подготовка по оказанию первой медицинской помощи"
-                "(2019); " Организация и сопровождение инклюзивного образования"
+                "(2019); "Организация и сопровождение инклюзивного образования"
                 (2019);{" "}
               </td>
-              <td>18</td>
-              <td>10</td>
+              <td itemProp="genExperience">18</td>
+              <td itemProp="specExperience">10</td>
             </tr>
-            <tr>
-              <td>Романов Зульфир Вахитович</td>
-              <td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Романов Зульфир Вахитович</td>
+              <td itemProp="post">
                 Преподаватель-организатор основ безопасности жизнедеятельности
                 высшей категории
               </td>
-              <td>ОБЖ Безопасность жизнедеятельности, БЖ военные сборы</td>
-              <td>-</td>
-              <td>Высшее</td>
-              <td>
+              <td itemProp="teachingDiscipline">
+                ОБЖ Безопасность жизнедеятельности, БЖ военные сборы
+              </td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">
                 Историк. Преподаватель истории. Специалист по гражданской
                 обороне
               </td>
               <td>-</td>
               <td>-</td>
               <td>История</td>
-              <td>
+              <td itemProp="profDevelopment">
                 "Психофизические особенности инвалидов и лиц с ограниченными
                 возможностями здоровья, специфика приема передачи учебной
-                информации , применение специальных технических средств обучения
+                информации, применение специальных технических средств обучения
                 с учетом различных нарушений функций организма человека" (2019);
-                Профессиональная переподготовка " Гражданская оборона и защита
+                Профессиональная переподготовка" Гражданская оборона и защита
                 населения от чрезвычайных ситуаций для должностных лиц"
               </td>
-              <td>11</td>
-              <td>5</td>
+              <td itemProp="genExperience">11</td>
+              <td itemProp="specExperience">5</td>
             </tr>
-            <tr>
-              <td>Сиразетдинова Эльвира Раисовна</td>
-              <td>Преподаватель первой квалификационной категории</td>
-              <td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Сиразетдинова Эльвира Раисовна</td>
+              <td itemProp="post">
+                Преподаватель первой квалификационной категории
+              </td>
+              <td itemProp="teachingDiscipline">
                 История; Экологические основы природопользования, Предупреждение
                 и предотвращение загрязнения окружающей среды
               </td>
-              <td>-</td>
-              <td>Высшее</td>
-              <td>
-                {" "}
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">
                 Историк. Преподаватель истории. Профессиональная переподготовка
                 "Специалист по экологической безопасности"
               </td>
               <td>-</td>
               <td>-</td>
               <td>История</td>
-              <td>
+              <td itemProp="profDevelopment">
                 "Организация и сопровождение инклюзивного образования" (2019);
                 "Подготовка по оказанию первой медицинской помощи"(2019)
                 "Педагогика и психология в системе СПО" (2021)
               </td>
-              <td>22</td>
-              <td>3</td>
+              <td itemProp="genExperience">22</td>
+              <td itemProp="specExperience">3</td>
             </tr>
-            <tr>
-              <td>Тазиева Гульдар Гайсаровна</td>
-              <td>Специалист по охране труда </td>
-              <td>Охрана труда и ТБ на судах, СВМ и их эксплуатация </td>
-              <td>-</td>
-              <td>Высшее</td>
-              <td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Тазиева Гульдар Гайсаровна</td>
+              <td itemProp="post">Специалист по охране труда </td>
+              <td itemProp="teachingDiscipline">
+                Охрана труда и ТБ на судах, СВМ и их эксплуатация{" "}
+              </td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">
                 Инженер по организации и управлению на транспорте; Специалист по
                 охране труда{" "}
               </td>
@@ -1651,7 +1810,7 @@ const Employees = observer(() => {
                 Организация перевозок и управление на транспорте (водном)
                 «Техносферная безопасность. Охрана труда»{" "}
               </td>
-              <td>
+              <td itemProp="profDevelopment">
                 "Психофизические особенности инвалидов и лиц с ограниченными
                 возможностями здоровья, специфика приема передачи учебной
                 информации , применение специальных технических средств обучения
@@ -1660,47 +1819,49 @@ const Employees = observer(() => {
                 педагогических работников СПО в свете требований
                 профессионального стандарта"(2019);{" "}
               </td>
-              <td>21</td>
-              <td>2</td>
+              <td itemProp="genExperience">21</td>
+              <td itemProp="specExperience">2</td>
             </tr>
-            <tr>
-              <td>Тарба Растан Александрович </td>
-              <td>Преподаватель первой квалификационной категории </td>
-              <td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Тарба Растан Александрович </td>
+              <td itemProp="post">
+                Преподаватель первой квалификационной категории{" "}
+              </td>
+              <td itemProp="teachingDiscipline">
                 Эксплуатация судовых энергетических установок на вспомогательном
                 уровне, Эксплуатация судна на вспомогательном уровне, Моторист
-                (машинист),{" "}
+                (машинист)
               </td>
-              <td>-</td>
-              <td>Высшее</td>
-              <td>Бакалавр</td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">Бакалавр</td>
               <td>-</td>
               <td>-</td>
               <td>Технологические машины и оборудование </td>
-              <td>
+              <td itemProp="profDevelopment">
                 {" "}
                 "Организация и сопровождение инклюзивного образования" (2019);
                 "Подготовка по оказанию первой медицинской помощи"(2019)
                 "Педагогика и психология в системе СПО" (2021){" "}
               </td>
-              <td>6</td>
-              <td>2</td>
+              <td itemProp="genExperience">6</td>
+              <td itemProp="specExperience">2</td>
             </tr>
-            <tr>
-              <td>Фомичев Сергей Юрьевич </td>
-              <td>Преподаватель</td>
-              <td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Фомичев Сергей Юрьевич </td>
+              <td itemProp="post">Преподаватель</td>
+              <td itemProp="teachingDiscipline">
                 Судовые вспомогательные механизмы и их эксплуатация, Техническое
                 обслуживание и ремонт судового оборудования, Техническая
                 эксплуатация судовой автоматики{" "}
               </td>
-              <td>-</td>
-              <td>Высшее</td>
-              <td>Инженер- электрик</td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">Инженер-электрик</td>
               <td>-</td>
               <td>-</td>
               <td>Электропривод и автоматизация промышленных установок, </td>
-              <td>
+              <td itemProp="profDevelopment">
                 Особенности деятельности педагогических работников СПО в свете
                 требований профессионального стандарта (2020); "Оказание первой
                 медицинской помощи"(2020); "Психофизические особенности
@@ -1709,318 +1870,349 @@ const Employees = observer(() => {
                 специальных технических средств обучения с учетом различных
                 нарушений функций организма человека" (2020);{" "}
               </td>
-              <td>37</td>
-              <td>1</td>
+              <td itemProp="genExperience">37</td>
+              <td itemProp="specExperience">1</td>
             </tr>
-
-            <tr>
-              <td>Щербакова Амина Байраковна</td>
-              <td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Щербакова Амина Байраковна</td>
+              <td itemProp="post">
                 Заведующий учебным отделом, преподаватель высшей
                 квалификационной категории
               </td>
-              <td>Литература</td>
+              <td itemProp="teachingDiscipline">Литература</td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">
+                Историк, преподаватель истории и обществоведения
+              </td>
               <td>-</td>
-              <td>Высшее</td>
-              <td> Историк, преподаватель истории и обществоведения</td>
               <td>-</td>
-              <td>-</td>
-              <td> История</td>
-              <td>
+              <td>История</td>
+              <td itemProp="profDevelopment">
                 {" "}
-                "Оказание первой помощи"(2019); " Современные требования
+                "Оказание первой помощи"(2019); "Современные требования
                 преподавания курса "История России" в свете требований ФГОС и
-                Историку- культурного стандарта" (2019); " Нормативно - правовые
-                , теоретико -методологические и методические основы преподавания
+                Историку- культурного стандарта" (2019); "Нормативно - правовые,
+                теоретико -методологические и методические основы преподавания
                 предмета обществознание" (2019)
               </td>
-              <td>25</td>
-              <td>23</td>
+              <td itemProp="genExperience">25</td>
+              <td itemProp="specExperience">23</td>
             </tr>
             <tr>
-              <td colspan="12">
+              <td itemProp="teachingOp" colSpan="12">
                 23.02.01 "Организация перевозок и управление на транспорте (по
                 видам)"
               </td>
             </tr>
-            <tr>
-              <td>Арсланова Наталья Анатольевна</td>
-              <td>Медицинская сестра</td>
-              <td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Арсланова Наталья Анатольевна</td>
+              <td itemProp="post">Медицинская сестра</td>
+              <td itemProp="teachingDiscipline">
                 ОБЖ. Основы мед. знаний, Безопасность жизнедеятельности (Основы
                 Медицинских знаний), Иностранный язык
               </td>
-              <td>-</td>
-              <td>Высшее</td>
-              <td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">
                 Сестринское дело (медицинская сестра) Лингвист, переводчик
                 немецкого и английского языка
               </td>
               <td>-</td>
               <td>-</td>
               <td>Сестринское дело Перевод и переводоведение</td>
-              <td>
+              <td itemProp="profDevelopment">
                 «Проведение предсменных, предрейсовых и послесменных,
                 послерейсовых медицинских осмотров» (2020)
               </td>
-              <td>14</td>
-              <td>3</td>
+              <td itemProp="genExperience">14</td>
+              <td itemProp="specExperience">3</td>
             </tr>
-            <tr>
-              <td>Ахметшин Максут Раянович </td>
-              <td>Преподаватель первой квалификационной категории </td>
-              <td>Метрология и стандартизация, Механика </td>
-              <td>-</td>
-              <td>Высшее</td>
-              <td>Инженер-механик </td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Ахметшин Максут Раянович </td>
+              <td itemProp="post">
+                Преподаватель первой квалификационной категории{" "}
+              </td>
+              <td itemProp="teachingDiscipline">
+                Метрология и стандартизация, Механика{" "}
+              </td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">Инженер-механик </td>
               <td>-</td>
               <td>-</td>
               <td>Механизация сельского хозяйства</td>
-              <td>
-                Стажировка на учебном -судне тренажере "Штурман Альбанов" по
-                теме "Эксплуатация судовых энергетических установок,
-                эксплуатация судового электрооборудования и средств
-                автоматики"(2019); "Использование инновационных интерактивных
-                технологий в системе СПО" (2019); "Подготовка по оказанию первой
-                медицинской помощи" (2019); "Организация и сопровождение
-                инклюзивного образования" (2019) ; "Особенности деятельности
-                педагогических работников СПО в свете требований
-                профессионального стандарта"(2020){" "}
+              <td itemProp="profDevelopment">
+                Стажировка на учебном судне-тренажере "Штурман Альбанов" по теме
+                "Эксплуатация судовых энергетических установок, эксплуатация
+                судового электрооборудования и средств автоматики"(2019);
+                "Использование инновационных интерактивных технологий в системе
+                СПО" (2019); "Подготовка по оказанию первой медицинской помощи"
+                (2019); "Организация и сопровождение инклюзивного образования"
+                (2019); "Особенности деятельности педагогических работников СПО
+                в свете требований профессионального стандарта"(2020){" "}
               </td>
-              <td>31</td>
-              <td>19</td>
+              <td itemProp="genExperience">31</td>
+              <td itemProp="specExperience">19</td>
             </tr>
-            <tr>
-              <td>Баширова Альфия Анваровна</td>
-              <td>Педагог- организатор</td>
-              <td>Родной язык ; Родная литература</td>
-              <td>-</td>
-              <td>Высшее</td>
-              <td>Учитель Башкирского языка и литературы</td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Баширова Альфия Анваровна</td>
+              <td itemProp="post">Педагог- организатор</td>
+              <td itemProp="teachingDiscipline">
+                Родной язык; Родная литература
+              </td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">
+                Учитель Башкирского языка и литературы
+              </td>
               <td>-</td>
               <td>-</td>
               <td>Филология</td>
-              <td>
+              <td itemProp="profDevelopment">
                 "Методические аспекты при изучении русской литературы последней
                 трети XIX века в современной школе"(2020)
               </td>
-              <td>13</td>
-              <td>1</td>
+              <td itemProp="genExperience">13</td>
+              <td itemProp="specExperience">1</td>
             </tr>
-            <tr>
-              <td>Бублис Юрий Федорович</td>
-              <td>Преподаватель высшей квалификационной категории</td>
-              <td>Теория устройства судна</td>
-              <td>-</td>
-              <td>Высшее</td>
-              <td>Инженер кораблестроитель</td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Бублис Юрий Федорович</td>
+              <td itemProp="post">
+                Преподаватель высшей квалификационной категории
+              </td>
+              <td itemProp="teachingDiscipline">Теория устройства судна</td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">Инженер кораблестроитель</td>
               <td>-</td>
               <td>-</td>
               <td>Судостроение и судоремонт</td>
-              <td> "Педагогика и психология в системе СПО" (2021)</td>
-              <td>50</td>
-              <td>22</td>
+              <td itemProp="profDevelopment">
+                {" "}
+                "Педагогика и психология в системе СПО" (2021)
+              </td>
+              <td itemProp="genExperience">50</td>
+              <td itemProp="specExperience">22</td>
             </tr>
-            <tr>
-              <td>Галлямова Раушания Харисовна</td>
-              <td>Преподаватель высшей квалификационной категории</td>
-              <td>Физика</td>
-              <td>-</td>
-              <td>Высшее</td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Галлямова Раушания Харисовна</td>
+              <td itemProp="post">
+                Преподаватель высшей квалификационной категории
+              </td>
+              <td itemProp="teachingDiscipline">Физика</td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
               <td>Физик</td>
               <td>-</td>
               <td>-</td>
               <td>Физика</td>
               <td>-</td>
-              <td>27</td>
-              <td>21</td>
+              <td itemProp="genExperience">27</td>
+              <td itemProp="specExperience">21</td>
             </tr>
-            <tr>
-              <td>Жилина Анна Викторовна</td>
-              <td>Преподаватель высшей квалификационной категории</td>
-              <td>Информатика; компьютерная графика</td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Жилина Анна Викторовна</td>
+              <td itemProp="post">
+                Преподаватель высшей квалификационной категории
+              </td>
+              <td itemProp="teachingDiscipline">
+                Информатика; компьютерная графика
+              </td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">Учитель математики и информатики</td>
               <td>-</td>
-              <td>Высшее</td>
-              <td> Учитель математики и информатики</td>
               <td>-</td>
-              <td>-</td>
-              <td> Математика и информатика</td>
-              <td>
+              <td>Математика и информатика</td>
+              <td itemProp="profDevelopment">
                 "Применение современных компьютерных технологий в процессе
                 обучения информатики в условиях реализации ФГОС"(2020)
               </td>
-              <td>20</td>
-              <td>19</td>
+              <td itemProp="genExperience">20</td>
+              <td itemProp="specExperience">19</td>
             </tr>
-            <tr>
-              <td>Зараев Ильшат Фаритович</td>
-              <td>Преподаватель первой квалификационной категории</td>
-              <td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Зараев Ильшат Фаритович</td>
+              <td itemProp="post">
+                Преподаватель первой квалификационной категории
+              </td>
+              <td itemProp="teachingDiscipline">
                 Астрономия; Химия; Экологические основы природопользования.
               </td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">Учитель биологии и химии</td>
               <td>-</td>
-              <td>Высшее</td>
-              <td>Учитель биологии и химии</td>
               <td>-</td>
-              <td>-</td>
-              <td> Биология и химия</td>
-              <td>
+              <td>Биология и химия</td>
+              <td itemProp="profDevelopment">
                 "Современные образовательные технологии в преподавании химии с
                 учетом ФГОС" (2020); "Основы предмета "Экология в соответствии с
                 требованиями ФГОС" (2020); "Методика преподавания астрономии при
                 подготовке специалистов среднего звена" (2020)
               </td>
-              <td>14</td>
-              <td>11</td>
+              <td itemProp="genExperience">14</td>
+              <td itemProp="specExperience">11</td>
             </tr>
-            <tr>
-              <td>Исхакова Лилия Лутфулловна</td>
-              <td>Преподаватель</td>
-              <td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Исхакова Лилия Лутфулловна</td>
+              <td itemProp="post">Преподаватель</td>
+              <td itemProp="teachingDiscipline">
                 Планирование и руководство работы структурного подразделения
               </td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">Бакалавр</td>
               <td>-</td>
-              <td>Высшее</td>
-              <td>Бакалавр</td>
               <td>-</td>
-              <td>-</td>
-              <td> Технология транспортных процессов</td>
-              <td> "Педагогика и психология в системе СПО" (2021)</td>
-              <td>20</td>
-              <td>3</td>
+              <td>Технология транспортных процессов</td>
+              <td itemProp="profDevelopment">
+                "Педагогика и психология в системе СПО" (2021)
+              </td>
+              <td itemProp="genExperience">20</td>
+              <td itemProp="specExperience">3</td>
             </tr>
-            <tr>
-              <td>Козырь Снежана Андреевна</td>
-              <td>Преподаватель высшей квалификационной категории</td>
-              <td>Русский язык; Литература</td>
-              <td>-</td>
-              <td>Высшее</td>
-              <td>Бакалавр</td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Козырь Снежана Андреевна</td>
+              <td itemProp="post">
+                Преподаватель высшей квалификационной категории
+              </td>
+              <td itemProp="teachingDiscipline">Русский язык; Литература</td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">Бакалавр</td>
               <td>-</td>
               <td>-</td>
               <td>Филология</td>
-              <td>
-                "Оказание первой медицинской помощи"(2020); " Особенности
+              <td itemProp="profDevelopment">
+                "Оказание первой медицинской помощи"(2020); "Особенности
                 деятельности педагогических работников СПО в свете требований
                 профессионального стандарта"(2020); "Исследовательская
                 технология на уроках русского языка и литературы по ФГОС"(2020)
               </td>
-              <td>5</td>
-              <td>3</td>
+              <td itemProp="genExperience">5</td>
+              <td itemProp="specExperience">3</td>
             </tr>
-            <tr>
-              <td>Муратов Раис Фаритович</td>
-              <td>Преподаватель</td>
-              <td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Муратов Раис Фаритович</td>
+              <td itemProp="post">Преподаватель</td>
+              <td itemProp="teachingDiscipline">
                 Национальные и международные требования по эксплуатации судна,
                 Планирование и руководство работы структурного подразделения,
                 Анализ деятельности структурного подразделения
               </td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">Инженер -электромеханик</td>
               <td>-</td>
-              <td>Высшее</td>
-              <td>Инженер -электромеханик</td>
               <td>-</td>
-              <td>-</td>
-              <td> Электрические машины</td>
-              <td>
+              <td>Электрические машины</td>
+              <td itemProp="profDevelopment">
                 "Особенности деятельности педагогических работников СПО в свете
                 требований профессионального стандарта"(2020){" "}
               </td>
-              <td>41</td>
-              <td>10</td>
+              <td itemProp="genExperience">41</td>
+              <td itemProp="specExperience">10</td>
             </tr>
-            <tr>
-              <td>Мухутдинова Лилия Ирековна</td>
-              <td>Преподаватель высшей квалификационной категории</td>
-              <td>Иностранный язык</td>
-              <td>-</td>
-              <td>Высшее</td>
-              <td>Филолог. Преподаватель немецкого языка</td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Мухутдинова Лилия Ирековна</td>
+              <td itemProp="post">
+                Преподаватель высшей квалификационной категории
+              </td>
+              <td itemProp="teachingDiscipline">Иностранный язык</td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">
+                Филолог. Преподаватель немецкого языка
+              </td>
               <td>-</td>
               <td>-</td>
               <td>Филология</td>
-              <td>
+              <td itemProp="profDevelopment">
                 "Психофизические особенности инвалидов и лиц с ограниченными
                 возможностями здоровья, специфика приема передачи учебной
-                информации , применение специальных технических средств обучения
+                информации, применение специальных технических средств обучения
                 с учетом различных нарушений функций организма человека" (2019);
                 "Оказание первой помощи"(2020); "Особенности деятельности
                 педагогических работников СПО в свете требований
                 профессионального стандарта"(2020);
               </td>
-              <td>28</td>
-              <td>27</td>
+              <td itemProp="genExperience">28</td>
+              <td itemProp="specExperience">27</td>
             </tr>
-            <tr>
-              <td>Решетников Виталий Евгеньевич</td>
-              <td>Преподаватель</td>
-              <td>Основы философии , История</td>
-              <td>-</td>
-              <td>Высшее</td>
-              <td> Историк, преподаватель истории</td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Решетников Виталий Евгеньевич</td>
+              <td itemProp="post">Преподаватель</td>
+              <td itemProp="teachingDiscipline">Основы философии , История</td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">Историк, преподаватель истории</td>
               <td>-</td>
               <td>-</td>
               <td> История</td>
-              <td>
+              <td itemProp="profDevelopment">
                 "Философия: Теория и методика преподавания в условиях реализации
                 ФГОС" (2019); "Подготовка по оказанию первой медицинской помощи"
-                "(2019); " Организация и сопровождение инклюзивного образования"
+                "(2019); "Организация и сопровождение инклюзивного образования"
                 (2019);{" "}
               </td>
-              <td>18</td>
-              <td>10</td>
+              <td itemProp="genExperience">18</td>
+              <td itemProp="specExperience">10</td>
             </tr>
-            <tr>
-              <td>Романов Зульфир Вахитович</td>
-              <td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Романов Зульфир Вахитович</td>
+              <td itemProp="post">
                 Преподаватель-организатор основ безопасности жизнедеятельности
                 высшей квалификационной категории
               </td>
-              <td>ОБЖ Безопасность жизнедеятельности, БЖ военные сборы</td>
-              <td>-</td>
-              <td>Высшее</td>
-              <td>
+              <td itemProp="teachingDiscipline">
+                ОБЖ Безопасность жизнедеятельности, БЖ военные сборы
+              </td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">
                 Историк. Преподаватель истории. Специалист по гражданской
                 обороне
               </td>
               <td>-</td>
               <td>-</td>
-              <td> История</td>
-              <td>
+              <td>История</td>
+              <td itemProp="profDevelopment">
                 {" "}
                 "Психофизические особенности инвалидов и лиц с ограниченными
                 возможностями здоровья, специфика приема передачи учебной
-                информации , применение специальных технических средств обучения
+                информации, применение специальных технических средств обучения
                 с учетом различных нарушений функций организма человека" (2019);
-                Профессиональная переподготовка " Гражданская оборона и защита
+                Профессиональная переподготовка" Гражданская оборона и защита
                 населения от чрезвычайных ситуаций для должностных лиц"
               </td>
-              <td>11</td>
-              <td>5</td>
+              <td itemProp="genExperience">11</td>
+              <td itemProp="specExperience">5</td>
             </tr>
-            <tr>
-              <td>Сиразетдинова Эльвира Раисовна</td>
-              <td>Преподаватель</td>
-              <td>
+            <tr itemProp="teachingStaff">
+              <td itemProp="fio">Сиразетдинова Эльвира Раисовна</td>
+              <td itemProp="post">Преподаватель</td>
+              <td itemProp="teachingDiscipline">
                 История; Предотвращение загрязнения окружающей среды;
                 Экологические основы природопользования{" "}
               </td>
-              <td>-</td>
-              <td>Высшее</td>
-              <td>
+              <td itemProp="employeeQualification">-</td>
+              <td itemProp="teachingLevel">Высшее</td>
+              <td itemProp="teachingQual">
                 Историк. Преподаватель истории. Профессиональная переподготовка
                 "Специалист по экологической безопасности"
               </td>
               <td>-</td>
               <td>-</td>
               <td>История</td>
-              <td>
+              <td itemProp="profDevelopment">
                 "Организация и сопровождение инклюзивного образования" (2019);
                 "Подготовка по оказанию первой медицинской помощи"(2019)
                 "Педагогика и психология в системе СПО" (2021){" "}
               </td>
-              <td>22</td>
-              <td>16</td>
+              <td itemProp="genExperience">22</td>
+              <td itemProp="specExperience">16</td>
             </tr>
           </tbody>
         </table>

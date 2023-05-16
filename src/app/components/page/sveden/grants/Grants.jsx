@@ -45,26 +45,33 @@ const Grants = observer(() => {
       </h3>
       <ul>
         <li className="doc__item">
-          <a href={"Ustav"} target={"_blank"} rel="noreferrer">
+          <a
+            itemProp="localAct"
+            href={"Ustav"}
+            target={"_blank"}
+            rel="noreferrer"
+          >
             Протокол заседания стипендиальной комиссии № 1 от 26.09.2022 об
             установлении размера стипендий
           </a>
         </li>
-
         <li className="doc__item">
-          <a href={"Ustav"} target={"_blank"} rel="noreferrer">
+          <a itemProp="grant" href={"Ustav"} target={"_blank"} rel="noreferrer">
             Приказ "О назначении стипендиальной комиссии" № 527-УФСПО-06 от
             23.09.2022 г
           </a>
         </li>
-
         <li className="doc__item">
-          <a href={"Ustav"} target={"_blank"} rel="noreferrer">
+          <a
+            itemProp="support"
+            href={"Ustav"}
+            target={"_blank"}
+            rel="noreferrer"
+          >
             Положение о стипендиальном обеспечении и других формах материальной
             поддержки студентов и аспирантов
           </a>
         </li>
-
         <li className="doc__item">
           <a href={"Ustav"} target={"_blank"} rel="noreferrer">
             Постановление Правительства РФ от 17.12.2016 г. № 1390 "О
@@ -90,6 +97,7 @@ const Grants = observer(() => {
         </li>
       </ul>
       <h3
+        itemProp="hostelInfo"
         className={`common__container-title ${toggleClassName(
           "title",
           "title-white",
@@ -119,7 +127,7 @@ const Grants = observer(() => {
         На первом этаже оборудована комната для приема пищи лицами ограниченными
         возможностями здоровья.
       </p>
-      <p>
+      <p itemProp="hostelTS">
         Филиал имеет общежитие общей площадью 5978,2 кв.м. на 375 место,
         согласно норм СанПин.
       </p>
@@ -140,35 +148,37 @@ const Grants = observer(() => {
             <tr>
               <td>Количество общежитий, интернатов </td>
               <td>1</td>
-              <td>нет</td>
+              <td>Нет</td>
             </tr>
             <tr>
               <td>Общая площадь</td>
               <td>5978,2</td>
-              <td>нет</td>
+              <td>Нет</td>
             </tr>
             <tr>
-              <td>Жилая площадь</td>
+              <td itemProp="hostelLS">Жилая площадь</td>
               <td>2265,3</td>
-              <td>нет</td>
+              <td>Нет</td>
             </tr>
             <tr>
-              <td>Количество мест</td>
+              <td itemProp="hostelNum">Количество мест</td>
               <td>375</td>
-              <td>нет</td>
+              <td>Нет</td>
             </tr>
             <tr>
-              <td>
-                Обеспеченность общежитий, интернатов 100% мягким и жестким
-                инвентарем по установленным стандартным нормам
+              <td itemProp="hostelInv">
+                Обеспеченность общежитий 100% мягким и жестким инвентарем по
+                установленным стандартным нормам
               </td>
               <td>100%</td>
-              <td>нет</td>
+              <td>Нет</td>
             </tr>
             <tr>
-              <td>Наличие питания (включая буфеты, столовые) (да/нет)</td>
-              <td>помещение для приема пищи +столовая</td>
-              <td>нет</td>
+              <td itemProp="hostelFd">
+                Наличие питания (включая буфеты, столовые) (да/нет)
+              </td>
+              <td>Помещение для приема пищи +столовая</td>
+              <td>Нет</td>
             </tr>
           </tbody>
         </table>
@@ -206,7 +216,12 @@ const Grants = observer(() => {
       </h3>
       <ul>
         <li className="doc__item ">
-          <a href={"Ustav"} target={"_blank"} rel="noreferrer">
+          <a
+            itemProp="localActObSt"
+            href={"Ustav"}
+            target={"_blank"}
+            rel="noreferrer"
+          >
             Смета стоимости проживания в общежитии с 01.07.2022
           </a>
         </li>
@@ -240,33 +255,35 @@ const Grants = observer(() => {
               <td colSpan="2">2021 год</td>
               <td colSpan="2">2022 год</td>
             </tr>
-            <tr>
-              <td>26.02.03</td>
-              <td>"Судовождение"</td>
+            <tr itemProp="graduateJob">
+              <td itemProp="eduCode">26.02.03</td>
+              <td itemProp="eduName">"Судовождение"</td>
               <td>0</td>
               <td>0</td>
               <td>38</td>
               <td>8</td>
               <td>14</td>
               <td>11</td>
-              <td>42</td>
-              <td>24</td>
+              <td itemProp="v1">42</td>
+              <td itemProp="t1">24</td>
             </tr>
-            <tr>
-              <td>26.02.05</td>
-              <td>"Эксплуатация судовых энергетических установок"</td>
+            <tr itemProp="graduateJob">
+              <td itemProp="eduCode">26.02.05</td>
+              <td itemProp="eduName">
+                "Эксплуатация судовых энергетических установок"
+              </td>
               <td>0</td>
               <td>0</td>
               <td>40</td>
               <td>13</td>
               <td>36</td>
               <td>25</td>
-              <td>43</td>
-              <td>14</td>
+              <td itemProp="v1">43</td>
+              <td itemProp="t1">14</td>
             </tr>
-            <tr>
-              <td>26.02.06</td>
-              <td>
+            <tr itemProp="graduateJob">
+              <td itemProp="eduCode">26.02.06</td>
+              <td itemProp="eduName">
                 "Эксплуатация судового электрооборудования и средств автоматики"
               </td>
               <td>0</td>
@@ -275,12 +292,12 @@ const Grants = observer(() => {
               <td>13</td>
               <td>22</td>
               <td>11</td>
-              <td>27</td>
-              <td>19</td>
+              <td itemProp="v1">27</td>
+              <td itemProp="t1">19</td>
             </tr>
-            <tr>
-              <td>23.02.01</td>
-              <td>
+            <tr itemProp="graduateJob">
+              <td itemProp="eduCode">23.02.01</td>
+              <td itemProp="eduName">
                 Организация перевозок и управление на транспорте (по видам)
               </td>
               <td>0</td>
@@ -289,8 +306,8 @@ const Grants = observer(() => {
               <td>0</td>
               <td>0</td>
               <td>0</td>
-              <td>1</td>
-              <td>1</td>
+              <td itemProp="v1">1</td>
+              <td itemProp="t1">1</td>
             </tr>
           </tbody>
         </table>

@@ -44,11 +44,11 @@ const Inter = observer(() => {
               Реквизиты договора (наименование, дата, номер, срок действия)
             </td>
           </tr>
-          <tr>
+          <tr itemProp="internationalDog">
             <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
+            <td itemProp="stateName">-</td>
+            <td itemProp="orgName">-</td>
+            <td itemProp="dogReg">-</td>
           </tr>
         </tbody>
       </table>
@@ -74,10 +74,10 @@ const Inter = observer(() => {
               свидетельства о международной аккредитации)
             </td>
           </tr>
-          <tr>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
+          <tr itemProp="internationalAccr">
+            <td itemProp="eduCode">-</td>
+            <td itemProp="eduName">-</td>
+            <td itemProp="dateEnd">-</td>
           </tr>
         </tbody>
       </table>
