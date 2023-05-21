@@ -130,19 +130,7 @@ const Reception = observer(() => {
           </a>
         </li>
         <li>
-          <a
-            href={KCP}
-            className={toggleClassName(
-              "education__link",
-              "education__link-white",
-              "education__link-black",
-              "education__link-contrast"
-            )}
-            target={"_blank"}
-            rel="noreferrer"
-          >
-            КЦП СПО 23/24 уч.год
-          </a>
+          <NavLink to="../kcp">КЦП СПО 23/24 уч.год</NavLink>
         </li>
         <li>
           <NavLink

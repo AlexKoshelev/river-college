@@ -109,7 +109,7 @@ const MenuNavbar = ({ toggleFontSize }) => {
               ],
             },
             {
-              label: "Абитурьенту",
+              label: "Абитуриенту",
               key: "enrollee",
               children: [
                 {

@@ -153,6 +153,9 @@ import adkug_260203 from "../../../../assets/pdf/educationPage/260203/adkug_2602
 import Pologenie_ucheb_prozess_ovz_2017 from "../../../../assets/pdf/educationPage/260203/Pologenie_ucheb_prozess_ovz_2017.pdf";
 import Pologen_Fizra from "../../../../assets/pdf/educationPage/260203/Pologen_Fizra.pdf";
 
+import kpvr_VO from "../../../../assets/pdf/educationPage/260506/kpvr_VO.pdf";
+import rp_23_24 from "../../../../assets/pdf/educationPage/260506/rp_23_24.pdf";
+
 const Education = observer(() => {
   return (
     <div
@@ -1283,8 +1286,29 @@ const Education = observer(() => {
                   </li>
                 </ul>
               </td>
-              <td>-</td>
-              <td>-</td>
+              <td>
+                {" "}
+                <ul>
+                  <li className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={rp_23_24} target={"_blank"} rel="noreferrer">
+                      Рабочая программа воспитания по направлению подготовки
+                      (специальности) 26.05.06 "Эксплуатация судовых
+                      энергетических установок"
+                    </a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li className="doc__item">
+                    <PDF height={"25px"} width={"25px"} />
+                    <a href={kpvr_VO} target={"_blank"} rel="noreferrer">
+                      Календарный план воспитательной работы
+                    </a>
+                  </li>
+                </ul>
+              </td>
               <td>
                 <ul>
                   <li className="doc__item">

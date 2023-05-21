@@ -34,7 +34,6 @@ Button.propTypes = {
   active: PropTypes.bool,
 };
 Button.defaultProps = {
-  children: "default button",
   onClick: () => {},
   className: "",
   disabled: false,

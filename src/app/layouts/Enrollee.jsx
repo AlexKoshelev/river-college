@@ -6,12 +6,29 @@ import { observer } from "mobx-react-lite";
 import { toggleClassName } from "../utils/disabled";
 const Enrolly = observer(() => {
   const linksMenu = [
-    { title: "Приемная ампания 2023", path: "" },
     {
-      title: "Дни открытых дверей",
-      path: "",
+      title: "Приемная кампания 2023",
+      path: "reception",
     },
+    {
+      title: "Подача документов",
+      path: "submissionDoc",
+    },
+    {
+      title: "Обращение директора",
+      path: "messageFromDirector",
+    },
+    {
+      title: "Мониторинг подачи документов",
+      path: "monitoring",
+    },
+    {
+      title: "Узнать как стать нашим курсантом",
+      path: "applicantsInfo",
+    },
+    { title: "Дни открытых дверей", path: "open-day" },
   ];
+
   return (
     <div className="_container min-height">
       <BreadCrumbs />

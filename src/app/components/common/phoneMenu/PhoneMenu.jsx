@@ -15,6 +15,7 @@ import { NavLink } from "react-router-dom";
 
 const PhoneMenu = () => {
   const [nav, setNav] = useState(false);
+  const [disabled, setDisabled] = useState(false);
   return (
     <header className="phoneMenu">
       <div>
@@ -51,6 +52,14 @@ const PhoneMenu = () => {
           )}
         </div>
         <div className={`phoneMenu__menu-dropdown ${!nav ? "" : " is-open "} `}>
+          <ul className="nav-menu">
+            <li
+              onClick={() => setDisabled(!disabled)}
+              className={`nav-menu-disabled ${!disabled ? "" : " is-open "}`}
+            >
+              Версия для слабовидящих
+            </li>
+          </ul>
           <div className="button__container">
             <Button className={"button__container-btn"}>
               {<Schedul className={"button__container-btn-icon"} />}
@@ -65,13 +74,15 @@ const PhoneMenu = () => {
               <NavLink to="">Главная</NavLink>
             </li>
             <li onClick={() => setNav(!nav)}>
-              <NavLink to="learning">Образование</NavLink>
+              <NavLink to="learning/practice">Образование</NavLink>
             </li>
             <li onClick={() => setNav(!nav)}>
-              <NavLink to="enrollee">Абитурьенту</NavLink>
+              <NavLink to="enrollee/reception">Абитуриенту</NavLink>
             </li>
             <li onClick={() => setNav(!nav)}>
-              <NavLink to="training">Дополнительное образование</NavLink>
+              <NavLink to="training/aboutCdo">
+                Дополнительное образование
+              </NavLink>
             </li>
             <li onClick={() => setNav(!nav)}>
               <NavLink to="live">Студенческая жизнь</NavLink>

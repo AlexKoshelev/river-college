@@ -79,6 +79,7 @@ import AdmissionConditions from "./components/page/enrollee/applicants/reception
 import ProfessionalTrainingPrograms from "./components/page/training/professionalTrainingPrograms/ProfessionalTrainingPrograms";
 import ShipPowerPlantsVO2023 from "./components/page/educationsPrograms/260506/ShipPowerPlantsVO2023";
 import ShipPowerPlantsVO2023FOS from "./components/page/educationsPrograms/260506/ShipPowerPlantsVO2023FOS";
+import KCP from "./components/page/enrollee/applicants/reception/KCP/KCP";
 const routes = () => [
   {
     path: "",
@@ -257,6 +258,10 @@ const routes = () => [
     path: "enrollee",
     element: <Enrolly />,
     children: [
+      {
+        path: "kcp",
+        element: <KCP />,
+      },
       {
         path: "applicants",
         element: <ApplicantsEnrollee />,

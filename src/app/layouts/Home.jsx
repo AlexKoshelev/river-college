@@ -1,32 +1,18 @@
 import React from "react";
 import { Outlet } from "react-router";
-import BreadCrumbs from "../components/common/breadCrumbs/BreadCrumbs";
 import ChapterMenu from "../components/ui/chapterMenu/ChapterMenu";
 const Home = () => {
-  const linksMenu = [
-    { title: "Курсантам", path: "" },
-    {
-      title: "Заочникам",
-      path: "",
-    },
-    {
-      title: "Выпускникам",
-      path: "",
-    },
-    {
-      title: "Практическая подготовка",
-      path: "practice",
-    },
-    {
-      title: "Служба трудоустройства",
-      path: "employmentService",
-    },
+  const linksArray = [
+    { title: "Главная", path: "/" },
+    { title: "О филиале", path: "/home/aboutBranch" },
+    { title: "Историяеская справка", path: "/home/historicalReference" },
+    { title: "Новости", path: "/home/univercityNews" },
+    { title: "План мероприятий", path: "/home/univercityEvents" },
   ];
   return (
     <div className="_container min-height">
-      <BreadCrumbs />
       <div className="chapter__menu-show">
-        <ChapterMenu linksArray={linksMenu} />
+        <ChapterMenu linksArray={linksArray} />
       </div>
       <Outlet />
     </div>

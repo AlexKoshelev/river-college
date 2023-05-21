@@ -1,4 +1,8 @@
 @import "../../../../style/variables";
+.main-mobileMenu{
+    display: none;
+    padding: 0 15px;
+}
 .imageSlider-show{
     display: block;
     position: relative;
@@ -97,5 +101,7 @@
     .imageSlider-show{
         display: none;
     }
-
+    .main-mobileMenu{
+        display: block;
+    }
 }

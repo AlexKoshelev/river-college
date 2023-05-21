@@ -3,7 +3,7 @@ import { ReactComponent as CalendarLogo } from "../../../assets/svg/calendar.svg
 import { ReactComponent as MuseumLogo } from "../../../assets/svg/museum.svg";
 import { ReactComponent as RiverUniversityLogo } from "../../../assets/svg/riveruniversityLogo.svg";
 import { ReactComponent as UserLogo } from "../../../assets/svg/user.svg";
-import React from "react";
+import React, { useState } from "react";
 import Button from "../button/Button";
 import MenuNavbar from "../../ui/menuNavbar/MenuNavbar";
 /* import Search from "../search/Search"; */
@@ -20,7 +20,9 @@ import {
 import { disabled } from "../../../utils/disabled";
 import { toggleClassName } from "../../../utils/disabled";
 import PhoneMenu from "../phoneMenu/PhoneMenu";
+import DesktopLogIn from "../../ui/logIn/desktopLogIn";
 const NavBar = observer(() => {
+  const [isActive, setIsActive] = useState(false);
   return (
     <>
       <header
@@ -142,6 +144,7 @@ const NavBar = observer(() => {
               {/*  <!-- кнопка входа в личный кабинет --> */}
               <div className="header__section3-btn-margin header__office">
                 <Button
+                  onClick={() => setIsActive(!isActive)}
                   className={`button ${toggleClassName(
                     "btn__office",
                     "btn__office-white",
@@ -179,6 +182,7 @@ const NavBar = observer(() => {
                     </span>
                   }
                 </Button>
+                <DesktopLogIn isActive={isActive} setIsActive={setIsActive} />
               </div>
             </div>
           </div>
