@@ -12,46 +12,50 @@ import {
 } from "../../../utils/disabled";
 import Button from "../button/Button";
 import { NavLink } from "react-router-dom";
+import MobileLogIn from "../../ui/logIn/mobileLogIn";
 
 const PhoneMenu = () => {
   const [nav, setNav] = useState(false);
+  const [login, setLogin] = useState(false);
   const [disabled, setDisabled] = useState(false);
   return (
     <header className="phoneMenu">
-      <div>
-        <RiverUniversityLogo
-          width="60px"
-          height="60px"
-          fill={toggleIconColor("#0C1C2B", "", "#000")}
-        />
-      </div>
-      <div className="phoneMenu__title">
-        <h1>
-          Уфимский филиал <br /> ФГБОУ ВО “Волжский государственный <br />{" "}
-          университет водного транспорта”
-        </h1>
-        <h3>
-          {" "}
-          Уфимский филиал <br /> ФГБОУ ВО “ВГУВТ”{" "}
-        </h3>
+      <div className="flex jcs w1 ">
+        <div>
+          <RiverUniversityLogo
+            width="60px"
+            height="60px"
+            fill={toggleIconColor("#0C1C2B", "", "#000")}
+          />
+        </div>
+        <div className="phoneMenu__title">
+          <h1>
+            Уфимский филиал <br /> ФГБОУ ВО “Волжский государственный <br />{" "}
+            университет водного транспорта”
+          </h1>
+          <h3>
+            {" "}
+            Уфимский филиал <br /> ФГБОУ ВО “ВГУВТ”{" "}
+          </h3>
+        </div>
+        <div>
+          <Burger
+            onClick={() => setNav(!nav)}
+            stroke={toggleIconColor("#C80000")}
+            width={toggleIconWidthSize("35px", "37px", "40px", "43px")}
+            height={toggleIconHeightSize("35px", "37px", "40px", "43px")}
+          />
+        </div>
       </div>
       <nav className="phoneMenu__menu">
-        <div onClick={() => setNav(!nav)} className="phoneMenu__menu-toggle">
-          {nav ? (
+        <div className={`phoneMenu__menu-dropdown ${!nav ? "" : " is-open "} `}>
+          <div onClick={() => setNav(!nav)} className="phoneMenu__menu-toggle">
             <Cross
               stroke={toggleIconColor("#C80000")}
               width={toggleIconWidthSize("35px", "37px", "40px", "43px")}
               height={toggleIconHeightSize("35px", "37px", "40px", "43px")}
             />
-          ) : (
-            <Burger
-              stroke={toggleIconColor("#C80000")}
-              width={toggleIconWidthSize("35px", "37px", "40px", "43px")}
-              height={toggleIconHeightSize("35px", "37px", "40px", "43px")}
-            />
-          )}
-        </div>
-        <div className={`phoneMenu__menu-dropdown ${!nav ? "" : " is-open "} `}>
+          </div>
           <ul className="nav-menu">
             <li
               onClick={() => setDisabled(!disabled)}
@@ -64,9 +68,17 @@ const PhoneMenu = () => {
             <Button className={"button__container-btn"}>
               {<Schedul className={"button__container-btn-icon"} />}
             </Button>
-            <Button className={"button__container-btn"}>
+            <Button
+              onClick={() => setLogin(true)}
+              className={"button__container-btn"}
+            >
               {<User className={"button__container-btn-icon"} />}
             </Button>
+            <MobileLogIn
+              isActive={login}
+              setIsActive={setLogin}
+              setNav={setNav}
+            />
           </div>
           <MenuLogo className="menuLogo" />
           <ul className="nav-menu">

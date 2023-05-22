@@ -14,8 +14,6 @@ import {
 const DesktopLogIn = observer(({ isActive, setIsActive }) => {
   const [data, setData] = useState({ login: "", password: "" });
   const handleChange = (target) => {
-    console.log(target);
-
     setData((prevState) => ({ ...prevState, [target.name]: target.value }));
   };
   const handleSubmit = (e) => {
